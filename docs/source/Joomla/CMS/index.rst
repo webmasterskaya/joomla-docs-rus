@@ -1,0 +1,61 @@
+:::::::::::
+Joomla\\CMS
+:::::::::::
+
+.. php:namespace: Joomla\\CMS
+
+.. toctree::
+
+   Access/index
+   Application/index
+   Association/index
+   Authentication/index
+   Cache/index
+   Captcha/index
+   Categories/index
+   Client/index
+   Component/index
+   Crypt/index
+   Date/index
+   Document/index
+   Editor/index
+   Environment/index
+   Exception/index
+   Extension/index
+   Factory
+   Feed/index
+   Filesystem/index
+   Filter/index
+   Form/index
+   Help/index
+   Helper/index
+   HTML/index
+   Http/index
+   Image/index
+   Input/index
+   Installer/index
+   Language/index
+   Layout/index
+   Log/index
+   Mail/index
+   Menu/index
+   Microdata/index
+   MVC/index
+   Object/index
+   Pagination/index
+   Pathway/index
+   Plugin/index
+   Profiler/index
+   Response/index
+   Router/index
+   Schema/index
+   Session/index
+   String/index
+   Table/index
+   Toolbar/index
+   UCM/index
+   Updater/index
+   Uri/index
+   User/index
+   Utility/index
+   Version

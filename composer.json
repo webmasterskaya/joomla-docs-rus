@@ -1,0 +1,44 @@
+{
+    "name": "webmasterskaya/joomla-docs-rus",
+    "description": "Joomla! \u0000\u0000 \u0000\u0000\u0000\u0000\u0000\u0000\u0000 \u0000\u0000\u0000\u0000\u0000.",
+    "type": "project",
+    "license": "GNU General Public License v3.0",
+    "authors": [
+        {
+            "name": "Artem Vasilev",
+            "email": "kern.usr@gmail.com"
+        }
+    ],
+    "prefer-stable": true,
+    "repositories": [
+        {
+            "type": "package",
+            "package": {
+                "name": "sphpdox/sphpdox",
+                "version": "1.0.0",
+                "source": {
+                    "url": "https://github.com/webmasterskaya/sphpdox.git",
+                    "type": "git",
+                    "reference": "master"
+                },
+                "require": {
+                    "php": ">=5.5.9",
+                    "symfony/console": "3.0.*",
+                    "symfony/process": "3.0.*",
+                    "andrewsville/php-token-reflection": "1.4.0"
+                },
+                "autoload": {
+                    "psr-0": {
+                        "Sphpdox": "lib/"
+                    }
+                },
+                "bin": [
+                    "composer/bin/sphpdox"
+                ]
+            }
+        }
+    ],
+    "require": {
+        "sphpdox/sphpdox": "*"
+    }
+}
