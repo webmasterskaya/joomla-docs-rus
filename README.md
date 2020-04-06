@@ -21,5 +21,5 @@ composer install
 ```
 6. Запустить сборку проекта
 ```
-./docks/make html
+make html
 ```
