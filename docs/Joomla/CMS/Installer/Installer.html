@@ -1,0 +1,1074 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="ru" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="ru" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Joomla\CMS\Installer\Installer &mdash; документация joomla-docs-rus 3.9.16</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../../../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../../" src="../../../_static/documentation_options.js"></script>
+        <script src="../../../_static/jquery.js"></script>
+        <script src="../../../_static/underscore.js"></script>
+        <script src="../../../_static/doctools.js"></script>
+        <script src="../../../_static/language_data.js"></script>
+        <script src="../../../_static/translations.js"></script>
+    
+    <script type="text/javascript" src="../../../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
+    <link rel="index" title="Алфавитный указатель" href="../../../genindex.html" />
+    <link rel="search" title="Поиск" href="../../../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search"  style="background: white" >
+          
+
+          
+            <a href="../../../index.html" class="icon icon-home"> joomla-docs-rus
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <!-- Local TOC -->
+              <div class="local-toc"><ul>
+<li><a class="reference internal" href="#">Joomla\CMS\Installer\Installer</a></li>
+</ul>
+</div>
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../../index.html">joomla-docs-rus</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content style-external-links">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../../index.html">Docs</a> &raquo;</li>
+        
+      <li>Joomla\CMS\Installer\Installer</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../../../_sources/Joomla/CMS/Installer/Installer.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="joomla-cms-installer-installer">
+<h1>Joomla\CMS\Installer\Installer<a class="headerlink" href="#joomla-cms-installer-installer" title="Ссылка на этот заголовок">¶</a></h1>
+<dl class="class">
+<dt id="Installer">
+<em class="property">class </em><code class="sig-name descname">Installer</code><a class="headerlink" href="#Installer" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Joomla base installer class</p>
+<dl class="attr">
+<dt id="Installer::$paths">
+<em class="property">property </em><code class="sig-name descname">paths</code><a class="headerlink" href="#Installer::$paths" title="Ссылка на это определение">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>array</p>
+</dd>
+<dt class="field-even">Scope</dt>
+<dd class="field-even"><p>protected</p>
+</dd>
+</dl>
+<p>Array of paths needed by the installer</p>
+</dd></dl>
+
+<dl class="attr">
+<dt id="Installer::$upgrade">
+<em class="property">property </em><code class="sig-name descname">upgrade</code><a class="headerlink" href="#Installer::$upgrade" title="Ссылка на это определение">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>boolean</p>
+</dd>
+<dt class="field-even">Scope</dt>
+<dd class="field-even"><p>protected</p>
+</dd>
+</dl>
+<p>True if package is an upgrade</p>
+</dd></dl>
+
+<dl class="attr">
+<dt id="Installer::$manifestClass">
+<em class="property">property </em><code class="sig-name descname">manifestClass</code><a class="headerlink" href="#Installer::$manifestClass" title="Ссылка на это определение">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>object</p>
+</dd>
+</dl>
+<p>The manifest trigger class</p>
+</dd></dl>
+
+<dl class="attr">
+<dt id="Installer::$overwrite">
+<em class="property">property </em><code class="sig-name descname">overwrite</code><a class="headerlink" href="#Installer::$overwrite" title="Ссылка на это определение">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>boolean</p>
+</dd>
+<dt class="field-even">Scope</dt>
+<dd class="field-even"><p>protected</p>
+</dd>
+</dl>
+<p>True if existing files can be overwritten</p>
+</dd></dl>
+
+<dl class="attr">
+<dt id="Installer::$stepStack">
+<em class="property">property </em><code class="sig-name descname">stepStack</code><a class="headerlink" href="#Installer::$stepStack" title="Ссылка на это определение">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>array</p>
+</dd>
+<dt class="field-even">Scope</dt>
+<dd class="field-even"><p>protected</p>
+</dd>
+</dl>
+<p>Stack of installation steps
+- Used for installation rollback</p>
+</dd></dl>
+
+<dl class="attr">
+<dt id="Installer::$extension">
+<em class="property">property </em><code class="sig-name descname">extension</code><a class="headerlink" href="#Installer::$extension" title="Ссылка на это определение">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p><a class="reference internal" href="../Table/Extension.html#Extension" title="Extension">Extension</a></p>
+</dd>
+</dl>
+<p>Extension Table Entry</p>
+</dd></dl>
+
+<dl class="attr">
+<dt id="Installer::$message">
+<em class="property">property </em><code class="sig-name descname">message</code><a class="headerlink" href="#Installer::$message" title="Ссылка на это определение">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>string</p>
+</dd>
+</dl>
+<p>The output from the install/uninstall scripts</p>
+</dd></dl>
+
+<dl class="attr">
+<dt id="Installer::$manifest">
+<em class="property">property </em><code class="sig-name descname">manifest</code><a class="headerlink" href="#Installer::$manifest" title="Ссылка на это определение">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>object</p>
+</dd>
+</dl>
+<p>The installation manifest XML object</p>
+</dd></dl>
+
+<dl class="attr">
+<dt id="Installer::$extension_message">
+<em class="property">property </em><code class="sig-name descname">extension_message</code><a class="headerlink" href="#Installer::$extension_message" title="Ссылка на это определение">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>string</p>
+</dd>
+<dt class="field-even">Scope</dt>
+<dd class="field-even"><p>protected</p>
+</dd>
+</dl>
+<p>The extension message that appears</p>
+</dd></dl>
+
+<dl class="attr">
+<dt id="Installer::$redirect_url">
+<em class="property">property </em><code class="sig-name descname">redirect_url</code><a class="headerlink" href="#Installer::$redirect_url" title="Ссылка на это определение">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>string</p>
+</dd>
+<dt class="field-even">Scope</dt>
+<dd class="field-even"><p>protected</p>
+</dd>
+</dl>
+<p>The redirect URL if this extension (can be null if no redirect)</p>
+</dd></dl>
+
+<dl class="attr">
+<dt id="Installer::$packageUninstall">
+<em class="property">property </em><code class="sig-name descname">packageUninstall</code><a class="headerlink" href="#Installer::$packageUninstall" title="Ссылка на это определение">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>boolean</p>
+</dd>
+<dt class="field-even">Scope</dt>
+<dd class="field-even"><p>protected</p>
+</dd>
+</dl>
+<p>Flag if the uninstall process was triggered by uninstalling a package</p>
+</dd></dl>
+
+<dl class="attr">
+<dt id="Installer::$instance">
+<em class="property">property </em><code class="sig-name descname">instance</code><a class="headerlink" href="#Installer::$instance" title="Ссылка на это определение">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p><a class="reference internal" href="#Installer" title="Installer">Installer</a></p>
+</dd>
+<dt class="field-even">Scope</dt>
+<dd class="field-even"><p>protected</p>
+</dd>
+</dl>
+<p>Installer instance container.</p>
+</dd></dl>
+
+<dl class="attr">
+<dt id="Installer::$instances">
+<em class="property">property </em><code class="sig-name descname">instances</code><a class="headerlink" href="#Installer::$instances" title="Ссылка на это определение">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>Installer[]</p>
+</dd>
+<dt class="field-even">Scope</dt>
+<dd class="field-even"><p>protected</p>
+</dd>
+</dl>
+<p>Installer instances container.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Installer::__construct">
+<code class="sig-name descname">__construct</code><span class="sig-paren">(</span><em class="sig-param">$basepath = __DIR__</em>, <em class="sig-param">$classprefix = '\Joomla\CMS\Installer\Adapter'</em>, <em class="sig-param">$adapterfolder = 'Adapter'</em><span class="sig-paren">)</span><a class="headerlink" href="#Installer::__construct" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Constructor</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$basepath</strong> – </p></li>
+<li><p><strong>$classprefix</strong> – </p></li>
+<li><p><strong>$adapterfolder</strong> – </p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="Installer::getInstance">
+<code class="sig-name descname">getInstance</code><span class="sig-paren">(</span><em class="sig-param">$basepath = __DIR__</em>, <em class="sig-param">$classprefix = '\Joomla\CMS\Installer\Adapter'</em>, <em class="sig-param">$adapterfolder = 'Adapter'</em><span class="sig-paren">)</span><a class="headerlink" href="#Installer::getInstance" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Returns the global Installer object, only creating it if it doesn’t
+already exist.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$basepath</strong> – </p></li>
+<li><p><strong>$classprefix</strong> – </p></li>
+<li><p><strong>$adapterfolder</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>Installer An installer object</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="Installer::isOverwrite">
+<code class="sig-name descname">isOverwrite</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Installer::isOverwrite" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Get the allow overwrite switch</p>
+<dl class="field-list simple">
+<dt class="field-odd">Результат</dt>
+<dd class="field-odd"><p>boolean Allow overwrite switch</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="Installer::setOverwrite">
+<code class="sig-name descname">setOverwrite</code><span class="sig-paren">(</span><em class="sig-param">$state = false</em><span class="sig-paren">)</span><a class="headerlink" href="#Installer::setOverwrite" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Set the allow overwrite switch</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$state</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>boolean True it state is set, false if it is not</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="Installer::getRedirectUrl">
+<code class="sig-name descname">getRedirectUrl</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Installer::getRedirectUrl" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Get the redirect location</p>
+<dl class="field-list simple">
+<dt class="field-odd">Результат</dt>
+<dd class="field-odd"><p>string Redirect location (or null)</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="Installer::setRedirectUrl">
+<code class="sig-name descname">setRedirectUrl</code><span class="sig-paren">(</span><em class="sig-param">$newurl</em><span class="sig-paren">)</span><a class="headerlink" href="#Installer::setRedirectUrl" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Set the redirect location</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$newurl</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>void</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="Installer::isPackageUninstall">
+<code class="sig-name descname">isPackageUninstall</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Installer::isPackageUninstall" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Get whether this installer is uninstalling extensions which are part of a
+package</p>
+<dl class="field-list simple">
+<dt class="field-odd">Результат</dt>
+<dd class="field-odd"><p>boolean</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="Installer::setPackageUninstall">
+<code class="sig-name descname">setPackageUninstall</code><span class="sig-paren">(</span><em class="sig-param">$uninstall</em><span class="sig-paren">)</span><a class="headerlink" href="#Installer::setPackageUninstall" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Set whether this installer is uninstalling extensions which are part of a
+package</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$uninstall</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>void</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="Installer::isUpgrade">
+<code class="sig-name descname">isUpgrade</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Installer::isUpgrade" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Get the upgrade switch</p>
+<dl class="field-list simple">
+<dt class="field-odd">Результат</dt>
+<dd class="field-odd"><p>boolean</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="Installer::setUpgrade">
+<code class="sig-name descname">setUpgrade</code><span class="sig-paren">(</span><em class="sig-param">$state = false</em><span class="sig-paren">)</span><a class="headerlink" href="#Installer::setUpgrade" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Set the upgrade switch</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$state</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>boolean True if upgrade, false otherwise</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="Installer::getManifest">
+<code class="sig-name descname">getManifest</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Installer::getManifest" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Get the installation manifest object</p>
+<dl class="field-list simple">
+<dt class="field-odd">Результат</dt>
+<dd class="field-odd"><p>SimpleXMLElement Manifest object</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="Installer::getPath">
+<code class="sig-name descname">getPath</code><span class="sig-paren">(</span><em class="sig-param">$name</em>, <em class="sig-param">$default = null</em><span class="sig-paren">)</span><a class="headerlink" href="#Installer::getPath" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Get an installer path by name</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$name</strong> – </p></li>
+<li><p><strong>$default</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>string Path</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="Installer::setPath">
+<code class="sig-name descname">setPath</code><span class="sig-paren">(</span><em class="sig-param">$name</em>, <em class="sig-param">$value</em><span class="sig-paren">)</span><a class="headerlink" href="#Installer::setPath" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Sets an installer path by name</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$name</strong> – </p></li>
+<li><p><strong>$value</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>void</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="Installer::pushStep">
+<code class="sig-name descname">pushStep</code><span class="sig-paren">(</span><em class="sig-param">$step</em><span class="sig-paren">)</span><a class="headerlink" href="#Installer::pushStep" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Pushes a step onto the installer stack for rolling back steps</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$step</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>void</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="Installer::abort">
+<code class="sig-name descname">abort</code><span class="sig-paren">(</span><em class="sig-param">$msg = null</em>, <em class="sig-param">$type = null</em><span class="sig-paren">)</span><a class="headerlink" href="#Installer::abort" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Installation abort method</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$msg</strong> – </p></li>
+<li><p><strong>$type</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>boolean True if successful</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="Installer::install">
+<code class="sig-name descname">install</code><span class="sig-paren">(</span><em class="sig-param">$path = null</em><span class="sig-paren">)</span><a class="headerlink" href="#Installer::install" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Package installation method</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$path</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>boolean True if successful</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="Installer::discover_install">
+<code class="sig-name descname">discover_install</code><span class="sig-paren">(</span><em class="sig-param">$eid = null</em><span class="sig-paren">)</span><a class="headerlink" href="#Installer::discover_install" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Discovered package installation method</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$eid</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>boolean True if successful</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="Installer::discover">
+<code class="sig-name descname">discover</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Installer::discover" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Extension discover method</p>
+<p>Asks each adapter to find extensions</p>
+<dl class="field-list simple">
+<dt class="field-odd">Результат</dt>
+<dd class="field-odd"><p>InstallerExtension[]</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="Installer::update">
+<code class="sig-name descname">update</code><span class="sig-paren">(</span><em class="sig-param">$path = null</em><span class="sig-paren">)</span><a class="headerlink" href="#Installer::update" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Package update method</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$path</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>boolean True if successful</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="Installer::uninstall">
+<code class="sig-name descname">uninstall</code><span class="sig-paren">(</span><em class="sig-param">$type</em>, <em class="sig-param">$identifier</em>, <em class="sig-param">$cid = 0</em><span class="sig-paren">)</span><a class="headerlink" href="#Installer::uninstall" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Package uninstallation method</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$type</strong> – </p></li>
+<li><p><strong>$identifier</strong> – </p></li>
+<li><p><strong>$cid</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>boolean True if successful</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="Installer::refreshManifestCache">
+<code class="sig-name descname">refreshManifestCache</code><span class="sig-paren">(</span><em class="sig-param">$eid</em><span class="sig-paren">)</span><a class="headerlink" href="#Installer::refreshManifestCache" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Refreshes the manifest cache stored in #__extensions</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$eid</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>boolean</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="Installer::setupInstall">
+<code class="sig-name descname">setupInstall</code><span class="sig-paren">(</span><em class="sig-param">$route = 'install'</em>, <em class="sig-param">$returnAdapter = false</em><span class="sig-paren">)</span><a class="headerlink" href="#Installer::setupInstall" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Prepare for installation: this method sets the installation directory,
+finds
+and checks the installation file and verifies the installation type.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$route</strong> – </p></li>
+<li><p><strong>$returnAdapter</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>boolean|InstallerAdapter InstallerAdapter object if explicitly requested otherwise boolean</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="Installer::parseQueries">
+<code class="sig-name descname">parseQueries</code><span class="sig-paren">(</span><em class="sig-param">SimpleXMLElement $element</em><span class="sig-paren">)</span><a class="headerlink" href="#Installer::parseQueries" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Backward compatible method to parse through a queries element of the
+installation manifest file and take appropriate action.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$element</strong> (<em>SimpleXMLElement</em>) – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>mixed Number of queries processed or False on error</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="Installer::parseSQLFiles">
+<code class="sig-name descname">parseSQLFiles</code><span class="sig-paren">(</span><em class="sig-param">$element</em><span class="sig-paren">)</span><a class="headerlink" href="#Installer::parseSQLFiles" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Method to extract the name of a discreet installation sql file from the
+installation manifest file.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$element</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>mixed Number of queries processed or False on error</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="Installer::setSchemaVersion">
+<code class="sig-name descname">setSchemaVersion</code><span class="sig-paren">(</span><em class="sig-param">SimpleXMLElement $schema</em>, <em class="sig-param">$eid</em><span class="sig-paren">)</span><a class="headerlink" href="#Installer::setSchemaVersion" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Set the schema version for an extension by looking at its latest update</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$schema</strong> (<em>SimpleXMLElement</em>) – </p></li>
+<li><p><strong>$eid</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>void</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="Installer::parseSchemaUpdates">
+<code class="sig-name descname">parseSchemaUpdates</code><span class="sig-paren">(</span><em class="sig-param">SimpleXMLElement $schema</em>, <em class="sig-param">$eid</em><span class="sig-paren">)</span><a class="headerlink" href="#Installer::parseSchemaUpdates" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Method to process the updates for an item</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$schema</strong> (<em>SimpleXMLElement</em>) – </p></li>
+<li><p><strong>$eid</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>boolean Result of the operations</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="Installer::parseFiles">
+<code class="sig-name descname">parseFiles</code><span class="sig-paren">(</span><em class="sig-param">SimpleXMLElement $element</em>, <em class="sig-param">$cid = 0</em>, <em class="sig-param">$oldFiles = null</em>, <em class="sig-param">$oldMD5 = null</em><span class="sig-paren">)</span><a class="headerlink" href="#Installer::parseFiles" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Method to parse through a files element of the installation manifest and
+take appropriate
+action.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$element</strong> (<em>SimpleXMLElement</em>) – </p></li>
+<li><p><strong>$cid</strong> – </p></li>
+<li><p><strong>$oldFiles</strong> – </p></li>
+<li><p><strong>$oldMD5</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>boolean True on success</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="Installer::parseLanguages">
+<code class="sig-name descname">parseLanguages</code><span class="sig-paren">(</span><em class="sig-param">SimpleXMLElement $element</em>, <em class="sig-param">$cid = 0</em><span class="sig-paren">)</span><a class="headerlink" href="#Installer::parseLanguages" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Method to parse through a languages element of the installation manifest
+and take appropriate
+action.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$element</strong> (<em>SimpleXMLElement</em>) – </p></li>
+<li><p><strong>$cid</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>boolean True on success</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="Installer::parseMedia">
+<code class="sig-name descname">parseMedia</code><span class="sig-paren">(</span><em class="sig-param">SimpleXMLElement $element</em>, <em class="sig-param">$cid = 0</em><span class="sig-paren">)</span><a class="headerlink" href="#Installer::parseMedia" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Method to parse through a media element of the installation manifest and
+take appropriate
+action.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$element</strong> (<em>SimpleXMLElement</em>) – </p></li>
+<li><p><strong>$cid</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>boolean True on success</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="Installer::getParams">
+<code class="sig-name descname">getParams</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Installer::getParams" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Method to parse the parameters of an extension, build the JSON string for
+its default parameters, and return the JSON string.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Результат</dt>
+<dd class="field-odd"><p>string JSON string of parameter values</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="Installer::copyFiles">
+<code class="sig-name descname">copyFiles</code><span class="sig-paren">(</span><em class="sig-param">$files</em>, <em class="sig-param">$overwrite = null</em><span class="sig-paren">)</span><a class="headerlink" href="#Installer::copyFiles" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Copyfiles</p>
+<p>Copy files from source directory to the target directory</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$files</strong> – </p></li>
+<li><p><strong>$overwrite</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>boolean True on success</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="Installer::removeFiles">
+<code class="sig-name descname">removeFiles</code><span class="sig-paren">(</span><em class="sig-param">$element</em>, <em class="sig-param">$cid = 0</em><span class="sig-paren">)</span><a class="headerlink" href="#Installer::removeFiles" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Method to parse through a files element of the installation manifest and
+remove
+the files that were installed</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$element</strong> – </p></li>
+<li><p><strong>$cid</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>boolean True on success</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="Installer::copyManifest">
+<code class="sig-name descname">copyManifest</code><span class="sig-paren">(</span><em class="sig-param">$cid = 1</em><span class="sig-paren">)</span><a class="headerlink" href="#Installer::copyManifest" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Copies the installation manifest file to the extension folder in the given
+client</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$cid</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>boolean True on success, False on error</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="Installer::findManifest">
+<code class="sig-name descname">findManifest</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Installer::findManifest" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Tries to find the package manifest file</p>
+<dl class="field-list simple">
+<dt class="field-odd">Результат</dt>
+<dd class="field-odd"><p>boolean True on success, False on error</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="Installer::isManifest">
+<code class="sig-name descname">isManifest</code><span class="sig-paren">(</span><em class="sig-param">$file</em><span class="sig-paren">)</span><a class="headerlink" href="#Installer::isManifest" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Is the XML file a valid Joomla installation manifest file.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$file</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>SimpleXMLElement|null A SimpleXMLElement, or null if the file failed to parse</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="Installer::generateManifestCache">
+<code class="sig-name descname">generateManifestCache</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Installer::generateManifestCache" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Generates a manifest cache</p>
+<dl class="field-list simple">
+<dt class="field-odd">Результат</dt>
+<dd class="field-odd"><p>string serialised manifest data</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="Installer::cleanDiscoveredExtension">
+<code class="sig-name descname">cleanDiscoveredExtension</code><span class="sig-paren">(</span><em class="sig-param">$type</em>, <em class="sig-param">$element</em>, <em class="sig-param">$folder = ''</em>, <em class="sig-param">$client = 0</em><span class="sig-paren">)</span><a class="headerlink" href="#Installer::cleanDiscoveredExtension" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Cleans up discovered extensions if they’re being installed some other way</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$type</strong> – </p></li>
+<li><p><strong>$element</strong> – </p></li>
+<li><p><strong>$folder</strong> – </p></li>
+<li><p><strong>$client</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>object Result of query</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="Installer::findDeletedFiles">
+<code class="sig-name descname">findDeletedFiles</code><span class="sig-paren">(</span><em class="sig-param">$old_files</em>, <em class="sig-param">$new_files</em><span class="sig-paren">)</span><a class="headerlink" href="#Installer::findDeletedFiles" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Compares two «files» entries to find deleted files/folders</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$old_files</strong> – </p></li>
+<li><p><strong>$new_files</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>array An array with the delete files and folders in findDeletedFiles[files] and findDeletedFiles[folders] respectively</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="Installer::loadMD5Sum">
+<code class="sig-name descname">loadMD5Sum</code><span class="sig-paren">(</span><em class="sig-param">$filename</em><span class="sig-paren">)</span><a class="headerlink" href="#Installer::loadMD5Sum" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Loads an MD5SUMS file into an associative array</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$filename</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>array Associative array with filenames as the index and the MD5 as the value</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="Installer::parseXMLInstallFile">
+<code class="sig-name descname">parseXMLInstallFile</code><span class="sig-paren">(</span><em class="sig-param">$path</em><span class="sig-paren">)</span><a class="headerlink" href="#Installer::parseXMLInstallFile" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Parse a XML install manifest file.</p>
+<p>XML Root tag should be „install“ except for languages which use meta file.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$path</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>array XML metadata.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="Installer::getAdapter">
+<code class="sig-name descname">getAdapter</code><span class="sig-paren">(</span><em class="sig-param">$name</em>, <em class="sig-param">$options = array()</em><span class="sig-paren">)</span><a class="headerlink" href="#Installer::getAdapter" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Fetches an adapter and adds it to the internal storage if an instance is
+not set
+while also ensuring its a valid adapter name</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$name</strong> – </p></li>
+<li><p><strong>$options</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>InstallerAdapter</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="Installer::getAdapters">
+<code class="sig-name descname">getAdapters</code><span class="sig-paren">(</span><em class="sig-param">$options = array()</em>, <em class="sig-param">$custom = array()</em><span class="sig-paren">)</span><a class="headerlink" href="#Installer::getAdapters" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Gets a list of available install adapters.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$options</strong> – </p></li>
+<li><p><strong>$custom</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>array An array of available install adapters.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="Installer::loadAdapter">
+<code class="sig-name descname">loadAdapter</code><span class="sig-paren">(</span><em class="sig-param">$adapter</em>, <em class="sig-param">$options = array()</em><span class="sig-paren">)</span><a class="headerlink" href="#Installer::loadAdapter" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Method to load an adapter instance</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$adapter</strong> – </p></li>
+<li><p><strong>$options</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>InstallerAdapter</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="Installer::loadAllAdapters">
+<code class="sig-name descname">loadAllAdapters</code><span class="sig-paren">(</span><em class="sig-param">$options = array()</em><span class="sig-paren">)</span><a class="headerlink" href="#Installer::loadAllAdapters" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Loads all adapters.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$options</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>void</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2020, Artem Vasilev &lt;kern.usr@gmail.com&gt;
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

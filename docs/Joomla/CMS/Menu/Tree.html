@@ -1,0 +1,358 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="ru" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="ru" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Joomla\CMS\Menu\Tree &mdash; документация joomla-docs-rus 3.9.16</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../../../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../../" src="../../../_static/documentation_options.js"></script>
+        <script src="../../../_static/jquery.js"></script>
+        <script src="../../../_static/underscore.js"></script>
+        <script src="../../../_static/doctools.js"></script>
+        <script src="../../../_static/language_data.js"></script>
+        <script src="../../../_static/translations.js"></script>
+    
+    <script type="text/javascript" src="../../../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
+    <link rel="index" title="Алфавитный указатель" href="../../../genindex.html" />
+    <link rel="search" title="Поиск" href="../../../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search"  style="background: white" >
+          
+
+          
+            <a href="../../../index.html" class="icon icon-home"> joomla-docs-rus
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <!-- Local TOC -->
+              <div class="local-toc"><ul>
+<li><a class="reference internal" href="#">Joomla\CMS\Menu\Tree</a></li>
+</ul>
+</div>
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../../index.html">joomla-docs-rus</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content style-external-links">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../../index.html">Docs</a> &raquo;</li>
+        
+      <li>Joomla\CMS\Menu\Tree</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../../../_sources/Joomla/CMS/Menu/Tree.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="joomla-cms-menu-tree">
+<h1>Joomla\CMS\Menu\Tree<a class="headerlink" href="#joomla-cms-menu-tree" title="Ссылка на этот заголовок">¶</a></h1>
+<dl class="class">
+<dt id="Tree">
+<em class="property">class </em><code class="sig-name descname">Tree</code><a class="headerlink" href="#Tree" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Menu Tree class to represent a menu tree hierarchy</p>
+<dl class="attr">
+<dt id="Tree::$root">
+<em class="property">property </em><code class="sig-name descname">root</code><a class="headerlink" href="#Tree::$root" title="Ссылка на это определение">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p><a class="reference internal" href="Node.html#Node" title="Node">Node</a></p>
+</dd>
+<dt class="field-even">Scope</dt>
+<dd class="field-even"><p>protected</p>
+</dd>
+</dl>
+<p>The root menu node</p>
+</dd></dl>
+
+<dl class="attr">
+<dt id="Tree::$current">
+<em class="property">property </em><code class="sig-name descname">current</code><a class="headerlink" href="#Tree::$current" title="Ссылка на это определение">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p><a class="reference internal" href="Node.html#Node" title="Node">Node</a></p>
+</dd>
+<dt class="field-even">Scope</dt>
+<dd class="field-even"><p>protected</p>
+</dd>
+</dl>
+<p>The current working menu node</p>
+</dd></dl>
+
+<dl class="attr">
+<dt id="Tree::$css">
+<em class="property">property </em><code class="sig-name descname">css</code><a class="headerlink" href="#Tree::$css" title="Ссылка на это определение">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>string[]</p>
+</dd>
+<dt class="field-even">Scope</dt>
+<dd class="field-even"><p>protected</p>
+</dd>
+</dl>
+<p>The CSS style array</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Tree::__construct">
+<code class="sig-name descname">__construct</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Tree::__construct" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Constructor</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Tree::getRoot">
+<code class="sig-name descname">getRoot</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Tree::getRoot" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Get the root node</p>
+<dl class="field-list simple">
+<dt class="field-odd">Результат</dt>
+<dd class="field-odd"><p>Node</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="Tree::getCurrent">
+<code class="sig-name descname">getCurrent</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Tree::getCurrent" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Get the current node</p>
+<dl class="field-list simple">
+<dt class="field-odd">Результат</dt>
+<dd class="field-odd"><p>Node</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="Tree::setCurrent">
+<code class="sig-name descname">setCurrent</code><span class="sig-paren">(</span><em class="sig-param">$node</em><span class="sig-paren">)</span><a class="headerlink" href="#Tree::setCurrent" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Get the current node</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$node</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>void</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="Tree::getParent">
+<code class="sig-name descname">getParent</code><span class="sig-paren">(</span><em class="sig-param">$setCurrent = true</em><span class="sig-paren">)</span><a class="headerlink" href="#Tree::getParent" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Method to get the parent and set it as active optionally</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$setCurrent</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>Node</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="Tree::reset">
+<code class="sig-name descname">reset</code><span class="sig-paren">(</span><em class="sig-param">$clear = false</em><span class="sig-paren">)</span><a class="headerlink" href="#Tree::reset" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Method to reset the working pointer to the root node and optionally clear
+all menu nodes</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$clear</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>Node The root node</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="Tree::addChild">
+<code class="sig-name descname">addChild</code><span class="sig-paren">(</span><em class="sig-param">Node $node</em>, <em class="sig-param">$setCurrent = false</em><span class="sig-paren">)</span><a class="headerlink" href="#Tree::addChild" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Method to add a child</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$node</strong> (<a class="reference internal" href="Node.html#Node" title="Node"><em>Node</em></a>) – </p></li>
+<li><p><strong>$setCurrent</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>Node The newly added node</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="Tree::getIconClass">
+<code class="sig-name descname">getIconClass</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Tree::getIconClass" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Method to get the CSS class name for an icon identifier or create one if
+a custom image path is passed as the identifier</p>
+<dl class="field-list simple">
+<dt class="field-odd">Результат</dt>
+<dd class="field-odd"><p>string CSS class name</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="Tree::getCss">
+<code class="sig-name descname">getCss</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Tree::getCss" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Get the CSS declarations for this tree</p>
+<dl class="field-list simple">
+<dt class="field-odd">Результат</dt>
+<dd class="field-odd"><p>string[]</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2020, Artem Vasilev &lt;kern.usr@gmail.com&gt;
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

@@ -1,0 +1,512 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="ru" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="ru" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Joomla\CMS\Filter\InputFilter &mdash; документация joomla-docs-rus 3.9.16</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../../../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../../" src="../../../_static/documentation_options.js"></script>
+        <script src="../../../_static/jquery.js"></script>
+        <script src="../../../_static/underscore.js"></script>
+        <script src="../../../_static/doctools.js"></script>
+        <script src="../../../_static/language_data.js"></script>
+        <script src="../../../_static/translations.js"></script>
+    
+    <script type="text/javascript" src="../../../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
+    <link rel="index" title="Алфавитный указатель" href="../../../genindex.html" />
+    <link rel="search" title="Поиск" href="../../../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search"  style="background: white" >
+          
+
+          
+            <a href="../../../index.html" class="icon icon-home"> joomla-docs-rus
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <!-- Local TOC -->
+              <div class="local-toc"><ul>
+<li><a class="reference internal" href="#">Joomla\CMS\Filter\InputFilter</a></li>
+</ul>
+</div>
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../../index.html">joomla-docs-rus</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content style-external-links">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../../index.html">Docs</a> &raquo;</li>
+        
+      <li>Joomla\CMS\Filter\InputFilter</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../../../_sources/Joomla/CMS/Filter/InputFilter.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="joomla-cms-filter-inputfilter">
+<h1>Joomla\CMS\Filter\InputFilter<a class="headerlink" href="#joomla-cms-filter-inputfilter" title="Ссылка на этот заголовок">¶</a></h1>
+<dl class="class">
+<dt id="InputFilter">
+<em class="property">class </em><code class="sig-name descname">InputFilter</code><a class="headerlink" href="#InputFilter" title="Ссылка на это определение">¶</a></dt>
+<dd><p>InputFilter is a class for filtering input from any data source</p>
+<p>Forked from the php input filter library by: Daniel Morris &lt;<a class="reference external" href="mailto:dan&#37;&#52;&#48;rootcube&#46;com">dan<span>&#64;</span>rootcube<span>&#46;</span>com</a>&gt;
+Original Contributors: Gianpaolo Racca, Ghislain Picard, Marco Wandschneider, Chris Tobin and Andrew Eddie.</p>
+<dl class="attr">
+<dt id="InputFilter::$stripUSC">
+<em class="property">property </em><code class="sig-name descname">stripUSC</code><a class="headerlink" href="#InputFilter::$stripUSC" title="Ссылка на это определение">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>integer</p>
+</dd>
+</dl>
+<p>A flag for Unicode Supplementary Characters (4-byte Unicode character)
+stripping.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="InputFilter::__construct">
+<code class="sig-name descname">__construct</code><span class="sig-paren">(</span><em class="sig-param">$tagsArray = array()</em>, <em class="sig-param">$attrArray = array()</em>, <em class="sig-param">$tagsMethod = 0</em>, <em class="sig-param">$attrMethod = 0</em>, <em class="sig-param">$xssAuto = 1</em>, <em class="sig-param">$stripUSC = -1</em><span class="sig-paren">)</span><a class="headerlink" href="#InputFilter::__construct" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Constructor for inputFilter class. Only first parameter is required.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$tagsArray</strong> – </p></li>
+<li><p><strong>$attrArray</strong> – </p></li>
+<li><p><strong>$tagsMethod</strong> – </p></li>
+<li><p><strong>$attrMethod</strong> – </p></li>
+<li><p><strong>$xssAuto</strong> – </p></li>
+<li><p><strong>$stripUSC</strong> – </p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="InputFilter::getInstance">
+<code class="sig-name descname">getInstance</code><span class="sig-paren">(</span><em class="sig-param">$tagsArray = array()</em>, <em class="sig-param">$attrArray = array()</em>, <em class="sig-param">$tagsMethod = 0</em>, <em class="sig-param">$attrMethod = 0</em>, <em class="sig-param">$xssAuto = 1</em>, <em class="sig-param">$stripUSC = -1</em><span class="sig-paren">)</span><a class="headerlink" href="#InputFilter::getInstance" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Returns an input filter object, only creating it if it doesn’t already
+exist.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$tagsArray</strong> – </p></li>
+<li><p><strong>$attrArray</strong> – </p></li>
+<li><p><strong>$tagsMethod</strong> – </p></li>
+<li><p><strong>$attrMethod</strong> – </p></li>
+<li><p><strong>$xssAuto</strong> – </p></li>
+<li><p><strong>$stripUSC</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>InputFilter The InputFilter object.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="InputFilter::clean">
+<code class="sig-name descname">clean</code><span class="sig-paren">(</span><em class="sig-param">$source</em>, <em class="sig-param">$type = 'string'</em><span class="sig-paren">)</span><a class="headerlink" href="#InputFilter::clean" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Method to be called by another php script. Processes for XSS and
+specified bad code.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$source</strong> – </p></li>
+<li><p><strong>$type</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>mixed „Cleaned“ version of input parameter</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="InputFilter::emailToPunycode">
+<code class="sig-name descname">emailToPunycode</code><span class="sig-paren">(</span><em class="sig-param">$text</em><span class="sig-paren">)</span><a class="headerlink" href="#InputFilter::emailToPunycode" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Function to punyencode utf8 mail when saving content</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$text</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>string The punyencoded mail</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="InputFilter::isSafeFile">
+<code class="sig-name descname">isSafeFile</code><span class="sig-paren">(</span><em class="sig-param">$file</em>, <em class="sig-param">$options = array()</em><span class="sig-paren">)</span><a class="headerlink" href="#InputFilter::isSafeFile" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Checks an uploaded for suspicious naming and potential PHP contents which
+could indicate a hacking attempt.</p>
+<p>The options you can define are:
+null_byte                   Prevent files with a null byte in their name
+(buffer overflow attack)
+forbidden_extensions        Do not allow these strings anywhere in the
+file’s extension php_tag_in_content          Do not allow <cite>&lt;?php</cite> tag in
+content phar_stub_in_content        Do not allow the <cite>__HALT_COMPILER()</cite>
+phar stub in content shorttag_in_content         Do not allow short tag
+<cite>&lt;?</cite> in content shorttag_extensions         Which file extensions to scan
+for short tags in content fobidden_ext_in_content     Do not allow
+forbidden_extensions anywhere in content php_ext_content_extensions  Which
+file extensions to scan for .php in content</p>
+<p>This code is an adaptation and improvement of Admin Tools“ UploadShield
+feature,
+relicensed and contributed by its author.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$file</strong> – </p></li>
+<li><p><strong>$options</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>boolean True of the file is safe</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="InputFilter::decodeFileData">
+<code class="sig-name descname">decodeFileData</code><span class="sig-paren">(</span><em class="sig-param">$data</em><span class="sig-paren">)</span><a class="headerlink" href="#InputFilter::decodeFileData" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Method to decode a file data array.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$data</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>array</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="InputFilter::_remove">
+<code class="sig-name descname">_remove</code><span class="sig-paren">(</span><em class="sig-param">$source</em><span class="sig-paren">)</span><a class="headerlink" href="#InputFilter::_remove" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Internal method to iteratively remove all unwanted tags and attributes</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$source</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>string „Cleaned“ version of input parameter</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="InputFilter::remove">
+<code class="sig-name descname">remove</code><span class="sig-paren">(</span><em class="sig-param">$source</em><span class="sig-paren">)</span><a class="headerlink" href="#InputFilter::remove" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Internal method to iteratively remove all unwanted tags and attributes</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$source</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>string „Cleaned“ version of input parameter</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="InputFilter::_cleanTags">
+<code class="sig-name descname">_cleanTags</code><span class="sig-paren">(</span><em class="sig-param">$source</em><span class="sig-paren">)</span><a class="headerlink" href="#InputFilter::_cleanTags" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Internal method to strip a string of certain tags</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$source</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>string „Cleaned“ version of input parameter</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="InputFilter::cleanTags">
+<code class="sig-name descname">cleanTags</code><span class="sig-paren">(</span><em class="sig-param">$source</em><span class="sig-paren">)</span><a class="headerlink" href="#InputFilter::cleanTags" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Internal method to strip a string of certain tags</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$source</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>string „Cleaned“ version of input parameter</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="InputFilter::_cleanAttributes">
+<code class="sig-name descname">_cleanAttributes</code><span class="sig-paren">(</span><em class="sig-param">$attrSet</em><span class="sig-paren">)</span><a class="headerlink" href="#InputFilter::_cleanAttributes" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Internal method to strip a tag of certain attributes</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$attrSet</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>array Filtered array of attribute pairs</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="InputFilter::escapeAttributeValues">
+<code class="sig-name descname">escapeAttributeValues</code><span class="sig-paren">(</span><em class="sig-param">$source</em><span class="sig-paren">)</span><a class="headerlink" href="#InputFilter::escapeAttributeValues" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Escape &lt; &gt; and » inside attribute values</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$source</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>string Filtered string</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="InputFilter::_decode">
+<code class="sig-name descname">_decode</code><span class="sig-paren">(</span><em class="sig-param">$source</em><span class="sig-paren">)</span><a class="headerlink" href="#InputFilter::_decode" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Try to convert to plaintext</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$source</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>string Plaintext string</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="InputFilter::decode">
+<code class="sig-name descname">decode</code><span class="sig-paren">(</span><em class="sig-param">$source</em><span class="sig-paren">)</span><a class="headerlink" href="#InputFilter::decode" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Try to convert to plaintext</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$source</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>string Plaintext string</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="InputFilter::_escapeAttributeValues">
+<code class="sig-name descname">_escapeAttributeValues</code><span class="sig-paren">(</span><em class="sig-param">$source</em><span class="sig-paren">)</span><a class="headerlink" href="#InputFilter::_escapeAttributeValues" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Escape &lt; &gt; and » inside attribute values</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$source</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>string Filtered string</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="InputFilter::_stripCSSExpressions">
+<code class="sig-name descname">_stripCSSExpressions</code><span class="sig-paren">(</span><em class="sig-param">$source</em><span class="sig-paren">)</span><a class="headerlink" href="#InputFilter::_stripCSSExpressions" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Remove CSS Expressions in the form of <cite>&lt;property&gt;:expression(…)</cite></p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$source</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>string Filtered string</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="InputFilter::stripUSC">
+<code class="sig-name descname">stripUSC</code><span class="sig-paren">(</span><em class="sig-param">$source</em><span class="sig-paren">)</span><a class="headerlink" href="#InputFilter::stripUSC" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Recursively strip Unicode Supplementary Characters from the source. Not:
+objects cannot be filtered.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$source</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>mixed The filtered result</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2020, Artem Vasilev &lt;kern.usr@gmail.com&gt;
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

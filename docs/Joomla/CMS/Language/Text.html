@@ -1,0 +1,392 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="ru" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="ru" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Joomla\CMS\Language\Text &mdash; документация joomla-docs-rus 3.9.16</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../../../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../../" src="../../../_static/documentation_options.js"></script>
+        <script src="../../../_static/jquery.js"></script>
+        <script src="../../../_static/underscore.js"></script>
+        <script src="../../../_static/doctools.js"></script>
+        <script src="../../../_static/language_data.js"></script>
+        <script src="../../../_static/translations.js"></script>
+    
+    <script type="text/javascript" src="../../../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
+    <link rel="index" title="Алфавитный указатель" href="../../../genindex.html" />
+    <link rel="search" title="Поиск" href="../../../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search"  style="background: white" >
+          
+
+          
+            <a href="../../../index.html" class="icon icon-home"> joomla-docs-rus
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <!-- Local TOC -->
+              <div class="local-toc"><ul>
+<li><a class="reference internal" href="#">Joomla\CMS\Language\Text</a></li>
+</ul>
+</div>
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../../index.html">joomla-docs-rus</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content style-external-links">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../../index.html">Docs</a> &raquo;</li>
+        
+      <li>Joomla\CMS\Language\Text</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../../../_sources/Joomla/CMS/Language/Text.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="joomla-cms-language-text">
+<h1>Joomla\CMS\Language\Text<a class="headerlink" href="#joomla-cms-language-text" title="Ссылка на этот заголовок">¶</a></h1>
+<dl class="class">
+<dt id="Text">
+<em class="property">class </em><code class="sig-name descname">Text</code><a class="headerlink" href="#Text" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Text handling class.</p>
+<dl class="attr">
+<dt id="Text::$strings">
+<em class="property">property </em><code class="sig-name descname">strings</code><a class="headerlink" href="#Text::$strings" title="Ссылка на это определение">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>array</p>
+</dd>
+<dt class="field-even">Scope</dt>
+<dd class="field-even"><p>protected</p>
+</dd>
+</dl>
+<p>JavaScript strings</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Text::_">
+<code class="sig-name descname">_</code><span class="sig-paren">(</span><em class="sig-param">$string</em>, <em class="sig-param">$jsSafe = false</em>, <em class="sig-param">$interpretBackSlashes = true</em>, <em class="sig-param">$script = false</em><span class="sig-paren">)</span><a class="headerlink" href="#Text::_" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Translates a string into the current language.</p>
+<p>Examples:
+<cite>&lt;script&gt;alert(Joomla.JText._(„&lt;?php echo Text::_(«JDEFAULT»,
+array(«script»=&gt;true)); ?&gt;“));&lt;/script&gt;</cite>
+will generate an alert message containing „Default“
+<cite>&lt;?php echo Text::_(«JDEFAULT»); ?&gt;</cite> will generate a „Default“ string</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$string</strong> – </p></li>
+<li><p><strong>$jsSafe</strong> – </p></li>
+<li><p><strong>$interpretBackSlashes</strong> – </p></li>
+<li><p><strong>$script</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>string The translated string or the key if $script is true</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="Text::passSprintf">
+<code class="sig-name descname">passSprintf</code><span class="sig-paren">(</span><em class="sig-param">$string</em>, <em class="sig-param">$jsSafe = false</em>, <em class="sig-param">$interpretBackSlashes = true</em>, <em class="sig-param">$script = false</em><span class="sig-paren">)</span><a class="headerlink" href="#Text::passSprintf" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Checks the string if it should be interpreted as sprintf and runs sprintf
+over it.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$string</strong> – </p></li>
+<li><p><strong>$jsSafe</strong> – </p></li>
+<li><p><strong>$interpretBackSlashes</strong> – </p></li>
+<li><p><strong>$script</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>boolean Whether the string be interpreted as sprintf</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="Text::alt">
+<code class="sig-name descname">alt</code><span class="sig-paren">(</span><em class="sig-param">$string</em>, <em class="sig-param">$alt</em>, <em class="sig-param">$jsSafe = false</em>, <em class="sig-param">$interpretBackSlashes = true</em>, <em class="sig-param">$script = false</em><span class="sig-paren">)</span><a class="headerlink" href="#Text::alt" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Translates a string into the current language.</p>
+<p>Examples:
+<cite>&lt;?php echo Text::alt(„JALL“, „language“); ?&gt;</cite> will generate a „All“
+string in English but a «Toutes» string in French
+<cite>&lt;?php echo Text::alt(„JALL“, „module“); ?&gt;</cite> will generate a „All“ string
+in English but a «Tous» string in French</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$string</strong> – </p></li>
+<li><p><strong>$alt</strong> – </p></li>
+<li><p><strong>$jsSafe</strong> – </p></li>
+<li><p><strong>$interpretBackSlashes</strong> – </p></li>
+<li><p><strong>$script</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>string The translated string or the key if $script is true</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="Text::plural">
+<code class="sig-name descname">plural</code><span class="sig-paren">(</span><em class="sig-param">$string</em>, <em class="sig-param">$n</em><span class="sig-paren">)</span><a class="headerlink" href="#Text::plural" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Like Text::sprintf but tries to pluralise the string.</p>
+<p>Note that this method can take a mixed number of arguments as for the
+sprintf function.</p>
+<p>The last argument can take an array of options:</p>
+<p>array(„jsSafe“=&gt;boolean, „interpretBackSlashes“=&gt;boolean,
+„script“=&gt;boolean)</p>
+<p>where:</p>
+<p>jsSafe is a boolean to generate a javascript safe strings.
+interpretBackSlashes is a boolean to interpret backslashes -&gt;, n-&gt;new
+line, t-&gt;tabulation.
+script is a boolean to indicate that the string will be push in the
+javascript language store.</p>
+<p>Examples:
+<cite>&lt;script&gt;alert(Joomla.JText._(„&lt;?php echo
+Text::plural(«COM_PLUGINS_N_ITEMS_UNPUBLISHED», 1, array(«script»=&gt;true));
+?&gt;“));&lt;/script&gt;</cite>
+will generate an alert message containing „1 plugin successfully disabled“
+<cite>&lt;?php echo Text::plural(„COM_PLUGINS_N_ITEMS_UNPUBLISHED“, 1); ?&gt;</cite> will
+generate a „1 plugin successfully disabled“ string</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$string</strong> – </p></li>
+<li><p><strong>$n</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>string The translated strings or the key if „script“ is true in the array of options</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="Text::sprintf">
+<code class="sig-name descname">sprintf</code><span class="sig-paren">(</span><em class="sig-param">$string</em><span class="sig-paren">)</span><a class="headerlink" href="#Text::sprintf" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Passes a string thru a sprintf.</p>
+<p>Note that this method can take a mixed number of arguments as for the
+sprintf function.</p>
+<p>The last argument can take an array of options:</p>
+<p>array(„jsSafe“=&gt;boolean, „interpretBackSlashes“=&gt;boolean,
+„script“=&gt;boolean)</p>
+<p>where:</p>
+<p>jsSafe is a boolean to generate a javascript safe strings.
+interpretBackSlashes is a boolean to interpret backslashes -&gt;, n-&gt;new
+line, t-&gt;tabulation.
+script is a boolean to indicate that the string will be push in the
+javascript language store.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$string</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>string The translated strings or the key if „script“ is true in the array of options.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="Text::printf">
+<code class="sig-name descname">printf</code><span class="sig-paren">(</span><em class="sig-param">$string</em><span class="sig-paren">)</span><a class="headerlink" href="#Text::printf" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Passes a string thru an printf.</p>
+<p>Note that this method can take a mixed number of arguments as for the
+sprintf function.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$string</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>mixed</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="Text::script">
+<code class="sig-name descname">script</code><span class="sig-paren">(</span><em class="sig-param">$string = null</em>, <em class="sig-param">$jsSafe = false</em>, <em class="sig-param">$interpretBackSlashes = true</em><span class="sig-paren">)</span><a class="headerlink" href="#Text::script" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Translate a string into the current language and stores it in the
+JavaScript language store.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$string</strong> – </p></li>
+<li><p><strong>$jsSafe</strong> – </p></li>
+<li><p><strong>$interpretBackSlashes</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>string</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="Text::getScriptStrings">
+<code class="sig-name descname">getScriptStrings</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Text::getScriptStrings" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Get the strings that have been loaded to the JavaScript language store.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Результат</dt>
+<dd class="field-odd"><p>array</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2020, Artem Vasilev &lt;kern.usr@gmail.com&gt;
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

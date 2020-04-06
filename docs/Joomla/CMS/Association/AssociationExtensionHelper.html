@@ -1,0 +1,432 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="ru" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="ru" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Joomla\CMS\Association\AssociationExtensionHelper &mdash; документация joomla-docs-rus 3.9.16</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../../../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../../" src="../../../_static/documentation_options.js"></script>
+        <script src="../../../_static/jquery.js"></script>
+        <script src="../../../_static/underscore.js"></script>
+        <script src="../../../_static/doctools.js"></script>
+        <script src="../../../_static/language_data.js"></script>
+        <script src="../../../_static/translations.js"></script>
+    
+    <script type="text/javascript" src="../../../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
+    <link rel="index" title="Алфавитный указатель" href="../../../genindex.html" />
+    <link rel="search" title="Поиск" href="../../../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search"  style="background: white" >
+          
+
+          
+            <a href="../../../index.html" class="icon icon-home"> joomla-docs-rus
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <!-- Local TOC -->
+              <div class="local-toc"><ul>
+<li><a class="reference internal" href="#">Joomla\CMS\Association\AssociationExtensionHelper</a></li>
+</ul>
+</div>
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../../index.html">joomla-docs-rus</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content style-external-links">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../../index.html">Docs</a> &raquo;</li>
+        
+      <li>Joomla\CMS\Association\AssociationExtensionHelper</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../../../_sources/Joomla/CMS/Association/AssociationExtensionHelper.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="joomla-cms-association-associationextensionhelper">
+<h1>Joomla\CMS\Association\AssociationExtensionHelper<a class="headerlink" href="#joomla-cms-association-associationextensionhelper" title="Ссылка на этот заголовок">¶</a></h1>
+<dl class="class">
+<dt id="AssociationExtensionHelper">
+<em class="property">class </em><code class="sig-name descname">AssociationExtensionHelper</code><a class="headerlink" href="#AssociationExtensionHelper" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Association Extension Helper</p>
+<dl class="attr">
+<dt id="AssociationExtensionHelper::$extension">
+<em class="property">property </em><code class="sig-name descname">extension</code><a class="headerlink" href="#AssociationExtensionHelper::$extension" title="Ссылка на это определение">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>array</p>
+</dd>
+<dt class="field-even">Scope</dt>
+<dd class="field-even"><p>protected</p>
+</dd>
+</dl>
+<p>The extension name</p>
+</dd></dl>
+
+<dl class="attr">
+<dt id="AssociationExtensionHelper::$itemTypes">
+<em class="property">property </em><code class="sig-name descname">itemTypes</code><a class="headerlink" href="#AssociationExtensionHelper::$itemTypes" title="Ссылка на это определение">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>array</p>
+</dd>
+<dt class="field-even">Scope</dt>
+<dd class="field-even"><p>protected</p>
+</dd>
+</dl>
+<p>Array of item types</p>
+</dd></dl>
+
+<dl class="attr">
+<dt id="AssociationExtensionHelper::$associationsSupport">
+<em class="property">property </em><code class="sig-name descname">associationsSupport</code><a class="headerlink" href="#AssociationExtensionHelper::$associationsSupport" title="Ссылка на это определение">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>boolean</p>
+</dd>
+<dt class="field-even">Scope</dt>
+<dd class="field-even"><p>protected</p>
+</dd>
+</dl>
+<p>Has the extension association support</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="AssociationExtensionHelper::hasAssociationsSupport">
+<code class="sig-name descname">hasAssociationsSupport</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#AssociationExtensionHelper::hasAssociationsSupport" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Checks if the extension supports associations</p>
+<dl class="field-list simple">
+<dt class="field-odd">Результат</dt>
+<dd class="field-odd"><p>boolean Supports the extension associations</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="AssociationExtensionHelper::getItemTypes">
+<code class="sig-name descname">getItemTypes</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#AssociationExtensionHelper::getItemTypes" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Get the item types</p>
+<dl class="field-list simple">
+<dt class="field-odd">Результат</dt>
+<dd class="field-odd"><p>array Array of item types</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="AssociationExtensionHelper::getAssociationList">
+<code class="sig-name descname">getAssociationList</code><span class="sig-paren">(</span><em class="sig-param">$typeName</em>, <em class="sig-param">$itemId</em><span class="sig-paren">)</span><a class="headerlink" href="#AssociationExtensionHelper::getAssociationList" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Get the associated items for an item</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$typeName</strong> – </p></li>
+<li><p><strong>$itemId</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>array</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="AssociationExtensionHelper::getType">
+<code class="sig-name descname">getType</code><span class="sig-paren">(</span><em class="sig-param">$typeName = ''</em><span class="sig-paren">)</span><a class="headerlink" href="#AssociationExtensionHelper::getType" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Get information about the type</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$typeName</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>array Array of item types</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="AssociationExtensionHelper::getTypeFields">
+<code class="sig-name descname">getTypeFields</code><span class="sig-paren">(</span><em class="sig-param">$typeName</em><span class="sig-paren">)</span><a class="headerlink" href="#AssociationExtensionHelper::getTypeFields" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Get information about the fields the type provides</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$typeName</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>array Array of support information</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="AssociationExtensionHelper::getTypeSupport">
+<code class="sig-name descname">getTypeSupport</code><span class="sig-paren">(</span><em class="sig-param">$typeName</em><span class="sig-paren">)</span><a class="headerlink" href="#AssociationExtensionHelper::getTypeSupport" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Get information about the fields the type provides</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$typeName</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>array Array of support information</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="AssociationExtensionHelper::getTypeTables">
+<code class="sig-name descname">getTypeTables</code><span class="sig-paren">(</span><em class="sig-param">$typeName</em><span class="sig-paren">)</span><a class="headerlink" href="#AssociationExtensionHelper::getTypeTables" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Get information about the tables the type use</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$typeName</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>array Array of support information</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="AssociationExtensionHelper::getTypeJoins">
+<code class="sig-name descname">getTypeJoins</code><span class="sig-paren">(</span><em class="sig-param">$typeName</em><span class="sig-paren">)</span><a class="headerlink" href="#AssociationExtensionHelper::getTypeJoins" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Get information about the table joins for the type</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$typeName</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>array Array of support information</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="AssociationExtensionHelper::getTypeTitle">
+<code class="sig-name descname">getTypeTitle</code><span class="sig-paren">(</span><em class="sig-param">$typeName</em><span class="sig-paren">)</span><a class="headerlink" href="#AssociationExtensionHelper::getTypeTitle" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Get the type title</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$typeName</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>array Array of support information</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="AssociationExtensionHelper::getTypeInformation">
+<code class="sig-name descname">getTypeInformation</code><span class="sig-paren">(</span><em class="sig-param">$typeName</em>, <em class="sig-param">$part = 'support'</em><span class="sig-paren">)</span><a class="headerlink" href="#AssociationExtensionHelper::getTypeInformation" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Get information about the type</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$typeName</strong> – </p></li>
+<li><p><strong>$part</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>array Array of support information</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="AssociationExtensionHelper::getTypeFieldName">
+<code class="sig-name descname">getTypeFieldName</code><span class="sig-paren">(</span><em class="sig-param">$typeName</em>, <em class="sig-param">$fieldName</em><span class="sig-paren">)</span><a class="headerlink" href="#AssociationExtensionHelper::getTypeFieldName" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Get a table field name for a type</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$typeName</strong> – </p></li>
+<li><p><strong>$fieldName</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>string</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="AssociationExtensionHelper::getSupportTemplate">
+<code class="sig-name descname">getSupportTemplate</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#AssociationExtensionHelper::getSupportTemplate" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Get default values for support array</p>
+<dl class="field-list simple">
+<dt class="field-odd">Результат</dt>
+<dd class="field-odd"><p>array</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="AssociationExtensionHelper::getFieldsTemplate">
+<code class="sig-name descname">getFieldsTemplate</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#AssociationExtensionHelper::getFieldsTemplate" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Get default values for fields array</p>
+<dl class="field-list simple">
+<dt class="field-odd">Результат</dt>
+<dd class="field-odd"><p>array</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2020, Artem Vasilev &lt;kern.usr@gmail.com&gt;
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

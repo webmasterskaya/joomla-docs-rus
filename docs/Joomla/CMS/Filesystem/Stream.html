@@ -1,0 +1,989 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="ru" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="ru" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Joomla\CMS\Filesystem\Stream &mdash; документация joomla-docs-rus 3.9.16</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../../../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../../" src="../../../_static/documentation_options.js"></script>
+        <script src="../../../_static/jquery.js"></script>
+        <script src="../../../_static/underscore.js"></script>
+        <script src="../../../_static/doctools.js"></script>
+        <script src="../../../_static/language_data.js"></script>
+        <script src="../../../_static/translations.js"></script>
+    
+    <script type="text/javascript" src="../../../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
+    <link rel="index" title="Алфавитный указатель" href="../../../genindex.html" />
+    <link rel="search" title="Поиск" href="../../../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search"  style="background: white" >
+          
+
+          
+            <a href="../../../index.html" class="icon icon-home"> joomla-docs-rus
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <!-- Local TOC -->
+              <div class="local-toc"><ul>
+<li><a class="reference internal" href="#">Joomla\CMS\Filesystem\Stream</a></li>
+</ul>
+</div>
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../../index.html">joomla-docs-rus</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content style-external-links">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../../index.html">Docs</a> &raquo;</li>
+        
+      <li>Joomla\CMS\Filesystem\Stream</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../../../_sources/Joomla/CMS/Filesystem/Stream.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="joomla-cms-filesystem-stream">
+<h1>Joomla\CMS\Filesystem\Stream<a class="headerlink" href="#joomla-cms-filesystem-stream" title="Ссылка на этот заголовок">¶</a></h1>
+<dl class="class">
+<dt id="Stream">
+<em class="property">class </em><code class="sig-name descname">Stream</code><a class="headerlink" href="#Stream" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Joomla! Stream Interface</p>
+<p>The Joomla! stream interface is designed to handle files as streams where as the legacy File static class treated files in a rather atomic manner.</p>
+<dl class="attr">
+<dt id="Stream::$filemode">
+<em class="property">property </em><code class="sig-name descname">filemode</code><a class="headerlink" href="#Stream::$filemode" title="Ссылка на это определение">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>integer</p>
+</dd>
+<dt class="field-even">Scope</dt>
+<dd class="field-even"><p>protected</p>
+</dd>
+</dl>
+<p>File Mode</p>
+</dd></dl>
+
+<dl class="attr">
+<dt id="Stream::$dirmode">
+<em class="property">property </em><code class="sig-name descname">dirmode</code><a class="headerlink" href="#Stream::$dirmode" title="Ссылка на это определение">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>integer</p>
+</dd>
+<dt class="field-even">Scope</dt>
+<dd class="field-even"><p>protected</p>
+</dd>
+</dl>
+<p>Directory Mode</p>
+</dd></dl>
+
+<dl class="attr">
+<dt id="Stream::$chunksize">
+<em class="property">property </em><code class="sig-name descname">chunksize</code><a class="headerlink" href="#Stream::$chunksize" title="Ссылка на это определение">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>integer</p>
+</dd>
+<dt class="field-even">Scope</dt>
+<dd class="field-even"><p>protected</p>
+</dd>
+</dl>
+<p>Default Chunk Size</p>
+</dd></dl>
+
+<dl class="attr">
+<dt id="Stream::$filename">
+<em class="property">property </em><code class="sig-name descname">filename</code><a class="headerlink" href="#Stream::$filename" title="Ссылка на это определение">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>string</p>
+</dd>
+<dt class="field-even">Scope</dt>
+<dd class="field-even"><p>protected</p>
+</dd>
+</dl>
+<p>Filename</p>
+</dd></dl>
+
+<dl class="attr">
+<dt id="Stream::$writeprefix">
+<em class="property">property </em><code class="sig-name descname">writeprefix</code><a class="headerlink" href="#Stream::$writeprefix" title="Ссылка на это определение">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>string</p>
+</dd>
+<dt class="field-even">Scope</dt>
+<dd class="field-even"><p>protected</p>
+</dd>
+</dl>
+<p>Prefix of the connection for writing</p>
+</dd></dl>
+
+<dl class="attr">
+<dt id="Stream::$readprefix">
+<em class="property">property </em><code class="sig-name descname">readprefix</code><a class="headerlink" href="#Stream::$readprefix" title="Ссылка на это определение">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>string</p>
+</dd>
+<dt class="field-even">Scope</dt>
+<dd class="field-even"><p>protected</p>
+</dd>
+</dl>
+<p>Prefix of the connection for reading</p>
+</dd></dl>
+
+<dl class="attr">
+<dt id="Stream::$processingmethod">
+<em class="property">property </em><code class="sig-name descname">processingmethod</code><a class="headerlink" href="#Stream::$processingmethod" title="Ссылка на это определение">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>string</p>
+</dd>
+<dt class="field-even">Scope</dt>
+<dd class="field-even"><p>protected</p>
+</dd>
+</dl>
+<p>Read Processing method</p>
+</dd></dl>
+
+<dl class="attr">
+<dt id="Stream::$filters">
+<em class="property">property </em><code class="sig-name descname">filters</code><a class="headerlink" href="#Stream::$filters" title="Ссылка на это определение">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>array</p>
+</dd>
+<dt class="field-even">Scope</dt>
+<dd class="field-even"><p>protected</p>
+</dd>
+</dl>
+<p>Filters applied to the current stream</p>
+</dd></dl>
+
+<dl class="attr">
+<dt id="Stream::$fh">
+<em class="property">property </em><code class="sig-name descname">fh</code><a class="headerlink" href="#Stream::$fh" title="Ссылка на это определение">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>resource</p>
+</dd>
+<dt class="field-even">Scope</dt>
+<dd class="field-even"><p>protected</p>
+</dd>
+</dl>
+<p>File Handle</p>
+</dd></dl>
+
+<dl class="attr">
+<dt id="Stream::$filesize">
+<em class="property">property </em><code class="sig-name descname">filesize</code><a class="headerlink" href="#Stream::$filesize" title="Ссылка на это определение">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>integer</p>
+</dd>
+<dt class="field-even">Scope</dt>
+<dd class="field-even"><p>protected</p>
+</dd>
+</dl>
+<p>File size</p>
+</dd></dl>
+
+<dl class="attr">
+<dt id="Stream::$context">
+<em class="property">property </em><code class="sig-name descname">context</code><a class="headerlink" href="#Stream::$context" title="Ссылка на это определение">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>resource</p>
+</dd>
+<dt class="field-even">Scope</dt>
+<dd class="field-even"><p>protected</p>
+</dd>
+</dl>
+<p>Context to use when opening the connection</p>
+</dd></dl>
+
+<dl class="attr">
+<dt id="Stream::$contextOptions">
+<em class="property">property </em><code class="sig-name descname">contextOptions</code><a class="headerlink" href="#Stream::$contextOptions" title="Ссылка на это определение">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>array</p>
+</dd>
+<dt class="field-even">Scope</dt>
+<dd class="field-even"><p>protected</p>
+</dd>
+</dl>
+<p>Context options; used to rebuild the context</p>
+</dd></dl>
+
+<dl class="attr">
+<dt id="Stream::$openmode">
+<em class="property">property </em><code class="sig-name descname">openmode</code><a class="headerlink" href="#Stream::$openmode" title="Ссылка на это определение">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>string</p>
+</dd>
+<dt class="field-even">Scope</dt>
+<dd class="field-even"><p>protected</p>
+</dd>
+</dl>
+<p>The mode under which the file was opened</p>
+</dd></dl>
+
+<dl class="attr">
+<dt id="Stream::$_errors">
+<em class="property">property </em><code class="sig-name descname">_errors</code><a class="headerlink" href="#Stream::$_errors" title="Ссылка на это определение">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>array</p>
+</dd>
+<dt class="field-even">Scope</dt>
+<dd class="field-even"><p>protected</p>
+</dd>
+</dl>
+<p>An array of error messages or Exception objects.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Stream::__construct">
+<code class="sig-name descname">__construct</code><span class="sig-paren">(</span><em class="sig-param">$writeprefix = ''</em>, <em class="sig-param">$readprefix = ''</em>, <em class="sig-param">$context = array()</em><span class="sig-paren">)</span><a class="headerlink" href="#Stream::__construct" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Constructor</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$writeprefix</strong> – </p></li>
+<li><p><strong>$readprefix</strong> – </p></li>
+<li><p><strong>$context</strong> – </p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="Stream::__destruct">
+<code class="sig-name descname">__destruct</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Stream::__destruct" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Destructor</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Stream::open">
+<code class="sig-name descname">open</code><span class="sig-paren">(</span><em class="sig-param">$filename</em>, <em class="sig-param">$mode = 'r'</em>, <em class="sig-param">$use_include_path = false</em>, <em class="sig-param">$context = null</em>, <em class="sig-param">$use_prefix = false</em>, <em class="sig-param">$relative = false</em>, <em class="sig-param">$detectprocessingmode = false</em><span class="sig-paren">)</span><a class="headerlink" href="#Stream::open" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Generic File Operations</p>
+<p>Open a stream with some lazy loading smarts</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$filename</strong> – </p></li>
+<li><p><strong>$mode</strong> – </p></li>
+<li><p><strong>$use_include_path</strong> – </p></li>
+<li><p><strong>$context</strong> – </p></li>
+<li><p><strong>$use_prefix</strong> – </p></li>
+<li><p><strong>$relative</strong> – </p></li>
+<li><p><strong>$detectprocessingmode</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>boolean</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="Stream::close">
+<code class="sig-name descname">close</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Stream::close" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Attempt to close a file handle</p>
+<p>Will return false if it failed and true on success If the file is not open
+the system will return true, this function destroys the file handle as
+well</p>
+<dl class="field-list simple">
+<dt class="field-odd">Результат</dt>
+<dd class="field-odd"><p>boolean</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="Stream::eof">
+<code class="sig-name descname">eof</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Stream::eof" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Work out if we’re at the end of the file for a stream</p>
+<dl class="field-list simple">
+<dt class="field-odd">Результат</dt>
+<dd class="field-odd"><p>boolean</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="Stream::filesize">
+<code class="sig-name descname">filesize</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Stream::filesize" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Retrieve the file size of the path</p>
+<dl class="field-list simple">
+<dt class="field-odd">Результат</dt>
+<dd class="field-odd"><p>mixed</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="Stream::gets">
+<code class="sig-name descname">gets</code><span class="sig-paren">(</span><em class="sig-param">$length = 0</em><span class="sig-paren">)</span><a class="headerlink" href="#Stream::gets" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Get a line from the stream source.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$length</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>mixed</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="Stream::read">
+<code class="sig-name descname">read</code><span class="sig-paren">(</span><em class="sig-param">$length = 0</em><span class="sig-paren">)</span><a class="headerlink" href="#Stream::read" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Read a file</p>
+<p>Handles user space streams appropriately otherwise any read will return
+8192</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$length</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>mixed</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="Stream::seek">
+<code class="sig-name descname">seek</code><span class="sig-paren">(</span><em class="sig-param">$offset</em>, <em class="sig-param">$whence = SEEK_SET</em><span class="sig-paren">)</span><a class="headerlink" href="#Stream::seek" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Seek the file</p>
+<p>Note: the return value is different to that of fseek</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$offset</strong> – </p></li>
+<li><p><strong>$whence</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>boolean True on success, false on failure</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="Stream::tell">
+<code class="sig-name descname">tell</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Stream::tell" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Returns the current position of the file read/write pointer.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Результат</dt>
+<dd class="field-odd"><p>mixed</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="Stream::write">
+<code class="sig-name descname">write</code><span class="sig-paren">(</span><em class="sig-param">$string</em>, <em class="sig-param">$length = 0</em>, <em class="sig-param">$chunk = 0</em><span class="sig-paren">)</span><a class="headerlink" href="#Stream::write" title="Ссылка на это определение">¶</a></dt>
+<dd><p>File write</p>
+<p>Whilst this function accepts a reference, the underlying fwrite will do a
+copy! This will roughly double the memory allocation for any write you do.
+Specifying chunked will get around this by only writing in specific chunk
+sizes. This defaults to 8192 which is a sane number to use most of the
+time (change the default with JStream::set(„chunksize“, newsize);)
+Note: This doesn’t support gzip/bzip2 writing like reading does</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$string</strong> – </p></li>
+<li><p><strong>$length</strong> – </p></li>
+<li><p><strong>$chunk</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>boolean</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="Stream::chmod">
+<code class="sig-name descname">chmod</code><span class="sig-paren">(</span><em class="sig-param">$filename = ''</em>, <em class="sig-param">$mode = 0</em><span class="sig-paren">)</span><a class="headerlink" href="#Stream::chmod" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Chmod wrapper</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$filename</strong> – </p></li>
+<li><p><strong>$mode</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>boolean</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="Stream::get_meta_data">
+<code class="sig-name descname">get_meta_data</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Stream::get_meta_data" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Get the stream metadata</p>
+<dl class="field-list simple">
+<dt class="field-odd">Результат</dt>
+<dd class="field-odd"><p>array header/metadata</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="Stream::_buildContext">
+<code class="sig-name descname">_buildContext</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Stream::_buildContext" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Stream contexts
+Builds the context from the array</p>
+<dl class="field-list simple">
+<dt class="field-odd">Результат</dt>
+<dd class="field-odd"><p>mixed</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="Stream::setContextOptions">
+<code class="sig-name descname">setContextOptions</code><span class="sig-paren">(</span><em class="sig-param">$context</em><span class="sig-paren">)</span><a class="headerlink" href="#Stream::setContextOptions" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Updates the context to the array</p>
+<p>Format is the same as the options for stream_context_create</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$context</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>void</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="Stream::addContextEntry">
+<code class="sig-name descname">addContextEntry</code><span class="sig-paren">(</span><em class="sig-param">$wrapper</em>, <em class="sig-param">$name</em>, <em class="sig-param">$value</em><span class="sig-paren">)</span><a class="headerlink" href="#Stream::addContextEntry" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Adds a particular options to the context</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$wrapper</strong> – </p></li>
+<li><p><strong>$name</strong> – </p></li>
+<li><p><strong>$value</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>void</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="Stream::deleteContextEntry">
+<code class="sig-name descname">deleteContextEntry</code><span class="sig-paren">(</span><em class="sig-param">$wrapper</em>, <em class="sig-param">$name</em><span class="sig-paren">)</span><a class="headerlink" href="#Stream::deleteContextEntry" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Deletes a particular setting from a context</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$wrapper</strong> – </p></li>
+<li><p><strong>$name</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>void</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="Stream::applyContextToStream">
+<code class="sig-name descname">applyContextToStream</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Stream::applyContextToStream" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Applies the current context to the stream</p>
+<p>Use this to change the values of the context after you’ve opened a stream</p>
+<dl class="field-list simple">
+<dt class="field-odd">Результат</dt>
+<dd class="field-odd"><p>mixed</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="Stream::appendFilter">
+<code class="sig-name descname">appendFilter</code><span class="sig-paren">(</span><em class="sig-param">$filtername</em>, <em class="sig-param">$read_write = STREAM_FILTER_READ</em>, <em class="sig-param">$params = array()</em><span class="sig-paren">)</span><a class="headerlink" href="#Stream::appendFilter" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Stream filters
+Append a filter to the chain</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$filtername</strong> – </p></li>
+<li><p><strong>$read_write</strong> – </p></li>
+<li><p><strong>$params</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>mixed</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="Stream::prependFilter">
+<code class="sig-name descname">prependFilter</code><span class="sig-paren">(</span><em class="sig-param">$filtername</em>, <em class="sig-param">$read_write = STREAM_FILTER_READ</em>, <em class="sig-param">$params = array()</em><span class="sig-paren">)</span><a class="headerlink" href="#Stream::prependFilter" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Prepend a filter to the chain</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$filtername</strong> – </p></li>
+<li><p><strong>$read_write</strong> – </p></li>
+<li><p><strong>$params</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>mixed</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="Stream::removeFilter">
+<code class="sig-name descname">removeFilter</code><span class="sig-paren">(</span><em class="sig-param">$resource</em>, <em class="sig-param">$byindex = false</em><span class="sig-paren">)</span><a class="headerlink" href="#Stream::removeFilter" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Remove a filter, either by resource (handed out from the append or prepend
+function)
+or via getting the filter list)</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$resource</strong> – </p></li>
+<li><p><strong>$byindex</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>boolean Result of operation</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="Stream::copy">
+<code class="sig-name descname">copy</code><span class="sig-paren">(</span><em class="sig-param">$src</em>, <em class="sig-param">$dest</em>, <em class="sig-param">$context = null</em>, <em class="sig-param">$use_prefix = true</em>, <em class="sig-param">$relative = false</em><span class="sig-paren">)</span><a class="headerlink" href="#Stream::copy" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Copy a file from src to dest</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$src</strong> – </p></li>
+<li><p><strong>$dest</strong> – </p></li>
+<li><p><strong>$context</strong> – </p></li>
+<li><p><strong>$use_prefix</strong> – </p></li>
+<li><p><strong>$relative</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>mixed</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="Stream::move">
+<code class="sig-name descname">move</code><span class="sig-paren">(</span><em class="sig-param">$src</em>, <em class="sig-param">$dest</em>, <em class="sig-param">$context = null</em>, <em class="sig-param">$use_prefix = true</em>, <em class="sig-param">$relative = false</em><span class="sig-paren">)</span><a class="headerlink" href="#Stream::move" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Moves a file</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$src</strong> – </p></li>
+<li><p><strong>$dest</strong> – </p></li>
+<li><p><strong>$context</strong> – </p></li>
+<li><p><strong>$use_prefix</strong> – </p></li>
+<li><p><strong>$relative</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>mixed</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="Stream::delete">
+<code class="sig-name descname">delete</code><span class="sig-paren">(</span><em class="sig-param">$filename</em>, <em class="sig-param">$context = null</em>, <em class="sig-param">$use_prefix = true</em>, <em class="sig-param">$relative = false</em><span class="sig-paren">)</span><a class="headerlink" href="#Stream::delete" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Delete a file</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$filename</strong> – </p></li>
+<li><p><strong>$context</strong> – </p></li>
+<li><p><strong>$use_prefix</strong> – </p></li>
+<li><p><strong>$relative</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>mixed</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="Stream::upload">
+<code class="sig-name descname">upload</code><span class="sig-paren">(</span><em class="sig-param">$src</em>, <em class="sig-param">$dest</em>, <em class="sig-param">$context = null</em>, <em class="sig-param">$use_prefix = true</em>, <em class="sig-param">$relative = false</em><span class="sig-paren">)</span><a class="headerlink" href="#Stream::upload" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Upload a file</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$src</strong> – </p></li>
+<li><p><strong>$dest</strong> – </p></li>
+<li><p><strong>$context</strong> – </p></li>
+<li><p><strong>$use_prefix</strong> – </p></li>
+<li><p><strong>$relative</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>mixed</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="Stream::writeFile">
+<code class="sig-name descname">writeFile</code><span class="sig-paren">(</span><em class="sig-param">$filename</em>, <em class="sig-param">$buffer</em><span class="sig-paren">)</span><a class="headerlink" href="#Stream::writeFile" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Writes a chunk of data to a file.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$filename</strong> – </p></li>
+<li><p><strong>$buffer</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>boolean</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="Stream::_getFilename">
+<code class="sig-name descname">_getFilename</code><span class="sig-paren">(</span><em class="sig-param">$filename</em>, <em class="sig-param">$mode</em>, <em class="sig-param">$use_prefix</em>, <em class="sig-param">$relative</em><span class="sig-paren">)</span><a class="headerlink" href="#Stream::_getFilename" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Determine the appropriate „filename“ of a file</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$filename</strong> – </p></li>
+<li><p><strong>$mode</strong> – </p></li>
+<li><p><strong>$use_prefix</strong> – </p></li>
+<li><p><strong>$relative</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>string</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="Stream::getFileHandle">
+<code class="sig-name descname">getFileHandle</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Stream::getFileHandle" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Return the internal file handle</p>
+<dl class="field-list simple">
+<dt class="field-odd">Результат</dt>
+<dd class="field-odd"><p>resource File handler</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="Stream::__toString">
+<code class="sig-name descname">__toString</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Stream::__toString" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Magic method to convert the object to a string gracefully.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Результат</dt>
+<dd class="field-odd"><p>string The classname.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="Stream::def">
+<code class="sig-name descname">def</code><span class="sig-paren">(</span><em class="sig-param">$property</em>, <em class="sig-param">$default = null</em><span class="sig-paren">)</span><a class="headerlink" href="#Stream::def" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Sets a default value if not already assigned</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$property</strong> – </p></li>
+<li><p><strong>$default</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>mixed</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="Stream::get">
+<code class="sig-name descname">get</code><span class="sig-paren">(</span><em class="sig-param">$property</em>, <em class="sig-param">$default = null</em><span class="sig-paren">)</span><a class="headerlink" href="#Stream::get" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Returns a property of the object or the default value if the property is
+not set.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$property</strong> – </p></li>
+<li><p><strong>$default</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>mixed The value of the property.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="Stream::getProperties">
+<code class="sig-name descname">getProperties</code><span class="sig-paren">(</span><em class="sig-param">$public = true</em><span class="sig-paren">)</span><a class="headerlink" href="#Stream::getProperties" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Returns an associative array of object properties.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$public</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>array</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="Stream::getError">
+<code class="sig-name descname">getError</code><span class="sig-paren">(</span><em class="sig-param">$i = null</em>, <em class="sig-param">$toString = true</em><span class="sig-paren">)</span><a class="headerlink" href="#Stream::getError" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Get the most recent error message.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$i</strong> – </p></li>
+<li><p><strong>$toString</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>string Error message</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="Stream::getErrors">
+<code class="sig-name descname">getErrors</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Stream::getErrors" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Return all errors, if any.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Результат</dt>
+<dd class="field-odd"><p>array Array of error messages or JErrors.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="Stream::set">
+<code class="sig-name descname">set</code><span class="sig-paren">(</span><em class="sig-param">$property</em>, <em class="sig-param">$value = null</em><span class="sig-paren">)</span><a class="headerlink" href="#Stream::set" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Modifies a property of the object, creating it if it does not already
+exist.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$property</strong> – </p></li>
+<li><p><strong>$value</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>mixed Previous value of the property.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="Stream::setProperties">
+<code class="sig-name descname">setProperties</code><span class="sig-paren">(</span><em class="sig-param">$properties</em><span class="sig-paren">)</span><a class="headerlink" href="#Stream::setProperties" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Set the object properties based on a named array/hash.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$properties</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>boolean</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="Stream::setError">
+<code class="sig-name descname">setError</code><span class="sig-paren">(</span><em class="sig-param">$error</em><span class="sig-paren">)</span><a class="headerlink" href="#Stream::setError" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Add an error message.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$error</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>void</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2020, Artem Vasilev &lt;kern.usr@gmail.com&gt;
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

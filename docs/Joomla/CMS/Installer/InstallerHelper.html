@@ -1,0 +1,336 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="ru" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="ru" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Joomla\CMS\Installer\InstallerHelper &mdash; документация joomla-docs-rus 3.9.16</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../../../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../../" src="../../../_static/documentation_options.js"></script>
+        <script src="../../../_static/jquery.js"></script>
+        <script src="../../../_static/underscore.js"></script>
+        <script src="../../../_static/doctools.js"></script>
+        <script src="../../../_static/language_data.js"></script>
+        <script src="../../../_static/translations.js"></script>
+    
+    <script type="text/javascript" src="../../../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
+    <link rel="index" title="Алфавитный указатель" href="../../../genindex.html" />
+    <link rel="search" title="Поиск" href="../../../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search"  style="background: white" >
+          
+
+          
+            <a href="../../../index.html" class="icon icon-home"> joomla-docs-rus
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <!-- Local TOC -->
+              <div class="local-toc"><ul>
+<li><a class="reference internal" href="#">Joomla\CMS\Installer\InstallerHelper</a></li>
+</ul>
+</div>
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../../index.html">joomla-docs-rus</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content style-external-links">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../../index.html">Docs</a> &raquo;</li>
+        
+      <li>Joomla\CMS\Installer\InstallerHelper</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../../../_sources/Joomla/CMS/Installer/InstallerHelper.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="joomla-cms-installer-installerhelper">
+<h1>Joomla\CMS\Installer\InstallerHelper<a class="headerlink" href="#joomla-cms-installer-installerhelper" title="Ссылка на этот заголовок">¶</a></h1>
+<dl class="class">
+<dt id="InstallerHelper">
+<em class="property">class </em><code class="sig-name descname">InstallerHelper</code><a class="headerlink" href="#InstallerHelper" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Installer helper class</p>
+<dl class="const">
+<dt id="InstallerHelper::HASH_NOT_VALIDATED">
+<em class="property">constant </em><code class="sig-name descname">HASH_NOT_VALIDATED</code><a class="headerlink" href="#InstallerHelper::HASH_NOT_VALIDATED" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Hash not validated identifier.</p>
+</dd></dl>
+
+<dl class="const">
+<dt id="InstallerHelper::HASH_VALIDATED">
+<em class="property">constant </em><code class="sig-name descname">HASH_VALIDATED</code><a class="headerlink" href="#InstallerHelper::HASH_VALIDATED" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Hash validated identifier.</p>
+</dd></dl>
+
+<dl class="const">
+<dt id="InstallerHelper::HASH_NOT_PROVIDED">
+<em class="property">constant </em><code class="sig-name descname">HASH_NOT_PROVIDED</code><a class="headerlink" href="#InstallerHelper::HASH_NOT_PROVIDED" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Hash not provided identifier.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="InstallerHelper::downloadPackage">
+<code class="sig-name descname">downloadPackage</code><span class="sig-paren">(</span><em class="sig-param">$url</em>, <em class="sig-param">$target = false</em><span class="sig-paren">)</span><a class="headerlink" href="#InstallerHelper::downloadPackage" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Downloads a package</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$url</strong> – </p></li>
+<li><p><strong>$target</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>string|boolean Path to downloaded package or boolean false on failure</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="InstallerHelper::unpack">
+<code class="sig-name descname">unpack</code><span class="sig-paren">(</span><em class="sig-param">$p_filename</em>, <em class="sig-param">$alwaysReturnArray = false</em><span class="sig-paren">)</span><a class="headerlink" href="#InstallerHelper::unpack" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Unpacks a file and verifies it as a Joomla element package
+Supports .gz .tar .tar.gz and .zip</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$p_filename</strong> – </p></li>
+<li><p><strong>$alwaysReturnArray</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>array|boolean Array on success or boolean false on failure</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="InstallerHelper::detectType">
+<code class="sig-name descname">detectType</code><span class="sig-paren">(</span><em class="sig-param">$p_dir</em><span class="sig-paren">)</span><a class="headerlink" href="#InstallerHelper::detectType" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Method to detect the extension type from a package directory</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$p_dir</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>mixed Extension type string or boolean false on fail</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="InstallerHelper::getFilenameFromUrl">
+<code class="sig-name descname">getFilenameFromUrl</code><span class="sig-paren">(</span><em class="sig-param">$url</em><span class="sig-paren">)</span><a class="headerlink" href="#InstallerHelper::getFilenameFromUrl" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Gets a file name out of a url</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$url</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>string Clean version of the filename or a unique id</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="InstallerHelper::cleanupInstall">
+<code class="sig-name descname">cleanupInstall</code><span class="sig-paren">(</span><em class="sig-param">$package</em>, <em class="sig-param">$resultdir</em><span class="sig-paren">)</span><a class="headerlink" href="#InstallerHelper::cleanupInstall" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Clean up temporary uploaded package and unpacked extension</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$package</strong> – </p></li>
+<li><p><strong>$resultdir</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>boolean True on success</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="InstallerHelper::splitSql">
+<code class="sig-name descname">splitSql</code><span class="sig-paren">(</span><em class="sig-param">$query</em><span class="sig-paren">)</span><a class="headerlink" href="#InstallerHelper::splitSql" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Splits contents of a sql file into array of discreet queries.
+Queries need to be delimited with end of statement marker „;“</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$query</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>array Array of queries</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="InstallerHelper::isChecksumValid">
+<code class="sig-name descname">isChecksumValid</code><span class="sig-paren">(</span><em class="sig-param">$packagefile</em>, <em class="sig-param">$updateObject</em><span class="sig-paren">)</span><a class="headerlink" href="#InstallerHelper::isChecksumValid" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Return the result of the checksum of a package with the
+SHA256/SHA384/SHA512 tags in the update server manifest</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$packagefile</strong> – </p></li>
+<li><p><strong>$updateObject</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>integer one if the hashes match, zero if hashes doesn’t match, two if hashes not found</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2020, Artem Vasilev &lt;kern.usr@gmail.com&gt;
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

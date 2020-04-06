@@ -1,0 +1,805 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="ru" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="ru" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Joomla\CMS\Router\AdministratorRouter &mdash; документация joomla-docs-rus 3.9.16</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../../../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../../" src="../../../_static/documentation_options.js"></script>
+        <script src="../../../_static/jquery.js"></script>
+        <script src="../../../_static/underscore.js"></script>
+        <script src="../../../_static/doctools.js"></script>
+        <script src="../../../_static/language_data.js"></script>
+        <script src="../../../_static/translations.js"></script>
+    
+    <script type="text/javascript" src="../../../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
+    <link rel="index" title="Алфавитный указатель" href="../../../genindex.html" />
+    <link rel="search" title="Поиск" href="../../../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search"  style="background: white" >
+          
+
+          
+            <a href="../../../index.html" class="icon icon-home"> joomla-docs-rus
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <!-- Local TOC -->
+              <div class="local-toc"><ul>
+<li><a class="reference internal" href="#">Joomla\CMS\Router\AdministratorRouter</a></li>
+</ul>
+</div>
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../../index.html">joomla-docs-rus</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content style-external-links">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../../index.html">Docs</a> &raquo;</li>
+        
+      <li>Joomla\CMS\Router\AdministratorRouter</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../../../_sources/Joomla/CMS/Router/AdministratorRouter.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="joomla-cms-router-administratorrouter">
+<h1>Joomla\CMS\Router\AdministratorRouter<a class="headerlink" href="#joomla-cms-router-administratorrouter" title="Ссылка на этот заголовок">¶</a></h1>
+<dl class="class">
+<dt id="AdministratorRouter">
+<em class="property">class </em><code class="sig-name descname">AdministratorRouter</code><a class="headerlink" href="#AdministratorRouter" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Class to create and parse routes</p>
+<dl class="const">
+<dt id="AdministratorRouter::PROCESS_BEFORE">
+<em class="property">constant </em><code class="sig-name descname">PROCESS_BEFORE</code><a class="headerlink" href="#AdministratorRouter::PROCESS_BEFORE" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Mask for the before process stage</p>
+</dd></dl>
+
+<dl class="const">
+<dt id="AdministratorRouter::PROCESS_DURING">
+<em class="property">constant </em><code class="sig-name descname">PROCESS_DURING</code><a class="headerlink" href="#AdministratorRouter::PROCESS_DURING" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Mask for the during process stage</p>
+</dd></dl>
+
+<dl class="const">
+<dt id="AdministratorRouter::PROCESS_AFTER">
+<em class="property">constant </em><code class="sig-name descname">PROCESS_AFTER</code><a class="headerlink" href="#AdministratorRouter::PROCESS_AFTER" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Mask for the after process stage</p>
+</dd></dl>
+
+<dl class="attr">
+<dt id="AdministratorRouter::$mode">
+<em class="property">property </em><code class="sig-name descname">mode</code><a class="headerlink" href="#AdministratorRouter::$mode" title="Ссылка на это определение">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>integer</p>
+</dd>
+<dt class="field-even">Scope</dt>
+<dd class="field-even"><p>protected</p>
+</dd>
+</dl>
+<p>The rewrite mode</p>
+</dd></dl>
+
+<dl class="attr">
+<dt id="AdministratorRouter::$_mode">
+<em class="property">property </em><code class="sig-name descname">_mode</code><a class="headerlink" href="#AdministratorRouter::$_mode" title="Ссылка на это определение">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>integer</p>
+</dd>
+<dt class="field-even">Scope</dt>
+<dd class="field-even"><p>protected</p>
+</dd>
+</dl>
+<p>The rewrite mode</p>
+</dd></dl>
+
+<dl class="attr">
+<dt id="AdministratorRouter::$vars">
+<em class="property">property </em><code class="sig-name descname">vars</code><a class="headerlink" href="#AdministratorRouter::$vars" title="Ссылка на это определение">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>array</p>
+</dd>
+<dt class="field-even">Scope</dt>
+<dd class="field-even"><p>protected</p>
+</dd>
+</dl>
+<p>An array of variables</p>
+</dd></dl>
+
+<dl class="attr">
+<dt id="AdministratorRouter::$_vars">
+<em class="property">property </em><code class="sig-name descname">_vars</code><a class="headerlink" href="#AdministratorRouter::$_vars" title="Ссылка на это определение">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>array</p>
+</dd>
+<dt class="field-even">Scope</dt>
+<dd class="field-even"><p>protected</p>
+</dd>
+</dl>
+<p>An array of variables</p>
+</dd></dl>
+
+<dl class="attr">
+<dt id="AdministratorRouter::$rules">
+<em class="property">property </em><code class="sig-name descname">rules</code><a class="headerlink" href="#AdministratorRouter::$rules" title="Ссылка на это определение">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>array</p>
+</dd>
+<dt class="field-even">Scope</dt>
+<dd class="field-even"><p>protected</p>
+</dd>
+</dl>
+<p>An array of rules</p>
+</dd></dl>
+
+<dl class="attr">
+<dt id="AdministratorRouter::$_rules">
+<em class="property">property </em><code class="sig-name descname">_rules</code><a class="headerlink" href="#AdministratorRouter::$_rules" title="Ссылка на это определение">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>array</p>
+</dd>
+<dt class="field-even">Scope</dt>
+<dd class="field-even"><p>protected</p>
+</dd>
+</dl>
+<p>An array of rules</p>
+</dd></dl>
+
+<dl class="attr">
+<dt id="AdministratorRouter::$cache">
+<em class="property">property </em><code class="sig-name descname">cache</code><a class="headerlink" href="#AdministratorRouter::$cache" title="Ссылка на это определение">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>array</p>
+</dd>
+<dt class="field-even">Scope</dt>
+<dd class="field-even"><p>protected</p>
+</dd>
+</dl>
+<p>Caching of processed URIs</p>
+</dd></dl>
+
+<dl class="attr">
+<dt id="AdministratorRouter::$instances">
+<em class="property">property </em><code class="sig-name descname">instances</code><a class="headerlink" href="#AdministratorRouter::$instances" title="Ссылка на это определение">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>Router[]</p>
+</dd>
+<dt class="field-even">Scope</dt>
+<dd class="field-even"><p>protected</p>
+</dd>
+</dl>
+<p>Router instances container.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="AdministratorRouter::parse">
+<code class="sig-name descname">parse</code><span class="sig-paren">(</span><em class="sig-param">$uri</em><span class="sig-paren">)</span><a class="headerlink" href="#AdministratorRouter::parse" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Function to convert a route to an internal URI.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$uri</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>array</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="AdministratorRouter::build">
+<code class="sig-name descname">build</code><span class="sig-paren">(</span><em class="sig-param">$url</em><span class="sig-paren">)</span><a class="headerlink" href="#AdministratorRouter::build" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Function to convert an internal URI to a route</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$url</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>Uri The absolute search engine friendly URL</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="AdministratorRouter::__construct">
+<code class="sig-name descname">__construct</code><span class="sig-paren">(</span><em class="sig-param">$options = array()</em><span class="sig-paren">)</span><a class="headerlink" href="#AdministratorRouter::__construct" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Class constructor</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$options</strong> – </p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="AdministratorRouter::getInstance">
+<code class="sig-name descname">getInstance</code><span class="sig-paren">(</span><em class="sig-param">$client</em>, <em class="sig-param">$options = array()</em><span class="sig-paren">)</span><a class="headerlink" href="#AdministratorRouter::getInstance" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Returns the global Router object, only creating it if it
+doesn’t already exist.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$client</strong> – </p></li>
+<li><p><strong>$options</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>Router A Router object.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="AdministratorRouter::getMode">
+<code class="sig-name descname">getMode</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#AdministratorRouter::getMode" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Get the router mode</p>
+<dl class="field-list simple">
+<dt class="field-odd">Результат</dt>
+<dd class="field-odd"><p>integer</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="AdministratorRouter::setMode">
+<code class="sig-name descname">setMode</code><span class="sig-paren">(</span><em class="sig-param">$mode</em><span class="sig-paren">)</span><a class="headerlink" href="#AdministratorRouter::setMode" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Set the router mode</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$mode</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>void</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="AdministratorRouter::setVar">
+<code class="sig-name descname">setVar</code><span class="sig-paren">(</span><em class="sig-param">$key</em>, <em class="sig-param">$value</em>, <em class="sig-param">$create = true</em><span class="sig-paren">)</span><a class="headerlink" href="#AdministratorRouter::setVar" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Set a router variable, creating it if it doesn’t exist</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$key</strong> – </p></li>
+<li><p><strong>$value</strong> – </p></li>
+<li><p><strong>$create</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>void</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="AdministratorRouter::setVars">
+<code class="sig-name descname">setVars</code><span class="sig-paren">(</span><em class="sig-param">$vars = array()</em>, <em class="sig-param">$merge = true</em><span class="sig-paren">)</span><a class="headerlink" href="#AdministratorRouter::setVars" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Set the router variable array</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$vars</strong> – </p></li>
+<li><p><strong>$merge</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>void</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="AdministratorRouter::getVar">
+<code class="sig-name descname">getVar</code><span class="sig-paren">(</span><em class="sig-param">$key</em><span class="sig-paren">)</span><a class="headerlink" href="#AdministratorRouter::getVar" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Get a router variable</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$key</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>mixed Value of the variable</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="AdministratorRouter::getVars">
+<code class="sig-name descname">getVars</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#AdministratorRouter::getVars" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Get the router variable array</p>
+<dl class="field-list simple">
+<dt class="field-odd">Результат</dt>
+<dd class="field-odd"><p>array An associative array of router variables</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="AdministratorRouter::attachBuildRule">
+<code class="sig-name descname">attachBuildRule</code><span class="sig-paren">(</span><em class="sig-param">$callback</em>, <em class="sig-param">$stage = self::PROCESS_DURING</em><span class="sig-paren">)</span><a class="headerlink" href="#AdministratorRouter::attachBuildRule" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Attach a build rule</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$callback</strong> – </p></li>
+<li><p><strong>$stage</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>void</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="AdministratorRouter::attachParseRule">
+<code class="sig-name descname">attachParseRule</code><span class="sig-paren">(</span><em class="sig-param">$callback</em>, <em class="sig-param">$stage = self::PROCESS_DURING</em><span class="sig-paren">)</span><a class="headerlink" href="#AdministratorRouter::attachParseRule" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Attach a parse rule</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$callback</strong> – </p></li>
+<li><p><strong>$stage</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>void</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="AdministratorRouter::_parseRawRoute">
+<code class="sig-name descname">_parseRawRoute</code><span class="sig-paren">(</span><em class="sig-param">$uri</em><span class="sig-paren">)</span><a class="headerlink" href="#AdministratorRouter::_parseRawRoute" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Function to convert a raw route to an internal URI</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$uri</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>boolean</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="AdministratorRouter::parseRawRoute">
+<code class="sig-name descname">parseRawRoute</code><span class="sig-paren">(</span><em class="sig-param">$uri</em><span class="sig-paren">)</span><a class="headerlink" href="#AdministratorRouter::parseRawRoute" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Function to convert a raw route to an internal URI</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$uri</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>array Array of variables</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="AdministratorRouter::_parseSefRoute">
+<code class="sig-name descname">_parseSefRoute</code><span class="sig-paren">(</span><em class="sig-param">$uri</em><span class="sig-paren">)</span><a class="headerlink" href="#AdministratorRouter::_parseSefRoute" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Function to convert a sef route to an internal URI</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$uri</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>string Internal URI</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="AdministratorRouter::parseSefRoute">
+<code class="sig-name descname">parseSefRoute</code><span class="sig-paren">(</span><em class="sig-param">$uri</em><span class="sig-paren">)</span><a class="headerlink" href="#AdministratorRouter::parseSefRoute" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Function to convert a sef route to an internal URI</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$uri</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>array Array of variables</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="AdministratorRouter::_buildRawRoute">
+<code class="sig-name descname">_buildRawRoute</code><span class="sig-paren">(</span><em class="sig-param">$uri</em><span class="sig-paren">)</span><a class="headerlink" href="#AdministratorRouter::_buildRawRoute" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Function to build a raw route</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$uri</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>string Raw Route</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="AdministratorRouter::buildRawRoute">
+<code class="sig-name descname">buildRawRoute</code><span class="sig-paren">(</span><em class="sig-param">$uri</em><span class="sig-paren">)</span><a class="headerlink" href="#AdministratorRouter::buildRawRoute" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Function to build a raw route</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$uri</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>string Raw Route</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="AdministratorRouter::_buildSefRoute">
+<code class="sig-name descname">_buildSefRoute</code><span class="sig-paren">(</span><em class="sig-param">$uri</em><span class="sig-paren">)</span><a class="headerlink" href="#AdministratorRouter::_buildSefRoute" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Function to build a sef route</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$uri</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>string The SEF route</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="AdministratorRouter::buildSefRoute">
+<code class="sig-name descname">buildSefRoute</code><span class="sig-paren">(</span><em class="sig-param">$uri</em><span class="sig-paren">)</span><a class="headerlink" href="#AdministratorRouter::buildSefRoute" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Function to build a sef route</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$uri</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>string The SEF route</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="AdministratorRouter::_processParseRules">
+<code class="sig-name descname">_processParseRules</code><span class="sig-paren">(</span><em class="sig-param">$uri</em><span class="sig-paren">)</span><a class="headerlink" href="#AdministratorRouter::_processParseRules" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Process the parsed router variables based on custom defined rules</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$uri</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>array The array of processed URI variables</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="AdministratorRouter::processParseRules">
+<code class="sig-name descname">processParseRules</code><span class="sig-paren">(</span><em class="sig-param">$uri</em>, <em class="sig-param">$stage = self::PROCESS_DURING</em><span class="sig-paren">)</span><a class="headerlink" href="#AdministratorRouter::processParseRules" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Process the parsed router variables based on custom defined rules</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$uri</strong> – </p></li>
+<li><p><strong>$stage</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>array The array of processed URI variables</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="AdministratorRouter::_processBuildRules">
+<code class="sig-name descname">_processBuildRules</code><span class="sig-paren">(</span><em class="sig-param">$uri</em><span class="sig-paren">)</span><a class="headerlink" href="#AdministratorRouter::_processBuildRules" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Process the build uri query data based on custom defined rules</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$uri</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>void</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="AdministratorRouter::processBuildRules">
+<code class="sig-name descname">processBuildRules</code><span class="sig-paren">(</span><em class="sig-param">$uri</em>, <em class="sig-param">$stage = self::PROCESS_DURING</em><span class="sig-paren">)</span><a class="headerlink" href="#AdministratorRouter::processBuildRules" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Process the build uri query data based on custom defined rules</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$uri</strong> – </p></li>
+<li><p><strong>$stage</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>void</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="AdministratorRouter::_createUri">
+<code class="sig-name descname">_createUri</code><span class="sig-paren">(</span><em class="sig-param">$url</em><span class="sig-paren">)</span><a class="headerlink" href="#AdministratorRouter::_createUri" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Create a uri based on a full or partial URL string</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$url</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>JUri</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="AdministratorRouter::createUri">
+<code class="sig-name descname">createUri</code><span class="sig-paren">(</span><em class="sig-param">$url</em><span class="sig-paren">)</span><a class="headerlink" href="#AdministratorRouter::createUri" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Create a uri based on a full or partial URL string</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$url</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>JUri</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="AdministratorRouter::_encodeSegments">
+<code class="sig-name descname">_encodeSegments</code><span class="sig-paren">(</span><em class="sig-param">$segments</em><span class="sig-paren">)</span><a class="headerlink" href="#AdministratorRouter::_encodeSegments" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Encode route segments</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$segments</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>array Array of encoded route segments</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="AdministratorRouter::encodeSegments">
+<code class="sig-name descname">encodeSegments</code><span class="sig-paren">(</span><em class="sig-param">$segments</em><span class="sig-paren">)</span><a class="headerlink" href="#AdministratorRouter::encodeSegments" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Encode route segments</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$segments</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>array Array of encoded route segments</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="AdministratorRouter::_decodeSegments">
+<code class="sig-name descname">_decodeSegments</code><span class="sig-paren">(</span><em class="sig-param">$segments</em><span class="sig-paren">)</span><a class="headerlink" href="#AdministratorRouter::_decodeSegments" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Decode route segments</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$segments</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>array Array of decoded route segments</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="AdministratorRouter::decodeSegments">
+<code class="sig-name descname">decodeSegments</code><span class="sig-paren">(</span><em class="sig-param">$segments</em><span class="sig-paren">)</span><a class="headerlink" href="#AdministratorRouter::decodeSegments" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Decode route segments</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$segments</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>array Array of decoded route segments</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2020, Artem Vasilev &lt;kern.usr@gmail.com&gt;
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

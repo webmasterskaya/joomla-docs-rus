@@ -1,0 +1,581 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="ru" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="ru" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Joomla\CMS\Mail\Mail &mdash; документация joomla-docs-rus 3.9.16</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../../../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../../" src="../../../_static/documentation_options.js"></script>
+        <script src="../../../_static/jquery.js"></script>
+        <script src="../../../_static/underscore.js"></script>
+        <script src="../../../_static/doctools.js"></script>
+        <script src="../../../_static/language_data.js"></script>
+        <script src="../../../_static/translations.js"></script>
+    
+    <script type="text/javascript" src="../../../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
+    <link rel="index" title="Алфавитный указатель" href="../../../genindex.html" />
+    <link rel="search" title="Поиск" href="../../../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search"  style="background: white" >
+          
+
+          
+            <a href="../../../index.html" class="icon icon-home"> joomla-docs-rus
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <!-- Local TOC -->
+              <div class="local-toc"><ul>
+<li><a class="reference internal" href="#">Joomla\CMS\Mail\Mail</a></li>
+</ul>
+</div>
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../../index.html">joomla-docs-rus</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content style-external-links">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../../index.html">Docs</a> &raquo;</li>
+        
+      <li>Joomla\CMS\Mail\Mail</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../../../_sources/Joomla/CMS/Mail/Mail.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="joomla-cms-mail-mail">
+<h1>Joomla\CMS\Mail\Mail<a class="headerlink" href="#joomla-cms-mail-mail" title="Ссылка на этот заголовок">¶</a></h1>
+<dl class="class">
+<dt id="Mail">
+<em class="property">class </em><code class="sig-name descname">Mail</code><a class="headerlink" href="#Mail" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Email Class.  Provides a common interface to send email from the Joomla! Platform</p>
+<dl class="attr">
+<dt id="Mail::$instances">
+<em class="property">property </em><code class="sig-name descname">instances</code><a class="headerlink" href="#Mail::$instances" title="Ссылка на это определение">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>Mail[]</p>
+</dd>
+<dt class="field-even">Scope</dt>
+<dd class="field-even"><p>protected</p>
+</dd>
+</dl>
+<p>Mail instances container.</p>
+</dd></dl>
+
+<dl class="attr">
+<dt id="Mail::$CharSet">
+<em class="property">property </em><code class="sig-name descname">CharSet</code><a class="headerlink" href="#Mail::$CharSet" title="Ссылка на это определение">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>string</p>
+</dd>
+</dl>
+<p>Charset of the message.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Mail::__construct">
+<code class="sig-name descname">__construct</code><span class="sig-paren">(</span><em class="sig-param">$exceptions = true</em><span class="sig-paren">)</span><a class="headerlink" href="#Mail::__construct" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Constructor</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$exceptions</strong> – </p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="Mail::getInstance">
+<code class="sig-name descname">getInstance</code><span class="sig-paren">(</span><em class="sig-param">$id = 'Joomla'</em>, <em class="sig-param">$exceptions = true</em><span class="sig-paren">)</span><a class="headerlink" href="#Mail::getInstance" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Returns the global email object, only creating it if it doesn’t already
+exist.</p>
+<p>NOTE: If you need an instance to use that does not have the global
+configuration values, use an id string that is not „Joomla“.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$id</strong> – </p></li>
+<li><p><strong>$exceptions</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>Mail The global Mail object</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="Mail::Send">
+<code class="sig-name descname">Send</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Mail::Send" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Send the mail</p>
+<dl class="field-list simple">
+<dt class="field-odd">Результат</dt>
+<dd class="field-odd"><p>boolean|JException Boolean true if successful, boolean false if the <cite>mailonline</cite> configuration is set to 0, or a JException object if the mail function does not exist or sending the message fails.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="Mail::setFrom">
+<code class="sig-name descname">setFrom</code><span class="sig-paren">(</span><em class="sig-param">$address</em>, <em class="sig-param">$name = ''</em>, <em class="sig-param">$auto = true</em><span class="sig-paren">)</span><a class="headerlink" href="#Mail::setFrom" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Set the From and FromName properties.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$address</strong> – </p></li>
+<li><p><strong>$name</strong> – </p></li>
+<li><p><strong>$auto</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>boolean</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="Mail::setSender">
+<code class="sig-name descname">setSender</code><span class="sig-paren">(</span><em class="sig-param">$from</em><span class="sig-paren">)</span><a class="headerlink" href="#Mail::setSender" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Set the email sender</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$from</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>Mail|boolean Returns this object for chaining on success or boolean false on failure.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="Mail::setSubject">
+<code class="sig-name descname">setSubject</code><span class="sig-paren">(</span><em class="sig-param">$subject</em><span class="sig-paren">)</span><a class="headerlink" href="#Mail::setSubject" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Set the email subject</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$subject</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>Mail Returns this object for chaining.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="Mail::setBody">
+<code class="sig-name descname">setBody</code><span class="sig-paren">(</span><em class="sig-param">$content</em><span class="sig-paren">)</span><a class="headerlink" href="#Mail::setBody" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Set the email body</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$content</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>Mail Returns this object for chaining.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="Mail::add">
+<code class="sig-name descname">add</code><span class="sig-paren">(</span><em class="sig-param">$recipient</em>, <em class="sig-param">$name = ''</em>, <em class="sig-param">$method = 'addAddress'</em><span class="sig-paren">)</span><a class="headerlink" href="#Mail::add" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Add recipients to the email.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$recipient</strong> – </p></li>
+<li><p><strong>$name</strong> – </p></li>
+<li><p><strong>$method</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>Mail|boolean Returns this object for chaining on success or boolean false on failure.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="Mail::addRecipient">
+<code class="sig-name descname">addRecipient</code><span class="sig-paren">(</span><em class="sig-param">$recipient</em>, <em class="sig-param">$name = ''</em><span class="sig-paren">)</span><a class="headerlink" href="#Mail::addRecipient" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Add recipients to the email</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$recipient</strong> – </p></li>
+<li><p><strong>$name</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>Mail|boolean Returns this object for chaining.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="Mail::addCc">
+<code class="sig-name descname">addCc</code><span class="sig-paren">(</span><em class="sig-param">$cc</em>, <em class="sig-param">$name = ''</em><span class="sig-paren">)</span><a class="headerlink" href="#Mail::addCc" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Add carbon copy recipients to the email</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$cc</strong> – </p></li>
+<li><p><strong>$name</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>Mail|boolean Returns this object for chaining on success or boolean false on failure.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="Mail::addBcc">
+<code class="sig-name descname">addBcc</code><span class="sig-paren">(</span><em class="sig-param">$bcc</em>, <em class="sig-param">$name = ''</em><span class="sig-paren">)</span><a class="headerlink" href="#Mail::addBcc" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Add blind carbon copy recipients to the email</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$bcc</strong> – </p></li>
+<li><p><strong>$name</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>Mail|boolean Returns this object for chaining on success or boolean false on failure.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="Mail::addAttachment">
+<code class="sig-name descname">addAttachment</code><span class="sig-paren">(</span><em class="sig-param">$path</em>, <em class="sig-param">$name = ''</em>, <em class="sig-param">$encoding = 'base64'</em>, <em class="sig-param">$type = 'application/octet-stream'</em>, <em class="sig-param">$disposition = 'attachment'</em><span class="sig-paren">)</span><a class="headerlink" href="#Mail::addAttachment" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Add file attachment to the email</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$path</strong> – </p></li>
+<li><p><strong>$name</strong> – </p></li>
+<li><p><strong>$encoding</strong> – </p></li>
+<li><p><strong>$type</strong> – </p></li>
+<li><p><strong>$disposition</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>Mail|boolean Returns this object for chaining on success or boolean false on failure.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="Mail::clearAttachments">
+<code class="sig-name descname">clearAttachments</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Mail::clearAttachments" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Unset all file attachments from the email</p>
+<dl class="field-list simple">
+<dt class="field-odd">Результат</dt>
+<dd class="field-odd"><p>Mail Returns this object for chaining.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="Mail::removeAttachment">
+<code class="sig-name descname">removeAttachment</code><span class="sig-paren">(</span><em class="sig-param">$index = 0</em><span class="sig-paren">)</span><a class="headerlink" href="#Mail::removeAttachment" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Unset file attachments specified by array index.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$index</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>Mail Returns this object for chaining.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="Mail::addReplyTo">
+<code class="sig-name descname">addReplyTo</code><span class="sig-paren">(</span><em class="sig-param">$replyto</em>, <em class="sig-param">$name = ''</em><span class="sig-paren">)</span><a class="headerlink" href="#Mail::addReplyTo" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Add Reply to email address(es) to the email</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$replyto</strong> – </p></li>
+<li><p><strong>$name</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>Mail|boolean Returns this object for chaining on success or boolean false on failure.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="Mail::isHtml">
+<code class="sig-name descname">isHtml</code><span class="sig-paren">(</span><em class="sig-param">$ishtml = true</em><span class="sig-paren">)</span><a class="headerlink" href="#Mail::isHtml" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Sets message type to HTML</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$ishtml</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>Mail Returns this object for chaining.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="Mail::isSendmail">
+<code class="sig-name descname">isSendmail</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Mail::isSendmail" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Send messages using $Sendmail.</p>
+<p>This overrides the parent class to remove the restriction on the
+executable’s name containing the word «sendmail»</p>
+<dl class="field-list simple">
+<dt class="field-odd">Результат</dt>
+<dd class="field-odd"><p>void</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="Mail::useSendmail">
+<code class="sig-name descname">useSendmail</code><span class="sig-paren">(</span><em class="sig-param">$sendmail = null</em><span class="sig-paren">)</span><a class="headerlink" href="#Mail::useSendmail" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Use sendmail for sending the email</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$sendmail</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>boolean True on success</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="Mail::useSmtp">
+<code class="sig-name descname">useSmtp</code><span class="sig-paren">(</span><em class="sig-param">$auth = null</em>, <em class="sig-param">$host = null</em>, <em class="sig-param">$user = null</em>, <em class="sig-param">$pass = null</em>, <em class="sig-param">$secure = null</em>, <em class="sig-param">$port = 25</em><span class="sig-paren">)</span><a class="headerlink" href="#Mail::useSmtp" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Use SMTP for sending the email</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$auth</strong> – </p></li>
+<li><p><strong>$host</strong> – </p></li>
+<li><p><strong>$user</strong> – </p></li>
+<li><p><strong>$pass</strong> – </p></li>
+<li><p><strong>$secure</strong> – </p></li>
+<li><p><strong>$port</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>boolean True on success</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="Mail::sendMail">
+<code class="sig-name descname">sendMail</code><span class="sig-paren">(</span><em class="sig-param">$from</em>, <em class="sig-param">$fromName</em>, <em class="sig-param">$recipient</em>, <em class="sig-param">$subject</em>, <em class="sig-param">$body</em>, <em class="sig-param">$mode = false</em>, <em class="sig-param">$cc = null</em>, <em class="sig-param">$bcc = null</em>, <em class="sig-param">$attachment = null</em>, <em class="sig-param">$replyTo = null</em>, <em class="sig-param">$replyToName = null</em><span class="sig-paren">)</span><a class="headerlink" href="#Mail::sendMail" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Function to send an email</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$from</strong> – </p></li>
+<li><p><strong>$fromName</strong> – </p></li>
+<li><p><strong>$recipient</strong> – </p></li>
+<li><p><strong>$subject</strong> – </p></li>
+<li><p><strong>$body</strong> – </p></li>
+<li><p><strong>$mode</strong> – </p></li>
+<li><p><strong>$cc</strong> – </p></li>
+<li><p><strong>$bcc</strong> – </p></li>
+<li><p><strong>$attachment</strong> – </p></li>
+<li><p><strong>$replyTo</strong> – </p></li>
+<li><p><strong>$replyToName</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>boolean True on success</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="Mail::sendAdminMail">
+<code class="sig-name descname">sendAdminMail</code><span class="sig-paren">(</span><em class="sig-param">$adminName</em>, <em class="sig-param">$adminEmail</em>, <em class="sig-param">$email</em>, <em class="sig-param">$type</em>, <em class="sig-param">$title</em>, <em class="sig-param">$author</em>, <em class="sig-param">$url = null</em><span class="sig-paren">)</span><a class="headerlink" href="#Mail::sendAdminMail" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Sends mail to administrator for approval of a user submission</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$adminName</strong> – </p></li>
+<li><p><strong>$adminEmail</strong> – </p></li>
+<li><p><strong>$email</strong> – </p></li>
+<li><p><strong>$type</strong> – </p></li>
+<li><p><strong>$title</strong> – </p></li>
+<li><p><strong>$author</strong> – </p></li>
+<li><p><strong>$url</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>boolean True on success</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2020, Artem Vasilev &lt;kern.usr@gmail.com&gt;
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

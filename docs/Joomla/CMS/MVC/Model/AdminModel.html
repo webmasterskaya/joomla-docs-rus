@@ -1,0 +1,1358 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="ru" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="ru" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Joomla\CMS\MVC\Model\AdminModel &mdash; документация joomla-docs-rus 3.9.16</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../../../../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../../../" src="../../../../_static/documentation_options.js"></script>
+        <script src="../../../../_static/jquery.js"></script>
+        <script src="../../../../_static/underscore.js"></script>
+        <script src="../../../../_static/doctools.js"></script>
+        <script src="../../../../_static/language_data.js"></script>
+        <script src="../../../../_static/translations.js"></script>
+    
+    <script type="text/javascript" src="../../../../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../../../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../../../_static/pygments.css" type="text/css" />
+    <link rel="index" title="Алфавитный указатель" href="../../../../genindex.html" />
+    <link rel="search" title="Поиск" href="../../../../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search"  style="background: white" >
+          
+
+          
+            <a href="../../../../index.html" class="icon icon-home"> joomla-docs-rus
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <!-- Local TOC -->
+              <div class="local-toc"><ul>
+<li><a class="reference internal" href="#">Joomla\CMS\MVC\Model\AdminModel</a></li>
+</ul>
+</div>
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../../../index.html">joomla-docs-rus</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content style-external-links">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../../../index.html">Docs</a> &raquo;</li>
+        
+      <li>Joomla\CMS\MVC\Model\AdminModel</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../../../../_sources/Joomla/CMS/MVC/Model/AdminModel.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="joomla-cms-mvc-model-adminmodel">
+<h1>Joomla\CMS\MVC\Model\AdminModel<a class="headerlink" href="#joomla-cms-mvc-model-adminmodel" title="Ссылка на этот заголовок">¶</a></h1>
+<dl class="class">
+<dt id="AdminModel">
+<em class="property">class </em><code class="sig-name descname">AdminModel</code><a class="headerlink" href="#AdminModel" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Prototype admin model.</p>
+<dl class="attr">
+<dt id="AdminModel::$typeAlias">
+<em class="property">property </em><code class="sig-name descname">typeAlias</code><a class="headerlink" href="#AdminModel::$typeAlias" title="Ссылка на это определение">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>string</p>
+</dd>
+</dl>
+<p>The type alias for this content type (for example, „com_content.article“).</p>
+</dd></dl>
+
+<dl class="attr">
+<dt id="AdminModel::$text_prefix">
+<em class="property">property </em><code class="sig-name descname">text_prefix</code><a class="headerlink" href="#AdminModel::$text_prefix" title="Ссылка на это определение">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>string</p>
+</dd>
+<dt class="field-even">Scope</dt>
+<dd class="field-even"><p>protected</p>
+</dd>
+</dl>
+<p>The prefix to use with controller messages.</p>
+</dd></dl>
+
+<dl class="attr">
+<dt id="AdminModel::$event_after_delete">
+<em class="property">property </em><code class="sig-name descname">event_after_delete</code><a class="headerlink" href="#AdminModel::$event_after_delete" title="Ссылка на это определение">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>string</p>
+</dd>
+<dt class="field-even">Scope</dt>
+<dd class="field-even"><p>protected</p>
+</dd>
+</dl>
+<p>The event to trigger after deleting the data.</p>
+</dd></dl>
+
+<dl class="attr">
+<dt id="AdminModel::$event_after_save">
+<em class="property">property </em><code class="sig-name descname">event_after_save</code><a class="headerlink" href="#AdminModel::$event_after_save" title="Ссылка на это определение">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>string</p>
+</dd>
+<dt class="field-even">Scope</dt>
+<dd class="field-even"><p>protected</p>
+</dd>
+</dl>
+<p>The event to trigger after saving the data.</p>
+</dd></dl>
+
+<dl class="attr">
+<dt id="AdminModel::$event_before_delete">
+<em class="property">property </em><code class="sig-name descname">event_before_delete</code><a class="headerlink" href="#AdminModel::$event_before_delete" title="Ссылка на это определение">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>string</p>
+</dd>
+<dt class="field-even">Scope</dt>
+<dd class="field-even"><p>protected</p>
+</dd>
+</dl>
+<p>The event to trigger before deleting the data.</p>
+</dd></dl>
+
+<dl class="attr">
+<dt id="AdminModel::$event_before_save">
+<em class="property">property </em><code class="sig-name descname">event_before_save</code><a class="headerlink" href="#AdminModel::$event_before_save" title="Ссылка на это определение">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>string</p>
+</dd>
+<dt class="field-even">Scope</dt>
+<dd class="field-even"><p>protected</p>
+</dd>
+</dl>
+<p>The event to trigger before saving the data.</p>
+</dd></dl>
+
+<dl class="attr">
+<dt id="AdminModel::$event_change_state">
+<em class="property">property </em><code class="sig-name descname">event_change_state</code><a class="headerlink" href="#AdminModel::$event_change_state" title="Ссылка на это определение">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>string</p>
+</dd>
+<dt class="field-even">Scope</dt>
+<dd class="field-even"><p>protected</p>
+</dd>
+</dl>
+<p>The event to trigger after changing the published state of the data.</p>
+</dd></dl>
+
+<dl class="attr">
+<dt id="AdminModel::$batch_copymove">
+<em class="property">property </em><code class="sig-name descname">batch_copymove</code><a class="headerlink" href="#AdminModel::$batch_copymove" title="Ссылка на это определение">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>string</p>
+</dd>
+<dt class="field-even">Scope</dt>
+<dd class="field-even"><p>protected</p>
+</dd>
+</dl>
+<p>Batch copy/move command. If set to false,
+the batch copy/move command is not supported</p>
+</dd></dl>
+
+<dl class="attr">
+<dt id="AdminModel::$batch_commands">
+<em class="property">property </em><code class="sig-name descname">batch_commands</code><a class="headerlink" href="#AdminModel::$batch_commands" title="Ссылка на это определение">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>array</p>
+</dd>
+<dt class="field-even">Scope</dt>
+<dd class="field-even"><p>protected</p>
+</dd>
+</dl>
+<p>Allowed batch commands</p>
+</dd></dl>
+
+<dl class="attr">
+<dt id="AdminModel::$associationsContext">
+<em class="property">property </em><code class="sig-name descname">associationsContext</code><a class="headerlink" href="#AdminModel::$associationsContext" title="Ссылка на это определение">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>string</p>
+</dd>
+<dt class="field-even">Scope</dt>
+<dd class="field-even"><p>protected</p>
+</dd>
+</dl>
+<p>The context used for the associations table</p>
+</dd></dl>
+
+<dl class="attr">
+<dt id="AdminModel::$batchSet">
+<em class="property">property </em><code class="sig-name descname">batchSet</code><a class="headerlink" href="#AdminModel::$batchSet" title="Ссылка на это определение">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>object</p>
+</dd>
+<dt class="field-even">Scope</dt>
+<dd class="field-even"><p>protected</p>
+</dd>
+</dl>
+<p>A flag to indicate if member variables for batch actions (and saveorder)
+have been initialized</p>
+</dd></dl>
+
+<dl class="attr">
+<dt id="AdminModel::$user">
+<em class="property">property </em><code class="sig-name descname">user</code><a class="headerlink" href="#AdminModel::$user" title="Ссылка на это определение">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>object</p>
+</dd>
+<dt class="field-even">Scope</dt>
+<dd class="field-even"><p>protected</p>
+</dd>
+</dl>
+<p>The user performing the actions (re-usable in batch methods &amp; saveorder(),
+initialized via initBatch())</p>
+</dd></dl>
+
+<dl class="attr">
+<dt id="AdminModel::$table">
+<em class="property">property </em><code class="sig-name descname">table</code><a class="headerlink" href="#AdminModel::$table" title="Ссылка на это определение">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>object</p>
+</dd>
+<dt class="field-even">Scope</dt>
+<dd class="field-even"><p>protected</p>
+</dd>
+</dl>
+<p>A JTable instance (of appropropriate type) to manage the DB records
+(re-usable in batch methods &amp; saveorder(), initialized via initBatch())</p>
+</dd></dl>
+
+<dl class="attr">
+<dt id="AdminModel::$tableClassName">
+<em class="property">property </em><code class="sig-name descname">tableClassName</code><a class="headerlink" href="#AdminModel::$tableClassName" title="Ссылка на это определение">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>string</p>
+</dd>
+<dt class="field-even">Scope</dt>
+<dd class="field-even"><p>protected</p>
+</dd>
+</dl>
+<p>The class name of the JTable instance managing the DB records (re-usable
+in batch methods &amp; saveorder(), initialized via initBatch())</p>
+</dd></dl>
+
+<dl class="attr">
+<dt id="AdminModel::$contentType">
+<em class="property">property </em><code class="sig-name descname">contentType</code><a class="headerlink" href="#AdminModel::$contentType" title="Ссылка на это определение">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>object</p>
+</dd>
+<dt class="field-even">Scope</dt>
+<dd class="field-even"><p>protected</p>
+</dd>
+</dl>
+<p>UCM Type corresponding to the current model class (re-usable in batch
+action methods, initialized via initBatch())</p>
+</dd></dl>
+
+<dl class="attr">
+<dt id="AdminModel::$type">
+<em class="property">property </em><code class="sig-name descname">type</code><a class="headerlink" href="#AdminModel::$type" title="Ссылка на это определение">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>object</p>
+</dd>
+<dt class="field-even">Scope</dt>
+<dd class="field-even"><p>protected</p>
+</dd>
+</dl>
+<p>DB data of UCM Type corresponding to the current model class (re-usable in
+batch action methods, initialized via initBatch())</p>
+</dd></dl>
+
+<dl class="attr">
+<dt id="AdminModel::$tagsObserver">
+<em class="property">property </em><code class="sig-name descname">tagsObserver</code><a class="headerlink" href="#AdminModel::$tagsObserver" title="Ссылка на это определение">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>object</p>
+</dd>
+<dt class="field-even">Scope</dt>
+<dd class="field-even"><p>protected</p>
+</dd>
+</dl>
+<p>A tags Observer instance to handle assigned tags (re-usable in batch
+action methods, initialized via initBatch())</p>
+</dd></dl>
+
+<dl class="attr">
+<dt id="AdminModel::$_forms">
+<em class="property">property </em><code class="sig-name descname">_forms</code><a class="headerlink" href="#AdminModel::$_forms" title="Ссылка на это определение">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>JForm[]</p>
+</dd>
+<dt class="field-even">Scope</dt>
+<dd class="field-even"><p>protected</p>
+</dd>
+</dl>
+<p>Array of form objects.</p>
+</dd></dl>
+
+<dl class="attr">
+<dt id="AdminModel::$events_map">
+<em class="property">property </em><code class="sig-name descname">events_map</code><a class="headerlink" href="#AdminModel::$events_map" title="Ссылка на это определение">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>array</p>
+</dd>
+<dt class="field-even">Scope</dt>
+<dd class="field-even"><p>protected</p>
+</dd>
+</dl>
+<p>Maps events to plugin groups.</p>
+</dd></dl>
+
+<dl class="attr">
+<dt id="AdminModel::$__state_set">
+<em class="property">property </em><code class="sig-name descname">__state_set</code><a class="headerlink" href="#AdminModel::$__state_set" title="Ссылка на это определение">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>boolean</p>
+</dd>
+<dt class="field-even">Scope</dt>
+<dd class="field-even"><p>protected</p>
+</dd>
+</dl>
+<p>Indicates if the internal state has been set</p>
+</dd></dl>
+
+<dl class="attr">
+<dt id="AdminModel::$_db">
+<em class="property">property </em><code class="sig-name descname">_db</code><a class="headerlink" href="#AdminModel::$_db" title="Ссылка на это определение">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>JDatabaseDriver</p>
+</dd>
+<dt class="field-even">Scope</dt>
+<dd class="field-even"><p>protected</p>
+</dd>
+</dl>
+<p>Database Connector</p>
+</dd></dl>
+
+<dl class="attr">
+<dt id="AdminModel::$name">
+<em class="property">property </em><code class="sig-name descname">name</code><a class="headerlink" href="#AdminModel::$name" title="Ссылка на это определение">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>string</p>
+</dd>
+<dt class="field-even">Scope</dt>
+<dd class="field-even"><p>protected</p>
+</dd>
+</dl>
+<p>The model (base) name</p>
+</dd></dl>
+
+<dl class="attr">
+<dt id="AdminModel::$option">
+<em class="property">property </em><code class="sig-name descname">option</code><a class="headerlink" href="#AdminModel::$option" title="Ссылка на это определение">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>string</p>
+</dd>
+<dt class="field-even">Scope</dt>
+<dd class="field-even"><p>protected</p>
+</dd>
+</dl>
+<p>The URL option for the component.</p>
+</dd></dl>
+
+<dl class="attr">
+<dt id="AdminModel::$state">
+<em class="property">property </em><code class="sig-name descname">state</code><a class="headerlink" href="#AdminModel::$state" title="Ссылка на это определение">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>JObject</p>
+</dd>
+<dt class="field-even">Scope</dt>
+<dd class="field-even"><p>protected</p>
+</dd>
+</dl>
+<p>A state object</p>
+</dd></dl>
+
+<dl class="attr">
+<dt id="AdminModel::$event_clean_cache">
+<em class="property">property </em><code class="sig-name descname">event_clean_cache</code><a class="headerlink" href="#AdminModel::$event_clean_cache" title="Ссылка на это определение">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>string</p>
+</dd>
+<dt class="field-even">Scope</dt>
+<dd class="field-even"><p>protected</p>
+</dd>
+</dl>
+<p>The event to trigger when cleaning cache.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="AdminModel::__construct">
+<code class="sig-name descname">__construct</code><span class="sig-paren">(</span><em class="sig-param">$config = array()</em><span class="sig-paren">)</span><a class="headerlink" href="#AdminModel::__construct" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Constructor.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$config</strong> – </p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="AdminModel::batch">
+<code class="sig-name descname">batch</code><span class="sig-paren">(</span><em class="sig-param">$commands</em>, <em class="sig-param">$pks</em>, <em class="sig-param">$contexts</em><span class="sig-paren">)</span><a class="headerlink" href="#AdminModel::batch" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Method to perform batch operations on an item or a set of items.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$commands</strong> – </p></li>
+<li><p><strong>$pks</strong> – </p></li>
+<li><p><strong>$contexts</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>boolean Returns true on success, false on failure.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="AdminModel::batchAccess">
+<code class="sig-name descname">batchAccess</code><span class="sig-paren">(</span><em class="sig-param">$value</em>, <em class="sig-param">$pks</em>, <em class="sig-param">$contexts</em><span class="sig-paren">)</span><a class="headerlink" href="#AdminModel::batchAccess" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Batch access level changes for a group of rows.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$value</strong> – </p></li>
+<li><p><strong>$pks</strong> – </p></li>
+<li><p><strong>$contexts</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>boolean True if successful, false otherwise and internal error is set.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="AdminModel::batchCopy">
+<code class="sig-name descname">batchCopy</code><span class="sig-paren">(</span><em class="sig-param">$value</em>, <em class="sig-param">$pks</em>, <em class="sig-param">$contexts</em><span class="sig-paren">)</span><a class="headerlink" href="#AdminModel::batchCopy" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Batch copy items to a new category or current.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$value</strong> – </p></li>
+<li><p><strong>$pks</strong> – </p></li>
+<li><p><strong>$contexts</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>array|boolean An array of new IDs on success, boolean false on failure.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="AdminModel::cleanupPostBatchCopy">
+<code class="sig-name descname">cleanupPostBatchCopy</code><span class="sig-paren">(</span><em class="sig-param">JTableInterface $table</em>, <em class="sig-param">$newId</em>, <em class="sig-param">$oldId</em><span class="sig-paren">)</span><a class="headerlink" href="#AdminModel::cleanupPostBatchCopy" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Function that can be overriden to do any data cleanup after batch copying
+data</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$table</strong> (<em>JTableInterface</em>) – </p></li>
+<li><p><strong>$newId</strong> – </p></li>
+<li><p><strong>$oldId</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>void</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="AdminModel::batchLanguage">
+<code class="sig-name descname">batchLanguage</code><span class="sig-paren">(</span><em class="sig-param">$value</em>, <em class="sig-param">$pks</em>, <em class="sig-param">$contexts</em><span class="sig-paren">)</span><a class="headerlink" href="#AdminModel::batchLanguage" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Batch language changes for a group of rows.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$value</strong> – </p></li>
+<li><p><strong>$pks</strong> – </p></li>
+<li><p><strong>$contexts</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>boolean True if successful, false otherwise and internal error is set.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="AdminModel::batchMove">
+<code class="sig-name descname">batchMove</code><span class="sig-paren">(</span><em class="sig-param">$value</em>, <em class="sig-param">$pks</em>, <em class="sig-param">$contexts</em><span class="sig-paren">)</span><a class="headerlink" href="#AdminModel::batchMove" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Batch move items to a new category</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$value</strong> – </p></li>
+<li><p><strong>$pks</strong> – </p></li>
+<li><p><strong>$contexts</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>boolean True if successful, false otherwise and internal error is set.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="AdminModel::batchTag">
+<code class="sig-name descname">batchTag</code><span class="sig-paren">(</span><em class="sig-param">$value</em>, <em class="sig-param">$pks</em>, <em class="sig-param">$contexts</em><span class="sig-paren">)</span><a class="headerlink" href="#AdminModel::batchTag" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Batch tag a list of item.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$value</strong> – </p></li>
+<li><p><strong>$pks</strong> – </p></li>
+<li><p><strong>$contexts</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>boolean True if successful, false otherwise and internal error is set.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="AdminModel::canDelete">
+<code class="sig-name descname">canDelete</code><span class="sig-paren">(</span><em class="sig-param">$record</em><span class="sig-paren">)</span><a class="headerlink" href="#AdminModel::canDelete" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Method to test whether a record can be deleted.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$record</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>boolean True if allowed to delete the record. Defaults to the permission for the component.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="AdminModel::canEditState">
+<code class="sig-name descname">canEditState</code><span class="sig-paren">(</span><em class="sig-param">$record</em><span class="sig-paren">)</span><a class="headerlink" href="#AdminModel::canEditState" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Method to test whether a record can have its state changed.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$record</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>boolean True if allowed to change the state of the record. Defaults to the permission for the component.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="AdminModel::checkin">
+<code class="sig-name descname">checkin</code><span class="sig-paren">(</span><em class="sig-param">$pks = array()</em><span class="sig-paren">)</span><a class="headerlink" href="#AdminModel::checkin" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Method override to check-in a record or an array of record</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$pks</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>integer|boolean Boolean false if there is an error, otherwise the count of records checked in.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="AdminModel::checkout">
+<code class="sig-name descname">checkout</code><span class="sig-paren">(</span><em class="sig-param">$pk = null</em><span class="sig-paren">)</span><a class="headerlink" href="#AdminModel::checkout" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Method override to check-out a record.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$pk</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>boolean True if successful, false if an error occurs.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="AdminModel::delete">
+<code class="sig-name descname">delete</code><span class="sig-paren">(</span><em class="sig-param">$pks</em><span class="sig-paren">)</span><a class="headerlink" href="#AdminModel::delete" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Method to delete one or more records.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$pks</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>boolean True if successful, false if an error occurs.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="AdminModel::generateNewTitle">
+<code class="sig-name descname">generateNewTitle</code><span class="sig-paren">(</span><em class="sig-param">$category_id</em>, <em class="sig-param">$alias</em>, <em class="sig-param">$title</em><span class="sig-paren">)</span><a class="headerlink" href="#AdminModel::generateNewTitle" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Method to change the title &amp; alias.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$category_id</strong> – </p></li>
+<li><p><strong>$alias</strong> – </p></li>
+<li><p><strong>$title</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>array Contains the modified title and alias.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="AdminModel::getItem">
+<code class="sig-name descname">getItem</code><span class="sig-paren">(</span><em class="sig-param">$pk = null</em><span class="sig-paren">)</span><a class="headerlink" href="#AdminModel::getItem" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Method to get a single record.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$pk</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>JObject|boolean Object on success, false on failure.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="AdminModel::getReorderConditions">
+<code class="sig-name descname">getReorderConditions</code><span class="sig-paren">(</span><em class="sig-param">$table</em><span class="sig-paren">)</span><a class="headerlink" href="#AdminModel::getReorderConditions" title="Ссылка на это определение">¶</a></dt>
+<dd><p>A protected method to get a set of ordering conditions.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$table</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>array An array of conditions to add to ordering queries.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="AdminModel::populateState">
+<code class="sig-name descname">populateState</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#AdminModel::populateState" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Stock method to auto-populate the model state.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Результат</dt>
+<dd class="field-odd"><p>void</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="AdminModel::prepareTable">
+<code class="sig-name descname">prepareTable</code><span class="sig-paren">(</span><em class="sig-param">$table</em><span class="sig-paren">)</span><a class="headerlink" href="#AdminModel::prepareTable" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Prepare and sanitise the table data prior to saving.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$table</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>void</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="AdminModel::publish">
+<code class="sig-name descname">publish</code><span class="sig-paren">(</span><em class="sig-param">$pks</em>, <em class="sig-param">$value = 1</em><span class="sig-paren">)</span><a class="headerlink" href="#AdminModel::publish" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Method to change the published state of one or more records.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$pks</strong> – </p></li>
+<li><p><strong>$value</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>boolean True on success.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="AdminModel::reorder">
+<code class="sig-name descname">reorder</code><span class="sig-paren">(</span><em class="sig-param">$pks</em>, <em class="sig-param">$delta = 0</em><span class="sig-paren">)</span><a class="headerlink" href="#AdminModel::reorder" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Method to adjust the ordering of a row.</p>
+<p>Returns NULL if the user did not have edit privileges for any of the
+selected primary keys.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$pks</strong> – </p></li>
+<li><p><strong>$delta</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>boolean|null False on failure or error, true on success, null if the $pk is empty (no items selected).</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="AdminModel::save">
+<code class="sig-name descname">save</code><span class="sig-paren">(</span><em class="sig-param">$data</em><span class="sig-paren">)</span><a class="headerlink" href="#AdminModel::save" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Method to save the form data.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$data</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>boolean True on success, False on error.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="AdminModel::saveorder">
+<code class="sig-name descname">saveorder</code><span class="sig-paren">(</span><em class="sig-param">$pks = array()</em>, <em class="sig-param">$order = null</em><span class="sig-paren">)</span><a class="headerlink" href="#AdminModel::saveorder" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Saves the manually set order of records.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$pks</strong> – </p></li>
+<li><p><strong>$order</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>boolean|JException Boolean true on success, false on failure, or JException if no items are selected</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="AdminModel::createTagsHelper">
+<code class="sig-name descname">createTagsHelper</code><span class="sig-paren">(</span><em class="sig-param">$tagsObserver</em>, <em class="sig-param">$type</em>, <em class="sig-param">$pk</em>, <em class="sig-param">$typeAlias</em>, <em class="sig-param">$table</em><span class="sig-paren">)</span><a class="headerlink" href="#AdminModel::createTagsHelper" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Method to create a tags helper to ensure proper management of tags</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$tagsObserver</strong> – </p></li>
+<li><p><strong>$type</strong> – </p></li>
+<li><p><strong>$pk</strong> – </p></li>
+<li><p><strong>$typeAlias</strong> – </p></li>
+<li><p><strong>$table</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>void</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="AdminModel::checkCategoryId">
+<code class="sig-name descname">checkCategoryId</code><span class="sig-paren">(</span><em class="sig-param">$categoryId</em><span class="sig-paren">)</span><a class="headerlink" href="#AdminModel::checkCategoryId" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Method to check the validity of the category ID for batch copy and move</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$categoryId</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>boolean</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="AdminModel::generateTitle">
+<code class="sig-name descname">generateTitle</code><span class="sig-paren">(</span><em class="sig-param">$categoryId</em>, <em class="sig-param">$table</em><span class="sig-paren">)</span><a class="headerlink" href="#AdminModel::generateTitle" title="Ссылка на это определение">¶</a></dt>
+<dd><p>A method to preprocess generating a new title in order to allow tables
+with alternative names
+for alias and title to use the batch move and copy methods</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$categoryId</strong> – </p></li>
+<li><p><strong>$table</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>void</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="AdminModel::initBatch">
+<code class="sig-name descname">initBatch</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#AdminModel::initBatch" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Method to initialize member variables used by batch methods and other
+methods like saveorder()</p>
+<dl class="field-list simple">
+<dt class="field-odd">Результат</dt>
+<dd class="field-odd"><p>void</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="AdminModel::editAssociations">
+<code class="sig-name descname">editAssociations</code><span class="sig-paren">(</span><em class="sig-param">$data</em><span class="sig-paren">)</span><a class="headerlink" href="#AdminModel::editAssociations" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Method to load an item in com_associations.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$data</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>boolean True if successful, false otherwise.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="AdminModel::getForm">
+<code class="sig-name descname">getForm</code><span class="sig-paren">(</span><em class="sig-param">$data = array()</em>, <em class="sig-param">$loadData = true</em><span class="sig-paren">)</span><a class="headerlink" href="#AdminModel::getForm" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Abstract method for getting the form from the model.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$data</strong> – </p></li>
+<li><p><strong>$loadData</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>JForm|boolean A JForm object on success, false on failure</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="AdminModel::loadForm">
+<code class="sig-name descname">loadForm</code><span class="sig-paren">(</span><em class="sig-param">$name</em>, <em class="sig-param">$source = null</em>, <em class="sig-param">$options = array()</em>, <em class="sig-param">$clear = false</em>, <em class="sig-param">$xpath = false</em><span class="sig-paren">)</span><a class="headerlink" href="#AdminModel::loadForm" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Method to get a form object.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$name</strong> – </p></li>
+<li><p><strong>$source</strong> – </p></li>
+<li><p><strong>$options</strong> – </p></li>
+<li><p><strong>$clear</strong> – </p></li>
+<li><p><strong>$xpath</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>JForm|boolean JForm object on success, false on error.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="AdminModel::loadFormData">
+<code class="sig-name descname">loadFormData</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#AdminModel::loadFormData" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Method to get the data that should be injected in the form.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Результат</dt>
+<dd class="field-odd"><p>array The default data is an empty array.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="AdminModel::preprocessData">
+<code class="sig-name descname">preprocessData</code><span class="sig-paren">(</span><em class="sig-param">$context</em>, <em class="sig-param">$data</em>, <em class="sig-param">$group = 'content'</em><span class="sig-paren">)</span><a class="headerlink" href="#AdminModel::preprocessData" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Method to allow derived classes to preprocess the data.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$context</strong> – </p></li>
+<li><p><strong>$data</strong> – </p></li>
+<li><p><strong>$group</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>void</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="AdminModel::preprocessForm">
+<code class="sig-name descname">preprocessForm</code><span class="sig-paren">(</span><em class="sig-param">JForm $form</em>, <em class="sig-param">$data</em>, <em class="sig-param">$group = 'content'</em><span class="sig-paren">)</span><a class="headerlink" href="#AdminModel::preprocessForm" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Method to allow derived classes to preprocess the form.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$form</strong> (<em>JForm</em>) – </p></li>
+<li><p><strong>$data</strong> – </p></li>
+<li><p><strong>$group</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>void</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="AdminModel::validate">
+<code class="sig-name descname">validate</code><span class="sig-paren">(</span><em class="sig-param">$form</em>, <em class="sig-param">$data</em>, <em class="sig-param">$group = null</em><span class="sig-paren">)</span><a class="headerlink" href="#AdminModel::validate" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Method to validate the form data.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$form</strong> – </p></li>
+<li><p><strong>$data</strong> – </p></li>
+<li><p><strong>$group</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>array|boolean Array of filtered data if valid, false otherwise.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="AdminModel::addIncludePath">
+<code class="sig-name descname">addIncludePath</code><span class="sig-paren">(</span><em class="sig-param">$path = ''</em>, <em class="sig-param">$prefix = ''</em><span class="sig-paren">)</span><a class="headerlink" href="#AdminModel::addIncludePath" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Add a directory where JModelLegacy should search for models. You may
+either pass a string or an array of directories.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$path</strong> – </p></li>
+<li><p><strong>$prefix</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>array An array with directory elements. If prefix is equal to „“, all directories are returned.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="AdminModel::addTablePath">
+<code class="sig-name descname">addTablePath</code><span class="sig-paren">(</span><em class="sig-param">$path</em><span class="sig-paren">)</span><a class="headerlink" href="#AdminModel::addTablePath" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Adds to the stack of model table paths in LIFO order.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$path</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>void</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="AdminModel::_createFileName">
+<code class="sig-name descname">_createFileName</code><span class="sig-paren">(</span><em class="sig-param">$type</em>, <em class="sig-param">$parts = array()</em><span class="sig-paren">)</span><a class="headerlink" href="#AdminModel::_createFileName" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Create the filename for a resource</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$type</strong> – </p></li>
+<li><p><strong>$parts</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>string The filename</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="AdminModel::getInstance">
+<code class="sig-name descname">getInstance</code><span class="sig-paren">(</span><em class="sig-param">$type</em>, <em class="sig-param">$prefix = ''</em>, <em class="sig-param">$config = array()</em><span class="sig-paren">)</span><a class="headerlink" href="#AdminModel::getInstance" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Returns a Model object, always creating it</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$type</strong> – </p></li>
+<li><p><strong>$prefix</strong> – </p></li>
+<li><p><strong>$config</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>JModelLegacy|boolean A JModelLegacy instance or false on failure</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="AdminModel::_getList">
+<code class="sig-name descname">_getList</code><span class="sig-paren">(</span><em class="sig-param">$query</em>, <em class="sig-param">$limitstart = 0</em>, <em class="sig-param">$limit = 0</em><span class="sig-paren">)</span><a class="headerlink" href="#AdminModel::_getList" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Gets an array of objects from the results of database query.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$query</strong> – </p></li>
+<li><p><strong>$limitstart</strong> – </p></li>
+<li><p><strong>$limit</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>object[] An array of results.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="AdminModel::_getListCount">
+<code class="sig-name descname">_getListCount</code><span class="sig-paren">(</span><em class="sig-param">$query</em><span class="sig-paren">)</span><a class="headerlink" href="#AdminModel::_getListCount" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Returns a record count for the query.</p>
+<p>Note: Current implementation of this method assumes that getListQuery()
+returns a set of unique rows,
+thus it uses SELECT COUNT(*) to count the rows. In cases that
+getListQuery() uses DISTINCT then either this method must be overriden by
+a custom implementation at the derived Model Class or a GROUP BY clause
+should be used to make the set unique.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$query</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>integer Number of rows for query.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="AdminModel::_createTable">
+<code class="sig-name descname">_createTable</code><span class="sig-paren">(</span><em class="sig-param">$name</em>, <em class="sig-param">$prefix = 'Table'</em>, <em class="sig-param">$config = array()</em><span class="sig-paren">)</span><a class="headerlink" href="#AdminModel::_createTable" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Method to load and return a model object.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$name</strong> – </p></li>
+<li><p><strong>$prefix</strong> – </p></li>
+<li><p><strong>$config</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>JTable|boolean Table object or boolean false if failed</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="AdminModel::getDbo">
+<code class="sig-name descname">getDbo</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#AdminModel::getDbo" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Method to get the database driver object</p>
+<dl class="field-list simple">
+<dt class="field-odd">Результат</dt>
+<dd class="field-odd"><p>JDatabaseDriver</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="AdminModel::getName">
+<code class="sig-name descname">getName</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#AdminModel::getName" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Method to get the model name</p>
+<p>The model name. By default parsed using the classname or it can be set by
+passing a $config[„name“] in the class constructor</p>
+<dl class="field-list simple">
+<dt class="field-odd">Результат</dt>
+<dd class="field-odd"><p>string The name of the model</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="AdminModel::getState">
+<code class="sig-name descname">getState</code><span class="sig-paren">(</span><em class="sig-param">$property = null</em>, <em class="sig-param">$default = null</em><span class="sig-paren">)</span><a class="headerlink" href="#AdminModel::getState" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Method to get model state variables</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$property</strong> – </p></li>
+<li><p><strong>$default</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>mixed The property where specified, the state object where omitted</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="AdminModel::getTable">
+<code class="sig-name descname">getTable</code><span class="sig-paren">(</span><em class="sig-param">$name = ''</em>, <em class="sig-param">$prefix = 'Table'</em>, <em class="sig-param">$options = array()</em><span class="sig-paren">)</span><a class="headerlink" href="#AdminModel::getTable" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Method to get a table object, load it if necessary.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$name</strong> – </p></li>
+<li><p><strong>$prefix</strong> – </p></li>
+<li><p><strong>$options</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>JTable A JTable object</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="AdminModel::loadHistory">
+<code class="sig-name descname">loadHistory</code><span class="sig-paren">(</span><em class="sig-param">$version_id</em>, <em class="sig-param">JTable $table</em><span class="sig-paren">)</span><a class="headerlink" href="#AdminModel::loadHistory" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Method to load a row for editing from the version history table.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$version_id</strong> – </p></li>
+<li><p><strong>$table</strong> (<em>JTable</em>) – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>boolean False on failure or error, true otherwise.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="AdminModel::setDbo">
+<code class="sig-name descname">setDbo</code><span class="sig-paren">(</span><em class="sig-param">$db</em><span class="sig-paren">)</span><a class="headerlink" href="#AdminModel::setDbo" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Method to set the database driver object</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$db</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>void</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="AdminModel::setState">
+<code class="sig-name descname">setState</code><span class="sig-paren">(</span><em class="sig-param">$property</em>, <em class="sig-param">$value = null</em><span class="sig-paren">)</span><a class="headerlink" href="#AdminModel::setState" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Method to set model state variables</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$property</strong> – </p></li>
+<li><p><strong>$value</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>mixed The previous value of the property or null if not set.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="AdminModel::cleanCache">
+<code class="sig-name descname">cleanCache</code><span class="sig-paren">(</span><em class="sig-param">$group = null</em>, <em class="sig-param">$client_id = 0</em><span class="sig-paren">)</span><a class="headerlink" href="#AdminModel::cleanCache" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Clean the cache</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$group</strong> – </p></li>
+<li><p><strong>$client_id</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>void</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2020, Artem Vasilev &lt;kern.usr@gmail.com&gt;
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

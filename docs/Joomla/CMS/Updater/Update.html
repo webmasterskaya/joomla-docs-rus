@@ -1,0 +1,641 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="ru" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="ru" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Joomla\CMS\Updater\Update &mdash; документация joomla-docs-rus 3.9.16</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../../../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../../" src="../../../_static/documentation_options.js"></script>
+        <script src="../../../_static/jquery.js"></script>
+        <script src="../../../_static/underscore.js"></script>
+        <script src="../../../_static/doctools.js"></script>
+        <script src="../../../_static/language_data.js"></script>
+        <script src="../../../_static/translations.js"></script>
+    
+    <script type="text/javascript" src="../../../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
+    <link rel="index" title="Алфавитный указатель" href="../../../genindex.html" />
+    <link rel="search" title="Поиск" href="../../../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search"  style="background: white" >
+          
+
+          
+            <a href="../../../index.html" class="icon icon-home"> joomla-docs-rus
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <!-- Local TOC -->
+              <div class="local-toc"><ul>
+<li><a class="reference internal" href="#">Joomla\CMS\Updater\Update</a></li>
+</ul>
+</div>
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../../index.html">joomla-docs-rus</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content style-external-links">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../../index.html">Docs</a> &raquo;</li>
+        
+      <li>Joomla\CMS\Updater\Update</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../../../_sources/Joomla/CMS/Updater/Update.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="joomla-cms-updater-update">
+<h1>Joomla\CMS\Updater\Update<a class="headerlink" href="#joomla-cms-updater-update" title="Ссылка на этот заголовок">¶</a></h1>
+<dl class="class">
+<dt id="Update">
+<em class="property">class </em><code class="sig-name descname">Update</code><a class="headerlink" href="#Update" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Update class. It is used by Updater::update() to install an update. Use Updater::findUpdates() to find updates for
+an extension.</p>
+<dl class="attr">
+<dt id="Update::$name">
+<em class="property">property </em><code class="sig-name descname">name</code><a class="headerlink" href="#Update::$name" title="Ссылка на это определение">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>string</p>
+</dd>
+<dt class="field-even">Scope</dt>
+<dd class="field-even"><p>protected</p>
+</dd>
+</dl>
+<p>Update manifest <cite>&lt;name&gt;</cite> element</p>
+</dd></dl>
+
+<dl class="attr">
+<dt id="Update::$description">
+<em class="property">property </em><code class="sig-name descname">description</code><a class="headerlink" href="#Update::$description" title="Ссылка на это определение">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>string</p>
+</dd>
+<dt class="field-even">Scope</dt>
+<dd class="field-even"><p>protected</p>
+</dd>
+</dl>
+<p>Update manifest <cite>&lt;description&gt;</cite> element</p>
+</dd></dl>
+
+<dl class="attr">
+<dt id="Update::$element">
+<em class="property">property </em><code class="sig-name descname">element</code><a class="headerlink" href="#Update::$element" title="Ссылка на это определение">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>string</p>
+</dd>
+<dt class="field-even">Scope</dt>
+<dd class="field-even"><p>protected</p>
+</dd>
+</dl>
+<p>Update manifest <cite>&lt;element&gt;</cite> element</p>
+</dd></dl>
+
+<dl class="attr">
+<dt id="Update::$type">
+<em class="property">property </em><code class="sig-name descname">type</code><a class="headerlink" href="#Update::$type" title="Ссылка на это определение">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>string</p>
+</dd>
+<dt class="field-even">Scope</dt>
+<dd class="field-even"><p>protected</p>
+</dd>
+</dl>
+<p>Update manifest <cite>&lt;type&gt;</cite> element</p>
+</dd></dl>
+
+<dl class="attr">
+<dt id="Update::$version">
+<em class="property">property </em><code class="sig-name descname">version</code><a class="headerlink" href="#Update::$version" title="Ссылка на это определение">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>string</p>
+</dd>
+<dt class="field-even">Scope</dt>
+<dd class="field-even"><p>protected</p>
+</dd>
+</dl>
+<p>Update manifest <cite>&lt;version&gt;</cite> element</p>
+</dd></dl>
+
+<dl class="attr">
+<dt id="Update::$infourl">
+<em class="property">property </em><code class="sig-name descname">infourl</code><a class="headerlink" href="#Update::$infourl" title="Ссылка на это определение">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>string</p>
+</dd>
+<dt class="field-even">Scope</dt>
+<dd class="field-even"><p>protected</p>
+</dd>
+</dl>
+<p>Update manifest <cite>&lt;infourl&gt;</cite> element</p>
+</dd></dl>
+
+<dl class="attr">
+<dt id="Update::$client">
+<em class="property">property </em><code class="sig-name descname">client</code><a class="headerlink" href="#Update::$client" title="Ссылка на это определение">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>string</p>
+</dd>
+<dt class="field-even">Scope</dt>
+<dd class="field-even"><p>protected</p>
+</dd>
+</dl>
+<p>Update manifest <cite>&lt;client&gt;</cite> element</p>
+</dd></dl>
+
+<dl class="attr">
+<dt id="Update::$group">
+<em class="property">property </em><code class="sig-name descname">group</code><a class="headerlink" href="#Update::$group" title="Ссылка на это определение">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>string</p>
+</dd>
+<dt class="field-even">Scope</dt>
+<dd class="field-even"><p>protected</p>
+</dd>
+</dl>
+<p>Update manifest <cite>&lt;group&gt;</cite> element</p>
+</dd></dl>
+
+<dl class="attr">
+<dt id="Update::$downloads">
+<em class="property">property </em><code class="sig-name descname">downloads</code><a class="headerlink" href="#Update::$downloads" title="Ссылка на это определение">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>string</p>
+</dd>
+<dt class="field-even">Scope</dt>
+<dd class="field-even"><p>protected</p>
+</dd>
+</dl>
+<p>Update manifest <cite>&lt;downloads&gt;</cite> element</p>
+</dd></dl>
+
+<dl class="attr">
+<dt id="Update::$downloadSources">
+<em class="property">property </em><code class="sig-name descname">downloadSources</code><a class="headerlink" href="#Update::$downloadSources" title="Ссылка на это определение">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>DownloadSource[]</p>
+</dd>
+<dt class="field-even">Scope</dt>
+<dd class="field-even"><p>protected</p>
+</dd>
+</dl>
+<p>Update manifest <cite>&lt;downloadsource&gt;</cite> elements</p>
+</dd></dl>
+
+<dl class="attr">
+<dt id="Update::$tags">
+<em class="property">property </em><code class="sig-name descname">tags</code><a class="headerlink" href="#Update::$tags" title="Ссылка на это определение">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>string</p>
+</dd>
+<dt class="field-even">Scope</dt>
+<dd class="field-even"><p>protected</p>
+</dd>
+</dl>
+<p>Update manifest <cite>&lt;tags&gt;</cite> element</p>
+</dd></dl>
+
+<dl class="attr">
+<dt id="Update::$maintainer">
+<em class="property">property </em><code class="sig-name descname">maintainer</code><a class="headerlink" href="#Update::$maintainer" title="Ссылка на это определение">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>string</p>
+</dd>
+<dt class="field-even">Scope</dt>
+<dd class="field-even"><p>protected</p>
+</dd>
+</dl>
+<p>Update manifest <cite>&lt;maintainer&gt;</cite> element</p>
+</dd></dl>
+
+<dl class="attr">
+<dt id="Update::$maintainerurl">
+<em class="property">property </em><code class="sig-name descname">maintainerurl</code><a class="headerlink" href="#Update::$maintainerurl" title="Ссылка на это определение">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>string</p>
+</dd>
+<dt class="field-even">Scope</dt>
+<dd class="field-even"><p>protected</p>
+</dd>
+</dl>
+<p>Update manifest <cite>&lt;maintainerurl&gt;</cite> element</p>
+</dd></dl>
+
+<dl class="attr">
+<dt id="Update::$category">
+<em class="property">property </em><code class="sig-name descname">category</code><a class="headerlink" href="#Update::$category" title="Ссылка на это определение">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>string</p>
+</dd>
+<dt class="field-even">Scope</dt>
+<dd class="field-even"><p>protected</p>
+</dd>
+</dl>
+<p>Update manifest <cite>&lt;category&gt;</cite> element</p>
+</dd></dl>
+
+<dl class="attr">
+<dt id="Update::$relationships">
+<em class="property">property </em><code class="sig-name descname">relationships</code><a class="headerlink" href="#Update::$relationships" title="Ссылка на это определение">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>string</p>
+</dd>
+<dt class="field-even">Scope</dt>
+<dd class="field-even"><p>protected</p>
+</dd>
+</dl>
+<p>Update manifest <cite>&lt;relationships&gt;</cite> element</p>
+</dd></dl>
+
+<dl class="attr">
+<dt id="Update::$targetplatform">
+<em class="property">property </em><code class="sig-name descname">targetplatform</code><a class="headerlink" href="#Update::$targetplatform" title="Ссылка на это определение">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>string</p>
+</dd>
+<dt class="field-even">Scope</dt>
+<dd class="field-even"><p>protected</p>
+</dd>
+</dl>
+<p>Update manifest <cite>&lt;targetplatform&gt;</cite> element</p>
+</dd></dl>
+
+<dl class="attr">
+<dt id="Update::$extra_query">
+<em class="property">property </em><code class="sig-name descname">extra_query</code><a class="headerlink" href="#Update::$extra_query" title="Ссылка на это определение">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>string</p>
+</dd>
+<dt class="field-even">Scope</dt>
+<dd class="field-even"><p>protected</p>
+</dd>
+</dl>
+<p>Extra query for download URLs</p>
+</dd></dl>
+
+<dl class="attr">
+<dt id="Update::$xmlParser">
+<em class="property">property </em><code class="sig-name descname">xmlParser</code><a class="headerlink" href="#Update::$xmlParser" title="Ссылка на это определение">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>resource</p>
+</dd>
+<dt class="field-even">Scope</dt>
+<dd class="field-even"><p>protected</p>
+</dd>
+</dl>
+<p>Resource handle for the XML Parser</p>
+</dd></dl>
+
+<dl class="attr">
+<dt id="Update::$stack">
+<em class="property">property </em><code class="sig-name descname">stack</code><a class="headerlink" href="#Update::$stack" title="Ссылка на это определение">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>array</p>
+</dd>
+<dt class="field-even">Scope</dt>
+<dd class="field-even"><p>protected</p>
+</dd>
+</dl>
+<p>Element call stack</p>
+</dd></dl>
+
+<dl class="attr">
+<dt id="Update::$stateStore">
+<em class="property">property </em><code class="sig-name descname">stateStore</code><a class="headerlink" href="#Update::$stateStore" title="Ссылка на это определение">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>array</p>
+</dd>
+<dt class="field-even">Scope</dt>
+<dd class="field-even"><p>protected</p>
+</dd>
+</dl>
+<p>Unused state array</p>
+</dd></dl>
+
+<dl class="attr">
+<dt id="Update::$currentUpdate">
+<em class="property">property </em><code class="sig-name descname">currentUpdate</code><a class="headerlink" href="#Update::$currentUpdate" title="Ссылка на это определение">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>stdClass</p>
+</dd>
+<dt class="field-even">Scope</dt>
+<dd class="field-even"><p>protected</p>
+</dd>
+</dl>
+<p>Object containing the current update data</p>
+</dd></dl>
+
+<dl class="attr">
+<dt id="Update::$latest">
+<em class="property">property </em><code class="sig-name descname">latest</code><a class="headerlink" href="#Update::$latest" title="Ссылка на это определение">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>stdClass</p>
+</dd>
+<dt class="field-even">Scope</dt>
+<dd class="field-even"><p>protected</p>
+</dd>
+</dl>
+<p>Object containing the latest update data</p>
+</dd></dl>
+
+<dl class="attr">
+<dt id="Update::$minimum_stability">
+<em class="property">property </em><code class="sig-name descname">minimum_stability</code><a class="headerlink" href="#Update::$minimum_stability" title="Ссылка на это определение">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+<dt class="field-even">Scope</dt>
+<dd class="field-even"><p>protected</p>
+</dd>
+</dl>
+<p>The minimum stability required for updates to be taken into account. The
+possible values are:
+0    dev            Development snapshots, nightly builds, pre-release
+versions and so on
+1    alpha        Alpha versions (work in progress, things are likely to
+be broken)
+2    beta        Beta versions (major functionality in place, show-stopper
+bugs are likely to be present)
+3    rc            Release Candidate versions (almost stable, minor bugs
+might be present)
+4    stable        Stable versions (production quality code)</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Update::_getStackLocation">
+<code class="sig-name descname">_getStackLocation</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Update::_getStackLocation" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Gets the reference to the current direct parent</p>
+<dl class="field-list simple">
+<dt class="field-odd">Результат</dt>
+<dd class="field-odd"><p>object</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="Update::_getLastTag">
+<code class="sig-name descname">_getLastTag</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Update::_getLastTag" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Get the last position in stack count</p>
+<dl class="field-list simple">
+<dt class="field-odd">Результат</dt>
+<dd class="field-odd"><p>string</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="Update::_startElement">
+<code class="sig-name descname">_startElement</code><span class="sig-paren">(</span><em class="sig-param">$parser</em>, <em class="sig-param">$name</em>, <em class="sig-param">$attrs = array()</em><span class="sig-paren">)</span><a class="headerlink" href="#Update::_startElement" title="Ссылка на это определение">¶</a></dt>
+<dd><p>XML Start Element callback</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$parser</strong> – </p></li>
+<li><p><strong>$name</strong> – </p></li>
+<li><p><strong>$attrs</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>void</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="Update::_endElement">
+<code class="sig-name descname">_endElement</code><span class="sig-paren">(</span><em class="sig-param">$parser</em>, <em class="sig-param">$name</em><span class="sig-paren">)</span><a class="headerlink" href="#Update::_endElement" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Callback for closing the element</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$parser</strong> – </p></li>
+<li><p><strong>$name</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>void</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="Update::_characterData">
+<code class="sig-name descname">_characterData</code><span class="sig-paren">(</span><em class="sig-param">$parser</em>, <em class="sig-param">$data</em><span class="sig-paren">)</span><a class="headerlink" href="#Update::_characterData" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Character Parser Function</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$parser</strong> – </p></li>
+<li><p><strong>$data</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>void</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="Update::loadFromXml">
+<code class="sig-name descname">loadFromXml</code><span class="sig-paren">(</span><em class="sig-param">$url</em>, <em class="sig-param">$minimum_stability = Updater::STABILITY_STABLE</em><span class="sig-paren">)</span><a class="headerlink" href="#Update::loadFromXml" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Loads an XML file from a URL.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$url</strong> – </p></li>
+<li><p><strong>$minimum_stability</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>boolean True on success</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="Update::stabilityTagToInteger">
+<code class="sig-name descname">stabilityTagToInteger</code><span class="sig-paren">(</span><em class="sig-param">$tag</em><span class="sig-paren">)</span><a class="headerlink" href="#Update::stabilityTagToInteger" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Converts a tag to numeric stability representation. If the tag doesn’t
+represent a known stability level (one of
+dev, alpha, beta, rc, stable) it is ignored.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$tag</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>integer</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2020, Artem Vasilev &lt;kern.usr@gmail.com&gt;
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

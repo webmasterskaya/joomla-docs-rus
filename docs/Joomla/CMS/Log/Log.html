@@ -1,0 +1,442 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="ru" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="ru" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Joomla\CMS\Log\Log &mdash; документация joomla-docs-rus 3.9.16</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../../../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../../" src="../../../_static/documentation_options.js"></script>
+        <script src="../../../_static/jquery.js"></script>
+        <script src="../../../_static/underscore.js"></script>
+        <script src="../../../_static/doctools.js"></script>
+        <script src="../../../_static/language_data.js"></script>
+        <script src="../../../_static/translations.js"></script>
+    
+    <script type="text/javascript" src="../../../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
+    <link rel="index" title="Алфавитный указатель" href="../../../genindex.html" />
+    <link rel="search" title="Поиск" href="../../../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search"  style="background: white" >
+          
+
+          
+            <a href="../../../index.html" class="icon icon-home"> joomla-docs-rus
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <!-- Local TOC -->
+              <div class="local-toc"><ul>
+<li><a class="reference internal" href="#">Joomla\CMS\Log\Log</a></li>
+</ul>
+</div>
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../../index.html">joomla-docs-rus</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content style-external-links">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../../index.html">Docs</a> &raquo;</li>
+        
+      <li>Joomla\CMS\Log\Log</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../../../_sources/Joomla/CMS/Log/Log.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="joomla-cms-log-log">
+<h1>Joomla\CMS\Log\Log<a class="headerlink" href="#joomla-cms-log-log" title="Ссылка на этот заголовок">¶</a></h1>
+<dl class="class">
+<dt id="Log">
+<em class="property">class </em><code class="sig-name descname">Log</code><a class="headerlink" href="#Log" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Joomla! Log Class</p>
+<p>This class hooks into the global log configuration settings to allow for user configured logging events to be sent to where the user wishes them to be sent. On high load sites Syslog is probably the best (pure PHP function), then the text file based loggers (CSV, W3c or plain Formattedtext) and finally MySQL offers the most features (e.g. rapid searching)
+but will incur a performance hit due to INSERT being issued.</p>
+<dl class="const">
+<dt id="Log::ALL">
+<em class="property">constant </em><code class="sig-name descname">ALL</code><a class="headerlink" href="#Log::ALL" title="Ссылка на это определение">¶</a></dt>
+<dd><p>All log priorities.</p>
+</dd></dl>
+
+<dl class="const">
+<dt id="Log::EMERGENCY">
+<em class="property">constant </em><code class="sig-name descname">EMERGENCY</code><a class="headerlink" href="#Log::EMERGENCY" title="Ссылка на это определение">¶</a></dt>
+<dd><p>The system is unusable.</p>
+</dd></dl>
+
+<dl class="const">
+<dt id="Log::ALERT">
+<em class="property">constant </em><code class="sig-name descname">ALERT</code><a class="headerlink" href="#Log::ALERT" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Action must be taken immediately.</p>
+</dd></dl>
+
+<dl class="const">
+<dt id="Log::CRITICAL">
+<em class="property">constant </em><code class="sig-name descname">CRITICAL</code><a class="headerlink" href="#Log::CRITICAL" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Critical conditions.</p>
+</dd></dl>
+
+<dl class="const">
+<dt id="Log::ERROR">
+<em class="property">constant </em><code class="sig-name descname">ERROR</code><a class="headerlink" href="#Log::ERROR" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Error conditions.</p>
+</dd></dl>
+
+<dl class="const">
+<dt id="Log::WARNING">
+<em class="property">constant </em><code class="sig-name descname">WARNING</code><a class="headerlink" href="#Log::WARNING" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Warning conditions.</p>
+</dd></dl>
+
+<dl class="const">
+<dt id="Log::NOTICE">
+<em class="property">constant </em><code class="sig-name descname">NOTICE</code><a class="headerlink" href="#Log::NOTICE" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Normal, but significant condition.</p>
+</dd></dl>
+
+<dl class="const">
+<dt id="Log::INFO">
+<em class="property">constant </em><code class="sig-name descname">INFO</code><a class="headerlink" href="#Log::INFO" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Informational message.</p>
+</dd></dl>
+
+<dl class="const">
+<dt id="Log::DEBUG">
+<em class="property">constant </em><code class="sig-name descname">DEBUG</code><a class="headerlink" href="#Log::DEBUG" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Debugging message.</p>
+</dd></dl>
+
+<dl class="attr">
+<dt id="Log::$instance">
+<em class="property">property </em><code class="sig-name descname">instance</code><a class="headerlink" href="#Log::$instance" title="Ссылка на это определение">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p><a class="reference internal" href="#Log" title="Log">Log</a></p>
+</dd>
+<dt class="field-even">Scope</dt>
+<dd class="field-even"><p>protected</p>
+</dd>
+</dl>
+<p>The global Log instance.</p>
+</dd></dl>
+
+<dl class="attr">
+<dt id="Log::$configurations">
+<em class="property">property </em><code class="sig-name descname">configurations</code><a class="headerlink" href="#Log::$configurations" title="Ссылка на это определение">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>array</p>
+</dd>
+<dt class="field-even">Scope</dt>
+<dd class="field-even"><p>protected</p>
+</dd>
+</dl>
+<p>Container for Logger configurations.</p>
+</dd></dl>
+
+<dl class="attr">
+<dt id="Log::$loggers">
+<em class="property">property </em><code class="sig-name descname">loggers</code><a class="headerlink" href="#Log::$loggers" title="Ссылка на это определение">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>Logger[]</p>
+</dd>
+<dt class="field-even">Scope</dt>
+<dd class="field-even"><p>protected</p>
+</dd>
+</dl>
+<p>Container for Logger objects.</p>
+</dd></dl>
+
+<dl class="attr">
+<dt id="Log::$lookup">
+<em class="property">property </em><code class="sig-name descname">lookup</code><a class="headerlink" href="#Log::$lookup" title="Ссылка на это определение">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>array</p>
+</dd>
+<dt class="field-even">Scope</dt>
+<dd class="field-even"><p>protected</p>
+</dd>
+</dl>
+<p>Lookup array for loggers.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Log::__construct">
+<code class="sig-name descname">__construct</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Log::__construct" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Constructor.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Log::add">
+<code class="sig-name descname">add</code><span class="sig-paren">(</span><em class="sig-param">$entry</em>, <em class="sig-param">$priority = self::INFO</em>, <em class="sig-param">$category = ''</em>, <em class="sig-param">$date = null</em>, <em class="sig-param">$context = array()</em><span class="sig-paren">)</span><a class="headerlink" href="#Log::add" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Method to add an entry to the log.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$entry</strong> – </p></li>
+<li><p><strong>$priority</strong> – </p></li>
+<li><p><strong>$category</strong> – </p></li>
+<li><p><strong>$date</strong> – </p></li>
+<li><p><strong>$context</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>void</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="Log::addLogger">
+<code class="sig-name descname">addLogger</code><span class="sig-paren">(</span><em class="sig-param">$options</em>, <em class="sig-param">$priorities = self::ALL</em>, <em class="sig-param">$categories = array()</em>, <em class="sig-param">$exclude = false</em><span class="sig-paren">)</span><a class="headerlink" href="#Log::addLogger" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Add a logger to the Log instance.  Loggers route log entries to the
+correct files/systems to be logged.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$options</strong> – </p></li>
+<li><p><strong>$priorities</strong> – </p></li>
+<li><p><strong>$categories</strong> – </p></li>
+<li><p><strong>$exclude</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>void</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="Log::addLoggerInternal">
+<code class="sig-name descname">addLoggerInternal</code><span class="sig-paren">(</span><em class="sig-param">$options</em>, <em class="sig-param">$priorities = self::ALL</em>, <em class="sig-param">$categories = array()</em>, <em class="sig-param">$exclude = false</em><span class="sig-paren">)</span><a class="headerlink" href="#Log::addLoggerInternal" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Add a logger to the Log instance.  Loggers route log entries to the
+correct files/systems to be logged.
+This method allows you to extend Log completely.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$options</strong> – </p></li>
+<li><p><strong>$priorities</strong> – </p></li>
+<li><p><strong>$categories</strong> – </p></li>
+<li><p><strong>$exclude</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>void</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="Log::createDelegatedLogger">
+<code class="sig-name descname">createDelegatedLogger</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Log::createDelegatedLogger" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Creates a delegated PSR-3 compatible logger from the current singleton
+instance. This method always returns a new delegated logger.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Результат</dt>
+<dd class="field-odd"><p>DelegatingPsrLogger</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="Log::setInstance">
+<code class="sig-name descname">setInstance</code><span class="sig-paren">(</span><em class="sig-param">$instance</em><span class="sig-paren">)</span><a class="headerlink" href="#Log::setInstance" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Returns a reference to the a Log object, only creating it if it doesn’t
+already exist.
+Note: This is principally made available for testing and internal
+purposes.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$instance</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>void</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="Log::addLogEntry">
+<code class="sig-name descname">addLogEntry</code><span class="sig-paren">(</span><em class="sig-param">LogEntry $entry</em><span class="sig-paren">)</span><a class="headerlink" href="#Log::addLogEntry" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Method to add an entry to the appropriate loggers.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$entry</strong> (<a class="reference internal" href="LogEntry.html#LogEntry" title="LogEntry"><em>LogEntry</em></a>) – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>void</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="Log::findLoggers">
+<code class="sig-name descname">findLoggers</code><span class="sig-paren">(</span><em class="sig-param">$priority</em>, <em class="sig-param">$category</em><span class="sig-paren">)</span><a class="headerlink" href="#Log::findLoggers" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Method to find the loggers to use based on priority and category values.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$priority</strong> – </p></li>
+<li><p><strong>$category</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>array The array of loggers to use for the given priority and category values.</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2020, Artem Vasilev &lt;kern.usr@gmail.com&gt;
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

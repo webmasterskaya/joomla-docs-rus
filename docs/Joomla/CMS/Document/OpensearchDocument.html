@@ -1,0 +1,1203 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="ru" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="ru" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Joomla\CMS\Document\OpensearchDocument &mdash; документация joomla-docs-rus 3.9.16</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../../../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../../" src="../../../_static/documentation_options.js"></script>
+        <script src="../../../_static/jquery.js"></script>
+        <script src="../../../_static/underscore.js"></script>
+        <script src="../../../_static/doctools.js"></script>
+        <script src="../../../_static/language_data.js"></script>
+        <script src="../../../_static/translations.js"></script>
+    
+    <script type="text/javascript" src="../../../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
+    <link rel="index" title="Алфавитный указатель" href="../../../genindex.html" />
+    <link rel="search" title="Поиск" href="../../../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search"  style="background: white" >
+          
+
+          
+            <a href="../../../index.html" class="icon icon-home"> joomla-docs-rus
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <!-- Local TOC -->
+              <div class="local-toc"><ul>
+<li><a class="reference internal" href="#">Joomla\CMS\Document\OpensearchDocument</a></li>
+</ul>
+</div>
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../../index.html">joomla-docs-rus</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content style-external-links">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../../index.html">Docs</a> &raquo;</li>
+        
+      <li>Joomla\CMS\Document\OpensearchDocument</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../../../_sources/Joomla/CMS/Document/OpensearchDocument.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="joomla-cms-document-opensearchdocument">
+<h1>Joomla\CMS\Document\OpensearchDocument<a class="headerlink" href="#joomla-cms-document-opensearchdocument" title="Ссылка на этот заголовок">¶</a></h1>
+<dl class="class">
+<dt id="OpensearchDocument">
+<em class="property">class </em><code class="sig-name descname">OpensearchDocument</code><a class="headerlink" href="#OpensearchDocument" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Opensearch class, provides an easy interface to display an Opensearch document</p>
+<dl class="attr">
+<dt id="OpensearchDocument::$title">
+<em class="property">property </em><code class="sig-name descname">title</code><a class="headerlink" href="#OpensearchDocument::$title" title="Ссылка на это определение">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>string</p>
+</dd>
+</dl>
+<p>Document title</p>
+</dd></dl>
+
+<dl class="attr">
+<dt id="OpensearchDocument::$description">
+<em class="property">property </em><code class="sig-name descname">description</code><a class="headerlink" href="#OpensearchDocument::$description" title="Ссылка на это определение">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>string</p>
+</dd>
+</dl>
+<p>Document description</p>
+</dd></dl>
+
+<dl class="attr">
+<dt id="OpensearchDocument::$link">
+<em class="property">property </em><code class="sig-name descname">link</code><a class="headerlink" href="#OpensearchDocument::$link" title="Ссылка на это определение">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>string</p>
+</dd>
+</dl>
+<p>Document full URL</p>
+</dd></dl>
+
+<dl class="attr">
+<dt id="OpensearchDocument::$base">
+<em class="property">property </em><code class="sig-name descname">base</code><a class="headerlink" href="#OpensearchDocument::$base" title="Ссылка на это определение">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>string</p>
+</dd>
+</dl>
+<p>Document base URL</p>
+</dd></dl>
+
+<dl class="attr">
+<dt id="OpensearchDocument::$language">
+<em class="property">property </em><code class="sig-name descname">language</code><a class="headerlink" href="#OpensearchDocument::$language" title="Ссылка на это определение">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>string</p>
+</dd>
+</dl>
+<p>Contains the document language setting</p>
+</dd></dl>
+
+<dl class="attr">
+<dt id="OpensearchDocument::$direction">
+<em class="property">property </em><code class="sig-name descname">direction</code><a class="headerlink" href="#OpensearchDocument::$direction" title="Ссылка на это определение">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>string</p>
+</dd>
+</dl>
+<p>Contains the document direction setting</p>
+</dd></dl>
+
+<dl class="attr">
+<dt id="OpensearchDocument::$_generator">
+<em class="property">property </em><code class="sig-name descname">_generator</code><a class="headerlink" href="#OpensearchDocument::$_generator" title="Ссылка на это определение">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>string</p>
+</dd>
+</dl>
+<p>Document generator</p>
+</dd></dl>
+
+<dl class="attr">
+<dt id="OpensearchDocument::$_mdate">
+<em class="property">property </em><code class="sig-name descname">_mdate</code><a class="headerlink" href="#OpensearchDocument::$_mdate" title="Ссылка на это определение">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>string|Date</p>
+</dd>
+</dl>
+<p>Document modified date</p>
+</dd></dl>
+
+<dl class="attr">
+<dt id="OpensearchDocument::$_tab">
+<em class="property">property </em><code class="sig-name descname">_tab</code><a class="headerlink" href="#OpensearchDocument::$_tab" title="Ссылка на это определение">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>string</p>
+</dd>
+</dl>
+<p>Tab string</p>
+</dd></dl>
+
+<dl class="attr">
+<dt id="OpensearchDocument::$_lineEnd">
+<em class="property">property </em><code class="sig-name descname">_lineEnd</code><a class="headerlink" href="#OpensearchDocument::$_lineEnd" title="Ссылка на это определение">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>string</p>
+</dd>
+</dl>
+<p>Contains the line end string</p>
+</dd></dl>
+
+<dl class="attr">
+<dt id="OpensearchDocument::$_charset">
+<em class="property">property </em><code class="sig-name descname">_charset</code><a class="headerlink" href="#OpensearchDocument::$_charset" title="Ссылка на это определение">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>string</p>
+</dd>
+</dl>
+<p>Contains the character encoding string</p>
+</dd></dl>
+
+<dl class="attr">
+<dt id="OpensearchDocument::$_mime">
+<em class="property">property </em><code class="sig-name descname">_mime</code><a class="headerlink" href="#OpensearchDocument::$_mime" title="Ссылка на это определение">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>string</p>
+</dd>
+</dl>
+<p>Document mime type</p>
+</dd></dl>
+
+<dl class="attr">
+<dt id="OpensearchDocument::$_namespace">
+<em class="property">property </em><code class="sig-name descname">_namespace</code><a class="headerlink" href="#OpensearchDocument::$_namespace" title="Ссылка на это определение">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>string</p>
+</dd>
+</dl>
+<p>Document namespace</p>
+</dd></dl>
+
+<dl class="attr">
+<dt id="OpensearchDocument::$_profile">
+<em class="property">property </em><code class="sig-name descname">_profile</code><a class="headerlink" href="#OpensearchDocument::$_profile" title="Ссылка на это определение">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>string</p>
+</dd>
+</dl>
+<p>Document profile</p>
+</dd></dl>
+
+<dl class="attr">
+<dt id="OpensearchDocument::$_scripts">
+<em class="property">property </em><code class="sig-name descname">_scripts</code><a class="headerlink" href="#OpensearchDocument::$_scripts" title="Ссылка на это определение">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>array</p>
+</dd>
+</dl>
+<p>Array of linked scripts</p>
+</dd></dl>
+
+<dl class="attr">
+<dt id="OpensearchDocument::$_script">
+<em class="property">property </em><code class="sig-name descname">_script</code><a class="headerlink" href="#OpensearchDocument::$_script" title="Ссылка на это определение">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>array</p>
+</dd>
+</dl>
+<p>Array of scripts placed in the header</p>
+</dd></dl>
+
+<dl class="attr">
+<dt id="OpensearchDocument::$scriptOptions">
+<em class="property">property </em><code class="sig-name descname">scriptOptions</code><a class="headerlink" href="#OpensearchDocument::$scriptOptions" title="Ссылка на это определение">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>array</p>
+</dd>
+<dt class="field-even">Scope</dt>
+<dd class="field-even"><p>protected</p>
+</dd>
+</dl>
+<p>Array of scripts options</p>
+</dd></dl>
+
+<dl class="attr">
+<dt id="OpensearchDocument::$_styleSheets">
+<em class="property">property </em><code class="sig-name descname">_styleSheets</code><a class="headerlink" href="#OpensearchDocument::$_styleSheets" title="Ссылка на это определение">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>array</p>
+</dd>
+</dl>
+<p>Array of linked style sheets</p>
+</dd></dl>
+
+<dl class="attr">
+<dt id="OpensearchDocument::$_style">
+<em class="property">property </em><code class="sig-name descname">_style</code><a class="headerlink" href="#OpensearchDocument::$_style" title="Ссылка на это определение">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>array</p>
+</dd>
+</dl>
+<p>Array of included style declarations</p>
+</dd></dl>
+
+<dl class="attr">
+<dt id="OpensearchDocument::$_metaTags">
+<em class="property">property </em><code class="sig-name descname">_metaTags</code><a class="headerlink" href="#OpensearchDocument::$_metaTags" title="Ссылка на это определение">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>array</p>
+</dd>
+</dl>
+<p>Array of meta tags</p>
+</dd></dl>
+
+<dl class="attr">
+<dt id="OpensearchDocument::$_engine">
+<em class="property">property </em><code class="sig-name descname">_engine</code><a class="headerlink" href="#OpensearchDocument::$_engine" title="Ссылка на это определение">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>object</p>
+</dd>
+</dl>
+<p>The rendering engine</p>
+</dd></dl>
+
+<dl class="attr">
+<dt id="OpensearchDocument::$_type">
+<em class="property">property </em><code class="sig-name descname">_type</code><a class="headerlink" href="#OpensearchDocument::$_type" title="Ссылка на это определение">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>string</p>
+</dd>
+</dl>
+<p>The document type</p>
+</dd></dl>
+
+<dl class="attr">
+<dt id="OpensearchDocument::$_buffer">
+<em class="property">property </em><code class="sig-name descname">_buffer</code><a class="headerlink" href="#OpensearchDocument::$_buffer" title="Ссылка на это определение">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>mixed</p>
+</dd>
+</dl>
+<p>Array of buffered output</p>
+</dd></dl>
+
+<dl class="attr">
+<dt id="OpensearchDocument::$instances">
+<em class="property">property </em><code class="sig-name descname">instances</code><a class="headerlink" href="#OpensearchDocument::$instances" title="Ссылка на это определение">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>array</p>
+</dd>
+<dt class="field-even">Scope</dt>
+<dd class="field-even"><p>protected</p>
+</dd>
+</dl>
+<p>Document instances container.</p>
+</dd></dl>
+
+<dl class="attr">
+<dt id="OpensearchDocument::$mediaVersion">
+<em class="property">property </em><code class="sig-name descname">mediaVersion</code><a class="headerlink" href="#OpensearchDocument::$mediaVersion" title="Ссылка на это определение">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>string</p>
+</dd>
+<dt class="field-even">Scope</dt>
+<dd class="field-even"><p>protected</p>
+</dd>
+</dl>
+<p>Media version added to assets</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="OpensearchDocument::__construct">
+<code class="sig-name descname">__construct</code><span class="sig-paren">(</span><em class="sig-param">$options = array()</em><span class="sig-paren">)</span><a class="headerlink" href="#OpensearchDocument::__construct" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Class constructor</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$options</strong> – </p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OpensearchDocument::render">
+<code class="sig-name descname">render</code><span class="sig-paren">(</span><em class="sig-param">$cache = false</em>, <em class="sig-param">$params = array()</em><span class="sig-paren">)</span><a class="headerlink" href="#OpensearchDocument::render" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Render the document</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$cache</strong> – </p></li>
+<li><p><strong>$params</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>string The rendered data</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OpensearchDocument::setShortName">
+<code class="sig-name descname">setShortName</code><span class="sig-paren">(</span><em class="sig-param">$name</em><span class="sig-paren">)</span><a class="headerlink" href="#OpensearchDocument::setShortName" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Sets the short name</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$name</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>OpensearchDocument instance of $this to allow chaining</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OpensearchDocument::addUrl">
+<code class="sig-name descname">addUrl</code><span class="sig-paren">(</span><em class="sig-param">OpensearchUrl $url</em><span class="sig-paren">)</span><a class="headerlink" href="#OpensearchDocument::addUrl" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Adds a URL to the Opensearch description.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$url</strong> (<a class="reference internal" href="Opensearch/OpensearchUrl.html#OpensearchUrl" title="OpensearchUrl"><em>OpensearchUrl</em></a>) – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>OpensearchDocument instance of $this to allow chaining</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OpensearchDocument::addImage">
+<code class="sig-name descname">addImage</code><span class="sig-paren">(</span><em class="sig-param">OpensearchImage $image</em><span class="sig-paren">)</span><a class="headerlink" href="#OpensearchDocument::addImage" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Adds an image to the Opensearch description.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$image</strong> (<a class="reference internal" href="Opensearch/OpensearchImage.html#OpensearchImage" title="OpensearchImage"><em>OpensearchImage</em></a>) – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>OpensearchDocument instance of $this to allow chaining</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OpensearchDocument::getInstance">
+<code class="sig-name descname">getInstance</code><span class="sig-paren">(</span><em class="sig-param">$type = 'html'</em>, <em class="sig-param">$attributes = array()</em><span class="sig-paren">)</span><a class="headerlink" href="#OpensearchDocument::getInstance" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Returns the global Document object, only creating it
+if it doesn’t already exist.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$type</strong> – </p></li>
+<li><p><strong>$attributes</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>object The document object.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OpensearchDocument::setType">
+<code class="sig-name descname">setType</code><span class="sig-paren">(</span><em class="sig-param">$type</em><span class="sig-paren">)</span><a class="headerlink" href="#OpensearchDocument::setType" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Set the document type</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$type</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>Document instance of $this to allow chaining</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OpensearchDocument::getType">
+<code class="sig-name descname">getType</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OpensearchDocument::getType" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Returns the document type</p>
+<dl class="field-list simple">
+<dt class="field-odd">Результат</dt>
+<dd class="field-odd"><p>string</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OpensearchDocument::getBuffer">
+<code class="sig-name descname">getBuffer</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OpensearchDocument::getBuffer" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Get the contents of the document buffer</p>
+<dl class="field-list simple">
+<dt class="field-odd">Результат</dt>
+<dd class="field-odd"><p>mixed</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OpensearchDocument::setBuffer">
+<code class="sig-name descname">setBuffer</code><span class="sig-paren">(</span><em class="sig-param">$content</em>, <em class="sig-param">$options = array()</em><span class="sig-paren">)</span><a class="headerlink" href="#OpensearchDocument::setBuffer" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Set the contents of the document buffer</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$content</strong> – </p></li>
+<li><p><strong>$options</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>Document instance of $this to allow chaining</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OpensearchDocument::getMetaData">
+<code class="sig-name descname">getMetaData</code><span class="sig-paren">(</span><em class="sig-param">$name</em>, <em class="sig-param">$attribute = 'name'</em><span class="sig-paren">)</span><a class="headerlink" href="#OpensearchDocument::getMetaData" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Gets a meta tag.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$name</strong> – </p></li>
+<li><p><strong>$attribute</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>string</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OpensearchDocument::setMetaData">
+<code class="sig-name descname">setMetaData</code><span class="sig-paren">(</span><em class="sig-param">$name</em>, <em class="sig-param">$content</em>, <em class="sig-param">$attribute = 'name'</em><span class="sig-paren">)</span><a class="headerlink" href="#OpensearchDocument::setMetaData" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Sets or alters a meta tag.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$name</strong> – </p></li>
+<li><p><strong>$content</strong> – </p></li>
+<li><p><strong>$attribute</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>Document instance of $this to allow chaining</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OpensearchDocument::addScript">
+<code class="sig-name descname">addScript</code><span class="sig-paren">(</span><em class="sig-param">$url</em>, <em class="sig-param">$options = array()</em>, <em class="sig-param">$attribs = array()</em><span class="sig-paren">)</span><a class="headerlink" href="#OpensearchDocument::addScript" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Adds a linked script to the page</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$url</strong> – </p></li>
+<li><p><strong>$options</strong> – </p></li>
+<li><p><strong>$attribs</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>Document instance of $this to allow chaining</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OpensearchDocument::addScriptVersion">
+<code class="sig-name descname">addScriptVersion</code><span class="sig-paren">(</span><em class="sig-param">$url</em>, <em class="sig-param">$options = array()</em>, <em class="sig-param">$attribs = array()</em><span class="sig-paren">)</span><a class="headerlink" href="#OpensearchDocument::addScriptVersion" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Adds a linked script to the page with a version to allow to flush it. Ex:
+myscript.js?54771616b5bceae9df03c6173babf11d
+If not specified Joomla! automatically handles versioning</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$url</strong> – </p></li>
+<li><p><strong>$options</strong> – </p></li>
+<li><p><strong>$attribs</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>Document instance of $this to allow chaining</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OpensearchDocument::addScriptDeclaration">
+<code class="sig-name descname">addScriptDeclaration</code><span class="sig-paren">(</span><em class="sig-param">$content</em>, <em class="sig-param">$type = 'text/javascript'</em><span class="sig-paren">)</span><a class="headerlink" href="#OpensearchDocument::addScriptDeclaration" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Adds a script to the page</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$content</strong> – </p></li>
+<li><p><strong>$type</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>Document instance of $this to allow chaining</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OpensearchDocument::addScriptOptions">
+<code class="sig-name descname">addScriptOptions</code><span class="sig-paren">(</span><em class="sig-param">$key</em>, <em class="sig-param">$options</em>, <em class="sig-param">$merge = true</em><span class="sig-paren">)</span><a class="headerlink" href="#OpensearchDocument::addScriptOptions" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Add option for script</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$key</strong> – </p></li>
+<li><p><strong>$options</strong> – </p></li>
+<li><p><strong>$merge</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>Document instance of $this to allow chaining</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OpensearchDocument::getScriptOptions">
+<code class="sig-name descname">getScriptOptions</code><span class="sig-paren">(</span><em class="sig-param">$key = null</em><span class="sig-paren">)</span><a class="headerlink" href="#OpensearchDocument::getScriptOptions" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Get script(s) options</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$key</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>array Options for given $key, or all script options</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OpensearchDocument::addStyleSheet">
+<code class="sig-name descname">addStyleSheet</code><span class="sig-paren">(</span><em class="sig-param">$url</em>, <em class="sig-param">$options = array()</em>, <em class="sig-param">$attribs = array()</em><span class="sig-paren">)</span><a class="headerlink" href="#OpensearchDocument::addStyleSheet" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Adds a linked stylesheet to the page</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$url</strong> – </p></li>
+<li><p><strong>$options</strong> – </p></li>
+<li><p><strong>$attribs</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>Document instance of $this to allow chaining</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OpensearchDocument::addStyleSheetVersion">
+<code class="sig-name descname">addStyleSheetVersion</code><span class="sig-paren">(</span><em class="sig-param">$url</em>, <em class="sig-param">$options = array()</em>, <em class="sig-param">$attribs = array()</em><span class="sig-paren">)</span><a class="headerlink" href="#OpensearchDocument::addStyleSheetVersion" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Adds a linked stylesheet version to the page. Ex:
+template.css?54771616b5bceae9df03c6173babf11d
+If not specified Joomla! automatically handles versioning</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$url</strong> – </p></li>
+<li><p><strong>$options</strong> – </p></li>
+<li><p><strong>$attribs</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>Document instance of $this to allow chaining</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OpensearchDocument::addStyleDeclaration">
+<code class="sig-name descname">addStyleDeclaration</code><span class="sig-paren">(</span><em class="sig-param">$content</em>, <em class="sig-param">$type = 'text/css'</em><span class="sig-paren">)</span><a class="headerlink" href="#OpensearchDocument::addStyleDeclaration" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Adds a stylesheet declaration to the page</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$content</strong> – </p></li>
+<li><p><strong>$type</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>Document instance of $this to allow chaining</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OpensearchDocument::setCharset">
+<code class="sig-name descname">setCharset</code><span class="sig-paren">(</span><em class="sig-param">$type = 'utf-8'</em><span class="sig-paren">)</span><a class="headerlink" href="#OpensearchDocument::setCharset" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Sets the document charset</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$type</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>Document instance of $this to allow chaining</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OpensearchDocument::getCharset">
+<code class="sig-name descname">getCharset</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OpensearchDocument::getCharset" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Returns the document charset encoding.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Результат</dt>
+<dd class="field-odd"><p>string</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OpensearchDocument::setLanguage">
+<code class="sig-name descname">setLanguage</code><span class="sig-paren">(</span><em class="sig-param">$lang = 'en-gb'</em><span class="sig-paren">)</span><a class="headerlink" href="#OpensearchDocument::setLanguage" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Sets the global document language declaration. Default is English (en-gb).</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$lang</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>Document instance of $this to allow chaining</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OpensearchDocument::getLanguage">
+<code class="sig-name descname">getLanguage</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OpensearchDocument::getLanguage" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Returns the document language.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Результат</dt>
+<dd class="field-odd"><p>string</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OpensearchDocument::setDirection">
+<code class="sig-name descname">setDirection</code><span class="sig-paren">(</span><em class="sig-param">$dir = 'ltr'</em><span class="sig-paren">)</span><a class="headerlink" href="#OpensearchDocument::setDirection" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Sets the global document direction declaration. Default is left-to-right
+(ltr).</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$dir</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>Document instance of $this to allow chaining</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OpensearchDocument::getDirection">
+<code class="sig-name descname">getDirection</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OpensearchDocument::getDirection" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Returns the document direction declaration.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Результат</dt>
+<dd class="field-odd"><p>string</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OpensearchDocument::setTitle">
+<code class="sig-name descname">setTitle</code><span class="sig-paren">(</span><em class="sig-param">$title</em><span class="sig-paren">)</span><a class="headerlink" href="#OpensearchDocument::setTitle" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Sets the title of the document</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$title</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>Document instance of $this to allow chaining</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OpensearchDocument::getTitle">
+<code class="sig-name descname">getTitle</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OpensearchDocument::getTitle" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Return the title of the document.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Результат</dt>
+<dd class="field-odd"><p>string</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OpensearchDocument::setMediaVersion">
+<code class="sig-name descname">setMediaVersion</code><span class="sig-paren">(</span><em class="sig-param">$mediaVersion</em><span class="sig-paren">)</span><a class="headerlink" href="#OpensearchDocument::setMediaVersion" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Set the assets version</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$mediaVersion</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>Document instance of $this to allow chaining</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OpensearchDocument::getMediaVersion">
+<code class="sig-name descname">getMediaVersion</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OpensearchDocument::getMediaVersion" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Return the media version</p>
+<dl class="field-list simple">
+<dt class="field-odd">Результат</dt>
+<dd class="field-odd"><p>string</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OpensearchDocument::setBase">
+<code class="sig-name descname">setBase</code><span class="sig-paren">(</span><em class="sig-param">$base</em><span class="sig-paren">)</span><a class="headerlink" href="#OpensearchDocument::setBase" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Sets the base URI of the document</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$base</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>Document instance of $this to allow chaining</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OpensearchDocument::getBase">
+<code class="sig-name descname">getBase</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OpensearchDocument::getBase" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Return the base URI of the document.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Результат</dt>
+<dd class="field-odd"><p>string</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OpensearchDocument::setDescription">
+<code class="sig-name descname">setDescription</code><span class="sig-paren">(</span><em class="sig-param">$description</em><span class="sig-paren">)</span><a class="headerlink" href="#OpensearchDocument::setDescription" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Sets the description of the document</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$description</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>Document instance of $this to allow chaining</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OpensearchDocument::getDescription">
+<code class="sig-name descname">getDescription</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OpensearchDocument::getDescription" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Return the description of the document.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Результат</dt>
+<dd class="field-odd"><p>string</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OpensearchDocument::setLink">
+<code class="sig-name descname">setLink</code><span class="sig-paren">(</span><em class="sig-param">$url</em><span class="sig-paren">)</span><a class="headerlink" href="#OpensearchDocument::setLink" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Sets the document link</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$url</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>Document instance of $this to allow chaining</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OpensearchDocument::getLink">
+<code class="sig-name descname">getLink</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OpensearchDocument::getLink" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Returns the document base url</p>
+<dl class="field-list simple">
+<dt class="field-odd">Результат</dt>
+<dd class="field-odd"><p>string</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OpensearchDocument::setGenerator">
+<code class="sig-name descname">setGenerator</code><span class="sig-paren">(</span><em class="sig-param">$generator</em><span class="sig-paren">)</span><a class="headerlink" href="#OpensearchDocument::setGenerator" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Sets the document generator</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$generator</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>Document instance of $this to allow chaining</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OpensearchDocument::getGenerator">
+<code class="sig-name descname">getGenerator</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OpensearchDocument::getGenerator" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Returns the document generator</p>
+<dl class="field-list simple">
+<dt class="field-odd">Результат</dt>
+<dd class="field-odd"><p>string</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OpensearchDocument::setModifiedDate">
+<code class="sig-name descname">setModifiedDate</code><span class="sig-paren">(</span><em class="sig-param">$date</em><span class="sig-paren">)</span><a class="headerlink" href="#OpensearchDocument::setModifiedDate" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Sets the document modified date</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$date</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>Document instance of $this to allow chaining</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OpensearchDocument::getModifiedDate">
+<code class="sig-name descname">getModifiedDate</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OpensearchDocument::getModifiedDate" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Returns the document modified date</p>
+<dl class="field-list simple">
+<dt class="field-odd">Результат</dt>
+<dd class="field-odd"><p>string|Date</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OpensearchDocument::setMimeEncoding">
+<code class="sig-name descname">setMimeEncoding</code><span class="sig-paren">(</span><em class="sig-param">$type = 'text/html'</em>, <em class="sig-param">$sync = true</em><span class="sig-paren">)</span><a class="headerlink" href="#OpensearchDocument::setMimeEncoding" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Sets the document MIME encoding that is sent to the browser.</p>
+<p>This usually will be text/html because most browsers cannot yet accept the
+proper mime settings for XHTML: application/xhtml+xml and to a lesser
+extent application/xml and text/xml. See the W3C note
+(<a class="reference external" href="mailto:{&#37;&#52;&#48;link">{<span>&#64;</span>link</a> <a class="reference external" href="http://www.w3.org/TR/xhtml-media-types/">http://www.w3.org/TR/xhtml-media-types/</a>
+<a class="reference external" href="http://www.w3.org/TR/xhtml-media-types/">http://www.w3.org/TR/xhtml-media-types/</a>}) for more details.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$type</strong> – </p></li>
+<li><p><strong>$sync</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>Document instance of $this to allow chaining</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OpensearchDocument::getMimeEncoding">
+<code class="sig-name descname">getMimeEncoding</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OpensearchDocument::getMimeEncoding" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Return the document MIME encoding that is sent to the browser.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Результат</dt>
+<dd class="field-odd"><p>string</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OpensearchDocument::setLineEnd">
+<code class="sig-name descname">setLineEnd</code><span class="sig-paren">(</span><em class="sig-param">$style</em><span class="sig-paren">)</span><a class="headerlink" href="#OpensearchDocument::setLineEnd" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Sets the line end style to Windows, Mac, Unix or a custom string.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$style</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>Document instance of $this to allow chaining</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OpensearchDocument::_getLineEnd">
+<code class="sig-name descname">_getLineEnd</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OpensearchDocument::_getLineEnd" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Returns the lineEnd</p>
+<dl class="field-list simple">
+<dt class="field-odd">Результат</dt>
+<dd class="field-odd"><p>string</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OpensearchDocument::setTab">
+<code class="sig-name descname">setTab</code><span class="sig-paren">(</span><em class="sig-param">$string</em><span class="sig-paren">)</span><a class="headerlink" href="#OpensearchDocument::setTab" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Sets the string used to indent HTML</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$string</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>Document instance of $this to allow chaining</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OpensearchDocument::_getTab">
+<code class="sig-name descname">_getTab</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OpensearchDocument::_getTab" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Returns a string containing the unit for indenting HTML</p>
+<dl class="field-list simple">
+<dt class="field-odd">Результат</dt>
+<dd class="field-odd"><p>string</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OpensearchDocument::loadRenderer">
+<code class="sig-name descname">loadRenderer</code><span class="sig-paren">(</span><em class="sig-param">$type</em><span class="sig-paren">)</span><a class="headerlink" href="#OpensearchDocument::loadRenderer" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Load a renderer</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$type</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>DocumentRenderer</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OpensearchDocument::parse">
+<code class="sig-name descname">parse</code><span class="sig-paren">(</span><em class="sig-param">$params = array()</em><span class="sig-paren">)</span><a class="headerlink" href="#OpensearchDocument::parse" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Parses the document and prepares the buffers</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$params</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>Document instance of $this to allow chaining</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2020, Artem Vasilev &lt;kern.usr@gmail.com&gt;
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

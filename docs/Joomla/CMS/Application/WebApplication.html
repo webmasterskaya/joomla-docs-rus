@@ -1,0 +1,963 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="ru" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="ru" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Joomla\CMS\Application\WebApplication &mdash; документация joomla-docs-rus 3.9.16</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../../../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../../" src="../../../_static/documentation_options.js"></script>
+        <script src="../../../_static/jquery.js"></script>
+        <script src="../../../_static/underscore.js"></script>
+        <script src="../../../_static/doctools.js"></script>
+        <script src="../../../_static/language_data.js"></script>
+        <script src="../../../_static/translations.js"></script>
+    
+    <script type="text/javascript" src="../../../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
+    <link rel="index" title="Алфавитный указатель" href="../../../genindex.html" />
+    <link rel="search" title="Поиск" href="../../../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search"  style="background: white" >
+          
+
+          
+            <a href="../../../index.html" class="icon icon-home"> joomla-docs-rus
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <!-- Local TOC -->
+              <div class="local-toc"><ul>
+<li><a class="reference internal" href="#">Joomla\CMS\Application\WebApplication</a></li>
+</ul>
+</div>
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../../index.html">joomla-docs-rus</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content style-external-links">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../../index.html">Docs</a> &raquo;</li>
+        
+      <li>Joomla\CMS\Application\WebApplication</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../../../_sources/Joomla/CMS/Application/WebApplication.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="joomla-cms-application-webapplication">
+<h1>Joomla\CMS\Application\WebApplication<a class="headerlink" href="#joomla-cms-application-webapplication" title="Ссылка на этот заголовок">¶</a></h1>
+<dl class="class">
+<dt id="WebApplication">
+<em class="property">class </em><code class="sig-name descname">WebApplication</code><a class="headerlink" href="#WebApplication" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Base class for a Joomla! Web application.</p>
+<dl class="attr">
+<dt id="WebApplication::$charSet">
+<em class="property">property </em><code class="sig-name descname">charSet</code><a class="headerlink" href="#WebApplication::$charSet" title="Ссылка на это определение">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>string</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="attr">
+<dt id="WebApplication::$mimeType">
+<em class="property">property </em><code class="sig-name descname">mimeType</code><a class="headerlink" href="#WebApplication::$mimeType" title="Ссылка на это определение">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>string</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="attr">
+<dt id="WebApplication::$modifiedDate">
+<em class="property">property </em><code class="sig-name descname">modifiedDate</code><a class="headerlink" href="#WebApplication::$modifiedDate" title="Ссылка на это определение">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>JDate</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="attr">
+<dt id="WebApplication::$client">
+<em class="property">property </em><code class="sig-name descname">client</code><a class="headerlink" href="#WebApplication::$client" title="Ссылка на это определение">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>JApplicationWebClient</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="attr">
+<dt id="WebApplication::$document">
+<em class="property">property </em><code class="sig-name descname">document</code><a class="headerlink" href="#WebApplication::$document" title="Ссылка на это определение">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>JDocument</p>
+</dd>
+<dt class="field-even">Scope</dt>
+<dd class="field-even"><p>protected</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="attr">
+<dt id="WebApplication::$language">
+<em class="property">property </em><code class="sig-name descname">language</code><a class="headerlink" href="#WebApplication::$language" title="Ссылка на это определение">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>JLanguage</p>
+</dd>
+<dt class="field-even">Scope</dt>
+<dd class="field-even"><p>protected</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="attr">
+<dt id="WebApplication::$session">
+<em class="property">property </em><code class="sig-name descname">session</code><a class="headerlink" href="#WebApplication::$session" title="Ссылка на это определение">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>JSession</p>
+</dd>
+<dt class="field-even">Scope</dt>
+<dd class="field-even"><p>protected</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="attr">
+<dt id="WebApplication::$response">
+<em class="property">property </em><code class="sig-name descname">response</code><a class="headerlink" href="#WebApplication::$response" title="Ссылка на это определение">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>object</p>
+</dd>
+<dt class="field-even">Scope</dt>
+<dd class="field-even"><p>protected</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="attr">
+<dt id="WebApplication::$instance">
+<em class="property">property </em><code class="sig-name descname">instance</code><a class="headerlink" href="#WebApplication::$instance" title="Ссылка на это определение">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p><a class="reference internal" href="#WebApplication" title="WebApplication">WebApplication</a></p>
+</dd>
+<dt class="field-even">Scope</dt>
+<dd class="field-even"><p>protected</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="attr">
+<dt id="WebApplication::$dispatcher">
+<em class="property">property </em><code class="sig-name descname">dispatcher</code><a class="headerlink" href="#WebApplication::$dispatcher" title="Ссылка на это определение">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>JEventDispatcher</p>
+</dd>
+<dt class="field-even">Scope</dt>
+<dd class="field-even"><p>protected</p>
+</dd>
+</dl>
+<p>The application dispatcher object.</p>
+</dd></dl>
+
+<dl class="attr">
+<dt id="WebApplication::$identity">
+<em class="property">property </em><code class="sig-name descname">identity</code><a class="headerlink" href="#WebApplication::$identity" title="Ссылка на это определение">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>JUser</p>
+</dd>
+<dt class="field-even">Scope</dt>
+<dd class="field-even"><p>protected</p>
+</dd>
+</dl>
+<p>The application identity object.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="WebApplication::__construct">
+<code class="sig-name descname">__construct</code><span class="sig-paren">(</span><em class="sig-param">Input $input = null</em>, <em class="sig-param">Registry $config = null</em>, <em class="sig-param">JApplicationWebClient $client = null</em><span class="sig-paren">)</span><a class="headerlink" href="#WebApplication::__construct" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Class constructor.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$input</strong> (<a class="reference internal" href="../Input/Input.html#Input" title="Input"><em>Input</em></a>) – </p></li>
+<li><p><strong>$config</strong> (<em>Registry</em>) – </p></li>
+<li><p><strong>$client</strong> (<em>JApplicationWebClient</em>) – </p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="WebApplication::getInstance">
+<code class="sig-name descname">getInstance</code><span class="sig-paren">(</span><em class="sig-param">$name = null</em><span class="sig-paren">)</span><a class="headerlink" href="#WebApplication::getInstance" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Returns a reference to the global WebApplication object, only creating it
+if it doesn’t already exist.</p>
+<p>This method must be invoked as: $web = WebApplication::getInstance();</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$name</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>WebApplication</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="WebApplication::initialise">
+<code class="sig-name descname">initialise</code><span class="sig-paren">(</span><em class="sig-param">$session = null</em>, <em class="sig-param">$document = null</em>, <em class="sig-param">$language = null</em>, <em class="sig-param">$dispatcher = null</em><span class="sig-paren">)</span><a class="headerlink" href="#WebApplication::initialise" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Initialise the application.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$session</strong> – </p></li>
+<li><p><strong>$document</strong> – </p></li>
+<li><p><strong>$language</strong> – </p></li>
+<li><p><strong>$dispatcher</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>WebApplication Instance of $this to allow chaining.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="WebApplication::execute">
+<code class="sig-name descname">execute</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#WebApplication::execute" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Execute the application.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Результат</dt>
+<dd class="field-odd"><p>void</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="WebApplication::render">
+<code class="sig-name descname">render</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#WebApplication::render" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Rendering is the process of pushing the document buffers into the template
+placeholders, retrieving data from the document and pushing it into
+the application response buffer.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Результат</dt>
+<dd class="field-odd"><p>void</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="WebApplication::compress">
+<code class="sig-name descname">compress</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#WebApplication::compress" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Checks the accept encoding of the browser and compresses the data before
+sending it to the client if possible.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Результат</dt>
+<dd class="field-odd"><p>void</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="WebApplication::respond">
+<code class="sig-name descname">respond</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#WebApplication::respond" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Method to send the application response to the client.  All headers will
+be sent prior to the main
+application output data.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Результат</dt>
+<dd class="field-odd"><p>void</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="WebApplication::redirect">
+<code class="sig-name descname">redirect</code><span class="sig-paren">(</span><em class="sig-param">$url</em>, <em class="sig-param">$status = 303</em><span class="sig-paren">)</span><a class="headerlink" href="#WebApplication::redirect" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Redirect to another URL.</p>
+<p>If the headers have not been sent the redirect will be accomplished using
+a «301 Moved Permanently»
+or «303 See Other» code in the header pointing to the new location. If the
+headers have already been sent this will be accomplished using a
+JavaScript statement.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$url</strong> – </p></li>
+<li><p><strong>$status</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>void</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="WebApplication::isRedirectState">
+<code class="sig-name descname">isRedirectState</code><span class="sig-paren">(</span><em class="sig-param">$state</em><span class="sig-paren">)</span><a class="headerlink" href="#WebApplication::isRedirectState" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Checks if a state is a redirect state</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$state</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>boolean</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="WebApplication::loadConfiguration">
+<code class="sig-name descname">loadConfiguration</code><span class="sig-paren">(</span><em class="sig-param">$data</em><span class="sig-paren">)</span><a class="headerlink" href="#WebApplication::loadConfiguration" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Load an object or array into the application configuration object.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$data</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>WebApplication Instance of $this to allow chaining.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="WebApplication::allowCache">
+<code class="sig-name descname">allowCache</code><span class="sig-paren">(</span><em class="sig-param">$allow = null</em><span class="sig-paren">)</span><a class="headerlink" href="#WebApplication::allowCache" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Set/get cachable state for the response.  If $allow is set, sets the
+cachable state of the
+response.  Always returns the current state.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$allow</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>boolean</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="WebApplication::setHeader">
+<code class="sig-name descname">setHeader</code><span class="sig-paren">(</span><em class="sig-param">$name</em>, <em class="sig-param">$value</em>, <em class="sig-param">$replace = false</em><span class="sig-paren">)</span><a class="headerlink" href="#WebApplication::setHeader" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Method to set a response header.  If the replace flag is set then all
+headers
+with the given name will be replaced by the new one.  The headers are
+stored
+in an internal array to be sent when the site is sent to the browser.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$name</strong> – </p></li>
+<li><p><strong>$value</strong> – </p></li>
+<li><p><strong>$replace</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>WebApplication Instance of $this to allow chaining.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="WebApplication::getHeaders">
+<code class="sig-name descname">getHeaders</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#WebApplication::getHeaders" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Method to get the array of response headers to be sent when the response
+is sent
+to the client.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Результат</dt>
+<dd class="field-odd"><p>array *</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="WebApplication::clearHeaders">
+<code class="sig-name descname">clearHeaders</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#WebApplication::clearHeaders" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Method to clear any set response headers.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Результат</dt>
+<dd class="field-odd"><p>WebApplication Instance of $this to allow chaining.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="WebApplication::sendHeaders">
+<code class="sig-name descname">sendHeaders</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#WebApplication::sendHeaders" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Send the response headers.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Результат</dt>
+<dd class="field-odd"><p>WebApplication Instance of $this to allow chaining.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="WebApplication::getHttpStatusValue">
+<code class="sig-name descname">getHttpStatusValue</code><span class="sig-paren">(</span><em class="sig-param">$value</em><span class="sig-paren">)</span><a class="headerlink" href="#WebApplication::getHttpStatusValue" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Check if a given value can be successfully mapped to a valid http status
+value</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$value</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>string</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="WebApplication::setBody">
+<code class="sig-name descname">setBody</code><span class="sig-paren">(</span><em class="sig-param">$content</em><span class="sig-paren">)</span><a class="headerlink" href="#WebApplication::setBody" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Set body content.  If body content already defined, this will replace it.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$content</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>WebApplication Instance of $this to allow chaining.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="WebApplication::prependBody">
+<code class="sig-name descname">prependBody</code><span class="sig-paren">(</span><em class="sig-param">$content</em><span class="sig-paren">)</span><a class="headerlink" href="#WebApplication::prependBody" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Prepend content to the body content</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$content</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>WebApplication Instance of $this to allow chaining.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="WebApplication::appendBody">
+<code class="sig-name descname">appendBody</code><span class="sig-paren">(</span><em class="sig-param">$content</em><span class="sig-paren">)</span><a class="headerlink" href="#WebApplication::appendBody" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Append content to the body content</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$content</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>WebApplication Instance of $this to allow chaining.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="WebApplication::getBody">
+<code class="sig-name descname">getBody</code><span class="sig-paren">(</span><em class="sig-param">$asArray = false</em><span class="sig-paren">)</span><a class="headerlink" href="#WebApplication::getBody" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Return the body content</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$asArray</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>mixed The response body either as an array or concatenated string.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="WebApplication::getDocument">
+<code class="sig-name descname">getDocument</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#WebApplication::getDocument" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Method to get the application document object.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Результат</dt>
+<dd class="field-odd"><p>JDocument The document object</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="WebApplication::getLanguage">
+<code class="sig-name descname">getLanguage</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#WebApplication::getLanguage" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Method to get the application language object.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Результат</dt>
+<dd class="field-odd"><p>JLanguage The language object</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="WebApplication::getSession">
+<code class="sig-name descname">getSession</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#WebApplication::getSession" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Method to get the application session object.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Результат</dt>
+<dd class="field-odd"><p>JSession The session object</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="WebApplication::checkConnectionAlive">
+<code class="sig-name descname">checkConnectionAlive</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#WebApplication::checkConnectionAlive" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Method to check the current client connection status to ensure that it is
+alive.  We are
+wrapping this to isolate the connection_status() function from our code
+base for testing reasons.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Результат</dt>
+<dd class="field-odd"><p>boolean True if the connection is valid and normal.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="WebApplication::checkHeadersSent">
+<code class="sig-name descname">checkHeadersSent</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#WebApplication::checkHeadersSent" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Method to check to see if headers have already been sent.  We are wrapping
+this to isolate the
+headers_sent() function from our code base for testing reasons.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Результат</dt>
+<dd class="field-odd"><p>boolean True if the headers have already been sent.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="WebApplication::detectRequestUri">
+<code class="sig-name descname">detectRequestUri</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#WebApplication::detectRequestUri" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Method to detect the requested URI from server environment variables.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Результат</dt>
+<dd class="field-odd"><p>string The requested URI</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="WebApplication::fetchConfigurationData">
+<code class="sig-name descname">fetchConfigurationData</code><span class="sig-paren">(</span><em class="sig-param">$file = ''</em>, <em class="sig-param">$class = 'JConfig'</em><span class="sig-paren">)</span><a class="headerlink" href="#WebApplication::fetchConfigurationData" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Method to load a PHP configuration class file based on convention and
+return the instantiated data object.  You
+will extend this method in child classes to provide configuration data
+from whatever data source is relevant
+for your specific application.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$file</strong> – </p></li>
+<li><p><strong>$class</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>mixed Either an array or object to be loaded into the configuration object.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="WebApplication::flushAssets">
+<code class="sig-name descname">flushAssets</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#WebApplication::flushAssets" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Flush the media version to refresh versionable assets</p>
+<dl class="field-list simple">
+<dt class="field-odd">Результат</dt>
+<dd class="field-odd"><p>void</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="WebApplication::header">
+<code class="sig-name descname">header</code><span class="sig-paren">(</span><em class="sig-param">$string</em>, <em class="sig-param">$replace = true</em>, <em class="sig-param">$code = null</em><span class="sig-paren">)</span><a class="headerlink" href="#WebApplication::header" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Method to send a header to the client.  We are wrapping this to isolate
+the header() function
+from our code base for testing reasons.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$string</strong> – </p></li>
+<li><p><strong>$replace</strong> – </p></li>
+<li><p><strong>$code</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>void</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="WebApplication::isSSLConnection">
+<code class="sig-name descname">isSSLConnection</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#WebApplication::isSSLConnection" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Determine if we are using a secure (SSL) connection.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Результат</dt>
+<dd class="field-odd"><p>boolean True if using SSL, false if not.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="WebApplication::loadDocument">
+<code class="sig-name descname">loadDocument</code><span class="sig-paren">(</span><em class="sig-param">JDocument $document = null</em><span class="sig-paren">)</span><a class="headerlink" href="#WebApplication::loadDocument" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Allows the application to load a custom or default document.</p>
+<p>The logic and options for creating this object are adequately generic for
+default cases but for many applications it will make sense to override
+this method and create a document,
+if required, based on more specific needs.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$document</strong> (<em>JDocument</em>) – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>WebApplication This method is chainable.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="WebApplication::loadLanguage">
+<code class="sig-name descname">loadLanguage</code><span class="sig-paren">(</span><em class="sig-param">JLanguage $language = null</em><span class="sig-paren">)</span><a class="headerlink" href="#WebApplication::loadLanguage" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Allows the application to load a custom or default language.</p>
+<p>The logic and options for creating this object are adequately generic for
+default cases but for many applications it will make sense to override
+this method and create a language,
+if required, based on more specific needs.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$language</strong> (<em>JLanguage</em>) – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>WebApplication This method is chainable.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="WebApplication::loadSession">
+<code class="sig-name descname">loadSession</code><span class="sig-paren">(</span><em class="sig-param">JSession $session = null</em><span class="sig-paren">)</span><a class="headerlink" href="#WebApplication::loadSession" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Allows the application to load a custom or default session.</p>
+<p>The logic and options for creating this object are adequately generic for
+default cases but for many applications it will make sense to override
+this method and create a session,
+if required, based on more specific needs.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$session</strong> (<em>JSession</em>) – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>WebApplication This method is chainable.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="WebApplication::afterSessionStart">
+<code class="sig-name descname">afterSessionStart</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#WebApplication::afterSessionStart" title="Ссылка на это определение">¶</a></dt>
+<dd><p>After the session has been started we need to populate it with some
+default values.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Результат</dt>
+<dd class="field-odd"><p>void</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="WebApplication::loadSystemUris">
+<code class="sig-name descname">loadSystemUris</code><span class="sig-paren">(</span><em class="sig-param">$requestUri = null</em><span class="sig-paren">)</span><a class="headerlink" href="#WebApplication::loadSystemUris" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Method to load the system URI strings for the application.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$requestUri</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>void</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="WebApplication::getIdentity">
+<code class="sig-name descname">getIdentity</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#WebApplication::getIdentity" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Get the application identity.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Результат</dt>
+<dd class="field-odd"><p>mixed A JUser object or null.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="WebApplication::registerEvent">
+<code class="sig-name descname">registerEvent</code><span class="sig-paren">(</span><em class="sig-param">$event</em>, <em class="sig-param">$handler</em><span class="sig-paren">)</span><a class="headerlink" href="#WebApplication::registerEvent" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Registers a handler to a particular event group.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$event</strong> – </p></li>
+<li><p><strong>$handler</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>BaseApplication The application to allow chaining.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="WebApplication::triggerEvent">
+<code class="sig-name descname">triggerEvent</code><span class="sig-paren">(</span><em class="sig-param">$event</em>, <em class="sig-param">$args = null</em><span class="sig-paren">)</span><a class="headerlink" href="#WebApplication::triggerEvent" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Calls all handlers associated with an event group.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$event</strong> – </p></li>
+<li><p><strong>$args</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>array An array of results from each function call, or null if no dispatcher is defined.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="WebApplication::loadDispatcher">
+<code class="sig-name descname">loadDispatcher</code><span class="sig-paren">(</span><em class="sig-param">JEventDispatcher $dispatcher = null</em><span class="sig-paren">)</span><a class="headerlink" href="#WebApplication::loadDispatcher" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Allows the application to load a custom or default dispatcher.</p>
+<p>The logic and options for creating this object are adequately generic for
+default cases but for many applications it will make sense to override
+this method and create event dispatchers, if required, based on more
+specific needs.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$dispatcher</strong> (<em>JEventDispatcher</em>) – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>BaseApplication This method is chainable.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="WebApplication::loadIdentity">
+<code class="sig-name descname">loadIdentity</code><span class="sig-paren">(</span><em class="sig-param">JUser $identity = null</em><span class="sig-paren">)</span><a class="headerlink" href="#WebApplication::loadIdentity" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Allows the application to load a custom or default identity.</p>
+<p>The logic and options for creating this object are adequately generic for
+default cases but for many applications it will make sense to override
+this method and create an identity,
+if required, based on more specific needs.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$identity</strong> (<em>JUser</em>) – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>BaseApplication This method is chainable.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="WebApplication::doExecute">
+<code class="sig-name descname">doExecute</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#WebApplication::doExecute" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Method to run the application routines.  Most likely you will want to
+instantiate a controller
+and execute it, or perform some sort of task directly.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Результат</dt>
+<dd class="field-odd"><p>void</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2020, Artem Vasilev &lt;kern.usr@gmail.com&gt;
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

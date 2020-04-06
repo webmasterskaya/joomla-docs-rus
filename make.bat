@@ -25,11 +25,23 @@ if errorlevel 9009 (
 	exit /b 1
 )
 
-.\vendor\bin\sphpdox process "Joomla\CMS" .\joomla-cms\libraries\src -o .\source && %SPHINXBUILD% -M %1 %SOURCEDIR% %BUILDDIR% %SPHINXOPTS% %O%
+call :parsephpdoc && call %SPHINXBUILD% -M %1 %SOURCEDIR% %BUILDDIR% %SPHINXOPTS% %O% && if "%1" == "html" call :htmltodocs
 goto end
 
 :help
 %SPHINXBUILD% -M help %SOURCEDIR% %BUILDDIR% %SPHINXOPTS% %O%
+
+:htmltodocs
+del /s /f /q .\docs\*.*
+for /f %%f in ('dir /ad /b .\docs\') do rd /s /q .\docs\%%f
+rd /s /q .\docs
+echo. 2>.\html\.nojekyll
+Rename html docs
+exit /B
+
+:parsephpdoc
+call .\vendor\bin\sphpdox process "Joomla\CMS" .\joomla-cms\libraries\src -o .\source
+exit /B
 
 :end
 popd

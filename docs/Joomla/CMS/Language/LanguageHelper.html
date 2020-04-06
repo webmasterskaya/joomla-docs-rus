@@ -1,0 +1,420 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="ru" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="ru" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Joomla\CMS\Language\LanguageHelper &mdash; документация joomla-docs-rus 3.9.16</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../../../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../../" src="../../../_static/documentation_options.js"></script>
+        <script src="../../../_static/jquery.js"></script>
+        <script src="../../../_static/underscore.js"></script>
+        <script src="../../../_static/doctools.js"></script>
+        <script src="../../../_static/language_data.js"></script>
+        <script src="../../../_static/translations.js"></script>
+    
+    <script type="text/javascript" src="../../../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
+    <link rel="index" title="Алфавитный указатель" href="../../../genindex.html" />
+    <link rel="search" title="Поиск" href="../../../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search"  style="background: white" >
+          
+
+          
+            <a href="../../../index.html" class="icon icon-home"> joomla-docs-rus
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <!-- Local TOC -->
+              <div class="local-toc"><ul>
+<li><a class="reference internal" href="#">Joomla\CMS\Language\LanguageHelper</a></li>
+</ul>
+</div>
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../../index.html">joomla-docs-rus</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content style-external-links">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../../index.html">Docs</a> &raquo;</li>
+        
+      <li>Joomla\CMS\Language\LanguageHelper</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../../../_sources/Joomla/CMS/Language/LanguageHelper.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="joomla-cms-language-languagehelper">
+<h1>Joomla\CMS\Language\LanguageHelper<a class="headerlink" href="#joomla-cms-language-languagehelper" title="Ссылка на этот заголовок">¶</a></h1>
+<dl class="class">
+<dt id="LanguageHelper">
+<em class="property">class </em><code class="sig-name descname">LanguageHelper</code><a class="headerlink" href="#LanguageHelper" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Language helper class</p>
+<dl class="method">
+<dt id="LanguageHelper::createLanguageList">
+<code class="sig-name descname">createLanguageList</code><span class="sig-paren">(</span><em class="sig-param">$actualLanguage</em>, <em class="sig-param">$basePath = JPATH_BASE</em>, <em class="sig-param">$caching = false</em>, <em class="sig-param">$installed = false</em><span class="sig-paren">)</span><a class="headerlink" href="#LanguageHelper::createLanguageList" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Builds a list of the system languages which can be used in a select option</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$actualLanguage</strong> – </p></li>
+<li><p><strong>$basePath</strong> – </p></li>
+<li><p><strong>$caching</strong> – </p></li>
+<li><p><strong>$installed</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>array List of system languages</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="LanguageHelper::detectLanguage">
+<code class="sig-name descname">detectLanguage</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#LanguageHelper::detectLanguage" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Tries to detect the language.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Результат</dt>
+<dd class="field-odd"><p>string locale or null if not found</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="LanguageHelper::getLanguages">
+<code class="sig-name descname">getLanguages</code><span class="sig-paren">(</span><em class="sig-param">$key = 'default'</em><span class="sig-paren">)</span><a class="headerlink" href="#LanguageHelper::getLanguages" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Get available languages</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$key</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>array An array of published languages</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="LanguageHelper::getInstalledLanguages">
+<code class="sig-name descname">getInstalledLanguages</code><span class="sig-paren">(</span><em class="sig-param">$clientId = null</em>, <em class="sig-param">$processMetaData = false</em>, <em class="sig-param">$processManifest = false</em>, <em class="sig-param">$pivot = 'element'</em>, <em class="sig-param">$orderField = null</em>, <em class="sig-param">$orderDirection = null</em><span class="sig-paren">)</span><a class="headerlink" href="#LanguageHelper::getInstalledLanguages" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Get a list of installed languages.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$clientId</strong> – </p></li>
+<li><p><strong>$processMetaData</strong> – </p></li>
+<li><p><strong>$processManifest</strong> – </p></li>
+<li><p><strong>$pivot</strong> – </p></li>
+<li><p><strong>$orderField</strong> – </p></li>
+<li><p><strong>$orderDirection</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>array Array with the installed languages.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="LanguageHelper::getContentLanguages">
+<code class="sig-name descname">getContentLanguages</code><span class="sig-paren">(</span><em class="sig-param">$publishedStates = array(1)</em>, <em class="sig-param">$checkInstalled = true</em>, <em class="sig-param">$pivot = 'lang_code'</em>, <em class="sig-param">$orderField = null</em>, <em class="sig-param">$orderDirection = null</em><span class="sig-paren">)</span><a class="headerlink" href="#LanguageHelper::getContentLanguages" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Get a list of content languages.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$publishedStates</strong> – </p></li>
+<li><p><strong>$checkInstalled</strong> – </p></li>
+<li><p><strong>$pivot</strong> – </p></li>
+<li><p><strong>$orderField</strong> – </p></li>
+<li><p><strong>$orderDirection</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>array Array of the content languages.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="LanguageHelper::parseIniFile">
+<code class="sig-name descname">parseIniFile</code><span class="sig-paren">(</span><em class="sig-param">$fileName</em>, <em class="sig-param">$debug = false</em><span class="sig-paren">)</span><a class="headerlink" href="#LanguageHelper::parseIniFile" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Parse strings from a language file.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$fileName</strong> – </p></li>
+<li><p><strong>$debug</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>boolean True if saved, false otherwise.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="LanguageHelper::saveToIniFile">
+<code class="sig-name descname">saveToIniFile</code><span class="sig-paren">(</span><em class="sig-param">$fileName</em>, <em class="sig-param">$strings</em><span class="sig-paren">)</span><a class="headerlink" href="#LanguageHelper::saveToIniFile" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Save strings to a language file.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$fileName</strong> – </p></li>
+<li><p><strong>$strings</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>boolean True if saved, false otherwise.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="LanguageHelper::exists">
+<code class="sig-name descname">exists</code><span class="sig-paren">(</span><em class="sig-param">$lang</em>, <em class="sig-param">$basePath = JPATH_BASE</em><span class="sig-paren">)</span><a class="headerlink" href="#LanguageHelper::exists" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Checks if a language exists.</p>
+<p>This is a simple, quick check for the directory that should contain
+language files for the given user.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$lang</strong> – </p></li>
+<li><p><strong>$basePath</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>boolean True if the language exists.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="LanguageHelper::getMetadata">
+<code class="sig-name descname">getMetadata</code><span class="sig-paren">(</span><em class="sig-param">$lang</em><span class="sig-paren">)</span><a class="headerlink" href="#LanguageHelper::getMetadata" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Returns an associative array holding the metadata.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$lang</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>mixed If $lang exists return key/value pair with the language metadata, otherwise return NULL.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="LanguageHelper::getKnownLanguages">
+<code class="sig-name descname">getKnownLanguages</code><span class="sig-paren">(</span><em class="sig-param">$basePath = JPATH_BASE</em><span class="sig-paren">)</span><a class="headerlink" href="#LanguageHelper::getKnownLanguages" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Returns a list of known languages for an area</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$basePath</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>array key/value pair with the language file and real name.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="LanguageHelper::getLanguagePath">
+<code class="sig-name descname">getLanguagePath</code><span class="sig-paren">(</span><em class="sig-param">$basePath = JPATH_BASE</em>, <em class="sig-param">$language = null</em><span class="sig-paren">)</span><a class="headerlink" href="#LanguageHelper::getLanguagePath" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Get the path to a language</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$basePath</strong> – </p></li>
+<li><p><strong>$language</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>string language related path or null.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="LanguageHelper::parseLanguageFiles">
+<code class="sig-name descname">parseLanguageFiles</code><span class="sig-paren">(</span><em class="sig-param">$dir = null</em><span class="sig-paren">)</span><a class="headerlink" href="#LanguageHelper::parseLanguageFiles" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Searches for language directories within a certain base dir.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$dir</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>array Array holding the found languages as filename =&gt; real name pairs.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="LanguageHelper::parseXMLLanguageFile">
+<code class="sig-name descname">parseXMLLanguageFile</code><span class="sig-paren">(</span><em class="sig-param">$path</em><span class="sig-paren">)</span><a class="headerlink" href="#LanguageHelper::parseXMLLanguageFile" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Parse XML file for language information.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$path</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>array Array holding the found metadata as a key =&gt; value pair.</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2020, Artem Vasilev &lt;kern.usr@gmail.com&gt;
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

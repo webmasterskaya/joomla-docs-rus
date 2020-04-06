@@ -1,0 +1,400 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="ru" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="ru" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Joomla\CMS\Captcha\Captcha &mdash; документация joomla-docs-rus 3.9.16</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../../../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../../" src="../../../_static/documentation_options.js"></script>
+        <script src="../../../_static/jquery.js"></script>
+        <script src="../../../_static/underscore.js"></script>
+        <script src="../../../_static/doctools.js"></script>
+        <script src="../../../_static/language_data.js"></script>
+        <script src="../../../_static/translations.js"></script>
+    
+    <script type="text/javascript" src="../../../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
+    <link rel="index" title="Алфавитный указатель" href="../../../genindex.html" />
+    <link rel="search" title="Поиск" href="../../../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search"  style="background: white" >
+          
+
+          
+            <a href="../../../index.html" class="icon icon-home"> joomla-docs-rus
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <!-- Local TOC -->
+              <div class="local-toc"><ul>
+<li><a class="reference internal" href="#">Joomla\CMS\Captcha\Captcha</a></li>
+</ul>
+</div>
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../../index.html">joomla-docs-rus</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content style-external-links">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../../index.html">Docs</a> &raquo;</li>
+        
+      <li>Joomla\CMS\Captcha\Captcha</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../../../_sources/Joomla/CMS/Captcha/Captcha.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="joomla-cms-captcha-captcha">
+<h1>Joomla\CMS\Captcha\Captcha<a class="headerlink" href="#joomla-cms-captcha-captcha" title="Ссылка на этот заголовок">¶</a></h1>
+<dl class="class">
+<dt id="Captcha">
+<em class="property">class </em><code class="sig-name descname">Captcha</code><a class="headerlink" href="#Captcha" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Joomla! Captcha base object</p>
+<dl class="attr">
+<dt id="Captcha::$_observers">
+<em class="property">property </em><code class="sig-name descname">_observers</code><a class="headerlink" href="#Captcha::$_observers" title="Ссылка на это определение">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>array</p>
+</dd>
+<dt class="field-even">Scope</dt>
+<dd class="field-even"><p>protected</p>
+</dd>
+</dl>
+<p>An array of Observer objects to notify</p>
+</dd></dl>
+
+<dl class="attr">
+<dt id="Captcha::$_state">
+<em class="property">property </em><code class="sig-name descname">_state</code><a class="headerlink" href="#Captcha::$_state" title="Ссылка на это определение">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>mixed</p>
+</dd>
+<dt class="field-even">Scope</dt>
+<dd class="field-even"><p>protected</p>
+</dd>
+</dl>
+<p>The state of the observable object</p>
+</dd></dl>
+
+<dl class="attr">
+<dt id="Captcha::$_methods">
+<em class="property">property </em><code class="sig-name descname">_methods</code><a class="headerlink" href="#Captcha::$_methods" title="Ссылка на это определение">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>array</p>
+</dd>
+<dt class="field-even">Scope</dt>
+<dd class="field-even"><p>protected</p>
+</dd>
+</dl>
+<p>A multi dimensional array of [function][] = key for observers</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Captcha::__construct">
+<code class="sig-name descname">__construct</code><span class="sig-paren">(</span><em class="sig-param">$captcha</em>, <em class="sig-param">$options</em><span class="sig-paren">)</span><a class="headerlink" href="#Captcha::__construct" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Class constructor.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$captcha</strong> – </p></li>
+<li><p><strong>$options</strong> – </p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="Captcha::getInstance">
+<code class="sig-name descname">getInstance</code><span class="sig-paren">(</span><em class="sig-param">$captcha</em>, <em class="sig-param">$options = array()</em><span class="sig-paren">)</span><a class="headerlink" href="#Captcha::getInstance" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Returns the global Captcha object, only creating it
+if it doesn’t already exist.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$captcha</strong> – </p></li>
+<li><p><strong>$options</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>Captcha|null Instance of this class.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="Captcha::initialise">
+<code class="sig-name descname">initialise</code><span class="sig-paren">(</span><em class="sig-param">$id</em><span class="sig-paren">)</span><a class="headerlink" href="#Captcha::initialise" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Fire the onInit event to initialise the captcha plugin.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$id</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>boolean True on success</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="Captcha::display">
+<code class="sig-name descname">display</code><span class="sig-paren">(</span><em class="sig-param">$name</em>, <em class="sig-param">$id</em>, <em class="sig-param">$class = ''</em><span class="sig-paren">)</span><a class="headerlink" href="#Captcha::display" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Get the HTML for the captcha.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$name</strong> – </p></li>
+<li><p><strong>$id</strong> – </p></li>
+<li><p><strong>$class</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>mixed The return value of the function «onDisplay» of the selected Plugin.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="Captcha::checkAnswer">
+<code class="sig-name descname">checkAnswer</code><span class="sig-paren">(</span><em class="sig-param">$code</em><span class="sig-paren">)</span><a class="headerlink" href="#Captcha::checkAnswer" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Checks if the answer is correct.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$code</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>bool Whether the provided answer was correct</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="Captcha::setupField">
+<code class="sig-name descname">setupField</code><span class="sig-paren">(</span><em class="sig-param">JoomlaCMSFormFieldCaptchaField $field</em>, <em class="sig-param">SimpleXMLElement $element</em><span class="sig-paren">)</span><a class="headerlink" href="#Captcha::setupField" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Method to react on the setup of a captcha field. Gives the possibility
+to change the field and/or the XML element for the field.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$field</strong> (<em>JoomlaCMSFormFieldCaptchaField</em>) – </p></li>
+<li><p><strong>$element</strong> (<em>SimpleXMLElement</em>) – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>void</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="Captcha::_load">
+<code class="sig-name descname">_load</code><span class="sig-paren">(</span><em class="sig-param">$options = array()</em><span class="sig-paren">)</span><a class="headerlink" href="#Captcha::_load" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Load the Captcha plugin.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$options</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>void</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="Captcha::getState">
+<code class="sig-name descname">getState</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Captcha::getState" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Get the state of the Captcha object</p>
+<dl class="field-list simple">
+<dt class="field-odd">Результат</dt>
+<dd class="field-odd"><p>mixed The state of the object.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="Captcha::attach">
+<code class="sig-name descname">attach</code><span class="sig-paren">(</span><em class="sig-param">$observer</em><span class="sig-paren">)</span><a class="headerlink" href="#Captcha::attach" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Attach an observer object</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$observer</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>void</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="Captcha::detach">
+<code class="sig-name descname">detach</code><span class="sig-paren">(</span><em class="sig-param">$observer</em><span class="sig-paren">)</span><a class="headerlink" href="#Captcha::detach" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Detach an observer object</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$observer</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>boolean True if the observer object was detached.</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2020, Artem Vasilev &lt;kern.usr@gmail.com&gt;
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

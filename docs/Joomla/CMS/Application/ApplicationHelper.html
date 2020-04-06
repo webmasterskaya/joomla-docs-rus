@@ -1,0 +1,334 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="ru" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="ru" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Joomla\CMS\Application\ApplicationHelper &mdash; документация joomla-docs-rus 3.9.16</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../../../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../../" src="../../../_static/documentation_options.js"></script>
+        <script src="../../../_static/jquery.js"></script>
+        <script src="../../../_static/underscore.js"></script>
+        <script src="../../../_static/doctools.js"></script>
+        <script src="../../../_static/language_data.js"></script>
+        <script src="../../../_static/translations.js"></script>
+    
+    <script type="text/javascript" src="../../../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
+    <link rel="index" title="Алфавитный указатель" href="../../../genindex.html" />
+    <link rel="search" title="Поиск" href="../../../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search"  style="background: white" >
+          
+
+          
+            <a href="../../../index.html" class="icon icon-home"> joomla-docs-rus
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <!-- Local TOC -->
+              <div class="local-toc"><ul>
+<li><a class="reference internal" href="#">Joomla\CMS\Application\ApplicationHelper</a></li>
+</ul>
+</div>
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../../index.html">joomla-docs-rus</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content style-external-links">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../../index.html">Docs</a> &raquo;</li>
+        
+      <li>Joomla\CMS\Application\ApplicationHelper</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../../../_sources/Joomla/CMS/Application/ApplicationHelper.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="joomla-cms-application-applicationhelper">
+<h1>Joomla\CMS\Application\ApplicationHelper<a class="headerlink" href="#joomla-cms-application-applicationhelper" title="Ссылка на этот заголовок">¶</a></h1>
+<dl class="class">
+<dt id="ApplicationHelper">
+<em class="property">class </em><code class="sig-name descname">ApplicationHelper</code><a class="headerlink" href="#ApplicationHelper" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Application helper functions</p>
+<dl class="attr">
+<dt id="ApplicationHelper::$_clients">
+<em class="property">property </em><code class="sig-name descname">_clients</code><a class="headerlink" href="#ApplicationHelper::$_clients" title="Ссылка на это определение">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>array</p>
+</dd>
+<dt class="field-even">Scope</dt>
+<dd class="field-even"><p>protected</p>
+</dd>
+</dl>
+<p>Client information array</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="ApplicationHelper::getComponentName">
+<code class="sig-name descname">getComponentName</code><span class="sig-paren">(</span><em class="sig-param">$default = null</em><span class="sig-paren">)</span><a class="headerlink" href="#ApplicationHelper::getComponentName" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Return the name of the request component [main component]</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$default</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>string Option (e.g. com_something)</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="ApplicationHelper::getHash">
+<code class="sig-name descname">getHash</code><span class="sig-paren">(</span><em class="sig-param">$seed</em><span class="sig-paren">)</span><a class="headerlink" href="#ApplicationHelper::getHash" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Provides a secure hash based on a seed</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$seed</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>string A secure hash</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="ApplicationHelper::stringURLSafe">
+<code class="sig-name descname">stringURLSafe</code><span class="sig-paren">(</span><em class="sig-param">$string</em>, <em class="sig-param">$language = ''</em><span class="sig-paren">)</span><a class="headerlink" href="#ApplicationHelper::stringURLSafe" title="Ссылка на это определение">¶</a></dt>
+<dd><p>This method transliterates a string into a URL
+safe string or returns a URL safe UTF-8 string
+based on the global configuration</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$string</strong> – </p></li>
+<li><p><strong>$language</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>string Processed string</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="ApplicationHelper::getClientInfo">
+<code class="sig-name descname">getClientInfo</code><span class="sig-paren">(</span><em class="sig-param">$id = null</em>, <em class="sig-param">$byName = false</em><span class="sig-paren">)</span><a class="headerlink" href="#ApplicationHelper::getClientInfo" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Gets information on a specific client id.  This method will be useful in
+future versions when we start mapping applications in the database.</p>
+<p>This method will return a client information array if called with no
+arguments which can be used to add custom application information.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$id</strong> – </p></li>
+<li><p><strong>$byName</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>mixed Object describing the client or false if not known</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="ApplicationHelper::addClientInfo">
+<code class="sig-name descname">addClientInfo</code><span class="sig-paren">(</span><em class="sig-param">$client</em><span class="sig-paren">)</span><a class="headerlink" href="#ApplicationHelper::addClientInfo" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Adds information for a client.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$client</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>boolean True if the information is added. False on error</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="ApplicationHelper::parseXMLInstallFile">
+<code class="sig-name descname">parseXMLInstallFile</code><span class="sig-paren">(</span><em class="sig-param">$path</em><span class="sig-paren">)</span><a class="headerlink" href="#ApplicationHelper::parseXMLInstallFile" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Parse a XML install manifest file.</p>
+<p>XML Root tag should be „install“ except for languages which use meta file.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$path</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>array XML metadata.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="ApplicationHelper::parseXMLLangMetaFile">
+<code class="sig-name descname">parseXMLLangMetaFile</code><span class="sig-paren">(</span><em class="sig-param">$path</em><span class="sig-paren">)</span><a class="headerlink" href="#ApplicationHelper::parseXMLLangMetaFile" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Parse a XML language meta file.</p>
+<p>XML Root tag  for languages which is meta file.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$path</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>array XML metadata.</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2020, Artem Vasilev &lt;kern.usr@gmail.com&gt;
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

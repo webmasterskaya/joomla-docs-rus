@@ -1,0 +1,798 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="ru" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="ru" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Joomla\CMS\Client\FtpClient &mdash; документация joomla-docs-rus 3.9.16</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../../../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../../" src="../../../_static/documentation_options.js"></script>
+        <script src="../../../_static/jquery.js"></script>
+        <script src="../../../_static/underscore.js"></script>
+        <script src="../../../_static/doctools.js"></script>
+        <script src="../../../_static/language_data.js"></script>
+        <script src="../../../_static/translations.js"></script>
+    
+    <script type="text/javascript" src="../../../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
+    <link rel="index" title="Алфавитный указатель" href="../../../genindex.html" />
+    <link rel="search" title="Поиск" href="../../../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search"  style="background: white" >
+          
+
+          
+            <a href="../../../index.html" class="icon icon-home"> joomla-docs-rus
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <!-- Local TOC -->
+              <div class="local-toc"><ul>
+<li><a class="reference internal" href="#">Joomla\CMS\Client\FtpClient</a></li>
+</ul>
+</div>
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../../index.html">joomla-docs-rus</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content style-external-links">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../../index.html">Docs</a> &raquo;</li>
+        
+      <li>Joomla\CMS\Client\FtpClient</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../../../_sources/Joomla/CMS/Client/FtpClient.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="joomla-cms-client-ftpclient">
+<h1>Joomla\CMS\Client\FtpClient<a class="headerlink" href="#joomla-cms-client-ftpclient" title="Ссылка на этот заголовок">¶</a></h1>
+<dl class="class">
+<dt id="FtpClient">
+<em class="property">class </em><code class="sig-name descname">FtpClient</code><a class="headerlink" href="#FtpClient" title="Ссылка на это определение">¶</a></dt>
+<dd><p>FTP client class</p>
+<dl class="attr">
+<dt id="FtpClient::$_conn">
+<em class="property">property </em><code class="sig-name descname">_conn</code><a class="headerlink" href="#FtpClient::$_conn" title="Ссылка на это определение">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>resource</p>
+</dd>
+<dt class="field-even">Scope</dt>
+<dd class="field-even"><p>protected</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="attr">
+<dt id="FtpClient::$_dataconn">
+<em class="property">property </em><code class="sig-name descname">_dataconn</code><a class="headerlink" href="#FtpClient::$_dataconn" title="Ссылка на это определение">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>resource</p>
+</dd>
+<dt class="field-even">Scope</dt>
+<dd class="field-even"><p>protected</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="attr">
+<dt id="FtpClient::$_pasv">
+<em class="property">property </em><code class="sig-name descname">_pasv</code><a class="headerlink" href="#FtpClient::$_pasv" title="Ссылка на это определение">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>array</p>
+</dd>
+<dt class="field-even">Scope</dt>
+<dd class="field-even"><p>protected</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="attr">
+<dt id="FtpClient::$_response">
+<em class="property">property </em><code class="sig-name descname">_response</code><a class="headerlink" href="#FtpClient::$_response" title="Ссылка на это определение">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>string</p>
+</dd>
+<dt class="field-even">Scope</dt>
+<dd class="field-even"><p>protected</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="attr">
+<dt id="FtpClient::$_timeout">
+<em class="property">property </em><code class="sig-name descname">_timeout</code><a class="headerlink" href="#FtpClient::$_timeout" title="Ссылка на это определение">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>integer</p>
+</dd>
+<dt class="field-even">Scope</dt>
+<dd class="field-even"><p>protected</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="attr">
+<dt id="FtpClient::$_type">
+<em class="property">property </em><code class="sig-name descname">_type</code><a class="headerlink" href="#FtpClient::$_type" title="Ссылка на это определение">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>integer</p>
+</dd>
+<dt class="field-even">Scope</dt>
+<dd class="field-even"><p>protected</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="attr">
+<dt id="FtpClient::$_autoAscii">
+<em class="property">property </em><code class="sig-name descname">_autoAscii</code><a class="headerlink" href="#FtpClient::$_autoAscii" title="Ссылка на это определение">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>array</p>
+</dd>
+<dt class="field-even">Scope</dt>
+<dd class="field-even"><p>protected</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="attr">
+<dt id="FtpClient::$_lineEndings">
+<em class="property">property </em><code class="sig-name descname">_lineEndings</code><a class="headerlink" href="#FtpClient::$_lineEndings" title="Ссылка на это определение">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>array</p>
+</dd>
+<dt class="field-even">Scope</dt>
+<dd class="field-even"><p>protected</p>
+</dd>
+</dl>
+<p>Array to hold native line ending characters</p>
+</dd></dl>
+
+<dl class="attr">
+<dt id="FtpClient::$instances">
+<em class="property">property </em><code class="sig-name descname">instances</code><a class="headerlink" href="#FtpClient::$instances" title="Ссылка на это определение">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>array</p>
+</dd>
+<dt class="field-even">Scope</dt>
+<dd class="field-even"><p>protected</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="FtpClient::__construct">
+<code class="sig-name descname">__construct</code><span class="sig-paren">(</span><em class="sig-param">$options = array()</em><span class="sig-paren">)</span><a class="headerlink" href="#FtpClient::__construct" title="Ссылка на это определение">¶</a></dt>
+<dd><p>FtpClient object constructor</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$options</strong> – </p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="FtpClient::__destruct">
+<code class="sig-name descname">__destruct</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#FtpClient::__destruct" title="Ссылка на это определение">¶</a></dt>
+<dd><p>FtpClient object destructor</p>
+<p>Closes an existing connection, if we have one</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="FtpClient::getInstance">
+<code class="sig-name descname">getInstance</code><span class="sig-paren">(</span><em class="sig-param">$host = '127.0.0.1'</em>, <em class="sig-param">$port = '21'</em>, <em class="sig-param">$options = array()</em>, <em class="sig-param">$user = null</em>, <em class="sig-param">$pass = null</em><span class="sig-paren">)</span><a class="headerlink" href="#FtpClient::getInstance" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Returns the global FTP connector object, only creating it
+if it doesn’t already exist.</p>
+<p>You may optionally specify a username and password in the parameters. If
+you do so,
+you may not login() again with different credentials using the same
+object.
+If you do not use this option, you must quit() the current connection when
+you are done, to free it for use by others.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$host</strong> – </p></li>
+<li><p><strong>$port</strong> – </p></li>
+<li><p><strong>$options</strong> – </p></li>
+<li><p><strong>$user</strong> – </p></li>
+<li><p><strong>$pass</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>FtpClient The FTP Client object.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="FtpClient::setOptions">
+<code class="sig-name descname">setOptions</code><span class="sig-paren">(</span><em class="sig-param">$options</em><span class="sig-paren">)</span><a class="headerlink" href="#FtpClient::setOptions" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Set client options</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$options</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>boolean True if successful</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="FtpClient::connect">
+<code class="sig-name descname">connect</code><span class="sig-paren">(</span><em class="sig-param">$host = '127.0.0.1'</em>, <em class="sig-param">$port = 21</em><span class="sig-paren">)</span><a class="headerlink" href="#FtpClient::connect" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Method to connect to a FTP server</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$host</strong> – </p></li>
+<li><p><strong>$port</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>boolean True if successful</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="FtpClient::isConnected">
+<code class="sig-name descname">isConnected</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#FtpClient::isConnected" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Method to determine if the object is connected to an FTP server</p>
+<dl class="field-list simple">
+<dt class="field-odd">Результат</dt>
+<dd class="field-odd"><p>boolean True if connected</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="FtpClient::login">
+<code class="sig-name descname">login</code><span class="sig-paren">(</span><em class="sig-param">$user = 'anonymous'</em>, <em class="sig-param">$pass = 'jftp&#64;joomla.org'</em><span class="sig-paren">)</span><a class="headerlink" href="#FtpClient::login" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Method to login to a server once connected</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$user</strong> – </p></li>
+<li><p><strong>$pass</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>boolean True if successful</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="FtpClient::quit">
+<code class="sig-name descname">quit</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#FtpClient::quit" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Method to quit and close the connection</p>
+<dl class="field-list simple">
+<dt class="field-odd">Результат</dt>
+<dd class="field-odd"><p>boolean True if successful</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="FtpClient::pwd">
+<code class="sig-name descname">pwd</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#FtpClient::pwd" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Method to retrieve the current working directory on the FTP server</p>
+<dl class="field-list simple">
+<dt class="field-odd">Результат</dt>
+<dd class="field-odd"><p>string Current working directory</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="FtpClient::syst">
+<code class="sig-name descname">syst</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#FtpClient::syst" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Method to system string from the FTP server</p>
+<dl class="field-list simple">
+<dt class="field-odd">Результат</dt>
+<dd class="field-odd"><p>string System identifier string</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="FtpClient::chdir">
+<code class="sig-name descname">chdir</code><span class="sig-paren">(</span><em class="sig-param">$path</em><span class="sig-paren">)</span><a class="headerlink" href="#FtpClient::chdir" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Method to change the current working directory on the FTP server</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$path</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>boolean True if successful</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="FtpClient::reinit">
+<code class="sig-name descname">reinit</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#FtpClient::reinit" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Method to reinitialise the server, ie. need to login again</p>
+<p>NOTE: This command not available on all servers</p>
+<dl class="field-list simple">
+<dt class="field-odd">Результат</dt>
+<dd class="field-odd"><p>boolean True if successful</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="FtpClient::rename">
+<code class="sig-name descname">rename</code><span class="sig-paren">(</span><em class="sig-param">$from</em>, <em class="sig-param">$to</em><span class="sig-paren">)</span><a class="headerlink" href="#FtpClient::rename" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Method to rename a file/folder on the FTP server</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$from</strong> – </p></li>
+<li><p><strong>$to</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>boolean True if successful</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="FtpClient::chmod">
+<code class="sig-name descname">chmod</code><span class="sig-paren">(</span><em class="sig-param">$path</em>, <em class="sig-param">$mode</em><span class="sig-paren">)</span><a class="headerlink" href="#FtpClient::chmod" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Method to change mode for a path on the FTP server</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$path</strong> – </p></li>
+<li><p><strong>$mode</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>boolean True if successful</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="FtpClient::delete">
+<code class="sig-name descname">delete</code><span class="sig-paren">(</span><em class="sig-param">$path</em><span class="sig-paren">)</span><a class="headerlink" href="#FtpClient::delete" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Method to delete a path [file/folder] on the FTP server</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$path</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>boolean True if successful</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="FtpClient::mkdir">
+<code class="sig-name descname">mkdir</code><span class="sig-paren">(</span><em class="sig-param">$path</em><span class="sig-paren">)</span><a class="headerlink" href="#FtpClient::mkdir" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Method to create a directory on the FTP server</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$path</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>boolean True if successful</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="FtpClient::restart">
+<code class="sig-name descname">restart</code><span class="sig-paren">(</span><em class="sig-param">$point</em><span class="sig-paren">)</span><a class="headerlink" href="#FtpClient::restart" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Method to restart data transfer at a given byte</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$point</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>boolean True if successful</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="FtpClient::create">
+<code class="sig-name descname">create</code><span class="sig-paren">(</span><em class="sig-param">$path</em><span class="sig-paren">)</span><a class="headerlink" href="#FtpClient::create" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Method to create an empty file on the FTP server</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$path</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>boolean True if successful</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="FtpClient::read">
+<code class="sig-name descname">read</code><span class="sig-paren">(</span><em class="sig-param">$remote</em>, <em class="sig-param">$buffer</em><span class="sig-paren">)</span><a class="headerlink" href="#FtpClient::read" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Method to read a file from the FTP server’s contents into a buffer</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$remote</strong> – </p></li>
+<li><p><strong>$buffer</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>boolean True if successful</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="FtpClient::get">
+<code class="sig-name descname">get</code><span class="sig-paren">(</span><em class="sig-param">$local</em>, <em class="sig-param">$remote</em><span class="sig-paren">)</span><a class="headerlink" href="#FtpClient::get" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Method to get a file from the FTP server and save it to a local file</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$local</strong> – </p></li>
+<li><p><strong>$remote</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>boolean True if successful</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="FtpClient::store">
+<code class="sig-name descname">store</code><span class="sig-paren">(</span><em class="sig-param">$local</em>, <em class="sig-param">$remote = null</em><span class="sig-paren">)</span><a class="headerlink" href="#FtpClient::store" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Method to store a file to the FTP server</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$local</strong> – </p></li>
+<li><p><strong>$remote</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>boolean True if successful</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="FtpClient::write">
+<code class="sig-name descname">write</code><span class="sig-paren">(</span><em class="sig-param">$remote</em>, <em class="sig-param">$buffer</em><span class="sig-paren">)</span><a class="headerlink" href="#FtpClient::write" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Method to write a string to the FTP server</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$remote</strong> – </p></li>
+<li><p><strong>$buffer</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>boolean True if successful</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="FtpClient::append">
+<code class="sig-name descname">append</code><span class="sig-paren">(</span><em class="sig-param">$remote</em>, <em class="sig-param">$buffer</em><span class="sig-paren">)</span><a class="headerlink" href="#FtpClient::append" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Method to append a string to the FTP server</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$remote</strong> – </p></li>
+<li><p><strong>$buffer</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>boolean True if successful</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="FtpClient::size">
+<code class="sig-name descname">size</code><span class="sig-paren">(</span><em class="sig-param">$remote</em><span class="sig-paren">)</span><a class="headerlink" href="#FtpClient::size" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Get the size of the remote file.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$remote</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>mixed number of bytes or false on error</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="FtpClient::listNames">
+<code class="sig-name descname">listNames</code><span class="sig-paren">(</span><em class="sig-param">$path = null</em><span class="sig-paren">)</span><a class="headerlink" href="#FtpClient::listNames" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Method to list the filenames of the contents of a directory on the FTP
+server</p>
+<p>Note: Some servers also return folder names. However, to be sure to list
+folders on all servers, you should use listDetails() instead if you also
+need to deal with folders</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$path</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>string Directory listing</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="FtpClient::listDetails">
+<code class="sig-name descname">listDetails</code><span class="sig-paren">(</span><em class="sig-param">$path = null</em>, <em class="sig-param">$type = 'all'</em><span class="sig-paren">)</span><a class="headerlink" href="#FtpClient::listDetails" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Method to list the contents of a directory on the FTP server</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$path</strong> – </p></li>
+<li><p><strong>$type</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>mixed If $type is raw: string Directory listing, otherwise array of string with file-names</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="FtpClient::_putCmd">
+<code class="sig-name descname">_putCmd</code><span class="sig-paren">(</span><em class="sig-param">$cmd</em>, <em class="sig-param">$expectedResponse</em><span class="sig-paren">)</span><a class="headerlink" href="#FtpClient::_putCmd" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Send command to the FTP server and validate an expected response code</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$cmd</strong> – </p></li>
+<li><p><strong>$expectedResponse</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>boolean True if command executed successfully</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="FtpClient::_verifyResponse">
+<code class="sig-name descname">_verifyResponse</code><span class="sig-paren">(</span><em class="sig-param">$expected</em><span class="sig-paren">)</span><a class="headerlink" href="#FtpClient::_verifyResponse" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Verify the response code from the server and log response if flag is set</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$expected</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>boolean True if response code from the server is expected</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="FtpClient::_passive">
+<code class="sig-name descname">_passive</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#FtpClient::_passive" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Set server to passive mode and open a data port connection</p>
+<dl class="field-list simple">
+<dt class="field-odd">Результат</dt>
+<dd class="field-odd"><p>boolean True if successful</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="FtpClient::_findMode">
+<code class="sig-name descname">_findMode</code><span class="sig-paren">(</span><em class="sig-param">$fileName</em><span class="sig-paren">)</span><a class="headerlink" href="#FtpClient::_findMode" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Method to find out the correct transfer mode for a specific file</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$fileName</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>integer Transfer-mode for this filetype [FTP_ASCII|FTP_BINARY]</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="FtpClient::_mode">
+<code class="sig-name descname">_mode</code><span class="sig-paren">(</span><em class="sig-param">$mode</em><span class="sig-paren">)</span><a class="headerlink" href="#FtpClient::_mode" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Set transfer mode</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$mode</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>boolean True if successful</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2020, Artem Vasilev &lt;kern.usr@gmail.com&gt;
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

@@ -1,0 +1,1398 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="ru" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="ru" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Joomla\CMS\Table\Category &mdash; документация joomla-docs-rus 3.9.16</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../../../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../../" src="../../../_static/documentation_options.js"></script>
+        <script src="../../../_static/jquery.js"></script>
+        <script src="../../../_static/underscore.js"></script>
+        <script src="../../../_static/doctools.js"></script>
+        <script src="../../../_static/language_data.js"></script>
+        <script src="../../../_static/translations.js"></script>
+    
+    <script type="text/javascript" src="../../../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
+    <link rel="index" title="Алфавитный указатель" href="../../../genindex.html" />
+    <link rel="search" title="Поиск" href="../../../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search"  style="background: white" >
+          
+
+          
+            <a href="../../../index.html" class="icon icon-home"> joomla-docs-rus
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <!-- Local TOC -->
+              <div class="local-toc"><ul>
+<li><a class="reference internal" href="#">Joomla\CMS\Table\Category</a></li>
+</ul>
+</div>
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../../index.html">joomla-docs-rus</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content style-external-links">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../../index.html">Docs</a> &raquo;</li>
+        
+      <li>Joomla\CMS\Table\Category</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../../../_sources/Joomla/CMS/Table/Category.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="joomla-cms-table-category">
+<h1>Joomla\CMS\Table\Category<a class="headerlink" href="#joomla-cms-table-category" title="Ссылка на этот заголовок">¶</a></h1>
+<dl class="class">
+<dt id="Category">
+<em class="property">class </em><code class="sig-name descname">Category</code><a class="headerlink" href="#Category" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Category table</p>
+<dl class="attr">
+<dt id="Category::$parent_id">
+<em class="property">property </em><code class="sig-name descname">parent_id</code><a class="headerlink" href="#Category::$parent_id" title="Ссылка на это определение">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>integer</p>
+</dd>
+</dl>
+<p>Object property holding the primary key of the parent node.  Provides
+adjacency list data for nodes.</p>
+</dd></dl>
+
+<dl class="attr">
+<dt id="Category::$level">
+<em class="property">property </em><code class="sig-name descname">level</code><a class="headerlink" href="#Category::$level" title="Ссылка на это определение">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>integer</p>
+</dd>
+</dl>
+<p>Object property holding the depth level of the node in the tree.</p>
+</dd></dl>
+
+<dl class="attr">
+<dt id="Category::$lft">
+<em class="property">property </em><code class="sig-name descname">lft</code><a class="headerlink" href="#Category::$lft" title="Ссылка на это определение">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>integer</p>
+</dd>
+</dl>
+<p>Object property holding the left value of the node for managing its
+placement in the nested sets tree.</p>
+</dd></dl>
+
+<dl class="attr">
+<dt id="Category::$rgt">
+<em class="property">property </em><code class="sig-name descname">rgt</code><a class="headerlink" href="#Category::$rgt" title="Ссылка на это определение">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>integer</p>
+</dd>
+</dl>
+<p>Object property holding the right value of the node for managing its
+placement in the nested sets tree.</p>
+</dd></dl>
+
+<dl class="attr">
+<dt id="Category::$alias">
+<em class="property">property </em><code class="sig-name descname">alias</code><a class="headerlink" href="#Category::$alias" title="Ссылка на это определение">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>string</p>
+</dd>
+</dl>
+<p>Object property holding the alias of this node used to constuct the full
+text path, forward-slash delimited.</p>
+</dd></dl>
+
+<dl class="attr">
+<dt id="Category::$_location">
+<em class="property">property </em><code class="sig-name descname">_location</code><a class="headerlink" href="#Category::$_location" title="Ссылка на это определение">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>string</p>
+</dd>
+<dt class="field-even">Scope</dt>
+<dd class="field-even"><p>protected</p>
+</dd>
+</dl>
+<p>Object property to hold the location type to use when storing the row.</p>
+</dd></dl>
+
+<dl class="attr">
+<dt id="Category::$_location_id">
+<em class="property">property </em><code class="sig-name descname">_location_id</code><a class="headerlink" href="#Category::$_location_id" title="Ссылка на это определение">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>integer</p>
+</dd>
+<dt class="field-even">Scope</dt>
+<dd class="field-even"><p>protected</p>
+</dd>
+</dl>
+<p>Object property to hold the primary key of the location reference node to
+use when storing the row.</p>
+<p>A combination of location type and reference node describes where to store
+the current node in the tree.</p>
+</dd></dl>
+
+<dl class="attr">
+<dt id="Category::$_cache">
+<em class="property">property </em><code class="sig-name descname">_cache</code><a class="headerlink" href="#Category::$_cache" title="Ссылка на это определение">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>array</p>
+</dd>
+<dt class="field-even">Scope</dt>
+<dd class="field-even"><p>protected</p>
+</dd>
+</dl>
+<p>An array to cache values in recursive processes.</p>
+</dd></dl>
+
+<dl class="attr">
+<dt id="Category::$_debug">
+<em class="property">property </em><code class="sig-name descname">_debug</code><a class="headerlink" href="#Category::$_debug" title="Ссылка на это определение">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>integer</p>
+</dd>
+<dt class="field-even">Scope</dt>
+<dd class="field-even"><p>protected</p>
+</dd>
+</dl>
+<p>Debug level</p>
+</dd></dl>
+
+<dl class="attr">
+<dt id="Category::$root_id">
+<em class="property">property </em><code class="sig-name descname">root_id</code><a class="headerlink" href="#Category::$root_id" title="Ссылка на это определение">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>integer</p>
+</dd>
+<dt class="field-even">Scope</dt>
+<dd class="field-even"><p>protected</p>
+</dd>
+</dl>
+<p>Cache for the root ID</p>
+</dd></dl>
+
+<dl class="attr">
+<dt id="Category::$_tbl">
+<em class="property">property </em><code class="sig-name descname">_tbl</code><a class="headerlink" href="#Category::$_tbl" title="Ссылка на это определение">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>string</p>
+</dd>
+<dt class="field-even">Scope</dt>
+<dd class="field-even"><p>protected</p>
+</dd>
+</dl>
+<p>Name of the database table to model.</p>
+</dd></dl>
+
+<dl class="attr">
+<dt id="Category::$_tbl_key">
+<em class="property">property </em><code class="sig-name descname">_tbl_key</code><a class="headerlink" href="#Category::$_tbl_key" title="Ссылка на это определение">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>string</p>
+</dd>
+<dt class="field-even">Scope</dt>
+<dd class="field-even"><p>protected</p>
+</dd>
+</dl>
+<p>Name of the primary key field in the table.</p>
+</dd></dl>
+
+<dl class="attr">
+<dt id="Category::$_tbl_keys">
+<em class="property">property </em><code class="sig-name descname">_tbl_keys</code><a class="headerlink" href="#Category::$_tbl_keys" title="Ссылка на это определение">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>array</p>
+</dd>
+<dt class="field-even">Scope</dt>
+<dd class="field-even"><p>protected</p>
+</dd>
+</dl>
+<p>Name of the primary key fields in the table.</p>
+</dd></dl>
+
+<dl class="attr">
+<dt id="Category::$_db">
+<em class="property">property </em><code class="sig-name descname">_db</code><a class="headerlink" href="#Category::$_db" title="Ссылка на это определение">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>JDatabaseDriver</p>
+</dd>
+<dt class="field-even">Scope</dt>
+<dd class="field-even"><p>protected</p>
+</dd>
+</dl>
+<p>JDatabaseDriver object.</p>
+</dd></dl>
+
+<dl class="attr">
+<dt id="Category::$_trackAssets">
+<em class="property">property </em><code class="sig-name descname">_trackAssets</code><a class="headerlink" href="#Category::$_trackAssets" title="Ссылка на это определение">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>boolean</p>
+</dd>
+<dt class="field-even">Scope</dt>
+<dd class="field-even"><p>protected</p>
+</dd>
+</dl>
+<p>Should rows be tracked as ACL assets?</p>
+</dd></dl>
+
+<dl class="attr">
+<dt id="Category::$_rules">
+<em class="property">property </em><code class="sig-name descname">_rules</code><a class="headerlink" href="#Category::$_rules" title="Ссылка на это определение">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>JAccessRules</p>
+</dd>
+<dt class="field-even">Scope</dt>
+<dd class="field-even"><p>protected</p>
+</dd>
+</dl>
+<p>The rules associated with this record.</p>
+</dd></dl>
+
+<dl class="attr">
+<dt id="Category::$_locked">
+<em class="property">property </em><code class="sig-name descname">_locked</code><a class="headerlink" href="#Category::$_locked" title="Ссылка на это определение">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>boolean</p>
+</dd>
+<dt class="field-even">Scope</dt>
+<dd class="field-even"><p>protected</p>
+</dd>
+</dl>
+<p>Indicator that the tables have been locked.</p>
+</dd></dl>
+
+<dl class="attr">
+<dt id="Category::$_autoincrement">
+<em class="property">property </em><code class="sig-name descname">_autoincrement</code><a class="headerlink" href="#Category::$_autoincrement" title="Ссылка на это определение">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>boolean</p>
+</dd>
+<dt class="field-even">Scope</dt>
+<dd class="field-even"><p>protected</p>
+</dd>
+</dl>
+<p>Indicates that the primary keys autoincrement.</p>
+</dd></dl>
+
+<dl class="attr">
+<dt id="Category::$_observers">
+<em class="property">property </em><code class="sig-name descname">_observers</code><a class="headerlink" href="#Category::$_observers" title="Ссылка на это определение">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>JObserverUpdater</p>
+</dd>
+<dt class="field-even">Scope</dt>
+<dd class="field-even"><p>protected</p>
+</dd>
+</dl>
+<p>Generic observers for this Table (Used e.g. for tags Processing)</p>
+</dd></dl>
+
+<dl class="attr">
+<dt id="Category::$_columnAlias">
+<em class="property">property </em><code class="sig-name descname">_columnAlias</code><a class="headerlink" href="#Category::$_columnAlias" title="Ссылка на это определение">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>array</p>
+</dd>
+<dt class="field-even">Scope</dt>
+<dd class="field-even"><p>protected</p>
+</dd>
+</dl>
+<p>Array with alias for «special» columns such as ordering, hits etc etc</p>
+</dd></dl>
+
+<dl class="attr">
+<dt id="Category::$_jsonEncode">
+<em class="property">property </em><code class="sig-name descname">_jsonEncode</code><a class="headerlink" href="#Category::$_jsonEncode" title="Ссылка на это определение">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>array</p>
+</dd>
+<dt class="field-even">Scope</dt>
+<dd class="field-even"><p>protected</p>
+</dd>
+</dl>
+<p>An array of key names to be json encoded in the bind function</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Category::__construct">
+<code class="sig-name descname">__construct</code><span class="sig-paren">(</span><em class="sig-param">JDatabaseDriver $db</em><span class="sig-paren">)</span><a class="headerlink" href="#Category::__construct" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Constructor</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$db</strong> (<em>JDatabaseDriver</em>) – </p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="Category::_getAssetName">
+<code class="sig-name descname">_getAssetName</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Category::_getAssetName" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Method to compute the default name of the asset.
+The default name is in the form table_name.id
+where id is the value of the primary key of the table.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Результат</dt>
+<dd class="field-odd"><p>string</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="Category::_getAssetTitle">
+<code class="sig-name descname">_getAssetTitle</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Category::_getAssetTitle" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Method to return the title to use for the asset table.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Результат</dt>
+<dd class="field-odd"><p>string</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="Category::_getAssetParentId">
+<code class="sig-name descname">_getAssetParentId</code><span class="sig-paren">(</span><em class="sig-param">Table $table = null</em>, <em class="sig-param">$id = null</em><span class="sig-paren">)</span><a class="headerlink" href="#Category::_getAssetParentId" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Get the parent asset id for the record</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$table</strong> (<a class="reference internal" href="Table.html#Table" title="Table"><em>Table</em></a>) – </p></li>
+<li><p><strong>$id</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>integer The id of the asset’s parent</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="Category::check">
+<code class="sig-name descname">check</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Category::check" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Override check function</p>
+<dl class="field-list simple">
+<dt class="field-odd">Результат</dt>
+<dd class="field-odd"><p>boolean</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="Category::bind">
+<code class="sig-name descname">bind</code><span class="sig-paren">(</span><em class="sig-param">$array</em>, <em class="sig-param">$ignore = ''</em><span class="sig-paren">)</span><a class="headerlink" href="#Category::bind" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Overloaded bind function.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$array</strong> – </p></li>
+<li><p><strong>$ignore</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>mixed Null if operation was satisfactory, otherwise returns an error</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="Category::store">
+<code class="sig-name descname">store</code><span class="sig-paren">(</span><em class="sig-param">$updateNulls = false</em><span class="sig-paren">)</span><a class="headerlink" href="#Category::store" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Overridden Table::store to set created/modified and user id.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$updateNulls</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>boolean True on success.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="Category::debug">
+<code class="sig-name descname">debug</code><span class="sig-paren">(</span><em class="sig-param">$level</em><span class="sig-paren">)</span><a class="headerlink" href="#Category::debug" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Sets the debug level on or off</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$level</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>void</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="Category::getPath">
+<code class="sig-name descname">getPath</code><span class="sig-paren">(</span><em class="sig-param">$pk = null</em>, <em class="sig-param">$diagnostic = false</em><span class="sig-paren">)</span><a class="headerlink" href="#Category::getPath" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Method to get an array of nodes from a given node to its root.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$pk</strong> – </p></li>
+<li><p><strong>$diagnostic</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>mixed An array of node objects including the start node.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="Category::getTree">
+<code class="sig-name descname">getTree</code><span class="sig-paren">(</span><em class="sig-param">$pk = null</em>, <em class="sig-param">$diagnostic = false</em><span class="sig-paren">)</span><a class="headerlink" href="#Category::getTree" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Method to get a node and all its child nodes.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$pk</strong> – </p></li>
+<li><p><strong>$diagnostic</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>mixed Boolean false on failure or array of node objects on success.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="Category::isLeaf">
+<code class="sig-name descname">isLeaf</code><span class="sig-paren">(</span><em class="sig-param">$pk = null</em><span class="sig-paren">)</span><a class="headerlink" href="#Category::isLeaf" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Method to determine if a node is a leaf node in the tree (has no
+children).</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$pk</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>boolean True if a leaf node, false if not or null if the node does not exist.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="Category::setLocation">
+<code class="sig-name descname">setLocation</code><span class="sig-paren">(</span><em class="sig-param">$referenceId</em>, <em class="sig-param">$position = 'after'</em><span class="sig-paren">)</span><a class="headerlink" href="#Category::setLocation" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Method to set the location of a node in the tree object.  This method does
+not
+save the new location to the database, but will set it in the object so
+that when the node is stored it will be stored in the new location.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$referenceId</strong> – </p></li>
+<li><p><strong>$position</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>void</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="Category::move">
+<code class="sig-name descname">move</code><span class="sig-paren">(</span><em class="sig-param">$delta</em>, <em class="sig-param">$where = ''</em><span class="sig-paren">)</span><a class="headerlink" href="#Category::move" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Method to move a row in the ordering sequence of a group of rows defined
+by an SQL WHERE clause.
+Negative numbers move the row up in the sequence and positive numbers move
+it down.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$delta</strong> – </p></li>
+<li><p><strong>$where</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>mixed Boolean true on success.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="Category::moveByReference">
+<code class="sig-name descname">moveByReference</code><span class="sig-paren">(</span><em class="sig-param">$referenceId</em>, <em class="sig-param">$position = 'after'</em>, <em class="sig-param">$pk = null</em>, <em class="sig-param">$recursiveUpdate = true</em><span class="sig-paren">)</span><a class="headerlink" href="#Category::moveByReference" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Method to move a node and its children to a new location in the tree.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$referenceId</strong> – </p></li>
+<li><p><strong>$position</strong> – </p></li>
+<li><p><strong>$pk</strong> – </p></li>
+<li><p><strong>$recursiveUpdate</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>boolean True on success.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="Category::delete">
+<code class="sig-name descname">delete</code><span class="sig-paren">(</span><em class="sig-param">$pk = null</em>, <em class="sig-param">$children = true</em><span class="sig-paren">)</span><a class="headerlink" href="#Category::delete" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Method to delete a node and, optionally, its child nodes from the table.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$pk</strong> – </p></li>
+<li><p><strong>$children</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>boolean True on success.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="Category::publish">
+<code class="sig-name descname">publish</code><span class="sig-paren">(</span><em class="sig-param">$pks = null</em>, <em class="sig-param">$state = 1</em>, <em class="sig-param">$userId = 0</em><span class="sig-paren">)</span><a class="headerlink" href="#Category::publish" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Method to set the publishing state for a node or list of nodes in the
+database
+table.  The method respects rows checked out by other users and will
+attempt
+to checkin rows that it can after adjustments are made. The method will
+not
+allow you to set a publishing state higher than any ancestor node and will
+not allow you to set a publishing state on a node with a checked out
+child.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$pks</strong> – </p></li>
+<li><p><strong>$state</strong> – </p></li>
+<li><p><strong>$userId</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>boolean True on success.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="Category::orderUp">
+<code class="sig-name descname">orderUp</code><span class="sig-paren">(</span><em class="sig-param">$pk</em><span class="sig-paren">)</span><a class="headerlink" href="#Category::orderUp" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Method to move a node one position to the left in the same level.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$pk</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>boolean True on success.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="Category::orderDown">
+<code class="sig-name descname">orderDown</code><span class="sig-paren">(</span><em class="sig-param">$pk</em><span class="sig-paren">)</span><a class="headerlink" href="#Category::orderDown" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Method to move a node one position to the right in the same level.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$pk</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>boolean True on success.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="Category::getRootId">
+<code class="sig-name descname">getRootId</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Category::getRootId" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Gets the ID of the root item in the tree</p>
+<dl class="field-list simple">
+<dt class="field-odd">Результат</dt>
+<dd class="field-odd"><p>mixed The primary id of the root row, or false if not found and the internal error is set.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="Category::rebuild">
+<code class="sig-name descname">rebuild</code><span class="sig-paren">(</span><em class="sig-param">$parentId = null</em>, <em class="sig-param">$leftId = 0</em>, <em class="sig-param">$level = 0</em>, <em class="sig-param">$path = ''</em><span class="sig-paren">)</span><a class="headerlink" href="#Category::rebuild" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Method to recursively rebuild the whole nested set tree.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$parentId</strong> – </p></li>
+<li><p><strong>$leftId</strong> – </p></li>
+<li><p><strong>$level</strong> – </p></li>
+<li><p><strong>$path</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>integer 1 + value of root rgt on success, false on failure</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="Category::rebuildPath">
+<code class="sig-name descname">rebuildPath</code><span class="sig-paren">(</span><em class="sig-param">$pk = null</em><span class="sig-paren">)</span><a class="headerlink" href="#Category::rebuildPath" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Method to rebuild the node’s path field from the alias values of the nodes
+from the current node to the root node of the tree.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$pk</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>boolean True on success.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="Category::reset">
+<code class="sig-name descname">reset</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Category::reset" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Method to reset class properties to the defaults set in the class
+definition. It will ignore the primary key as well as any private class
+properties (except $_errors).</p>
+<dl class="field-list simple">
+<dt class="field-odd">Результат</dt>
+<dd class="field-odd"><p>void</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="Category::saveorder">
+<code class="sig-name descname">saveorder</code><span class="sig-paren">(</span><em class="sig-param">$idArray = null</em>, <em class="sig-param">$lft_array = null</em><span class="sig-paren">)</span><a class="headerlink" href="#Category::saveorder" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Method to update order of table rows</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$idArray</strong> – </p></li>
+<li><p><strong>$lft_array</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>integer 1 + value of root rgt on success, false on failure.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="Category::recursiveUpdatePublishedColumn">
+<code class="sig-name descname">recursiveUpdatePublishedColumn</code><span class="sig-paren">(</span><em class="sig-param">$pk</em>, <em class="sig-param">$newState = null</em><span class="sig-paren">)</span><a class="headerlink" href="#Category::recursiveUpdatePublishedColumn" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Method to recursive update published column for children rows.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$pk</strong> – </p></li>
+<li><p><strong>$newState</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>boolean True on success.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="Category::_getNode">
+<code class="sig-name descname">_getNode</code><span class="sig-paren">(</span><em class="sig-param">$id</em>, <em class="sig-param">$key = null</em><span class="sig-paren">)</span><a class="headerlink" href="#Category::_getNode" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Method to get nested set properties for a node in the tree.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$id</strong> – </p></li>
+<li><p><strong>$key</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>mixed Boolean false on failure or node object on success.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="Category::_getTreeRepositionData">
+<code class="sig-name descname">_getTreeRepositionData</code><span class="sig-paren">(</span><em class="sig-param">$referenceNode</em>, <em class="sig-param">$nodeWidth</em>, <em class="sig-param">$position = 'before'</em><span class="sig-paren">)</span><a class="headerlink" href="#Category::_getTreeRepositionData" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Method to get various data necessary to make room in the tree at a
+location
+for a node and its children.  The returned data object includes conditions
+for SQL WHERE clauses for updating left and right id values to make room
+for
+the node as well as the new left and right ids for the node.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$referenceNode</strong> – </p></li>
+<li><p><strong>$nodeWidth</strong> – </p></li>
+<li><p><strong>$position</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>mixed Boolean false on failure or data object on success.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="Category::_logtable">
+<code class="sig-name descname">_logtable</code><span class="sig-paren">(</span><em class="sig-param">$showData = true</em>, <em class="sig-param">$showQuery = true</em><span class="sig-paren">)</span><a class="headerlink" href="#Category::_logtable" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Method to create a log table in the buffer optionally showing the query
+and/or data.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$showData</strong> – </p></li>
+<li><p><strong>$showQuery</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>void</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="Category::_runQuery">
+<code class="sig-name descname">_runQuery</code><span class="sig-paren">(</span><em class="sig-param">$query</em>, <em class="sig-param">$errorMessage</em><span class="sig-paren">)</span><a class="headerlink" href="#Category::_runQuery" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Runs a query and unlocks the database on an error.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$query</strong> – </p></li>
+<li><p><strong>$errorMessage</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>boolean void</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="Category::attachObserver">
+<code class="sig-name descname">attachObserver</code><span class="sig-paren">(</span><em class="sig-param">JObserverInterface $observer</em><span class="sig-paren">)</span><a class="headerlink" href="#Category::attachObserver" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Implement JObservableInterface:
+Adds an observer to this instance.
+This method will be called fron the constructor of classes implementing
+JObserverInterface
+which is instanciated by the constructor of $this with
+JObserverMapper::attachAllObservers($this)</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$observer</strong> (<em>JObserverInterface</em>) – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>void</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="Category::getObserverOfClass">
+<code class="sig-name descname">getObserverOfClass</code><span class="sig-paren">(</span><em class="sig-param">$observerClass</em><span class="sig-paren">)</span><a class="headerlink" href="#Category::getObserverOfClass" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Gets the instance of the observer of class $observerClass</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$observerClass</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>JTableObserver|null</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="Category::getFields">
+<code class="sig-name descname">getFields</code><span class="sig-paren">(</span><em class="sig-param">$reload = false</em><span class="sig-paren">)</span><a class="headerlink" href="#Category::getFields" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Get the columns from database table.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$reload</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>mixed An array of the field names, or false if an error occurs.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="Category::getInstance">
+<code class="sig-name descname">getInstance</code><span class="sig-paren">(</span><em class="sig-param">$type</em>, <em class="sig-param">$prefix = 'JTable'</em>, <em class="sig-param">$config = array()</em><span class="sig-paren">)</span><a class="headerlink" href="#Category::getInstance" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Static method to get an instance of a Table class if it can be found in
+the table include paths.</p>
+<p>To add include paths for searching for Table classes see
+Table::addIncludePath().</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$type</strong> – </p></li>
+<li><p><strong>$prefix</strong> – </p></li>
+<li><p><strong>$config</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>Table|boolean A Table object if found or boolean false on failure.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="Category::addIncludePath">
+<code class="sig-name descname">addIncludePath</code><span class="sig-paren">(</span><em class="sig-param">$path = null</em><span class="sig-paren">)</span><a class="headerlink" href="#Category::addIncludePath" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Add a filesystem path where Table should search for table class files.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$path</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>array An array of filesystem paths to find Table classes in.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="Category::appendPrimaryKeys">
+<code class="sig-name descname">appendPrimaryKeys</code><span class="sig-paren">(</span><em class="sig-param">$query</em>, <em class="sig-param">$pk = null</em><span class="sig-paren">)</span><a class="headerlink" href="#Category::appendPrimaryKeys" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Method to append the primary keys for this table to a query.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$query</strong> – </p></li>
+<li><p><strong>$pk</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>void</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="Category::getTableName">
+<code class="sig-name descname">getTableName</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Category::getTableName" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Method to get the database table name for the class.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Результат</dt>
+<dd class="field-odd"><p>string The name of the database table being modeled.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="Category::getKeyName">
+<code class="sig-name descname">getKeyName</code><span class="sig-paren">(</span><em class="sig-param">$multiple = false</em><span class="sig-paren">)</span><a class="headerlink" href="#Category::getKeyName" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Method to get the primary key field name for the table.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$multiple</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>mixed Array of primary key field names or string containing the first primary key field.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="Category::getDbo">
+<code class="sig-name descname">getDbo</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Category::getDbo" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Method to get the JDatabaseDriver object.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Результат</dt>
+<dd class="field-odd"><p>JDatabaseDriver The internal database driver object.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="Category::setDbo">
+<code class="sig-name descname">setDbo</code><span class="sig-paren">(</span><em class="sig-param">$db</em><span class="sig-paren">)</span><a class="headerlink" href="#Category::setDbo" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Method to set the JDatabaseDriver object.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$db</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>boolean True on success.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="Category::setRules">
+<code class="sig-name descname">setRules</code><span class="sig-paren">(</span><em class="sig-param">$input</em><span class="sig-paren">)</span><a class="headerlink" href="#Category::setRules" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Method to set rules for the record.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$input</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>void</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="Category::getRules">
+<code class="sig-name descname">getRules</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Category::getRules" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Method to get the rules for the record.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Результат</dt>
+<dd class="field-odd"><p>JAccessRules object</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="Category::load">
+<code class="sig-name descname">load</code><span class="sig-paren">(</span><em class="sig-param">$keys = null</em>, <em class="sig-param">$reset = true</em><span class="sig-paren">)</span><a class="headerlink" href="#Category::load" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Method to load a row from the database by primary key and bind the fields
+to the Table instance properties.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$keys</strong> – </p></li>
+<li><p><strong>$reset</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>boolean True if successful. False if row not found.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="Category::save">
+<code class="sig-name descname">save</code><span class="sig-paren">(</span><em class="sig-param">$src</em>, <em class="sig-param">$orderingFilter = ''</em>, <em class="sig-param">$ignore = ''</em><span class="sig-paren">)</span><a class="headerlink" href="#Category::save" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Method to provide a shortcut to binding, checking and storing a Table
+instance to the database table.</p>
+<p>The method will check a row in once the data has been stored and if an
+ordering filter is present will attempt to reorder the table rows based on
+the filter.  The ordering filter is an instance property name.  The rows
+that will be reordered are those whose value matches the Table instance
+for the property specified.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$src</strong> – </p></li>
+<li><p><strong>$orderingFilter</strong> – </p></li>
+<li><p><strong>$ignore</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>boolean True on success.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="Category::checkOut">
+<code class="sig-name descname">checkOut</code><span class="sig-paren">(</span><em class="sig-param">$userId</em>, <em class="sig-param">$pk = null</em><span class="sig-paren">)</span><a class="headerlink" href="#Category::checkOut" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Method to check a row out if the necessary properties/fields exist.</p>
+<p>To prevent race conditions while editing rows in a database, a row can be
+checked out if the fields „checked_out“ and „checked_out_time“
+are available. While a row is checked out, any attempt to store the row by
+a user other than the one who checked the row out should be held until the
+row is checked in again.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$userId</strong> – </p></li>
+<li><p><strong>$pk</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>boolean True on success.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="Category::checkIn">
+<code class="sig-name descname">checkIn</code><span class="sig-paren">(</span><em class="sig-param">$pk = null</em><span class="sig-paren">)</span><a class="headerlink" href="#Category::checkIn" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Method to check a row in if the necessary properties/fields exist.</p>
+<p>Checking a row in will allow other users the ability to edit the row.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$pk</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>boolean True on success.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="Category::hasPrimaryKey">
+<code class="sig-name descname">hasPrimaryKey</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Category::hasPrimaryKey" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Validate that the primary key has been set.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Результат</dt>
+<dd class="field-odd"><p>boolean True if the primary key(s) have been set.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="Category::hit">
+<code class="sig-name descname">hit</code><span class="sig-paren">(</span><em class="sig-param">$pk = null</em><span class="sig-paren">)</span><a class="headerlink" href="#Category::hit" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Method to increment the hits for a row if the necessary property/field
+exists.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$pk</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>boolean True on success.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="Category::isCheckedOut">
+<code class="sig-name descname">isCheckedOut</code><span class="sig-paren">(</span><em class="sig-param">$with = 0</em>, <em class="sig-param">$against = null</em><span class="sig-paren">)</span><a class="headerlink" href="#Category::isCheckedOut" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Method to determine if a row is checked out and therefore uneditable by a
+user.</p>
+<p>If the row is checked out by the same user, then it is considered not
+checked out – as the user can still edit it.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$with</strong> – </p></li>
+<li><p><strong>$against</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>boolean True if checked out.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="Category::getNextOrder">
+<code class="sig-name descname">getNextOrder</code><span class="sig-paren">(</span><em class="sig-param">$where = ''</em><span class="sig-paren">)</span><a class="headerlink" href="#Category::getNextOrder" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Method to get the next ordering value for a group of rows defined by an
+SQL WHERE clause.</p>
+<p>This is useful for placing a new item last in a group of items in the
+table.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$where</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>integer The next ordering value.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="Category::getPrimaryKey">
+<code class="sig-name descname">getPrimaryKey</code><span class="sig-paren">(</span><em class="sig-param">$keys = array()</em><span class="sig-paren">)</span><a class="headerlink" href="#Category::getPrimaryKey" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Get the primary key values for this table using passed in values as a
+default.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$keys</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>array An array of primary key names and values.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="Category::reorder">
+<code class="sig-name descname">reorder</code><span class="sig-paren">(</span><em class="sig-param">$where = ''</em><span class="sig-paren">)</span><a class="headerlink" href="#Category::reorder" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Method to compact the ordering values of rows in a group of rows defined
+by an SQL WHERE clause.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$where</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>mixed Boolean True on success.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="Category::_lock">
+<code class="sig-name descname">_lock</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Category::_lock" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Method to lock the database table for writing.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Результат</dt>
+<dd class="field-odd"><p>boolean True on success.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="Category::getColumnAlias">
+<code class="sig-name descname">getColumnAlias</code><span class="sig-paren">(</span><em class="sig-param">$column</em><span class="sig-paren">)</span><a class="headerlink" href="#Category::getColumnAlias" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Method to return the real name of a «special» column such as ordering,
+hits, published
+etc etc. In this way you are free to follow your db naming convention and
+use the
+built in Joomla functions.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$column</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>string The string that identify the special</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="Category::setColumnAlias">
+<code class="sig-name descname">setColumnAlias</code><span class="sig-paren">(</span><em class="sig-param">$column</em>, <em class="sig-param">$columnAlias</em><span class="sig-paren">)</span><a class="headerlink" href="#Category::setColumnAlias" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Method to register a column alias for a «special» column.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$column</strong> – </p></li>
+<li><p><strong>$columnAlias</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>void</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="Category::_unlock">
+<code class="sig-name descname">_unlock</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Category::_unlock" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Method to unlock the database table for writing.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Результат</dt>
+<dd class="field-odd"><p>boolean True on success.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="Category::hasField">
+<code class="sig-name descname">hasField</code><span class="sig-paren">(</span><em class="sig-param">$key</em><span class="sig-paren">)</span><a class="headerlink" href="#Category::hasField" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Check if the record has a property (applying a column alias if it exists)</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$key</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>boolean</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2020, Artem Vasilev &lt;kern.usr@gmail.com&gt;
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

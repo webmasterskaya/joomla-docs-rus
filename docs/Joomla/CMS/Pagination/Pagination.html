@@ -1,0 +1,667 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="ru" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="ru" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Joomla\CMS\Pagination\Pagination &mdash; документация joomla-docs-rus 3.9.16</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../../../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../../" src="../../../_static/documentation_options.js"></script>
+        <script src="../../../_static/jquery.js"></script>
+        <script src="../../../_static/underscore.js"></script>
+        <script src="../../../_static/doctools.js"></script>
+        <script src="../../../_static/language_data.js"></script>
+        <script src="../../../_static/translations.js"></script>
+    
+    <script type="text/javascript" src="../../../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
+    <link rel="index" title="Алфавитный указатель" href="../../../genindex.html" />
+    <link rel="search" title="Поиск" href="../../../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search"  style="background: white" >
+          
+
+          
+            <a href="../../../index.html" class="icon icon-home"> joomla-docs-rus
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <!-- Local TOC -->
+              <div class="local-toc"><ul>
+<li><a class="reference internal" href="#">Joomla\CMS\Pagination\Pagination</a></li>
+</ul>
+</div>
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../../index.html">joomla-docs-rus</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content style-external-links">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../../index.html">Docs</a> &raquo;</li>
+        
+      <li>Joomla\CMS\Pagination\Pagination</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../../../_sources/Joomla/CMS/Pagination/Pagination.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="joomla-cms-pagination-pagination">
+<h1>Joomla\CMS\Pagination\Pagination<a class="headerlink" href="#joomla-cms-pagination-pagination" title="Ссылка на этот заголовок">¶</a></h1>
+<dl class="class">
+<dt id="Pagination">
+<em class="property">class </em><code class="sig-name descname">Pagination</code><a class="headerlink" href="#Pagination" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Pagination Class. Provides a common interface for content pagination for the Joomla! CMS.</p>
+<dl class="attr">
+<dt id="Pagination::$limitstart">
+<em class="property">property </em><code class="sig-name descname">limitstart</code><a class="headerlink" href="#Pagination::$limitstart" title="Ссылка на это определение">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>integer</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="attr">
+<dt id="Pagination::$limit">
+<em class="property">property </em><code class="sig-name descname">limit</code><a class="headerlink" href="#Pagination::$limit" title="Ссылка на это определение">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>integer</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="attr">
+<dt id="Pagination::$total">
+<em class="property">property </em><code class="sig-name descname">total</code><a class="headerlink" href="#Pagination::$total" title="Ссылка на это определение">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>integer</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="attr">
+<dt id="Pagination::$prefix">
+<em class="property">property </em><code class="sig-name descname">prefix</code><a class="headerlink" href="#Pagination::$prefix" title="Ссылка на это определение">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>integer</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="attr">
+<dt id="Pagination::$pagesStart">
+<em class="property">property </em><code class="sig-name descname">pagesStart</code><a class="headerlink" href="#Pagination::$pagesStart" title="Ссылка на это определение">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>integer</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="attr">
+<dt id="Pagination::$pagesStop">
+<em class="property">property </em><code class="sig-name descname">pagesStop</code><a class="headerlink" href="#Pagination::$pagesStop" title="Ссылка на это определение">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>integer</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="attr">
+<dt id="Pagination::$pagesCurrent">
+<em class="property">property </em><code class="sig-name descname">pagesCurrent</code><a class="headerlink" href="#Pagination::$pagesCurrent" title="Ссылка на это определение">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>integer</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="attr">
+<dt id="Pagination::$pagesTotal">
+<em class="property">property </em><code class="sig-name descname">pagesTotal</code><a class="headerlink" href="#Pagination::$pagesTotal" title="Ссылка на это определение">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>integer</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="attr">
+<dt id="Pagination::$hideEmptyLimitstart">
+<em class="property">property </em><code class="sig-name descname">hideEmptyLimitstart</code><a class="headerlink" href="#Pagination::$hideEmptyLimitstart" title="Ссылка на это определение">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>boolean</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="attr">
+<dt id="Pagination::$viewall">
+<em class="property">property </em><code class="sig-name descname">viewall</code><a class="headerlink" href="#Pagination::$viewall" title="Ссылка на это определение">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>boolean</p>
+</dd>
+<dt class="field-even">Scope</dt>
+<dd class="field-even"><p>protected</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="attr">
+<dt id="Pagination::$additionalUrlParams">
+<em class="property">property </em><code class="sig-name descname">additionalUrlParams</code><a class="headerlink" href="#Pagination::$additionalUrlParams" title="Ссылка на это определение">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>array</p>
+</dd>
+<dt class="field-even">Scope</dt>
+<dd class="field-even"><p>protected</p>
+</dd>
+</dl>
+<p>Additional URL parameters to be added to the pagination URLs generated by
+the class.  These
+may be useful for filters and extra values when dealing with lists and GET
+requests.</p>
+</dd></dl>
+
+<dl class="attr">
+<dt id="Pagination::$app">
+<em class="property">property </em><code class="sig-name descname">app</code><a class="headerlink" href="#Pagination::$app" title="Ссылка на это определение">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p><a class="reference internal" href="../Application/CMSApplication.html#CMSApplication" title="CMSApplication">CMSApplication</a></p>
+</dd>
+<dt class="field-even">Scope</dt>
+<dd class="field-even"><p>protected</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="attr">
+<dt id="Pagination::$data">
+<em class="property">property </em><code class="sig-name descname">data</code><a class="headerlink" href="#Pagination::$data" title="Ссылка на это определение">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>object</p>
+</dd>
+<dt class="field-even">Scope</dt>
+<dd class="field-even"><p>protected</p>
+</dd>
+</dl>
+<p>Pagination data object</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Pagination::__construct">
+<code class="sig-name descname">__construct</code><span class="sig-paren">(</span><em class="sig-param">$total</em>, <em class="sig-param">$limitstart</em>, <em class="sig-param">$limit</em>, <em class="sig-param">$prefix = ''</em>, <em class="sig-param">CMSApplication $app = null</em><span class="sig-paren">)</span><a class="headerlink" href="#Pagination::__construct" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Constructor.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$total</strong> – </p></li>
+<li><p><strong>$limitstart</strong> – </p></li>
+<li><p><strong>$limit</strong> – </p></li>
+<li><p><strong>$prefix</strong> – </p></li>
+<li><p><strong>$app</strong> (<a class="reference internal" href="../Application/CMSApplication.html#CMSApplication" title="CMSApplication"><em>CMSApplication</em></a>) – </p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="Pagination::setAdditionalUrlParam">
+<code class="sig-name descname">setAdditionalUrlParam</code><span class="sig-paren">(</span><em class="sig-param">$key</em>, <em class="sig-param">$value</em><span class="sig-paren">)</span><a class="headerlink" href="#Pagination::setAdditionalUrlParam" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Method to set an additional URL parameter to be added to all pagination
+class generated
+links.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$key</strong> – </p></li>
+<li><p><strong>$value</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>mixed The old value for the parameter.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="Pagination::getAdditionalUrlParam">
+<code class="sig-name descname">getAdditionalUrlParam</code><span class="sig-paren">(</span><em class="sig-param">$key</em><span class="sig-paren">)</span><a class="headerlink" href="#Pagination::getAdditionalUrlParam" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Method to get an additional URL parameter (if it exists) to be added to
+all pagination class generated links.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$key</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>mixed The value if it exists or null if it does not.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="Pagination::getRowOffset">
+<code class="sig-name descname">getRowOffset</code><span class="sig-paren">(</span><em class="sig-param">$index</em><span class="sig-paren">)</span><a class="headerlink" href="#Pagination::getRowOffset" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Return the rationalised offset for a row with a given index.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$index</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>integer Rationalised offset for a row with a given index.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="Pagination::getData">
+<code class="sig-name descname">getData</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Pagination::getData" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Return the pagination data object, only creating it if it doesn’t already
+exist.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Результат</dt>
+<dd class="field-odd"><p>stdClass Pagination data object.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="Pagination::getPagesCounter">
+<code class="sig-name descname">getPagesCounter</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Pagination::getPagesCounter" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Create and return the pagination pages counter string, ie. Page 2 of 4.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Результат</dt>
+<dd class="field-odd"><p>string Pagination pages counter string.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="Pagination::getResultsCounter">
+<code class="sig-name descname">getResultsCounter</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Pagination::getResultsCounter" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Create and return the pagination result set counter string, e.g. Results
+1-10 of 42</p>
+<dl class="field-list simple">
+<dt class="field-odd">Результат</dt>
+<dd class="field-odd"><p>string Pagination result set counter string.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="Pagination::getPagesLinks">
+<code class="sig-name descname">getPagesLinks</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Pagination::getPagesLinks" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Create and return the pagination page list string, ie. Previous, Next, 1 2
+3 … x.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Результат</dt>
+<dd class="field-odd"><p>string Pagination page list string.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="Pagination::getPaginationLinks">
+<code class="sig-name descname">getPaginationLinks</code><span class="sig-paren">(</span><em class="sig-param">$layoutId = 'joomla.pagination.links'</em>, <em class="sig-param">$options = array()</em><span class="sig-paren">)</span><a class="headerlink" href="#Pagination::getPaginationLinks" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Get the pagination links</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$layoutId</strong> – </p></li>
+<li><p><strong>$options</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>string Pagination links.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="Pagination::getPaginationPages">
+<code class="sig-name descname">getPaginationPages</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Pagination::getPaginationPages" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Create and return the pagination pages list, ie. Previous, Next, 1 2 3 …
+x.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Результат</dt>
+<dd class="field-odd"><p>array Pagination pages list.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="Pagination::getListFooter">
+<code class="sig-name descname">getListFooter</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Pagination::getListFooter" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Return the pagination footer.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Результат</dt>
+<dd class="field-odd"><p>string Pagination footer.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="Pagination::getLimitBox">
+<code class="sig-name descname">getLimitBox</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Pagination::getLimitBox" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Creates a dropdown box for selecting how many records to show per page.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Результат</dt>
+<dd class="field-odd"><p>string The HTML for the limit # input box.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="Pagination::orderUpIcon">
+<code class="sig-name descname">orderUpIcon</code><span class="sig-paren">(</span><em class="sig-param">$i</em>, <em class="sig-param">$condition = true</em>, <em class="sig-param">$task = 'orderup'</em>, <em class="sig-param">$alt = 'JLIB_HTML_MOVE_UP'</em>, <em class="sig-param">$enabled = true</em>, <em class="sig-param">$checkbox = 'cb'</em><span class="sig-paren">)</span><a class="headerlink" href="#Pagination::orderUpIcon" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Return the icon to move an item UP.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$i</strong> – </p></li>
+<li><p><strong>$condition</strong> – </p></li>
+<li><p><strong>$task</strong> – </p></li>
+<li><p><strong>$alt</strong> – </p></li>
+<li><p><strong>$enabled</strong> – </p></li>
+<li><p><strong>$checkbox</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>string Either the icon to move an item up or a space.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="Pagination::orderDownIcon">
+<code class="sig-name descname">orderDownIcon</code><span class="sig-paren">(</span><em class="sig-param">$i</em>, <em class="sig-param">$n</em>, <em class="sig-param">$condition = true</em>, <em class="sig-param">$task = 'orderdown'</em>, <em class="sig-param">$alt = 'JLIB_HTML_MOVE_DOWN'</em>, <em class="sig-param">$enabled = true</em>, <em class="sig-param">$checkbox = 'cb'</em><span class="sig-paren">)</span><a class="headerlink" href="#Pagination::orderDownIcon" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Return the icon to move an item DOWN.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$i</strong> – </p></li>
+<li><p><strong>$n</strong> – </p></li>
+<li><p><strong>$condition</strong> – </p></li>
+<li><p><strong>$task</strong> – </p></li>
+<li><p><strong>$alt</strong> – </p></li>
+<li><p><strong>$enabled</strong> – </p></li>
+<li><p><strong>$checkbox</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>string Either the icon to move an item down or a space.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="Pagination::_list_footer">
+<code class="sig-name descname">_list_footer</code><span class="sig-paren">(</span><em class="sig-param">$list</em><span class="sig-paren">)</span><a class="headerlink" href="#Pagination::_list_footer" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Create the HTML for a list footer</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$list</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>string HTML for a list footer</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="Pagination::_list_render">
+<code class="sig-name descname">_list_render</code><span class="sig-paren">(</span><em class="sig-param">$list</em><span class="sig-paren">)</span><a class="headerlink" href="#Pagination::_list_render" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Create the html for a list footer</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$list</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>string HTML for a list start, previous, next,end</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="Pagination::_item_active">
+<code class="sig-name descname">_item_active</code><span class="sig-paren">(</span><em class="sig-param">PaginationObject $item</em><span class="sig-paren">)</span><a class="headerlink" href="#Pagination::_item_active" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Method to create an active pagination link to the item</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$item</strong> (<a class="reference internal" href="PaginationObject.html#PaginationObject" title="PaginationObject"><em>PaginationObject</em></a>) – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>string HTML link</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="Pagination::_item_inactive">
+<code class="sig-name descname">_item_inactive</code><span class="sig-paren">(</span><em class="sig-param">PaginationObject $item</em><span class="sig-paren">)</span><a class="headerlink" href="#Pagination::_item_inactive" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Method to create an inactive pagination string</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$item</strong> (<a class="reference internal" href="PaginationObject.html#PaginationObject" title="PaginationObject"><em>PaginationObject</em></a>) – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>string</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="Pagination::_buildDataObject">
+<code class="sig-name descname">_buildDataObject</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Pagination::_buildDataObject" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Create and return the pagination data object.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Результат</dt>
+<dd class="field-odd"><p>stdClass Pagination data object.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="Pagination::set">
+<code class="sig-name descname">set</code><span class="sig-paren">(</span><em class="sig-param">$property</em>, <em class="sig-param">$value = null</em><span class="sig-paren">)</span><a class="headerlink" href="#Pagination::set" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Modifies a property of the object, creating it if it does not already
+exist.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$property</strong> – </p></li>
+<li><p><strong>$value</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>void</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="Pagination::get">
+<code class="sig-name descname">get</code><span class="sig-paren">(</span><em class="sig-param">$property</em>, <em class="sig-param">$default = null</em><span class="sig-paren">)</span><a class="headerlink" href="#Pagination::get" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Returns a property of the object or the default value if the property is
+not set.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$property</strong> – </p></li>
+<li><p><strong>$default</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>mixed The value of the property.</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2020, Artem Vasilev &lt;kern.usr@gmail.com&gt;
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

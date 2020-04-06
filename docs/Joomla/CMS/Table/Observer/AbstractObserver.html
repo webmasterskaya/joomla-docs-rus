@@ -1,0 +1,325 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="ru" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="ru" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Joomla\CMS\Table\Observer\AbstractObserver &mdash; документация joomla-docs-rus 3.9.16</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../../../../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../../../" src="../../../../_static/documentation_options.js"></script>
+        <script src="../../../../_static/jquery.js"></script>
+        <script src="../../../../_static/underscore.js"></script>
+        <script src="../../../../_static/doctools.js"></script>
+        <script src="../../../../_static/language_data.js"></script>
+        <script src="../../../../_static/translations.js"></script>
+    
+    <script type="text/javascript" src="../../../../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../../../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../../../_static/pygments.css" type="text/css" />
+    <link rel="index" title="Алфавитный указатель" href="../../../../genindex.html" />
+    <link rel="search" title="Поиск" href="../../../../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search"  style="background: white" >
+          
+
+          
+            <a href="../../../../index.html" class="icon icon-home"> joomla-docs-rus
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <!-- Local TOC -->
+              <div class="local-toc"><ul>
+<li><a class="reference internal" href="#">Joomla\CMS\Table\Observer\AbstractObserver</a></li>
+</ul>
+</div>
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../../../index.html">joomla-docs-rus</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content style-external-links">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../../../index.html">Docs</a> &raquo;</li>
+        
+      <li>Joomla\CMS\Table\Observer\AbstractObserver</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../../../../_sources/Joomla/CMS/Table/Observer/AbstractObserver.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="joomla-cms-table-observer-abstractobserver">
+<h1>Joomla\CMS\Table\Observer\AbstractObserver<a class="headerlink" href="#joomla-cms-table-observer-abstractobserver" title="Ссылка на этот заголовок">¶</a></h1>
+<dl class="class">
+<dt id="AbstractObserver">
+<em class="property">class </em><code class="sig-name descname">AbstractObserver</code><a class="headerlink" href="#AbstractObserver" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Table class supporting modified pre-order tree traversal behavior.</p>
+<dl class="attr">
+<dt id="AbstractObserver::$table">
+<em class="property">property </em><code class="sig-name descname">table</code><a class="headerlink" href="#AbstractObserver::$table" title="Ссылка на это определение">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p><a class="reference internal" href="../Table.html#Table" title="Table">Table</a></p>
+</dd>
+<dt class="field-even">Scope</dt>
+<dd class="field-even"><p>protected</p>
+</dd>
+</dl>
+<p>The observed table</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="AbstractObserver::__construct">
+<code class="sig-name descname">__construct</code><span class="sig-paren">(</span><em class="sig-param">TableInterface $table</em><span class="sig-paren">)</span><a class="headerlink" href="#AbstractObserver::__construct" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Constructor: Associates to $table $this observer</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$table</strong> (<a class="reference internal" href="../TableInterface.html#TableInterface" title="TableInterface"><em>TableInterface</em></a>) – </p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="AbstractObserver::onBeforeLoad">
+<code class="sig-name descname">onBeforeLoad</code><span class="sig-paren">(</span><em class="sig-param">$keys</em>, <em class="sig-param">$reset</em><span class="sig-paren">)</span><a class="headerlink" href="#AbstractObserver::onBeforeLoad" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Pre-processor for $table-&gt;load($keys, $reset)</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$keys</strong> – </p></li>
+<li><p><strong>$reset</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>void</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="AbstractObserver::onAfterLoad">
+<code class="sig-name descname">onAfterLoad</code><span class="sig-paren">(</span><em class="sig-param">$result</em>, <em class="sig-param">$row</em><span class="sig-paren">)</span><a class="headerlink" href="#AbstractObserver::onAfterLoad" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Post-processor for $table-&gt;load($keys, $reset)</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$result</strong> – </p></li>
+<li><p><strong>$row</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>void</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="AbstractObserver::onBeforeStore">
+<code class="sig-name descname">onBeforeStore</code><span class="sig-paren">(</span><em class="sig-param">$updateNulls</em>, <em class="sig-param">$tableKey</em><span class="sig-paren">)</span><a class="headerlink" href="#AbstractObserver::onBeforeStore" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Pre-processor for $table-&gt;store($updateNulls)</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$updateNulls</strong> – </p></li>
+<li><p><strong>$tableKey</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>void</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="AbstractObserver::onAfterStore">
+<code class="sig-name descname">onAfterStore</code><span class="sig-paren">(</span><em class="sig-param">$result</em><span class="sig-paren">)</span><a class="headerlink" href="#AbstractObserver::onAfterStore" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Post-processor for $table-&gt;store($updateNulls)</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$result</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>void</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="AbstractObserver::onBeforeDelete">
+<code class="sig-name descname">onBeforeDelete</code><span class="sig-paren">(</span><em class="sig-param">$pk</em><span class="sig-paren">)</span><a class="headerlink" href="#AbstractObserver::onBeforeDelete" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Pre-processor for $table-&gt;delete($pk)</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$pk</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>void</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="AbstractObserver::onAfterDelete">
+<code class="sig-name descname">onAfterDelete</code><span class="sig-paren">(</span><em class="sig-param">$pk</em><span class="sig-paren">)</span><a class="headerlink" href="#AbstractObserver::onAfterDelete" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Post-processor for $table-&gt;delete($pk)</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$pk</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>void</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2020, Artem Vasilev &lt;kern.usr@gmail.com&gt;
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

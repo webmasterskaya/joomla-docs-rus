@@ -1,0 +1,649 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="ru" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="ru" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Joomla\CMS\Factory &mdash; документация joomla-docs-rus 3.9.16</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+        <script src="../../_static/jquery.js"></script>
+        <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/doctools.js"></script>
+        <script src="../../_static/language_data.js"></script>
+        <script src="../../_static/translations.js"></script>
+    
+    <script type="text/javascript" src="../../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <link rel="index" title="Алфавитный указатель" href="../../genindex.html" />
+    <link rel="search" title="Поиск" href="../../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search"  style="background: white" >
+          
+
+          
+            <a href="../../index.html" class="icon icon-home"> joomla-docs-rus
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <!-- Local TOC -->
+              <div class="local-toc"><ul>
+<li><a class="reference internal" href="#">Joomla\CMS\Factory</a></li>
+</ul>
+</div>
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">joomla-docs-rus</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content style-external-links">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../index.html">Docs</a> &raquo;</li>
+        
+      <li>Joomla\CMS\Factory</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../../_sources/Joomla/CMS/Factory.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="joomla-cms-factory">
+<h1>Joomla\CMS\Factory<a class="headerlink" href="#joomla-cms-factory" title="Ссылка на этот заголовок">¶</a></h1>
+<dl class="class">
+<dt id="Factory">
+<em class="property">class </em><code class="sig-name descname">Factory</code><a class="headerlink" href="#Factory" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Joomla Platform Factory class.</p>
+<dl class="attr">
+<dt id="Factory::$application">
+<em class="property">property </em><code class="sig-name descname">application</code><a class="headerlink" href="#Factory::$application" title="Ссылка на это определение">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p><a class="reference internal" href="Application/CMSApplication.html#CMSApplication" title="CMSApplication">CMSApplication</a></p>
+</dd>
+</dl>
+<p>Global application object</p>
+</dd></dl>
+
+<dl class="attr">
+<dt id="Factory::$cache">
+<em class="property">property </em><code class="sig-name descname">cache</code><a class="headerlink" href="#Factory::$cache" title="Ссылка на это определение">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p><a class="reference internal" href="Cache/Cache.html#Cache" title="Cache">Cache</a></p>
+</dd>
+</dl>
+<p>Global cache object</p>
+</dd></dl>
+
+<dl class="attr">
+<dt id="Factory::$config">
+<em class="property">property </em><code class="sig-name descname">config</code><a class="headerlink" href="#Factory::$config" title="Ссылка на это определение">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>JConfig</p>
+</dd>
+</dl>
+<p>Global configuraiton object</p>
+</dd></dl>
+
+<dl class="attr">
+<dt id="Factory::$dates">
+<em class="property">property </em><code class="sig-name descname">dates</code><a class="headerlink" href="#Factory::$dates" title="Ссылка на это определение">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>array</p>
+</dd>
+</dl>
+<p>Container for Date instances</p>
+</dd></dl>
+
+<dl class="attr">
+<dt id="Factory::$session">
+<em class="property">property </em><code class="sig-name descname">session</code><a class="headerlink" href="#Factory::$session" title="Ссылка на это определение">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p><a class="reference internal" href="Session/Session.html#Session" title="Session">Session</a></p>
+</dd>
+</dl>
+<p>Global session object</p>
+</dd></dl>
+
+<dl class="attr">
+<dt id="Factory::$language">
+<em class="property">property </em><code class="sig-name descname">language</code><a class="headerlink" href="#Factory::$language" title="Ссылка на это определение">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p><a class="reference internal" href="Table/Language.html#Language" title="Language">Language</a></p>
+</dd>
+</dl>
+<p>Global language object</p>
+</dd></dl>
+
+<dl class="attr">
+<dt id="Factory::$document">
+<em class="property">property </em><code class="sig-name descname">document</code><a class="headerlink" href="#Factory::$document" title="Ссылка на это определение">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>JDocument</p>
+</dd>
+</dl>
+<p>Global document object</p>
+</dd></dl>
+
+<dl class="attr">
+<dt id="Factory::$acl">
+<em class="property">property </em><code class="sig-name descname">acl</code><a class="headerlink" href="#Factory::$acl" title="Ссылка на это определение">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p><a class="reference internal" href="Access/Wrapper/Access.html#Access" title="Access">Access</a></p>
+</dd>
+</dl>
+<p>Global ACL object</p>
+</dd></dl>
+
+<dl class="attr">
+<dt id="Factory::$database">
+<em class="property">property </em><code class="sig-name descname">database</code><a class="headerlink" href="#Factory::$database" title="Ссылка на это определение">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>JDatabaseDriver</p>
+</dd>
+</dl>
+<p>Global database object</p>
+</dd></dl>
+
+<dl class="attr">
+<dt id="Factory::$mailer">
+<em class="property">property </em><code class="sig-name descname">mailer</code><a class="headerlink" href="#Factory::$mailer" title="Ссылка на это определение">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p><a class="reference internal" href="Mail/Mail.html#Mail" title="Mail">Mail</a></p>
+</dd>
+</dl>
+<p>Global mailer object</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Factory::getApplication">
+<code class="sig-name descname">getApplication</code><span class="sig-paren">(</span><em class="sig-param">$id = null</em>, <em class="sig-param">$config = array()</em>, <em class="sig-param">$prefix = 'J'</em><span class="sig-paren">)</span><a class="headerlink" href="#Factory::getApplication" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Get an application object.</p>
+<p>Returns the global <a class="reference external" href="mailto:{&#37;&#52;&#48;link">{<span>&#64;</span>link</a> CMSApplication} object, only creating it if it
+doesn’t already exist.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$id</strong> – </p></li>
+<li><p><strong>$config</strong> – </p></li>
+<li><p><strong>$prefix</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>CMSApplication object</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="Factory::getConfig">
+<code class="sig-name descname">getConfig</code><span class="sig-paren">(</span><em class="sig-param">$file = null</em>, <em class="sig-param">$type = 'PHP'</em>, <em class="sig-param">$namespace = ''</em><span class="sig-paren">)</span><a class="headerlink" href="#Factory::getConfig" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Get a configuration object</p>
+<p>Returns the global <a class="reference external" href="mailto:{&#37;&#52;&#48;link">{<span>&#64;</span>link</a> JConfig} object, only creating it if it doesn’t
+already exist.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$file</strong> – </p></li>
+<li><p><strong>$type</strong> – </p></li>
+<li><p><strong>$namespace</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>Registry</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="Factory::getSession">
+<code class="sig-name descname">getSession</code><span class="sig-paren">(</span><em class="sig-param">$options = array()</em><span class="sig-paren">)</span><a class="headerlink" href="#Factory::getSession" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Get a session object.</p>
+<p>Returns the global <a class="reference external" href="mailto:{&#37;&#52;&#48;link">{<span>&#64;</span>link</a> Session} object, only creating it if it doesn’t
+already exist.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$options</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>Session object</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="Factory::getLanguage">
+<code class="sig-name descname">getLanguage</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Factory::getLanguage" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Get a language object.</p>
+<p>Returns the global <a class="reference external" href="mailto:{&#37;&#52;&#48;link">{<span>&#64;</span>link</a> Language} object, only creating it if it doesn’t
+already exist.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Результат</dt>
+<dd class="field-odd"><p>Language object</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="Factory::getDocument">
+<code class="sig-name descname">getDocument</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Factory::getDocument" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Get a document object.</p>
+<p>Returns the global <a class="reference external" href="mailto:{&#37;&#52;&#48;link">{<span>&#64;</span>link</a> JDocument} object, only creating it if it
+doesn’t already exist.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Результат</dt>
+<dd class="field-odd"><p>JDocument object</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="Factory::getUser">
+<code class="sig-name descname">getUser</code><span class="sig-paren">(</span><em class="sig-param">$id = null</em><span class="sig-paren">)</span><a class="headerlink" href="#Factory::getUser" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Get a user object.</p>
+<p>Returns the global <a class="reference external" href="mailto:{&#37;&#52;&#48;link">{<span>&#64;</span>link</a> User} object, only creating it if it doesn’t
+already exist.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$id</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>User object</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="Factory::getCache">
+<code class="sig-name descname">getCache</code><span class="sig-paren">(</span><em class="sig-param">$group = ''</em>, <em class="sig-param">$handler = 'callback'</em>, <em class="sig-param">$storage = null</em><span class="sig-paren">)</span><a class="headerlink" href="#Factory::getCache" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Get a cache object</p>
+<p>Returns the global <a class="reference external" href="mailto:{&#37;&#52;&#48;link">{<span>&#64;</span>link</a> CacheController} object</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$group</strong> – </p></li>
+<li><p><strong>$handler</strong> – </p></li>
+<li><p><strong>$storage</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>JoomlaCMSCacheCacheController object</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="Factory::getAcl">
+<code class="sig-name descname">getAcl</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Factory::getAcl" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Get an authorization object</p>
+<p>Returns the global <a class="reference external" href="mailto:{&#37;&#52;&#48;link">{<span>&#64;</span>link</a> Access} object, only creating it if it doesn’t
+already exist.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Результат</dt>
+<dd class="field-odd"><p>Access object</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="Factory::getDbo">
+<code class="sig-name descname">getDbo</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Factory::getDbo" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Get a database object.</p>
+<p>Returns the global <a class="reference external" href="mailto:{&#37;&#52;&#48;link">{<span>&#64;</span>link</a> JDatabaseDriver} object, only creating it if it
+doesn’t already exist.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Результат</dt>
+<dd class="field-odd"><p>JDatabaseDriver</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="Factory::getMailer">
+<code class="sig-name descname">getMailer</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Factory::getMailer" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Get a mailer object.</p>
+<p>Returns the global <a class="reference external" href="mailto:{&#37;&#52;&#48;link">{<span>&#64;</span>link</a> JMail} object, only creating it if it doesn’t
+already exist.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Результат</dt>
+<dd class="field-odd"><p>JMail object</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="Factory::getFeedParser">
+<code class="sig-name descname">getFeedParser</code><span class="sig-paren">(</span><em class="sig-param">$url</em>, <em class="sig-param">$cache_time = 0</em><span class="sig-paren">)</span><a class="headerlink" href="#Factory::getFeedParser" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Get a parsed XML Feed Source</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$url</strong> – </p></li>
+<li><p><strong>$cache_time</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>mixed SimplePie parsed object on success, false on failure.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="Factory::getXml">
+<code class="sig-name descname">getXml</code><span class="sig-paren">(</span><em class="sig-param">$data</em>, <em class="sig-param">$isFile = true</em><span class="sig-paren">)</span><a class="headerlink" href="#Factory::getXml" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Reads a XML file.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$data</strong> – </p></li>
+<li><p><strong>$isFile</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>mixed JXMLElement or SimpleXMLElement on success or false on error.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="Factory::getEditor">
+<code class="sig-name descname">getEditor</code><span class="sig-paren">(</span><em class="sig-param">$editor = null</em><span class="sig-paren">)</span><a class="headerlink" href="#Factory::getEditor" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Get an editor object.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$editor</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>Editor instance of Editor</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="Factory::getUri">
+<code class="sig-name descname">getUri</code><span class="sig-paren">(</span><em class="sig-param">$uri = 'SERVER'</em><span class="sig-paren">)</span><a class="headerlink" href="#Factory::getUri" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Return a reference to the <a class="reference external" href="mailto:{&#37;&#52;&#48;link">{<span>&#64;</span>link</a> Uri} object</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$uri</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>Uri object</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="Factory::getDate">
+<code class="sig-name descname">getDate</code><span class="sig-paren">(</span><em class="sig-param">$time = 'now'</em>, <em class="sig-param">$tzOffset = null</em><span class="sig-paren">)</span><a class="headerlink" href="#Factory::getDate" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Return the <a class="reference external" href="mailto:{&#37;&#52;&#48;link">{<span>&#64;</span>link</a> Date} object</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$time</strong> – </p></li>
+<li><p><strong>$tzOffset</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>Date object</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="Factory::createConfig">
+<code class="sig-name descname">createConfig</code><span class="sig-paren">(</span><em class="sig-param">$file</em>, <em class="sig-param">$type = 'PHP'</em>, <em class="sig-param">$namespace = ''</em><span class="sig-paren">)</span><a class="headerlink" href="#Factory::createConfig" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Create a configuration object</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$file</strong> – </p></li>
+<li><p><strong>$type</strong> – </p></li>
+<li><p><strong>$namespace</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>Registry</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="Factory::createSession">
+<code class="sig-name descname">createSession</code><span class="sig-paren">(</span><em class="sig-param">$options = array()</em><span class="sig-paren">)</span><a class="headerlink" href="#Factory::createSession" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Create a session object</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$options</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>Session object</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="Factory::createDbo">
+<code class="sig-name descname">createDbo</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Factory::createDbo" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Create a database object</p>
+<dl class="field-list simple">
+<dt class="field-odd">Результат</dt>
+<dd class="field-odd"><p>JDatabaseDriver</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="Factory::createMailer">
+<code class="sig-name descname">createMailer</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Factory::createMailer" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Create a mailer object</p>
+<dl class="field-list simple">
+<dt class="field-odd">Результат</dt>
+<dd class="field-odd"><p>JMail object</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="Factory::createLanguage">
+<code class="sig-name descname">createLanguage</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Factory::createLanguage" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Create a language object</p>
+<dl class="field-list simple">
+<dt class="field-odd">Результат</dt>
+<dd class="field-odd"><p>Language object</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="Factory::createDocument">
+<code class="sig-name descname">createDocument</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Factory::createDocument" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Create a document object</p>
+<dl class="field-list simple">
+<dt class="field-odd">Результат</dt>
+<dd class="field-odd"><p>JDocument object</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="Factory::getStream">
+<code class="sig-name descname">getStream</code><span class="sig-paren">(</span><em class="sig-param">$use_prefix = true</em>, <em class="sig-param">$use_network = true</em>, <em class="sig-param">$ua = null</em>, <em class="sig-param">$uamask = false</em><span class="sig-paren">)</span><a class="headerlink" href="#Factory::getStream" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Creates a new stream object with appropriate prefix</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$use_prefix</strong> – </p></li>
+<li><p><strong>$use_network</strong> – </p></li>
+<li><p><strong>$ua</strong> – </p></li>
+<li><p><strong>$uamask</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>JStream</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2020, Artem Vasilev &lt;kern.usr@gmail.com&gt;
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

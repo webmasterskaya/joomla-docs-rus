@@ -1,0 +1,817 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="ru" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="ru" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Joomla\CMS\MVC\View\CategoriesView &mdash; документация joomla-docs-rus 3.9.16</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../../../../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../../../" src="../../../../_static/documentation_options.js"></script>
+        <script src="../../../../_static/jquery.js"></script>
+        <script src="../../../../_static/underscore.js"></script>
+        <script src="../../../../_static/doctools.js"></script>
+        <script src="../../../../_static/language_data.js"></script>
+        <script src="../../../../_static/translations.js"></script>
+    
+    <script type="text/javascript" src="../../../../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../../../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../../../_static/pygments.css" type="text/css" />
+    <link rel="index" title="Алфавитный указатель" href="../../../../genindex.html" />
+    <link rel="search" title="Поиск" href="../../../../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search"  style="background: white" >
+          
+
+          
+            <a href="../../../../index.html" class="icon icon-home"> joomla-docs-rus
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <!-- Local TOC -->
+              <div class="local-toc"><ul>
+<li><a class="reference internal" href="#">Joomla\CMS\MVC\View\CategoriesView</a></li>
+</ul>
+</div>
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../../../index.html">joomla-docs-rus</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content style-external-links">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../../../index.html">Docs</a> &raquo;</li>
+        
+      <li>Joomla\CMS\MVC\View\CategoriesView</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../../../../_sources/Joomla/CMS/MVC/View/CategoriesView.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="joomla-cms-mvc-view-categoriesview">
+<h1>Joomla\CMS\MVC\View\CategoriesView<a class="headerlink" href="#joomla-cms-mvc-view-categoriesview" title="Ссылка на этот заголовок">¶</a></h1>
+<dl class="class">
+<dt id="CategoriesView">
+<em class="property">class </em><code class="sig-name descname">CategoriesView</code><a class="headerlink" href="#CategoriesView" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Categories view base class.</p>
+<dl class="attr">
+<dt id="CategoriesView::$state">
+<em class="property">property </em><code class="sig-name descname">state</code><a class="headerlink" href="#CategoriesView::$state" title="Ссылка на это определение">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>JoomlaRegistryRegistry</p>
+</dd>
+<dt class="field-even">Scope</dt>
+<dd class="field-even"><p>protected</p>
+</dd>
+</dl>
+<p>State data</p>
+</dd></dl>
+
+<dl class="attr">
+<dt id="CategoriesView::$items">
+<em class="property">property </em><code class="sig-name descname">items</code><a class="headerlink" href="#CategoriesView::$items" title="Ссылка на это определение">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>array</p>
+</dd>
+<dt class="field-even">Scope</dt>
+<dd class="field-even"><p>protected</p>
+</dd>
+</dl>
+<p>Category items data</p>
+</dd></dl>
+
+<dl class="attr">
+<dt id="CategoriesView::$pageHeading">
+<em class="property">property </em><code class="sig-name descname">pageHeading</code><a class="headerlink" href="#CategoriesView::$pageHeading" title="Ссылка на это определение">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>string</p>
+</dd>
+<dt class="field-even">Scope</dt>
+<dd class="field-even"><p>protected</p>
+</dd>
+</dl>
+<p>Language key for default page heading</p>
+</dd></dl>
+
+<dl class="attr">
+<dt id="CategoriesView::$document">
+<em class="property">property </em><code class="sig-name descname">document</code><a class="headerlink" href="#CategoriesView::$document" title="Ссылка на это определение">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>JDocument</p>
+</dd>
+</dl>
+<p>The active document object</p>
+</dd></dl>
+
+<dl class="attr">
+<dt id="CategoriesView::$_name">
+<em class="property">property </em><code class="sig-name descname">_name</code><a class="headerlink" href="#CategoriesView::$_name" title="Ссылка на это определение">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>array</p>
+</dd>
+<dt class="field-even">Scope</dt>
+<dd class="field-even"><p>protected</p>
+</dd>
+</dl>
+<p>The name of the view</p>
+</dd></dl>
+
+<dl class="attr">
+<dt id="CategoriesView::$_models">
+<em class="property">property </em><code class="sig-name descname">_models</code><a class="headerlink" href="#CategoriesView::$_models" title="Ссылка на это определение">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>array</p>
+</dd>
+<dt class="field-even">Scope</dt>
+<dd class="field-even"><p>protected</p>
+</dd>
+</dl>
+<p>Registered models</p>
+</dd></dl>
+
+<dl class="attr">
+<dt id="CategoriesView::$_basePath">
+<em class="property">property </em><code class="sig-name descname">_basePath</code><a class="headerlink" href="#CategoriesView::$_basePath" title="Ссылка на это определение">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>string</p>
+</dd>
+<dt class="field-even">Scope</dt>
+<dd class="field-even"><p>protected</p>
+</dd>
+</dl>
+<p>The base path of the view</p>
+</dd></dl>
+
+<dl class="attr">
+<dt id="CategoriesView::$_defaultModel">
+<em class="property">property </em><code class="sig-name descname">_defaultModel</code><a class="headerlink" href="#CategoriesView::$_defaultModel" title="Ссылка на это определение">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>string</p>
+</dd>
+<dt class="field-even">Scope</dt>
+<dd class="field-even"><p>protected</p>
+</dd>
+</dl>
+<p>The default model</p>
+</dd></dl>
+
+<dl class="attr">
+<dt id="CategoriesView::$_layout">
+<em class="property">property </em><code class="sig-name descname">_layout</code><a class="headerlink" href="#CategoriesView::$_layout" title="Ссылка на это определение">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>string</p>
+</dd>
+<dt class="field-even">Scope</dt>
+<dd class="field-even"><p>protected</p>
+</dd>
+</dl>
+<p>Layout name</p>
+</dd></dl>
+
+<dl class="attr">
+<dt id="CategoriesView::$_layoutExt">
+<em class="property">property </em><code class="sig-name descname">_layoutExt</code><a class="headerlink" href="#CategoriesView::$_layoutExt" title="Ссылка на это определение">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>string</p>
+</dd>
+<dt class="field-even">Scope</dt>
+<dd class="field-even"><p>protected</p>
+</dd>
+</dl>
+<p>Layout extension</p>
+</dd></dl>
+
+<dl class="attr">
+<dt id="CategoriesView::$_layoutTemplate">
+<em class="property">property </em><code class="sig-name descname">_layoutTemplate</code><a class="headerlink" href="#CategoriesView::$_layoutTemplate" title="Ссылка на это определение">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>string</p>
+</dd>
+<dt class="field-even">Scope</dt>
+<dd class="field-even"><p>protected</p>
+</dd>
+</dl>
+<p>Layout template</p>
+</dd></dl>
+
+<dl class="attr">
+<dt id="CategoriesView::$_path">
+<em class="property">property </em><code class="sig-name descname">_path</code><a class="headerlink" href="#CategoriesView::$_path" title="Ссылка на это определение">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>array</p>
+</dd>
+<dt class="field-even">Scope</dt>
+<dd class="field-even"><p>protected</p>
+</dd>
+</dl>
+<p>The set of search directories for resources (templates)</p>
+</dd></dl>
+
+<dl class="attr">
+<dt id="CategoriesView::$_template">
+<em class="property">property </em><code class="sig-name descname">_template</code><a class="headerlink" href="#CategoriesView::$_template" title="Ссылка на это определение">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>string</p>
+</dd>
+<dt class="field-even">Scope</dt>
+<dd class="field-even"><p>protected</p>
+</dd>
+</dl>
+<p>The name of the default template source file.</p>
+</dd></dl>
+
+<dl class="attr">
+<dt id="CategoriesView::$_output">
+<em class="property">property </em><code class="sig-name descname">_output</code><a class="headerlink" href="#CategoriesView::$_output" title="Ссылка на это определение">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>string</p>
+</dd>
+<dt class="field-even">Scope</dt>
+<dd class="field-even"><p>protected</p>
+</dd>
+</dl>
+<p>The output of the template script.</p>
+</dd></dl>
+
+<dl class="attr">
+<dt id="CategoriesView::$_escape">
+<em class="property">property </em><code class="sig-name descname">_escape</code><a class="headerlink" href="#CategoriesView::$_escape" title="Ссылка на это определение">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>string</p>
+</dd>
+<dt class="field-even">Scope</dt>
+<dd class="field-even"><p>protected</p>
+</dd>
+</dl>
+<p>Callback for escaping.</p>
+</dd></dl>
+
+<dl class="attr">
+<dt id="CategoriesView::$_charset">
+<em class="property">property </em><code class="sig-name descname">_charset</code><a class="headerlink" href="#CategoriesView::$_charset" title="Ссылка на это определение">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>string</p>
+</dd>
+<dt class="field-even">Scope</dt>
+<dd class="field-even"><p>protected</p>
+</dd>
+</dl>
+<p>Charset to use in escaping mechanisms; defaults to urf8 (UTF-8)</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="CategoriesView::display">
+<code class="sig-name descname">display</code><span class="sig-paren">(</span><em class="sig-param">$tpl = null</em><span class="sig-paren">)</span><a class="headerlink" href="#CategoriesView::display" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Execute and display a template script.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$tpl</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>mixed A string if successful, otherwise an Error object.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="CategoriesView::prepareDocument">
+<code class="sig-name descname">prepareDocument</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#CategoriesView::prepareDocument" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Prepares the document</p>
+<dl class="field-list simple">
+<dt class="field-odd">Результат</dt>
+<dd class="field-odd"><p>void</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="CategoriesView::__construct">
+<code class="sig-name descname">__construct</code><span class="sig-paren">(</span><em class="sig-param">$config = array()</em><span class="sig-paren">)</span><a class="headerlink" href="#CategoriesView::__construct" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Constructor</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$config</strong> – </p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="CategoriesView::assign">
+<code class="sig-name descname">assign</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#CategoriesView::assign" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Assigns variables to the view script via differing strategies.</p>
+<p>This method is overloaded; you can assign all the properties of an object,
+an associative array, or a single value by name.</p>
+<p>You are not allowed to set variables that begin with an underscore;
+these are either private properties for JView or private variables within
+the template script itself.</p>
+<p>&lt;code&gt;
+$view = new JoomlaCMSViewHtmlView;</p>
+<p>// Assign directly
+$view-&gt;var1 = „something“;
+$view-&gt;var2 = „else“;</p>
+<p>// Assign by name and value
+$view-&gt;assign(„var1“, „something“);
+$view-&gt;assign(„var2“, „else“);</p>
+<p>// Assign by assoc-array
+$ary = array(„var1“ =&gt; „something“, „var2“ =&gt; „else“);
+$view-&gt;assign($obj);</p>
+<p>// Assign by object
+$obj = new stdClass;
+$obj-&gt;var1 = „something“;
+$obj-&gt;var2 = „else“;
+$view-&gt;assign($obj);</p>
+<p>&lt;/code&gt;</p>
+<dl class="field-list simple">
+<dt class="field-odd">Результат</dt>
+<dd class="field-odd"><p>boolean True on success, false on failure.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="CategoriesView::assignRef">
+<code class="sig-name descname">assignRef</code><span class="sig-paren">(</span><em class="sig-param">$key</em>, <em class="sig-param">$val</em><span class="sig-paren">)</span><a class="headerlink" href="#CategoriesView::assignRef" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Assign variable for the view (by reference).</p>
+<p>You are not allowed to set variables that begin with an underscore;
+these are either private properties for JView or private variables within
+the template script itself.</p>
+<p>&lt;code&gt;
+$view = new JView;</p>
+<p>// Assign by name and value
+$view-&gt;assignRef(„var1“, $ref);</p>
+<p>// Assign directly
+$view-&gt;var1 = &amp;$ref;
+&lt;/code&gt;</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$key</strong> – </p></li>
+<li><p><strong>$val</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>boolean True on success, false on failure.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="CategoriesView::escape">
+<code class="sig-name descname">escape</code><span class="sig-paren">(</span><em class="sig-param">$var</em><span class="sig-paren">)</span><a class="headerlink" href="#CategoriesView::escape" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Escapes a value for output in a view script.</p>
+<p>If escaping mechanism is either htmlspecialchars or htmlentities, uses
+<a class="reference external" href="mailto:{&#37;&#52;&#48;link">{<span>&#64;</span>link</a> $_encoding} setting.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$var</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>mixed The escaped value.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="CategoriesView::get">
+<code class="sig-name descname">get</code><span class="sig-paren">(</span><em class="sig-param">$property</em>, <em class="sig-param">$default = null</em><span class="sig-paren">)</span><a class="headerlink" href="#CategoriesView::get" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Method to get data from a registered model or a property of the view</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$property</strong> – </p></li>
+<li><p><strong>$default</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>mixed The return value of the method</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="CategoriesView::getModel">
+<code class="sig-name descname">getModel</code><span class="sig-paren">(</span><em class="sig-param">$name = null</em><span class="sig-paren">)</span><a class="headerlink" href="#CategoriesView::getModel" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Method to get the model object</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$name</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>mixed JModelLegacy object</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="CategoriesView::getLayout">
+<code class="sig-name descname">getLayout</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#CategoriesView::getLayout" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Get the layout.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Результат</dt>
+<dd class="field-odd"><p>string The layout name</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="CategoriesView::getLayoutTemplate">
+<code class="sig-name descname">getLayoutTemplate</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#CategoriesView::getLayoutTemplate" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Get the layout template.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Результат</dt>
+<dd class="field-odd"><p>string The layout template name</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="CategoriesView::getName">
+<code class="sig-name descname">getName</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#CategoriesView::getName" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Method to get the view name</p>
+<p>The model name by default parsed using the classname, or it can be set by
+passing a $config[„name“] in the class constructor</p>
+<dl class="field-list simple">
+<dt class="field-odd">Результат</dt>
+<dd class="field-odd"><p>string The name of the model</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="CategoriesView::setModel">
+<code class="sig-name descname">setModel</code><span class="sig-paren">(</span><em class="sig-param">$model</em>, <em class="sig-param">$default = false</em><span class="sig-paren">)</span><a class="headerlink" href="#CategoriesView::setModel" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Method to add a model to the view.  We support a multiple model single
+view system by which models are referenced by classname.  A caveat to the
+classname referencing is that any classname prepended by JModel will be
+referenced by the name without JModel, eg. JModelCategory is just
+Category.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$model</strong> – </p></li>
+<li><p><strong>$default</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>JModelLegacy The added model.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="CategoriesView::setLayout">
+<code class="sig-name descname">setLayout</code><span class="sig-paren">(</span><em class="sig-param">$layout</em><span class="sig-paren">)</span><a class="headerlink" href="#CategoriesView::setLayout" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Sets the layout name to use</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$layout</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>string Previous value.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="CategoriesView::setLayoutExt">
+<code class="sig-name descname">setLayoutExt</code><span class="sig-paren">(</span><em class="sig-param">$value</em><span class="sig-paren">)</span><a class="headerlink" href="#CategoriesView::setLayoutExt" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Allows a different extension for the layout files to be used</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$value</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>string Previous value</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="CategoriesView::setEscape">
+<code class="sig-name descname">setEscape</code><span class="sig-paren">(</span><em class="sig-param">$spec</em><span class="sig-paren">)</span><a class="headerlink" href="#CategoriesView::setEscape" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Sets the _escape() callback.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$spec</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>void</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="CategoriesView::addTemplatePath">
+<code class="sig-name descname">addTemplatePath</code><span class="sig-paren">(</span><em class="sig-param">$path</em><span class="sig-paren">)</span><a class="headerlink" href="#CategoriesView::addTemplatePath" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Adds to the stack of view script paths in LIFO order.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$path</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>void</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="CategoriesView::addHelperPath">
+<code class="sig-name descname">addHelperPath</code><span class="sig-paren">(</span><em class="sig-param">$path</em><span class="sig-paren">)</span><a class="headerlink" href="#CategoriesView::addHelperPath" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Adds to the stack of helper script paths in LIFO order.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$path</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>void</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="CategoriesView::loadTemplate">
+<code class="sig-name descname">loadTemplate</code><span class="sig-paren">(</span><em class="sig-param">$tpl = null</em><span class="sig-paren">)</span><a class="headerlink" href="#CategoriesView::loadTemplate" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Load a template file – first look in the templates folder for an override</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$tpl</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>string The output of the the template script.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="CategoriesView::loadHelper">
+<code class="sig-name descname">loadHelper</code><span class="sig-paren">(</span><em class="sig-param">$hlp = null</em><span class="sig-paren">)</span><a class="headerlink" href="#CategoriesView::loadHelper" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Load a helper file</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$hlp</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>void</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="CategoriesView::_setPath">
+<code class="sig-name descname">_setPath</code><span class="sig-paren">(</span><em class="sig-param">$type</em>, <em class="sig-param">$path</em><span class="sig-paren">)</span><a class="headerlink" href="#CategoriesView::_setPath" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Sets an entire array of search paths for templates or resources.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$type</strong> – </p></li>
+<li><p><strong>$path</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>void</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="CategoriesView::_addPath">
+<code class="sig-name descname">_addPath</code><span class="sig-paren">(</span><em class="sig-param">$type</em>, <em class="sig-param">$path</em><span class="sig-paren">)</span><a class="headerlink" href="#CategoriesView::_addPath" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Adds to the search path for templates and resources.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$type</strong> – </p></li>
+<li><p><strong>$path</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>void</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="CategoriesView::_createFileName">
+<code class="sig-name descname">_createFileName</code><span class="sig-paren">(</span><em class="sig-param">$type</em>, <em class="sig-param">$parts = array()</em><span class="sig-paren">)</span><a class="headerlink" href="#CategoriesView::_createFileName" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Create the filename for a resource</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$type</strong> – </p></li>
+<li><p><strong>$parts</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>string The filename</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="CategoriesView::getForm">
+<code class="sig-name descname">getForm</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#CategoriesView::getForm" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Returns the form object</p>
+<dl class="field-list simple">
+<dt class="field-odd">Результат</dt>
+<dd class="field-odd"><p>mixed A JForm object on success, false on failure</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="CategoriesView::setDocumentTitle">
+<code class="sig-name descname">setDocumentTitle</code><span class="sig-paren">(</span><em class="sig-param">$title</em><span class="sig-paren">)</span><a class="headerlink" href="#CategoriesView::setDocumentTitle" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Sets the document title according to Global Configuration options</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$title</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>void</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2020, Artem Vasilev &lt;kern.usr@gmail.com&gt;
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

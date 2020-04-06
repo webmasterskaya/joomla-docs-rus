@@ -1,0 +1,386 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="ru" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="ru" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Joomla\CMS\Authentication\Authentication &mdash; документация joomla-docs-rus 3.9.16</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../../../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../../" src="../../../_static/documentation_options.js"></script>
+        <script src="../../../_static/jquery.js"></script>
+        <script src="../../../_static/underscore.js"></script>
+        <script src="../../../_static/doctools.js"></script>
+        <script src="../../../_static/language_data.js"></script>
+        <script src="../../../_static/translations.js"></script>
+    
+    <script type="text/javascript" src="../../../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
+    <link rel="index" title="Алфавитный указатель" href="../../../genindex.html" />
+    <link rel="search" title="Поиск" href="../../../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search"  style="background: white" >
+          
+
+          
+            <a href="../../../index.html" class="icon icon-home"> joomla-docs-rus
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <!-- Local TOC -->
+              <div class="local-toc"><ul>
+<li><a class="reference internal" href="#">Joomla\CMS\Authentication\Authentication</a></li>
+</ul>
+</div>
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../../index.html">joomla-docs-rus</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content style-external-links">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../../index.html">Docs</a> &raquo;</li>
+        
+      <li>Joomla\CMS\Authentication\Authentication</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../../../_sources/Joomla/CMS/Authentication/Authentication.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="joomla-cms-authentication-authentication">
+<h1>Joomla\CMS\Authentication\Authentication<a class="headerlink" href="#joomla-cms-authentication-authentication" title="Ссылка на этот заголовок">¶</a></h1>
+<dl class="class">
+<dt id="Authentication">
+<em class="property">class </em><code class="sig-name descname">Authentication</code><a class="headerlink" href="#Authentication" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Authentication class, provides an interface for the Joomla authentication system</p>
+<dl class="const">
+<dt id="Authentication::STATUS_SUCCESS">
+<em class="property">constant </em><code class="sig-name descname">STATUS_SUCCESS</code><a class="headerlink" href="#Authentication::STATUS_SUCCESS" title="Ссылка на это определение">¶</a></dt>
+<dd><p>This is the status code returned when the authentication is success (permit login)</p>
+</dd></dl>
+
+<dl class="const">
+<dt id="Authentication::STATUS_CANCEL">
+<em class="property">constant </em><code class="sig-name descname">STATUS_CANCEL</code><a class="headerlink" href="#Authentication::STATUS_CANCEL" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Status to indicate cancellation of authentication (unused)</p>
+</dd></dl>
+
+<dl class="const">
+<dt id="Authentication::STATUS_FAILURE">
+<em class="property">constant </em><code class="sig-name descname">STATUS_FAILURE</code><a class="headerlink" href="#Authentication::STATUS_FAILURE" title="Ссылка на это определение">¶</a></dt>
+<dd><p>This is the status code returned when the authentication failed (prevent login if no success)</p>
+</dd></dl>
+
+<dl class="const">
+<dt id="Authentication::STATUS_EXPIRED">
+<em class="property">constant </em><code class="sig-name descname">STATUS_EXPIRED</code><a class="headerlink" href="#Authentication::STATUS_EXPIRED" title="Ссылка на это определение">¶</a></dt>
+<dd><p>This is the status code returned when the account has expired (prevent login)</p>
+</dd></dl>
+
+<dl class="const">
+<dt id="Authentication::STATUS_DENIED">
+<em class="property">constant </em><code class="sig-name descname">STATUS_DENIED</code><a class="headerlink" href="#Authentication::STATUS_DENIED" title="Ссылка на это определение">¶</a></dt>
+<dd><p>This is the status code returned when the account has been denied (prevent login)</p>
+</dd></dl>
+
+<dl class="const">
+<dt id="Authentication::STATUS_UNKNOWN">
+<em class="property">constant </em><code class="sig-name descname">STATUS_UNKNOWN</code><a class="headerlink" href="#Authentication::STATUS_UNKNOWN" title="Ссылка на это определение">¶</a></dt>
+<dd><p>This is the status code returned when the account doesn’t exist (not an error)</p>
+</dd></dl>
+
+<dl class="attr">
+<dt id="Authentication::$observers">
+<em class="property">property </em><code class="sig-name descname">observers</code><a class="headerlink" href="#Authentication::$observers" title="Ссылка на это определение">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>array</p>
+</dd>
+<dt class="field-even">Scope</dt>
+<dd class="field-even"><p>protected</p>
+</dd>
+</dl>
+<p>An array of Observer objects to notify</p>
+</dd></dl>
+
+<dl class="attr">
+<dt id="Authentication::$state">
+<em class="property">property </em><code class="sig-name descname">state</code><a class="headerlink" href="#Authentication::$state" title="Ссылка на это определение">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>mixed</p>
+</dd>
+<dt class="field-even">Scope</dt>
+<dd class="field-even"><p>protected</p>
+</dd>
+</dl>
+<p>The state of the observable object</p>
+</dd></dl>
+
+<dl class="attr">
+<dt id="Authentication::$methods">
+<em class="property">property </em><code class="sig-name descname">methods</code><a class="headerlink" href="#Authentication::$methods" title="Ссылка на это определение">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>array</p>
+</dd>
+<dt class="field-even">Scope</dt>
+<dd class="field-even"><p>protected</p>
+</dd>
+</dl>
+<p>A multi dimensional array of [function][] = key for observers</p>
+</dd></dl>
+
+<dl class="attr">
+<dt id="Authentication::$instance">
+<em class="property">property </em><code class="sig-name descname">instance</code><a class="headerlink" href="#Authentication::$instance" title="Ссылка на это определение">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p><a class="reference internal" href="#Authentication" title="Authentication">Authentication</a></p>
+</dd>
+<dt class="field-even">Scope</dt>
+<dd class="field-even"><p>protected</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="Authentication::__construct">
+<code class="sig-name descname">__construct</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Authentication::__construct" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Constructor</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Authentication::getInstance">
+<code class="sig-name descname">getInstance</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Authentication::getInstance" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Returns the global authentication object, only creating it
+if it doesn’t already exist.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Результат</dt>
+<dd class="field-odd"><p>Authentication The global Authentication object</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="Authentication::getState">
+<code class="sig-name descname">getState</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Authentication::getState" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Get the state of the Authentication object</p>
+<dl class="field-list simple">
+<dt class="field-odd">Результат</dt>
+<dd class="field-odd"><p>mixed The state of the object.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="Authentication::attach">
+<code class="sig-name descname">attach</code><span class="sig-paren">(</span><em class="sig-param">$observer</em><span class="sig-paren">)</span><a class="headerlink" href="#Authentication::attach" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Attach an observer object</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$observer</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>void</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="Authentication::detach">
+<code class="sig-name descname">detach</code><span class="sig-paren">(</span><em class="sig-param">$observer</em><span class="sig-paren">)</span><a class="headerlink" href="#Authentication::detach" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Detach an observer object</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$observer</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>boolean True if the observer object was detached.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="Authentication::authenticate">
+<code class="sig-name descname">authenticate</code><span class="sig-paren">(</span><em class="sig-param">$credentials</em>, <em class="sig-param">$options = array()</em><span class="sig-paren">)</span><a class="headerlink" href="#Authentication::authenticate" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Finds out if a set of login credentials are valid by asking all observing
+objects to run their respective authentication routines.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$credentials</strong> – </p></li>
+<li><p><strong>$options</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>AuthenticationResponse Response object with status variable filled in for last plugin or first successful plugin.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="Authentication::authorise">
+<code class="sig-name descname">authorise</code><span class="sig-paren">(</span><em class="sig-param">$response</em>, <em class="sig-param">$options = array()</em><span class="sig-paren">)</span><a class="headerlink" href="#Authentication::authorise" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Authorises that a particular user should be able to login</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$response</strong> – </p></li>
+<li><p><strong>$options</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>AuthenticationResponse[] Array of authentication response objects</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2020, Artem Vasilev &lt;kern.usr@gmail.com&gt;
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

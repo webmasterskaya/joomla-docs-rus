@@ -1,0 +1,853 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="ru" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="ru" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Joomla\CMS\MVC\Controller\BaseController &mdash; документация joomla-docs-rus 3.9.16</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../../../../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../../../" src="../../../../_static/documentation_options.js"></script>
+        <script src="../../../../_static/jquery.js"></script>
+        <script src="../../../../_static/underscore.js"></script>
+        <script src="../../../../_static/doctools.js"></script>
+        <script src="../../../../_static/language_data.js"></script>
+        <script src="../../../../_static/translations.js"></script>
+    
+    <script type="text/javascript" src="../../../../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../../../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../../../_static/pygments.css" type="text/css" />
+    <link rel="index" title="Алфавитный указатель" href="../../../../genindex.html" />
+    <link rel="search" title="Поиск" href="../../../../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search"  style="background: white" >
+          
+
+          
+            <a href="../../../../index.html" class="icon icon-home"> joomla-docs-rus
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <!-- Local TOC -->
+              <div class="local-toc"><ul>
+<li><a class="reference internal" href="#">Joomla\CMS\MVC\Controller\BaseController</a></li>
+</ul>
+</div>
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../../../index.html">joomla-docs-rus</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content style-external-links">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../../../index.html">Docs</a> &raquo;</li>
+        
+      <li>Joomla\CMS\MVC\Controller\BaseController</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../../../../_sources/Joomla/CMS/MVC/Controller/BaseController.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="joomla-cms-mvc-controller-basecontroller">
+<h1>Joomla\CMS\MVC\Controller\BaseController<a class="headerlink" href="#joomla-cms-mvc-controller-basecontroller" title="Ссылка на этот заголовок">¶</a></h1>
+<dl class="class">
+<dt id="BaseController">
+<em class="property">class </em><code class="sig-name descname">BaseController</code><a class="headerlink" href="#BaseController" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Base class for a Joomla Controller</p>
+<p>Controller (Controllers are where you put all the actual code.) Provides basic functionality, such as rendering views (aka displaying templates).</p>
+<dl class="attr">
+<dt id="BaseController::$basePath">
+<em class="property">property </em><code class="sig-name descname">basePath</code><a class="headerlink" href="#BaseController::$basePath" title="Ссылка на это определение">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>string</p>
+</dd>
+<dt class="field-even">Scope</dt>
+<dd class="field-even"><p>protected</p>
+</dd>
+</dl>
+<p>The base path of the controller</p>
+</dd></dl>
+
+<dl class="attr">
+<dt id="BaseController::$default_view">
+<em class="property">property </em><code class="sig-name descname">default_view</code><a class="headerlink" href="#BaseController::$default_view" title="Ссылка на это определение">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>string</p>
+</dd>
+<dt class="field-even">Scope</dt>
+<dd class="field-even"><p>protected</p>
+</dd>
+</dl>
+<p>The default view for the display method.</p>
+</dd></dl>
+
+<dl class="attr">
+<dt id="BaseController::$doTask">
+<em class="property">property </em><code class="sig-name descname">doTask</code><a class="headerlink" href="#BaseController::$doTask" title="Ссылка на это определение">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>string</p>
+</dd>
+<dt class="field-even">Scope</dt>
+<dd class="field-even"><p>protected</p>
+</dd>
+</dl>
+<p>The mapped task that was performed.</p>
+</dd></dl>
+
+<dl class="attr">
+<dt id="BaseController::$message">
+<em class="property">property </em><code class="sig-name descname">message</code><a class="headerlink" href="#BaseController::$message" title="Ссылка на это определение">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>string</p>
+</dd>
+<dt class="field-even">Scope</dt>
+<dd class="field-even"><p>protected</p>
+</dd>
+</dl>
+<p>Redirect message.</p>
+</dd></dl>
+
+<dl class="attr">
+<dt id="BaseController::$messageType">
+<em class="property">property </em><code class="sig-name descname">messageType</code><a class="headerlink" href="#BaseController::$messageType" title="Ссылка на это определение">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>string</p>
+</dd>
+<dt class="field-even">Scope</dt>
+<dd class="field-even"><p>protected</p>
+</dd>
+</dl>
+<p>Redirect message type.</p>
+</dd></dl>
+
+<dl class="attr">
+<dt id="BaseController::$methods">
+<em class="property">property </em><code class="sig-name descname">methods</code><a class="headerlink" href="#BaseController::$methods" title="Ссылка на это определение">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>array</p>
+</dd>
+<dt class="field-even">Scope</dt>
+<dd class="field-even"><p>protected</p>
+</dd>
+</dl>
+<p>Array of class methods</p>
+</dd></dl>
+
+<dl class="attr">
+<dt id="BaseController::$name">
+<em class="property">property </em><code class="sig-name descname">name</code><a class="headerlink" href="#BaseController::$name" title="Ссылка на это определение">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>array</p>
+</dd>
+<dt class="field-even">Scope</dt>
+<dd class="field-even"><p>protected</p>
+</dd>
+</dl>
+<p>The name of the controller</p>
+</dd></dl>
+
+<dl class="attr">
+<dt id="BaseController::$model_prefix">
+<em class="property">property </em><code class="sig-name descname">model_prefix</code><a class="headerlink" href="#BaseController::$model_prefix" title="Ссылка на это определение">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>string</p>
+</dd>
+<dt class="field-even">Scope</dt>
+<dd class="field-even"><p>protected</p>
+</dd>
+</dl>
+<p>The prefix of the models</p>
+</dd></dl>
+
+<dl class="attr">
+<dt id="BaseController::$paths">
+<em class="property">property </em><code class="sig-name descname">paths</code><a class="headerlink" href="#BaseController::$paths" title="Ссылка на это определение">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>array</p>
+</dd>
+<dt class="field-even">Scope</dt>
+<dd class="field-even"><p>protected</p>
+</dd>
+</dl>
+<p>The set of search directories for resources (views).</p>
+</dd></dl>
+
+<dl class="attr">
+<dt id="BaseController::$redirect">
+<em class="property">property </em><code class="sig-name descname">redirect</code><a class="headerlink" href="#BaseController::$redirect" title="Ссылка на это определение">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>string</p>
+</dd>
+<dt class="field-even">Scope</dt>
+<dd class="field-even"><p>protected</p>
+</dd>
+</dl>
+<p>URL for redirection.</p>
+</dd></dl>
+
+<dl class="attr">
+<dt id="BaseController::$task">
+<em class="property">property </em><code class="sig-name descname">task</code><a class="headerlink" href="#BaseController::$task" title="Ссылка на это определение">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>string</p>
+</dd>
+<dt class="field-even">Scope</dt>
+<dd class="field-even"><p>protected</p>
+</dd>
+</dl>
+<p>Current or most recently performed task.</p>
+</dd></dl>
+
+<dl class="attr">
+<dt id="BaseController::$taskMap">
+<em class="property">property </em><code class="sig-name descname">taskMap</code><a class="headerlink" href="#BaseController::$taskMap" title="Ссылка на это определение">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>array</p>
+</dd>
+<dt class="field-even">Scope</dt>
+<dd class="field-even"><p>protected</p>
+</dd>
+</dl>
+<p>Array of class methods to call for a given task.</p>
+</dd></dl>
+
+<dl class="attr">
+<dt id="BaseController::$input">
+<em class="property">property </em><code class="sig-name descname">input</code><a class="headerlink" href="#BaseController::$input" title="Ссылка на это определение">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>JInput</p>
+</dd>
+<dt class="field-even">Scope</dt>
+<dd class="field-even"><p>protected</p>
+</dd>
+</dl>
+<p>Hold a JInput object for easier access to the input variables.</p>
+</dd></dl>
+
+<dl class="attr">
+<dt id="BaseController::$instance">
+<em class="property">property </em><code class="sig-name descname">instance</code><a class="headerlink" href="#BaseController::$instance" title="Ссылка на это определение">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>JControllerLegacy</p>
+</dd>
+<dt class="field-even">Scope</dt>
+<dd class="field-even"><p>protected</p>
+</dd>
+</dl>
+<p>Instance container.</p>
+</dd></dl>
+
+<dl class="attr">
+<dt id="BaseController::$views">
+<em class="property">property </em><code class="sig-name descname">views</code><a class="headerlink" href="#BaseController::$views" title="Ссылка на это определение">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>JViewLegacy[]</p>
+</dd>
+<dt class="field-even">Scope</dt>
+<dd class="field-even"><p>protected</p>
+</dd>
+</dl>
+<p>Instance container containing the views.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="BaseController::addModelPath">
+<code class="sig-name descname">addModelPath</code><span class="sig-paren">(</span><em class="sig-param">$path</em>, <em class="sig-param">$prefix = ''</em><span class="sig-paren">)</span><a class="headerlink" href="#BaseController::addModelPath" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Adds to the stack of model paths in LIFO order.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$path</strong> – </p></li>
+<li><p><strong>$prefix</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>void</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="BaseController::createFileName">
+<code class="sig-name descname">createFileName</code><span class="sig-paren">(</span><em class="sig-param">$type</em>, <em class="sig-param">$parts = array()</em><span class="sig-paren">)</span><a class="headerlink" href="#BaseController::createFileName" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Create the filename for a resource.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$type</strong> – </p></li>
+<li><p><strong>$parts</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>string The filename.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="BaseController::getInstance">
+<code class="sig-name descname">getInstance</code><span class="sig-paren">(</span><em class="sig-param">$prefix</em>, <em class="sig-param">$config = array()</em><span class="sig-paren">)</span><a class="headerlink" href="#BaseController::getInstance" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Method to get a singleton controller instance.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$prefix</strong> – </p></li>
+<li><p><strong>$config</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>JControllerLegacy</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="BaseController::__construct">
+<code class="sig-name descname">__construct</code><span class="sig-paren">(</span><em class="sig-param">$config = array()</em><span class="sig-paren">)</span><a class="headerlink" href="#BaseController::__construct" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Constructor.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$config</strong> – </p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="BaseController::addPath">
+<code class="sig-name descname">addPath</code><span class="sig-paren">(</span><em class="sig-param">$type</em>, <em class="sig-param">$path</em><span class="sig-paren">)</span><a class="headerlink" href="#BaseController::addPath" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Adds to the search path for templates and resources.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$type</strong> – </p></li>
+<li><p><strong>$path</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>JControllerLegacy A JControllerLegacy object to support chaining.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="BaseController::addViewPath">
+<code class="sig-name descname">addViewPath</code><span class="sig-paren">(</span><em class="sig-param">$path</em><span class="sig-paren">)</span><a class="headerlink" href="#BaseController::addViewPath" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Add one or more view paths to the controller’s stack, in LIFO order.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$path</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>JControllerLegacy This object to support chaining.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="BaseController::authorise">
+<code class="sig-name descname">authorise</code><span class="sig-paren">(</span><em class="sig-param">$task</em><span class="sig-paren">)</span><a class="headerlink" href="#BaseController::authorise" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Authorisation check</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$task</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>boolean True if authorised</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="BaseController::checkEditId">
+<code class="sig-name descname">checkEditId</code><span class="sig-paren">(</span><em class="sig-param">$context</em>, <em class="sig-param">$id</em><span class="sig-paren">)</span><a class="headerlink" href="#BaseController::checkEditId" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Method to check whether an ID is in the edit list.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$context</strong> – </p></li>
+<li><p><strong>$id</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>boolean True if the ID is in the edit list.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="BaseController::createModel">
+<code class="sig-name descname">createModel</code><span class="sig-paren">(</span><em class="sig-param">$name</em>, <em class="sig-param">$prefix = ''</em>, <em class="sig-param">$config = array()</em><span class="sig-paren">)</span><a class="headerlink" href="#BaseController::createModel" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Method to load and return a model object.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$name</strong> – </p></li>
+<li><p><strong>$prefix</strong> – </p></li>
+<li><p><strong>$config</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>JModelLegacy|boolean Model object on success; otherwise false on failure.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="BaseController::createView">
+<code class="sig-name descname">createView</code><span class="sig-paren">(</span><em class="sig-param">$name</em>, <em class="sig-param">$prefix = ''</em>, <em class="sig-param">$type = ''</em>, <em class="sig-param">$config = array()</em><span class="sig-paren">)</span><a class="headerlink" href="#BaseController::createView" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Method to load and return a view object. This method first looks in the
+current template directory for a match and, failing that, uses a default
+set path to load the view class file.</p>
+<p>Note the «name, prefix, type» order of parameters, which differs from the
+«name, type, prefix» order used in related public methods.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$name</strong> – </p></li>
+<li><p><strong>$prefix</strong> – </p></li>
+<li><p><strong>$type</strong> – </p></li>
+<li><p><strong>$config</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>JViewLegacy|null View object on success; null or error result on failure.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="BaseController::display">
+<code class="sig-name descname">display</code><span class="sig-paren">(</span><em class="sig-param">$cachable = false</em>, <em class="sig-param">$urlparams = array()</em><span class="sig-paren">)</span><a class="headerlink" href="#BaseController::display" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Typical view method for MVC based architecture</p>
+<p>This function is provide as a default implementation, in most cases you
+will need to override it in your own controllers.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$cachable</strong> – </p></li>
+<li><p><strong>$urlparams</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>JControllerLegacy A JControllerLegacy object to support chaining.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="BaseController::execute">
+<code class="sig-name descname">execute</code><span class="sig-paren">(</span><em class="sig-param">$task</em><span class="sig-paren">)</span><a class="headerlink" href="#BaseController::execute" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Execute a task by triggering a method in the derived class.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$task</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>mixed The value returned by the called method.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="BaseController::getModel">
+<code class="sig-name descname">getModel</code><span class="sig-paren">(</span><em class="sig-param">$name = ''</em>, <em class="sig-param">$prefix = ''</em>, <em class="sig-param">$config = array()</em><span class="sig-paren">)</span><a class="headerlink" href="#BaseController::getModel" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Method to get a model object, loading it if required.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$name</strong> – </p></li>
+<li><p><strong>$prefix</strong> – </p></li>
+<li><p><strong>$config</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>JModelLegacy|boolean Model object on success; otherwise false on failure.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="BaseController::getName">
+<code class="sig-name descname">getName</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#BaseController::getName" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Method to get the controller name</p>
+<p>The dispatcher name is set by default parsed using the classname, or it
+can be set by passing a $config[„name“] in the class constructor</p>
+<dl class="field-list simple">
+<dt class="field-odd">Результат</dt>
+<dd class="field-odd"><p>string The name of the dispatcher</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="BaseController::getTask">
+<code class="sig-name descname">getTask</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#BaseController::getTask" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Get the last task that is being performed or was most recently performed.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Результат</dt>
+<dd class="field-odd"><p>string The task that is being performed or was most recently performed.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="BaseController::getTasks">
+<code class="sig-name descname">getTasks</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#BaseController::getTasks" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Gets the available tasks in the controller.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Результат</dt>
+<dd class="field-odd"><p>array Array[i] of task names.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="BaseController::getView">
+<code class="sig-name descname">getView</code><span class="sig-paren">(</span><em class="sig-param">$name = ''</em>, <em class="sig-param">$type = ''</em>, <em class="sig-param">$prefix = ''</em>, <em class="sig-param">$config = array()</em><span class="sig-paren">)</span><a class="headerlink" href="#BaseController::getView" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Method to get a reference to the current view and load it if necessary.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$name</strong> – </p></li>
+<li><p><strong>$type</strong> – </p></li>
+<li><p><strong>$prefix</strong> – </p></li>
+<li><p><strong>$config</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>JViewLegacy Reference to the view or an error.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="BaseController::holdEditId">
+<code class="sig-name descname">holdEditId</code><span class="sig-paren">(</span><em class="sig-param">$context</em>, <em class="sig-param">$id</em><span class="sig-paren">)</span><a class="headerlink" href="#BaseController::holdEditId" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Method to add a record ID to the edit list.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$context</strong> – </p></li>
+<li><p><strong>$id</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>void</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="BaseController::redirect">
+<code class="sig-name descname">redirect</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#BaseController::redirect" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Redirects the browser or returns false if no redirect is set.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Результат</dt>
+<dd class="field-odd"><p>boolean False if no redirect exists.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="BaseController::registerDefaultTask">
+<code class="sig-name descname">registerDefaultTask</code><span class="sig-paren">(</span><em class="sig-param">$method</em><span class="sig-paren">)</span><a class="headerlink" href="#BaseController::registerDefaultTask" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Register the default task to perform if a mapping is not found.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$method</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>JControllerLegacy A JControllerLegacy object to support chaining.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="BaseController::registerTask">
+<code class="sig-name descname">registerTask</code><span class="sig-paren">(</span><em class="sig-param">$task</em>, <em class="sig-param">$method</em><span class="sig-paren">)</span><a class="headerlink" href="#BaseController::registerTask" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Register (map) a task to a method in the class.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$task</strong> – </p></li>
+<li><p><strong>$method</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>JControllerLegacy A JControllerLegacy object to support chaining.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="BaseController::unregisterTask">
+<code class="sig-name descname">unregisterTask</code><span class="sig-paren">(</span><em class="sig-param">$task</em><span class="sig-paren">)</span><a class="headerlink" href="#BaseController::unregisterTask" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Unregister (unmap) a task in the class.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$task</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>JControllerLegacy This object to support chaining.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="BaseController::releaseEditId">
+<code class="sig-name descname">releaseEditId</code><span class="sig-paren">(</span><em class="sig-param">$context</em>, <em class="sig-param">$id</em><span class="sig-paren">)</span><a class="headerlink" href="#BaseController::releaseEditId" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Method to check whether an ID is in the edit list.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$context</strong> – </p></li>
+<li><p><strong>$id</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>void</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="BaseController::setMessage">
+<code class="sig-name descname">setMessage</code><span class="sig-paren">(</span><em class="sig-param">$text</em>, <em class="sig-param">$type = 'message'</em><span class="sig-paren">)</span><a class="headerlink" href="#BaseController::setMessage" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Sets the internal message that is passed with a redirect</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$text</strong> – </p></li>
+<li><p><strong>$type</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>string Previous message</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="BaseController::setPath">
+<code class="sig-name descname">setPath</code><span class="sig-paren">(</span><em class="sig-param">$type</em>, <em class="sig-param">$path</em><span class="sig-paren">)</span><a class="headerlink" href="#BaseController::setPath" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Sets an entire array of search paths for resources.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$type</strong> – </p></li>
+<li><p><strong>$path</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>void</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="BaseController::checkToken">
+<code class="sig-name descname">checkToken</code><span class="sig-paren">(</span><em class="sig-param">$method = 'post'</em>, <em class="sig-param">$redirect = true</em><span class="sig-paren">)</span><a class="headerlink" href="#BaseController::checkToken" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Checks for a form token in the request.</p>
+<p>Use in conjunction with JHtml::_(„form.token“) or
+JSession::getFormToken.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$method</strong> – </p></li>
+<li><p><strong>$redirect</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>boolean True if found and valid, otherwise return false or redirect to referrer page.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="BaseController::setRedirect">
+<code class="sig-name descname">setRedirect</code><span class="sig-paren">(</span><em class="sig-param">$url</em>, <em class="sig-param">$msg = null</em>, <em class="sig-param">$type = null</em><span class="sig-paren">)</span><a class="headerlink" href="#BaseController::setRedirect" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Set a URL for browser redirection.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$url</strong> – </p></li>
+<li><p><strong>$msg</strong> – </p></li>
+<li><p><strong>$type</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>JControllerLegacy This object to support chaining.</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2020, Artem Vasilev &lt;kern.usr@gmail.com&gt;
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

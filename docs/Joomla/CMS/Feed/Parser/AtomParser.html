@@ -1,0 +1,557 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="ru" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="ru" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Joomla\CMS\Feed\Parser\AtomParser &mdash; документация joomla-docs-rus 3.9.16</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../../../../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../../../" src="../../../../_static/documentation_options.js"></script>
+        <script src="../../../../_static/jquery.js"></script>
+        <script src="../../../../_static/underscore.js"></script>
+        <script src="../../../../_static/doctools.js"></script>
+        <script src="../../../../_static/language_data.js"></script>
+        <script src="../../../../_static/translations.js"></script>
+    
+    <script type="text/javascript" src="../../../../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../../../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../../../_static/pygments.css" type="text/css" />
+    <link rel="index" title="Алфавитный указатель" href="../../../../genindex.html" />
+    <link rel="search" title="Поиск" href="../../../../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search"  style="background: white" >
+          
+
+          
+            <a href="../../../../index.html" class="icon icon-home"> joomla-docs-rus
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <!-- Local TOC -->
+              <div class="local-toc"><ul>
+<li><a class="reference internal" href="#">Joomla\CMS\Feed\Parser\AtomParser</a></li>
+</ul>
+</div>
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../../../index.html">joomla-docs-rus</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content style-external-links">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../../../index.html">Docs</a> &raquo;</li>
+        
+      <li>Joomla\CMS\Feed\Parser\AtomParser</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../../../../_sources/Joomla/CMS/Feed/Parser/AtomParser.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="joomla-cms-feed-parser-atomparser">
+<h1>Joomla\CMS\Feed\Parser\AtomParser<a class="headerlink" href="#joomla-cms-feed-parser-atomparser" title="Ссылка на этот заголовок">¶</a></h1>
+<dl class="class">
+<dt id="AtomParser">
+<em class="property">class </em><code class="sig-name descname">AtomParser</code><a class="headerlink" href="#AtomParser" title="Ссылка на это определение">¶</a></dt>
+<dd><p>ATOM Feed Parser class.</p>
+<dl class="attr">
+<dt id="AtomParser::$version">
+<em class="property">property </em><code class="sig-name descname">version</code><a class="headerlink" href="#AtomParser::$version" title="Ссылка на это определение">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>string</p>
+</dd>
+<dt class="field-even">Scope</dt>
+<dd class="field-even"><p>protected</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="attr">
+<dt id="AtomParser::$entryElementName">
+<em class="property">property </em><code class="sig-name descname">entryElementName</code><a class="headerlink" href="#AtomParser::$entryElementName" title="Ссылка на это определение">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>string</p>
+</dd>
+<dt class="field-even">Scope</dt>
+<dd class="field-even"><p>protected</p>
+</dd>
+</dl>
+<p>The feed element name for the entry elements.</p>
+</dd></dl>
+
+<dl class="attr">
+<dt id="AtomParser::$namespaces">
+<em class="property">property </em><code class="sig-name descname">namespaces</code><a class="headerlink" href="#AtomParser::$namespaces" title="Ссылка на это определение">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>array</p>
+</dd>
+<dt class="field-even">Scope</dt>
+<dd class="field-even"><p>protected</p>
+</dd>
+</dl>
+<p>Array of NamespaceParserInterface objects</p>
+</dd></dl>
+
+<dl class="attr">
+<dt id="AtomParser::$stream">
+<em class="property">property </em><code class="sig-name descname">stream</code><a class="headerlink" href="#AtomParser::$stream" title="Ссылка на это определение">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>XMLReader</p>
+</dd>
+<dt class="field-even">Scope</dt>
+<dd class="field-even"><p>protected</p>
+</dd>
+</dl>
+<p>The XMLReader stream object for the feed.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="AtomParser::handleAuthor">
+<code class="sig-name descname">handleAuthor</code><span class="sig-paren">(</span><em class="sig-param">Feed $feed</em>, <em class="sig-param">SimpleXMLElement $el</em><span class="sig-paren">)</span><a class="headerlink" href="#AtomParser::handleAuthor" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Method to handle the <cite>&lt;author&gt;</cite> element for the feed.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$feed</strong> (<a class="reference internal" href="../Feed.html#Feed" title="Feed"><em>Feed</em></a>) – </p></li>
+<li><p><strong>$el</strong> (<em>SimpleXMLElement</em>) – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>void</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="AtomParser::handleContributor">
+<code class="sig-name descname">handleContributor</code><span class="sig-paren">(</span><em class="sig-param">Feed $feed</em>, <em class="sig-param">SimpleXMLElement $el</em><span class="sig-paren">)</span><a class="headerlink" href="#AtomParser::handleContributor" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Method to handle the <cite>&lt;contributor&gt;</cite> element for the feed.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$feed</strong> (<a class="reference internal" href="../Feed.html#Feed" title="Feed"><em>Feed</em></a>) – </p></li>
+<li><p><strong>$el</strong> (<em>SimpleXMLElement</em>) – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>void</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="AtomParser::handleGenerator">
+<code class="sig-name descname">handleGenerator</code><span class="sig-paren">(</span><em class="sig-param">Feed $feed</em>, <em class="sig-param">SimpleXMLElement $el</em><span class="sig-paren">)</span><a class="headerlink" href="#AtomParser::handleGenerator" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Method to handle the <cite>&lt;generator&gt;</cite> element for the feed.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$feed</strong> (<a class="reference internal" href="../Feed.html#Feed" title="Feed"><em>Feed</em></a>) – </p></li>
+<li><p><strong>$el</strong> (<em>SimpleXMLElement</em>) – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>void</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="AtomParser::handleId">
+<code class="sig-name descname">handleId</code><span class="sig-paren">(</span><em class="sig-param">Feed $feed</em>, <em class="sig-param">SimpleXMLElement $el</em><span class="sig-paren">)</span><a class="headerlink" href="#AtomParser::handleId" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Method to handle the <cite>&lt;id&gt;</cite> element for the feed.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$feed</strong> (<a class="reference internal" href="../Feed.html#Feed" title="Feed"><em>Feed</em></a>) – </p></li>
+<li><p><strong>$el</strong> (<em>SimpleXMLElement</em>) – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>void</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="AtomParser::handleLink">
+<code class="sig-name descname">handleLink</code><span class="sig-paren">(</span><em class="sig-param">Feed $feed</em>, <em class="sig-param">SimpleXMLElement $el</em><span class="sig-paren">)</span><a class="headerlink" href="#AtomParser::handleLink" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Method to handle the <cite>&lt;link&gt;</cite> element for the feed.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$feed</strong> (<a class="reference internal" href="../Feed.html#Feed" title="Feed"><em>Feed</em></a>) – </p></li>
+<li><p><strong>$el</strong> (<em>SimpleXMLElement</em>) – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>void</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="AtomParser::handleRights">
+<code class="sig-name descname">handleRights</code><span class="sig-paren">(</span><em class="sig-param">Feed $feed</em>, <em class="sig-param">SimpleXMLElement $el</em><span class="sig-paren">)</span><a class="headerlink" href="#AtomParser::handleRights" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Method to handle the <cite>&lt;rights&gt;</cite> element for the feed.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$feed</strong> (<a class="reference internal" href="../Feed.html#Feed" title="Feed"><em>Feed</em></a>) – </p></li>
+<li><p><strong>$el</strong> (<em>SimpleXMLElement</em>) – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>void</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="AtomParser::handleSubtitle">
+<code class="sig-name descname">handleSubtitle</code><span class="sig-paren">(</span><em class="sig-param">Feed $feed</em>, <em class="sig-param">SimpleXMLElement $el</em><span class="sig-paren">)</span><a class="headerlink" href="#AtomParser::handleSubtitle" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Method to handle the <cite>&lt;subtitle&gt;</cite> element for the feed.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$feed</strong> (<a class="reference internal" href="../Feed.html#Feed" title="Feed"><em>Feed</em></a>) – </p></li>
+<li><p><strong>$el</strong> (<em>SimpleXMLElement</em>) – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>void</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="AtomParser::handleTitle">
+<code class="sig-name descname">handleTitle</code><span class="sig-paren">(</span><em class="sig-param">Feed $feed</em>, <em class="sig-param">SimpleXMLElement $el</em><span class="sig-paren">)</span><a class="headerlink" href="#AtomParser::handleTitle" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Method to handle the <cite>&lt;title&gt;</cite> element for the feed.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$feed</strong> (<a class="reference internal" href="../Feed.html#Feed" title="Feed"><em>Feed</em></a>) – </p></li>
+<li><p><strong>$el</strong> (<em>SimpleXMLElement</em>) – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>void</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="AtomParser::handleUpdated">
+<code class="sig-name descname">handleUpdated</code><span class="sig-paren">(</span><em class="sig-param">Feed $feed</em>, <em class="sig-param">SimpleXMLElement $el</em><span class="sig-paren">)</span><a class="headerlink" href="#AtomParser::handleUpdated" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Method to handle the <cite>&lt;updated&gt;</cite> element for the feed.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$feed</strong> (<a class="reference internal" href="../Feed.html#Feed" title="Feed"><em>Feed</em></a>) – </p></li>
+<li><p><strong>$el</strong> (<em>SimpleXMLElement</em>) – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>void</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="AtomParser::initialise">
+<code class="sig-name descname">initialise</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#AtomParser::initialise" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Method to initialise the feed for parsing.  Here we detect the version and
+advance the stream
+reader so that it is ready to parse feed elements.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Результат</dt>
+<dd class="field-odd"><p>void</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="AtomParser::processFeedEntry">
+<code class="sig-name descname">processFeedEntry</code><span class="sig-paren">(</span><em class="sig-param">FeedEntry $entry</em>, <em class="sig-param">SimpleXMLElement $el</em><span class="sig-paren">)</span><a class="headerlink" href="#AtomParser::processFeedEntry" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Method to handle a <cite>&lt;entry&gt;</cite> element for the feed.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$entry</strong> (<a class="reference internal" href="../FeedEntry.html#FeedEntry" title="FeedEntry"><em>FeedEntry</em></a>) – </p></li>
+<li><p><strong>$el</strong> (<em>SimpleXMLElement</em>) – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>void</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="AtomParser::bestLinkForUri">
+<code class="sig-name descname">bestLinkForUri</code><span class="sig-paren">(</span><em class="sig-param">$links</em><span class="sig-paren">)</span><a class="headerlink" href="#AtomParser::bestLinkForUri" title="Ссылка на это определение">¶</a></dt>
+<dd><p>If there is more than one &lt;link&gt; in the feed entry, find the most
+appropriate one and return it.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$links</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>SimpleXMLElement</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="AtomParser::__construct">
+<code class="sig-name descname">__construct</code><span class="sig-paren">(</span><em class="sig-param">XMLReader $stream</em><span class="sig-paren">)</span><a class="headerlink" href="#AtomParser::__construct" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Constructor.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$stream</strong> (<em>XMLReader</em>) – </p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="AtomParser::parse">
+<code class="sig-name descname">parse</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#AtomParser::parse" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Method to parse the feed into a JFeed object.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Результат</dt>
+<dd class="field-odd"><p>Feed</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="AtomParser::registerNamespace">
+<code class="sig-name descname">registerNamespace</code><span class="sig-paren">(</span><em class="sig-param">$prefix</em>, <em class="sig-param">NamespaceParserInterface $namespace</em><span class="sig-paren">)</span><a class="headerlink" href="#AtomParser::registerNamespace" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Method to register a namespace handler object.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$prefix</strong> – </p></li>
+<li><p><strong>$namespace</strong> (<a class="reference internal" href="NamespaceParserInterface.html#NamespaceParserInterface" title="NamespaceParserInterface"><em>NamespaceParserInterface</em></a>) – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>JFeed</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="AtomParser::processElement">
+<code class="sig-name descname">processElement</code><span class="sig-paren">(</span><em class="sig-param">Feed $feed</em>, <em class="sig-param">SimpleXMLElement $el</em>, <em class="sig-param">$namespaces</em><span class="sig-paren">)</span><a class="headerlink" href="#AtomParser::processElement" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Method to parse a specific feed element.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$feed</strong> (<a class="reference internal" href="../Feed.html#Feed" title="Feed"><em>Feed</em></a>) – </p></li>
+<li><p><strong>$el</strong> (<em>SimpleXMLElement</em>) – </p></li>
+<li><p><strong>$namespaces</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>void</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="AtomParser::fetchNamespace">
+<code class="sig-name descname">fetchNamespace</code><span class="sig-paren">(</span><em class="sig-param">$prefix</em><span class="sig-paren">)</span><a class="headerlink" href="#AtomParser::fetchNamespace" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Method to get a namespace object for a given namespace prefix.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$prefix</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>mixed NamespaceParserInterface or false if none exists.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="AtomParser::moveToNextElement">
+<code class="sig-name descname">moveToNextElement</code><span class="sig-paren">(</span><em class="sig-param">$name = null</em><span class="sig-paren">)</span><a class="headerlink" href="#AtomParser::moveToNextElement" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Method to move the stream parser to the next XML element node.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$name</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>boolean True if the stream parser is on an XML element node.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="AtomParser::moveToClosingElement">
+<code class="sig-name descname">moveToClosingElement</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#AtomParser::moveToClosingElement" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Method to move the stream parser to the closing XML node of the current
+element.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Результат</dt>
+<dd class="field-odd"><p>void</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2020, Artem Vasilev &lt;kern.usr@gmail.com&gt;
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

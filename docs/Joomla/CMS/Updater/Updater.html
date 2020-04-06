@@ -1,0 +1,375 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="ru" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="ru" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Joomla\CMS\Updater\Updater &mdash; документация joomla-docs-rus 3.9.16</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../../../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../../" src="../../../_static/documentation_options.js"></script>
+        <script src="../../../_static/jquery.js"></script>
+        <script src="../../../_static/underscore.js"></script>
+        <script src="../../../_static/doctools.js"></script>
+        <script src="../../../_static/language_data.js"></script>
+        <script src="../../../_static/translations.js"></script>
+    
+    <script type="text/javascript" src="../../../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
+    <link rel="index" title="Алфавитный указатель" href="../../../genindex.html" />
+    <link rel="search" title="Поиск" href="../../../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search"  style="background: white" >
+          
+
+          
+            <a href="../../../index.html" class="icon icon-home"> joomla-docs-rus
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <!-- Local TOC -->
+              <div class="local-toc"><ul>
+<li><a class="reference internal" href="#">Joomla\CMS\Updater\Updater</a></li>
+</ul>
+</div>
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../../index.html">joomla-docs-rus</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content style-external-links">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../../index.html">Docs</a> &raquo;</li>
+        
+      <li>Joomla\CMS\Updater\Updater</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../../../_sources/Joomla/CMS/Updater/Updater.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="joomla-cms-updater-updater">
+<h1>Joomla\CMS\Updater\Updater<a class="headerlink" href="#joomla-cms-updater-updater" title="Ссылка на этот заголовок">¶</a></h1>
+<dl class="class">
+<dt id="Updater">
+<em class="property">class </em><code class="sig-name descname">Updater</code><a class="headerlink" href="#Updater" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Updater Class</p>
+<dl class="const">
+<dt id="Updater::STABILITY_DEV">
+<em class="property">constant </em><code class="sig-name descname">STABILITY_DEV</code><a class="headerlink" href="#Updater::STABILITY_DEV" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Development snapshots, nightly builds, pre-release versions and so on</p>
+</dd></dl>
+
+<dl class="const">
+<dt id="Updater::STABILITY_ALPHA">
+<em class="property">constant </em><code class="sig-name descname">STABILITY_ALPHA</code><a class="headerlink" href="#Updater::STABILITY_ALPHA" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Alpha versions (work in progress, things are likely to be broken)</p>
+</dd></dl>
+
+<dl class="const">
+<dt id="Updater::STABILITY_BETA">
+<em class="property">constant </em><code class="sig-name descname">STABILITY_BETA</code><a class="headerlink" href="#Updater::STABILITY_BETA" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Beta versions (major functionality in place, show-stopper bugs are likely to be present)</p>
+</dd></dl>
+
+<dl class="const">
+<dt id="Updater::STABILITY_RC">
+<em class="property">constant </em><code class="sig-name descname">STABILITY_RC</code><a class="headerlink" href="#Updater::STABILITY_RC" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Release Candidate versions (almost stable, minor bugs might be present)</p>
+</dd></dl>
+
+<dl class="const">
+<dt id="Updater::STABILITY_STABLE">
+<em class="property">constant </em><code class="sig-name descname">STABILITY_STABLE</code><a class="headerlink" href="#Updater::STABILITY_STABLE" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Stable versions (production quality code)</p>
+</dd></dl>
+
+<dl class="attr">
+<dt id="Updater::$instance">
+<em class="property">property </em><code class="sig-name descname">instance</code><a class="headerlink" href="#Updater::$instance" title="Ссылка на это определение">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p><a class="reference internal" href="#Updater" title="Updater">Updater</a></p>
+</dd>
+<dt class="field-even">Scope</dt>
+<dd class="field-even"><p>protected</p>
+</dd>
+</dl>
+<p>Updater instance container.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Updater::__construct">
+<code class="sig-name descname">__construct</code><span class="sig-paren">(</span><em class="sig-param">$basepath = __DIR__</em>, <em class="sig-param">$classprefix = '\Joomla\CMS\Updater\Adapter'</em>, <em class="sig-param">$adapterfolder = 'Adapter'</em><span class="sig-paren">)</span><a class="headerlink" href="#Updater::__construct" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Constructor</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$basepath</strong> – </p></li>
+<li><p><strong>$classprefix</strong> – </p></li>
+<li><p><strong>$adapterfolder</strong> – </p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="Updater::getInstance">
+<code class="sig-name descname">getInstance</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Updater::getInstance" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Returns a reference to the global Installer object, only creating it
+if it doesn’t already exist.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Результат</dt>
+<dd class="field-odd"><p>Updater An installer object</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="Updater::findUpdates">
+<code class="sig-name descname">findUpdates</code><span class="sig-paren">(</span><em class="sig-param">$eid = 0</em>, <em class="sig-param">$cacheTimeout = 0</em>, <em class="sig-param">$minimum_stability = self::STABILITY_STABLE</em>, <em class="sig-param">$includeCurrent = false</em><span class="sig-paren">)</span><a class="headerlink" href="#Updater::findUpdates" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Finds the update for an extension. Any discovered updates are stored in
+the #__updates table.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$eid</strong> – </p></li>
+<li><p><strong>$cacheTimeout</strong> – </p></li>
+<li><p><strong>$minimum_stability</strong> – </p></li>
+<li><p><strong>$includeCurrent</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>boolean True if there are updates</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="Updater::update">
+<code class="sig-name descname">update</code><span class="sig-paren">(</span><em class="sig-param">$id</em><span class="sig-paren">)</span><a class="headerlink" href="#Updater::update" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Finds an update for an extension</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$id</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>mixed</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="Updater::getUpdateSites">
+<code class="sig-name descname">getUpdateSites</code><span class="sig-paren">(</span><em class="sig-param">$eid = 0</em><span class="sig-paren">)</span><a class="headerlink" href="#Updater::getUpdateSites" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Returns the update site records for an extension with ID $eid. If $eid is
+zero all enabled update sites records
+will be returned.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$eid</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>array</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="Updater::getUpdateObjectsForSite">
+<code class="sig-name descname">getUpdateObjectsForSite</code><span class="sig-paren">(</span><em class="sig-param">$updateSite</em>, <em class="sig-param">$minimum_stability = self::STABILITY_STABLE</em>, <em class="sig-param">$includeCurrent = false</em><span class="sig-paren">)</span><a class="headerlink" href="#Updater::getUpdateObjectsForSite" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Loads the contents of an update site record $updateSite and returns the
+update objects</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$updateSite</strong> – </p></li>
+<li><p><strong>$minimum_stability</strong> – </p></li>
+<li><p><strong>$includeCurrent</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>array The update records. Empty array if no updates are found.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="Updater::getSitesWithUpdates">
+<code class="sig-name descname">getSitesWithUpdates</code><span class="sig-paren">(</span><em class="sig-param">$timestamp = 0</em><span class="sig-paren">)</span><a class="headerlink" href="#Updater::getSitesWithUpdates" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Returns the IDs of the update sites with cached updates</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$timestamp</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>array The IDs of the update sites with cached updates</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="Updater::updateLastCheckTimestamp">
+<code class="sig-name descname">updateLastCheckTimestamp</code><span class="sig-paren">(</span><em class="sig-param">$updateSiteId</em><span class="sig-paren">)</span><a class="headerlink" href="#Updater::updateLastCheckTimestamp" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Update the last check timestamp of an update site</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$updateSiteId</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>void</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2020, Artem Vasilev &lt;kern.usr@gmail.com&gt;
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

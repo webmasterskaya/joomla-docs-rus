@@ -1,0 +1,595 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="ru" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="ru" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Joomla\CMS\Environment\Browser &mdash; документация joomla-docs-rus 3.9.16</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../../../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../../" src="../../../_static/documentation_options.js"></script>
+        <script src="../../../_static/jquery.js"></script>
+        <script src="../../../_static/underscore.js"></script>
+        <script src="../../../_static/doctools.js"></script>
+        <script src="../../../_static/language_data.js"></script>
+        <script src="../../../_static/translations.js"></script>
+    
+    <script type="text/javascript" src="../../../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
+    <link rel="index" title="Алфавитный указатель" href="../../../genindex.html" />
+    <link rel="search" title="Поиск" href="../../../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search"  style="background: white" >
+          
+
+          
+            <a href="../../../index.html" class="icon icon-home"> joomla-docs-rus
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <!-- Local TOC -->
+              <div class="local-toc"><ul>
+<li><a class="reference internal" href="#">Joomla\CMS\Environment\Browser</a></li>
+</ul>
+</div>
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../../index.html">joomla-docs-rus</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content style-external-links">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../../index.html">Docs</a> &raquo;</li>
+        
+      <li>Joomla\CMS\Environment\Browser</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../../../_sources/Joomla/CMS/Environment/Browser.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="joomla-cms-environment-browser">
+<h1>Joomla\CMS\Environment\Browser<a class="headerlink" href="#joomla-cms-environment-browser" title="Ссылка на этот заголовок">¶</a></h1>
+<dl class="class">
+<dt id="Browser">
+<em class="property">class </em><code class="sig-name descname">Browser</code><a class="headerlink" href="#Browser" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Browser class, provides capability information about the current web client.</p>
+<p>Browser identification is performed by examining the HTTP_USER_AGENT environment variable provided by the web server.</p>
+<p>This class has many influences from the lib/Browser.php code in version 3 of Horde by Chuck Hagenbuch and Jon Parise.</p>
+<dl class="attr">
+<dt id="Browser::$majorVersion">
+<em class="property">property </em><code class="sig-name descname">majorVersion</code><a class="headerlink" href="#Browser::$majorVersion" title="Ссылка на это определение">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>integer</p>
+</dd>
+<dt class="field-even">Scope</dt>
+<dd class="field-even"><p>protected</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="attr">
+<dt id="Browser::$minorVersion">
+<em class="property">property </em><code class="sig-name descname">minorVersion</code><a class="headerlink" href="#Browser::$minorVersion" title="Ссылка на это определение">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>integer</p>
+</dd>
+<dt class="field-even">Scope</dt>
+<dd class="field-even"><p>protected</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="attr">
+<dt id="Browser::$browser">
+<em class="property">property </em><code class="sig-name descname">browser</code><a class="headerlink" href="#Browser::$browser" title="Ссылка на это определение">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>string</p>
+</dd>
+<dt class="field-even">Scope</dt>
+<dd class="field-even"><p>protected</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="attr">
+<dt id="Browser::$agent">
+<em class="property">property </em><code class="sig-name descname">agent</code><a class="headerlink" href="#Browser::$agent" title="Ссылка на это определение">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>string</p>
+</dd>
+<dt class="field-even">Scope</dt>
+<dd class="field-even"><p>protected</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="attr">
+<dt id="Browser::$lowerAgent">
+<em class="property">property </em><code class="sig-name descname">lowerAgent</code><a class="headerlink" href="#Browser::$lowerAgent" title="Ссылка на это определение">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>string</p>
+</dd>
+<dt class="field-even">Scope</dt>
+<dd class="field-even"><p>protected</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="attr">
+<dt id="Browser::$accept">
+<em class="property">property </em><code class="sig-name descname">accept</code><a class="headerlink" href="#Browser::$accept" title="Ссылка на это определение">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>string</p>
+</dd>
+<dt class="field-even">Scope</dt>
+<dd class="field-even"><p>protected</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="attr">
+<dt id="Browser::$acceptParsed">
+<em class="property">property </em><code class="sig-name descname">acceptParsed</code><a class="headerlink" href="#Browser::$acceptParsed" title="Ссылка на это определение">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>array</p>
+</dd>
+<dt class="field-even">Scope</dt>
+<dd class="field-even"><p>protected</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="attr">
+<dt id="Browser::$platform">
+<em class="property">property </em><code class="sig-name descname">platform</code><a class="headerlink" href="#Browser::$platform" title="Ссылка на это определение">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>string</p>
+</dd>
+<dt class="field-even">Scope</dt>
+<dd class="field-even"><p>protected</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="attr">
+<dt id="Browser::$robots">
+<em class="property">property </em><code class="sig-name descname">robots</code><a class="headerlink" href="#Browser::$robots" title="Ссылка на это определение">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>array</p>
+</dd>
+<dt class="field-even">Scope</dt>
+<dd class="field-even"><p>protected</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="attr">
+<dt id="Browser::$mobile">
+<em class="property">property </em><code class="sig-name descname">mobile</code><a class="headerlink" href="#Browser::$mobile" title="Ссылка на это определение">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>boolean</p>
+</dd>
+<dt class="field-even">Scope</dt>
+<dd class="field-even"><p>protected</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="attr">
+<dt id="Browser::$images">
+<em class="property">property </em><code class="sig-name descname">images</code><a class="headerlink" href="#Browser::$images" title="Ссылка на это определение">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>array</p>
+</dd>
+<dt class="field-even">Scope</dt>
+<dd class="field-even"><p>protected</p>
+</dd>
+</dl>
+<p>List of viewable image MIME subtypes.
+This list of viewable images works for IE and Netscape/Mozilla.</p>
+</dd></dl>
+
+<dl class="attr">
+<dt id="Browser::$instances">
+<em class="property">property </em><code class="sig-name descname">instances</code><a class="headerlink" href="#Browser::$instances" title="Ссылка на это определение">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>array</p>
+</dd>
+<dt class="field-even">Scope</dt>
+<dd class="field-even"><p>protected</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="Browser::__construct">
+<code class="sig-name descname">__construct</code><span class="sig-paren">(</span><em class="sig-param">$userAgent = null</em>, <em class="sig-param">$accept = null</em><span class="sig-paren">)</span><a class="headerlink" href="#Browser::__construct" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Create a browser instance (constructor).</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$userAgent</strong> – </p></li>
+<li><p><strong>$accept</strong> – </p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="Browser::getInstance">
+<code class="sig-name descname">getInstance</code><span class="sig-paren">(</span><em class="sig-param">$userAgent = null</em>, <em class="sig-param">$accept = null</em><span class="sig-paren">)</span><a class="headerlink" href="#Browser::getInstance" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Returns the global Browser object, only creating it
+if it doesn’t already exist.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$userAgent</strong> – </p></li>
+<li><p><strong>$accept</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>Browser The Browser object.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="Browser::match">
+<code class="sig-name descname">match</code><span class="sig-paren">(</span><em class="sig-param">$userAgent = null</em>, <em class="sig-param">$accept = null</em><span class="sig-paren">)</span><a class="headerlink" href="#Browser::match" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Parses the user agent string and inititializes the object with
+all the known features and quirks for the given browser.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$userAgent</strong> – </p></li>
+<li><p><strong>$accept</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>void</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="Browser::_setPlatform">
+<code class="sig-name descname">_setPlatform</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Browser::_setPlatform" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Match the platform of the browser.</p>
+<p>This is a pretty simplistic implementation, but it’s intended to let us
+tell what line breaks to send, so it’s good enough for its purpose.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Результат</dt>
+<dd class="field-odd"><p>void</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="Browser::getPlatform">
+<code class="sig-name descname">getPlatform</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Browser::getPlatform" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Return the currently matched platform.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Результат</dt>
+<dd class="field-odd"><p>string The user’s platform.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="Browser::identifyBrowserVersion">
+<code class="sig-name descname">identifyBrowserVersion</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Browser::identifyBrowserVersion" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Set browser version, not by engine version
+Fallback to use when no other method identify the engine version</p>
+<dl class="field-list simple">
+<dt class="field-odd">Результат</dt>
+<dd class="field-odd"><p>void</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="Browser::setBrowser">
+<code class="sig-name descname">setBrowser</code><span class="sig-paren">(</span><em class="sig-param">$browser</em><span class="sig-paren">)</span><a class="headerlink" href="#Browser::setBrowser" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Sets the current browser.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$browser</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>void</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="Browser::getBrowser">
+<code class="sig-name descname">getBrowser</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Browser::getBrowser" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Retrieve the current browser.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Результат</dt>
+<dd class="field-odd"><p>string The current browser.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="Browser::getMajor">
+<code class="sig-name descname">getMajor</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Browser::getMajor" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Retrieve the current browser’s major version.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Результат</dt>
+<dd class="field-odd"><p>integer The current browser’s major version</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="Browser::getMinor">
+<code class="sig-name descname">getMinor</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Browser::getMinor" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Retrieve the current browser’s minor version.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Результат</dt>
+<dd class="field-odd"><p>integer The current browser’s minor version.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="Browser::getVersion">
+<code class="sig-name descname">getVersion</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Browser::getVersion" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Retrieve the current browser’s version.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Результат</dt>
+<dd class="field-odd"><p>string The current browser’s version.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="Browser::getAgentString">
+<code class="sig-name descname">getAgentString</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Browser::getAgentString" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Return the full browser agent string.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Результат</dt>
+<dd class="field-odd"><p>string The browser agent string</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="Browser::getHTTPProtocol">
+<code class="sig-name descname">getHTTPProtocol</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Browser::getHTTPProtocol" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Returns the server protocol in use on the current server.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Результат</dt>
+<dd class="field-odd"><p>string The HTTP server protocol version.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="Browser::isViewable">
+<code class="sig-name descname">isViewable</code><span class="sig-paren">(</span><em class="sig-param">$mimetype</em><span class="sig-paren">)</span><a class="headerlink" href="#Browser::isViewable" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Determines if a browser can display a given MIME type.</p>
+<p>Note that  image/jpeg and image/pjpeg <em>appear</em> to be the same entity, but
+Mozilla doesn’t seem to want to accept the latter.
+For our purposes, we will treat them the same.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$mimetype</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>boolean True if the browser can display the MIME type.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="Browser::isBrowser">
+<code class="sig-name descname">isBrowser</code><span class="sig-paren">(</span><em class="sig-param">$browser</em><span class="sig-paren">)</span><a class="headerlink" href="#Browser::isBrowser" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Determine if the given browser is the same as the current.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$browser</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>boolean Is the given browser the same as the current?</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="Browser::isRobot">
+<code class="sig-name descname">isRobot</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Browser::isRobot" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Determines if the browser is a robot or not.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Результат</dt>
+<dd class="field-odd"><p>boolean True if browser is a known robot.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="Browser::isMobile">
+<code class="sig-name descname">isMobile</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Browser::isMobile" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Determines if the browser is mobile version or not.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Результат</dt>
+<dd class="field-odd"><p>boolean True if browser is a known mobile version.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="Browser::isSSLConnection">
+<code class="sig-name descname">isSSLConnection</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Browser::isSSLConnection" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Determine if we are using a secure (SSL) connection.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Результат</dt>
+<dd class="field-odd"><p>boolean True if using SSL, false if not.</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2020, Artem Vasilev &lt;kern.usr@gmail.com&gt;
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

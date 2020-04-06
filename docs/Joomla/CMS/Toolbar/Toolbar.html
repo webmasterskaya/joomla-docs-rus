@@ -1,0 +1,424 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="ru" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="ru" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Joomla\CMS\Toolbar\Toolbar &mdash; документация joomla-docs-rus 3.9.16</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../../../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../../" src="../../../_static/documentation_options.js"></script>
+        <script src="../../../_static/jquery.js"></script>
+        <script src="../../../_static/underscore.js"></script>
+        <script src="../../../_static/doctools.js"></script>
+        <script src="../../../_static/language_data.js"></script>
+        <script src="../../../_static/translations.js"></script>
+    
+    <script type="text/javascript" src="../../../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
+    <link rel="index" title="Алфавитный указатель" href="../../../genindex.html" />
+    <link rel="search" title="Поиск" href="../../../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search"  style="background: white" >
+          
+
+          
+            <a href="../../../index.html" class="icon icon-home"> joomla-docs-rus
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <!-- Local TOC -->
+              <div class="local-toc"><ul>
+<li><a class="reference internal" href="#">Joomla\CMS\Toolbar\Toolbar</a></li>
+</ul>
+</div>
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../../index.html">joomla-docs-rus</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content style-external-links">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../../index.html">Docs</a> &raquo;</li>
+        
+      <li>Joomla\CMS\Toolbar\Toolbar</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../../../_sources/Joomla/CMS/Toolbar/Toolbar.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="joomla-cms-toolbar-toolbar">
+<h1>Joomla\CMS\Toolbar\Toolbar<a class="headerlink" href="#joomla-cms-toolbar-toolbar" title="Ссылка на этот заголовок">¶</a></h1>
+<dl class="class">
+<dt id="Toolbar">
+<em class="property">class </em><code class="sig-name descname">Toolbar</code><a class="headerlink" href="#Toolbar" title="Ссылка на это определение">¶</a></dt>
+<dd><p>ToolBar handler</p>
+<dl class="attr">
+<dt id="Toolbar::$_name">
+<em class="property">property </em><code class="sig-name descname">_name</code><a class="headerlink" href="#Toolbar::$_name" title="Ссылка на это определение">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>string</p>
+</dd>
+<dt class="field-even">Scope</dt>
+<dd class="field-even"><p>protected</p>
+</dd>
+</dl>
+<p>Toolbar name</p>
+</dd></dl>
+
+<dl class="attr">
+<dt id="Toolbar::$_bar">
+<em class="property">property </em><code class="sig-name descname">_bar</code><a class="headerlink" href="#Toolbar::$_bar" title="Ссылка на это определение">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>array</p>
+</dd>
+<dt class="field-even">Scope</dt>
+<dd class="field-even"><p>protected</p>
+</dd>
+</dl>
+<p>Toolbar array</p>
+</dd></dl>
+
+<dl class="attr">
+<dt id="Toolbar::$_buttons">
+<em class="property">property </em><code class="sig-name descname">_buttons</code><a class="headerlink" href="#Toolbar::$_buttons" title="Ссылка на это определение">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>array</p>
+</dd>
+<dt class="field-even">Scope</dt>
+<dd class="field-even"><p>protected</p>
+</dd>
+</dl>
+<p>Loaded buttons</p>
+</dd></dl>
+
+<dl class="attr">
+<dt id="Toolbar::$_buttonPath">
+<em class="property">property </em><code class="sig-name descname">_buttonPath</code><a class="headerlink" href="#Toolbar::$_buttonPath" title="Ссылка на это определение">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>array</p>
+</dd>
+<dt class="field-even">Scope</dt>
+<dd class="field-even"><p>protected</p>
+</dd>
+</dl>
+<p>Directories, where button types can be stored.</p>
+</dd></dl>
+
+<dl class="attr">
+<dt id="Toolbar::$instances">
+<em class="property">property </em><code class="sig-name descname">instances</code><a class="headerlink" href="#Toolbar::$instances" title="Ссылка на это определение">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p><a class="reference internal" href="#Toolbar" title="Toolbar">Toolbar</a></p>
+</dd>
+<dt class="field-even">Scope</dt>
+<dd class="field-even"><p>protected</p>
+</dd>
+</dl>
+<p>Stores the singleton instances of various toolbar.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Toolbar::__construct">
+<code class="sig-name descname">__construct</code><span class="sig-paren">(</span><em class="sig-param">$name = 'toolbar'</em><span class="sig-paren">)</span><a class="headerlink" href="#Toolbar::__construct" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Constructor</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$name</strong> – </p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="Toolbar::getInstance">
+<code class="sig-name descname">getInstance</code><span class="sig-paren">(</span><em class="sig-param">$name = 'toolbar'</em><span class="sig-paren">)</span><a class="headerlink" href="#Toolbar::getInstance" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Returns the global Toolbar object, only creating it if it
+doesn’t already exist.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$name</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>JToolbar The JToolbar object.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="Toolbar::appendButton">
+<code class="sig-name descname">appendButton</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Toolbar::appendButton" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Set a value</p>
+<dl class="field-list simple">
+<dt class="field-odd">Результат</dt>
+<dd class="field-odd"><p>string The set value.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="Toolbar::getItems">
+<code class="sig-name descname">getItems</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Toolbar::getItems" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Get the list of toolbar links.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Результат</dt>
+<dd class="field-odd"><p>array</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="Toolbar::getName">
+<code class="sig-name descname">getName</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Toolbar::getName" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Get the name of the toolbar.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Результат</dt>
+<dd class="field-odd"><p>string</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="Toolbar::prependButton">
+<code class="sig-name descname">prependButton</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Toolbar::prependButton" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Get a value.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Результат</dt>
+<dd class="field-odd"><p>string</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="Toolbar::render">
+<code class="sig-name descname">render</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Toolbar::render" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Render a toolbar.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Результат</dt>
+<dd class="field-odd"><p>string HTML for the toolbar.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="Toolbar::renderButton">
+<code class="sig-name descname">renderButton</code><span class="sig-paren">(</span><em class="sig-param">$node</em><span class="sig-paren">)</span><a class="headerlink" href="#Toolbar::renderButton" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Render a button.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$node</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>string</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="Toolbar::loadButtonType">
+<code class="sig-name descname">loadButtonType</code><span class="sig-paren">(</span><em class="sig-param">$type</em>, <em class="sig-param">$new = false</em><span class="sig-paren">)</span><a class="headerlink" href="#Toolbar::loadButtonType" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Loads a button type.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$type</strong> – </p></li>
+<li><p><strong>$new</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>boolean</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="Toolbar::loadButtonClass">
+<code class="sig-name descname">loadButtonClass</code><span class="sig-paren">(</span><em class="sig-param">$type</em><span class="sig-paren">)</span><a class="headerlink" href="#Toolbar::loadButtonClass" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Load the button class including the deprecated ones.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$type</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>string|null</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="Toolbar::addButtonPath">
+<code class="sig-name descname">addButtonPath</code><span class="sig-paren">(</span><em class="sig-param">$path</em><span class="sig-paren">)</span><a class="headerlink" href="#Toolbar::addButtonPath" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Add a directory where Toolbar should search for button types in LIFO
+order.</p>
+<p>You may either pass a string or an array of directories.</p>
+<p>Toolbar will be searching for an element type in the same order you added
+them. If the parameter type cannot be found in the custom folders,
+it will look in libraries/joomla/html/toolbar/button.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$path</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>void</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2020, Artem Vasilev &lt;kern.usr@gmail.com&gt;
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

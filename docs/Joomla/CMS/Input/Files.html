@@ -1,0 +1,361 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="ru" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="ru" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Joomla\CMS\Input\Files &mdash; документация joomla-docs-rus 3.9.16</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../../../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../../" src="../../../_static/documentation_options.js"></script>
+        <script src="../../../_static/jquery.js"></script>
+        <script src="../../../_static/underscore.js"></script>
+        <script src="../../../_static/doctools.js"></script>
+        <script src="../../../_static/language_data.js"></script>
+        <script src="../../../_static/translations.js"></script>
+    
+    <script type="text/javascript" src="../../../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
+    <link rel="index" title="Алфавитный указатель" href="../../../genindex.html" />
+    <link rel="search" title="Поиск" href="../../../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search"  style="background: white" >
+          
+
+          
+            <a href="../../../index.html" class="icon icon-home"> joomla-docs-rus
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <!-- Local TOC -->
+              <div class="local-toc"><ul>
+<li><a class="reference internal" href="#">Joomla\CMS\Input\Files</a></li>
+</ul>
+</div>
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../../index.html">joomla-docs-rus</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content style-external-links">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../../index.html">Docs</a> &raquo;</li>
+        
+      <li>Joomla\CMS\Input\Files</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../../../_sources/Joomla/CMS/Input/Files.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="joomla-cms-input-files">
+<h1>Joomla\CMS\Input\Files<a class="headerlink" href="#joomla-cms-input-files" title="Ссылка на этот заголовок">¶</a></h1>
+<dl class="class">
+<dt id="Files">
+<em class="property">class </em><code class="sig-name descname">Files</code><a class="headerlink" href="#Files" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Joomla! Input Files Class</p>
+<dl class="attr">
+<dt id="Files::$decodedData">
+<em class="property">property </em><code class="sig-name descname">decodedData</code><a class="headerlink" href="#Files::$decodedData" title="Ссылка на это определение">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>array</p>
+</dd>
+<dt class="field-even">Scope</dt>
+<dd class="field-even"><p>protected</p>
+</dd>
+</dl>
+<p>The pivoted data from a $_FILES or compatible array.</p>
+</dd></dl>
+
+<dl class="attr">
+<dt id="Files::$inputs">
+<em class="property">property </em><code class="sig-name descname">inputs</code><a class="headerlink" href="#Files::$inputs" title="Ссылка на это определение">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>Input[]</p>
+</dd>
+<dt class="field-even">Scope</dt>
+<dd class="field-even"><p>protected</p>
+</dd>
+</dl>
+<p>Input objects</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Files::__construct">
+<code class="sig-name descname">__construct</code><span class="sig-paren">(</span><em class="sig-param">$source = null</em>, <em class="sig-param">$options = array()</em><span class="sig-paren">)</span><a class="headerlink" href="#Files::__construct" title="Ссылка на это определение">¶</a></dt>
+<dd><p>The class constructor.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$source</strong> – </p></li>
+<li><p><strong>$options</strong> – </p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="Files::get">
+<code class="sig-name descname">get</code><span class="sig-paren">(</span><em class="sig-param">$name</em>, <em class="sig-param">$default = null</em>, <em class="sig-param">$filter = 'cmd'</em><span class="sig-paren">)</span><a class="headerlink" href="#Files::get" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Gets a value from the input data.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$name</strong> – </p></li>
+<li><p><strong>$default</strong> – </p></li>
+<li><p><strong>$filter</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>mixed The filtered input value.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="Files::decodeData">
+<code class="sig-name descname">decodeData</code><span class="sig-paren">(</span><em class="sig-param">$data</em><span class="sig-paren">)</span><a class="headerlink" href="#Files::decodeData" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Method to decode a data array.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$data</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>array</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="Files::set">
+<code class="sig-name descname">set</code><span class="sig-paren">(</span><em class="sig-param">$name</em>, <em class="sig-param">$value</em><span class="sig-paren">)</span><a class="headerlink" href="#Files::set" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Sets a value.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$name</strong> – </p></li>
+<li><p><strong>$value</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>void</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="Files::__get">
+<code class="sig-name descname">__get</code><span class="sig-paren">(</span><em class="sig-param">$name</em><span class="sig-paren">)</span><a class="headerlink" href="#Files::__get" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Magic method to get an input object</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$name</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>Input The request input object</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="Files::getArray">
+<code class="sig-name descname">getArray</code><span class="sig-paren">(</span><em class="sig-param">$vars = array()</em>, <em class="sig-param">$datasource = null</em>, <em class="sig-param">$defaultFilter = 'unknown'</em><span class="sig-paren">)</span><a class="headerlink" href="#Files::getArray" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Gets an array of values from the request.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$vars</strong> – </p></li>
+<li><p><strong>$datasource</strong> – </p></li>
+<li><p><strong>$defaultFilter</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>mixed The filtered input data.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="Files::getArrayRecursive">
+<code class="sig-name descname">getArrayRecursive</code><span class="sig-paren">(</span><em class="sig-param">$vars = array()</em>, <em class="sig-param">$datasource = null</em>, <em class="sig-param">$defaultFilter = 'unknown'</em>, <em class="sig-param">$recursion = false</em><span class="sig-paren">)</span><a class="headerlink" href="#Files::getArrayRecursive" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Gets an array of values from the request.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$vars</strong> – </p></li>
+<li><p><strong>$datasource</strong> – </p></li>
+<li><p><strong>$defaultFilter</strong> – </p></li>
+<li><p><strong>$recursion</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>mixed The filtered input data.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="Files::unserialize">
+<code class="sig-name descname">unserialize</code><span class="sig-paren">(</span><em class="sig-param">$input</em><span class="sig-paren">)</span><a class="headerlink" href="#Files::unserialize" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Method to unserialize the input.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$input</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>Input The input object.</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2020, Artem Vasilev &lt;kern.usr@gmail.com&gt;
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

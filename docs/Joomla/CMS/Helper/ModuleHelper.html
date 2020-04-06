@@ -1,0 +1,390 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="ru" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="ru" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Joomla\CMS\Helper\ModuleHelper &mdash; документация joomla-docs-rus 3.9.16</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../../../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../../" src="../../../_static/documentation_options.js"></script>
+        <script src="../../../_static/jquery.js"></script>
+        <script src="../../../_static/underscore.js"></script>
+        <script src="../../../_static/doctools.js"></script>
+        <script src="../../../_static/language_data.js"></script>
+        <script src="../../../_static/translations.js"></script>
+    
+    <script type="text/javascript" src="../../../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
+    <link rel="index" title="Алфавитный указатель" href="../../../genindex.html" />
+    <link rel="search" title="Поиск" href="../../../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search"  style="background: white" >
+          
+
+          
+            <a href="../../../index.html" class="icon icon-home"> joomla-docs-rus
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <!-- Local TOC -->
+              <div class="local-toc"><ul>
+<li><a class="reference internal" href="#">Joomla\CMS\Helper\ModuleHelper</a></li>
+</ul>
+</div>
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../../index.html">joomla-docs-rus</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content style-external-links">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../../index.html">Docs</a> &raquo;</li>
+        
+      <li>Joomla\CMS\Helper\ModuleHelper</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../../../_sources/Joomla/CMS/Helper/ModuleHelper.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="joomla-cms-helper-modulehelper">
+<h1>Joomla\CMS\Helper\ModuleHelper<a class="headerlink" href="#joomla-cms-helper-modulehelper" title="Ссылка на этот заголовок">¶</a></h1>
+<dl class="class">
+<dt id="ModuleHelper">
+<em class="property">class </em><code class="sig-name descname">ModuleHelper</code><a class="headerlink" href="#ModuleHelper" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Module helper class</p>
+<dl class="method">
+<dt id="ModuleHelper::getModule">
+<code class="sig-name descname">getModule</code><span class="sig-paren">(</span><em class="sig-param">$name</em>, <em class="sig-param">$title = null</em><span class="sig-paren">)</span><a class="headerlink" href="#ModuleHelper::getModule" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Get module by name (real, eg „Breadcrumbs“ or folder, eg
+„mod_breadcrumbs“)</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$name</strong> – </p></li>
+<li><p><strong>$title</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>stdClass The Module object</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="ModuleHelper::getModules">
+<code class="sig-name descname">getModules</code><span class="sig-paren">(</span><em class="sig-param">$position</em><span class="sig-paren">)</span><a class="headerlink" href="#ModuleHelper::getModules" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Get modules by position</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$position</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>array An array of module objects</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="ModuleHelper::isEnabled">
+<code class="sig-name descname">isEnabled</code><span class="sig-paren">(</span><em class="sig-param">$module</em><span class="sig-paren">)</span><a class="headerlink" href="#ModuleHelper::isEnabled" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Checks if a module is enabled. A given module will only be returned
+if it meets the following criteria: it is enabled, it is assigned to
+the current menu item or all items, and the user meets the access level
+requirements.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$module</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>boolean See description for conditions.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="ModuleHelper::renderModule">
+<code class="sig-name descname">renderModule</code><span class="sig-paren">(</span><em class="sig-param">$module</em>, <em class="sig-param">$attribs = array()</em><span class="sig-paren">)</span><a class="headerlink" href="#ModuleHelper::renderModule" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Render the module.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$module</strong> – </p></li>
+<li><p><strong>$attribs</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>string The HTML content of the module output.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="ModuleHelper::getLayoutPath">
+<code class="sig-name descname">getLayoutPath</code><span class="sig-paren">(</span><em class="sig-param">$module</em>, <em class="sig-param">$layout = 'default'</em><span class="sig-paren">)</span><a class="headerlink" href="#ModuleHelper::getLayoutPath" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Get the path to a layout for a module</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$module</strong> – </p></li>
+<li><p><strong>$layout</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>string The path to the module layout</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="ModuleHelper::_load">
+<code class="sig-name descname">_load</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ModuleHelper::_load" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Load published modules.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Результат</dt>
+<dd class="field-odd"><p>array</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="ModuleHelper::load">
+<code class="sig-name descname">load</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ModuleHelper::load" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Load published modules.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Результат</dt>
+<dd class="field-odd"><p>array</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="ModuleHelper::getModuleList">
+<code class="sig-name descname">getModuleList</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ModuleHelper::getModuleList" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Module list</p>
+<dl class="field-list simple">
+<dt class="field-odd">Результат</dt>
+<dd class="field-odd"><p>array</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="ModuleHelper::cleanModuleList">
+<code class="sig-name descname">cleanModuleList</code><span class="sig-paren">(</span><em class="sig-param">$modules</em><span class="sig-paren">)</span><a class="headerlink" href="#ModuleHelper::cleanModuleList" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Clean the module list</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$modules</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>array</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="ModuleHelper::moduleCache">
+<code class="sig-name descname">moduleCache</code><span class="sig-paren">(</span><em class="sig-param">$module</em>, <em class="sig-param">$moduleparams</em>, <em class="sig-param">$cacheparams</em><span class="sig-paren">)</span><a class="headerlink" href="#ModuleHelper::moduleCache" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Module cache helper</p>
+<p>Caching modes:
+To be set in XML:
+„static“      One cache file for all pages with the same module parameters
+„oldstatic“   1.5 definition of module caching, one cache file for all
+pages with the same module id and user aid,
+„itemid“      Changes on itemid change, to be called from inside the
+module:
+„safeuri“     Id created from $cacheparams-&gt;modeparams array,
+„id“          Module sets own cache id’s</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$module</strong> – </p></li>
+<li><p><strong>$moduleparams</strong> – </p></li>
+<li><p><strong>$cacheparams</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>string</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="ModuleHelper::isAdminMultilang">
+<code class="sig-name descname">isAdminMultilang</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ModuleHelper::isAdminMultilang" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Method to determine if filtering by language is enabled in back-end for
+modules.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Результат</dt>
+<dd class="field-odd"><p>boolean True if enabled; false otherwise.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="ModuleHelper::getModuleById">
+<code class="sig-name descname">getModuleById</code><span class="sig-paren">(</span><em class="sig-param">$id</em><span class="sig-paren">)</span><a class="headerlink" href="#ModuleHelper::getModuleById" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Get module by id</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$id</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>stdClass The Module object</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2020, Artem Vasilev &lt;kern.usr@gmail.com&gt;
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

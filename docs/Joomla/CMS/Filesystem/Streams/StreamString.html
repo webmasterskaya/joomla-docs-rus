@@ -1,0 +1,444 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="ru" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="ru" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Joomla\CMS\Filesystem\Streams\StreamString &mdash; документация joomla-docs-rus 3.9.16</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../../../../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../../../" src="../../../../_static/documentation_options.js"></script>
+        <script src="../../../../_static/jquery.js"></script>
+        <script src="../../../../_static/underscore.js"></script>
+        <script src="../../../../_static/doctools.js"></script>
+        <script src="../../../../_static/language_data.js"></script>
+        <script src="../../../../_static/translations.js"></script>
+    
+    <script type="text/javascript" src="../../../../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../../../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../../../_static/pygments.css" type="text/css" />
+    <link rel="index" title="Алфавитный указатель" href="../../../../genindex.html" />
+    <link rel="search" title="Поиск" href="../../../../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search"  style="background: white" >
+          
+
+          
+            <a href="../../../../index.html" class="icon icon-home"> joomla-docs-rus
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <!-- Local TOC -->
+              <div class="local-toc"><ul>
+<li><a class="reference internal" href="#">Joomla\CMS\Filesystem\Streams\StreamString</a></li>
+</ul>
+</div>
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../../../index.html">joomla-docs-rus</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content style-external-links">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../../../index.html">Docs</a> &raquo;</li>
+        
+      <li>Joomla\CMS\Filesystem\Streams\StreamString</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../../../../_sources/Joomla/CMS/Filesystem/Streams/StreamString.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="joomla-cms-filesystem-streams-streamstring">
+<h1>Joomla\CMS\Filesystem\Streams\StreamString<a class="headerlink" href="#joomla-cms-filesystem-streams-streamstring" title="Ссылка на этот заголовок">¶</a></h1>
+<dl class="class">
+<dt id="StreamString">
+<em class="property">class </em><code class="sig-name descname">StreamString</code><a class="headerlink" href="#StreamString" title="Ссылка на это определение">¶</a></dt>
+<dd><p>String Stream Wrapper</p>
+<p>This class allows you to use a PHP string in the same way that you would normally use a regular stream wrapper</p>
+<dl class="attr">
+<dt id="StreamString::$currentString">
+<em class="property">property </em><code class="sig-name descname">currentString</code><a class="headerlink" href="#StreamString::$currentString" title="Ссылка на это определение">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>string</p>
+</dd>
+<dt class="field-even">Scope</dt>
+<dd class="field-even"><p>protected</p>
+</dd>
+</dl>
+<p>The current string</p>
+</dd></dl>
+
+<dl class="attr">
+<dt id="StreamString::$path">
+<em class="property">property </em><code class="sig-name descname">path</code><a class="headerlink" href="#StreamString::$path" title="Ссылка на это определение">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>string</p>
+</dd>
+<dt class="field-even">Scope</dt>
+<dd class="field-even"><p>protected</p>
+</dd>
+</dl>
+<p>The path</p>
+</dd></dl>
+
+<dl class="attr">
+<dt id="StreamString::$mode">
+<em class="property">property </em><code class="sig-name descname">mode</code><a class="headerlink" href="#StreamString::$mode" title="Ссылка на это определение">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>string</p>
+</dd>
+<dt class="field-even">Scope</dt>
+<dd class="field-even"><p>protected</p>
+</dd>
+</dl>
+<p>The mode</p>
+</dd></dl>
+
+<dl class="attr">
+<dt id="StreamString::$options">
+<em class="property">property </em><code class="sig-name descname">options</code><a class="headerlink" href="#StreamString::$options" title="Ссылка на это определение">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>string</p>
+</dd>
+<dt class="field-even">Scope</dt>
+<dd class="field-even"><p>protected</p>
+</dd>
+</dl>
+<p>Enter description here …</p>
+</dd></dl>
+
+<dl class="attr">
+<dt id="StreamString::$openedPath">
+<em class="property">property </em><code class="sig-name descname">openedPath</code><a class="headerlink" href="#StreamString::$openedPath" title="Ссылка на это определение">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>string</p>
+</dd>
+<dt class="field-even">Scope</dt>
+<dd class="field-even"><p>protected</p>
+</dd>
+</dl>
+<p>Enter description here …</p>
+</dd></dl>
+
+<dl class="attr">
+<dt id="StreamString::$pos">
+<em class="property">property </em><code class="sig-name descname">pos</code><a class="headerlink" href="#StreamString::$pos" title="Ссылка на это определение">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>integer</p>
+</dd>
+<dt class="field-even">Scope</dt>
+<dd class="field-even"><p>protected</p>
+</dd>
+</dl>
+<p>Current position</p>
+</dd></dl>
+
+<dl class="attr">
+<dt id="StreamString::$len">
+<em class="property">property </em><code class="sig-name descname">len</code><a class="headerlink" href="#StreamString::$len" title="Ссылка на это определение">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>string</p>
+</dd>
+<dt class="field-even">Scope</dt>
+<dd class="field-even"><p>protected</p>
+</dd>
+</dl>
+<p>Length of the string</p>
+</dd></dl>
+
+<dl class="attr">
+<dt id="StreamString::$stat">
+<em class="property">property </em><code class="sig-name descname">stat</code><a class="headerlink" href="#StreamString::$stat" title="Ссылка на это определение">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>array</p>
+</dd>
+<dt class="field-even">Scope</dt>
+<dd class="field-even"><p>protected</p>
+</dd>
+</dl>
+<p>Statistics for a file</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="StreamString::stream_open">
+<code class="sig-name descname">stream_open</code><span class="sig-paren">(</span><em class="sig-param">$path</em>, <em class="sig-param">$mode</em>, <em class="sig-param">$options</em>, <em class="sig-param">$opened_path</em><span class="sig-paren">)</span><a class="headerlink" href="#StreamString::stream_open" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Method to open a file or URL.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$path</strong> – </p></li>
+<li><p><strong>$mode</strong> – </p></li>
+<li><p><strong>$options</strong> – </p></li>
+<li><p><strong>$opened_path</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>boolean</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="StreamString::stream_stat">
+<code class="sig-name descname">stream_stat</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#StreamString::stream_stat" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Method to retrieve information from a file resource</p>
+<dl class="field-list simple">
+<dt class="field-odd">Результат</dt>
+<dd class="field-odd"><p>array</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="StreamString::url_stat">
+<code class="sig-name descname">url_stat</code><span class="sig-paren">(</span><em class="sig-param">$path</em>, <em class="sig-param">$flags = 0</em><span class="sig-paren">)</span><a class="headerlink" href="#StreamString::url_stat" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Method to retrieve information about a file.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$path</strong> – </p></li>
+<li><p><strong>$flags</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>array</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="StreamString::stream_read">
+<code class="sig-name descname">stream_read</code><span class="sig-paren">(</span><em class="sig-param">$count</em><span class="sig-paren">)</span><a class="headerlink" href="#StreamString::stream_read" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Method to read a given number of bytes starting at the current position
+and moving to the end of the string defined by the current position plus
+the
+given number.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$count</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>void</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="StreamString::stream_write">
+<code class="sig-name descname">stream_write</code><span class="sig-paren">(</span><em class="sig-param">$data</em><span class="sig-paren">)</span><a class="headerlink" href="#StreamString::stream_write" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Stream write, always returning false.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$data</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>boolean</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="StreamString::stream_tell">
+<code class="sig-name descname">stream_tell</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#StreamString::stream_tell" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Method to get the current position</p>
+<dl class="field-list simple">
+<dt class="field-odd">Результат</dt>
+<dd class="field-odd"><p>integer The position</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="StreamString::stream_eof">
+<code class="sig-name descname">stream_eof</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#StreamString::stream_eof" title="Ссылка на это определение">¶</a></dt>
+<dd><p>End of field check</p>
+<dl class="field-list simple">
+<dt class="field-odd">Результат</dt>
+<dd class="field-odd"><p>boolean True if at end of field.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="StreamString::stream_seek">
+<code class="sig-name descname">stream_seek</code><span class="sig-paren">(</span><em class="sig-param">$offset</em>, <em class="sig-param">$whence</em><span class="sig-paren">)</span><a class="headerlink" href="#StreamString::stream_seek" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Stream offset</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$offset</strong> – </p></li>
+<li><p><strong>$whence</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>boolean True on success.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="StreamString::stream_flush">
+<code class="sig-name descname">stream_flush</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#StreamString::stream_flush" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Stream flush, always returns true.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Результат</dt>
+<dd class="field-odd"><p>boolean</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2020, Artem Vasilev &lt;kern.usr@gmail.com&gt;
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

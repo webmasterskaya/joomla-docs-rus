@@ -1,0 +1,1158 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="ru" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="ru" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Joomla\CMS\Form\Form &mdash; документация joomla-docs-rus 3.9.16</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../../../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../../" src="../../../_static/documentation_options.js"></script>
+        <script src="../../../_static/jquery.js"></script>
+        <script src="../../../_static/underscore.js"></script>
+        <script src="../../../_static/doctools.js"></script>
+        <script src="../../../_static/language_data.js"></script>
+        <script src="../../../_static/translations.js"></script>
+    
+    <script type="text/javascript" src="../../../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
+    <link rel="index" title="Алфавитный указатель" href="../../../genindex.html" />
+    <link rel="search" title="Поиск" href="../../../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search"  style="background: white" >
+          
+
+          
+            <a href="../../../index.html" class="icon icon-home"> joomla-docs-rus
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <!-- Local TOC -->
+              <div class="local-toc"><ul>
+<li><a class="reference internal" href="#">Joomla\CMS\Form\Form</a></li>
+</ul>
+</div>
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../../index.html">joomla-docs-rus</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content style-external-links">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../../index.html">Docs</a> &raquo;</li>
+        
+      <li>Joomla\CMS\Form\Form</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../../../_sources/Joomla/CMS/Form/Form.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="joomla-cms-form-form">
+<h1>Joomla\CMS\Form\Form<a class="headerlink" href="#joomla-cms-form-form" title="Ссылка на этот заголовок">¶</a></h1>
+<dl class="class">
+<dt id="Form">
+<em class="property">class </em><code class="sig-name descname">Form</code><a class="headerlink" href="#Form" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Form Class for the Joomla Platform.</p>
+<p>This class implements a robust API for constructing, populating, filtering, and validating forms.
+It uses XML definitions to construct form fields and a variety of field and rule classes to render and validate the form.</p>
+<dl class="attr">
+<dt id="Form::$data">
+<em class="property">property </em><code class="sig-name descname">data</code><a class="headerlink" href="#Form::$data" title="Ссылка на это определение">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>Registry</p>
+</dd>
+<dt class="field-even">Scope</dt>
+<dd class="field-even"><p>protected</p>
+</dd>
+</dl>
+<p>The Registry data store for form fields during display.</p>
+</dd></dl>
+
+<dl class="attr">
+<dt id="Form::$errors">
+<em class="property">property </em><code class="sig-name descname">errors</code><a class="headerlink" href="#Form::$errors" title="Ссылка на это определение">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>array</p>
+</dd>
+<dt class="field-even">Scope</dt>
+<dd class="field-even"><p>protected</p>
+</dd>
+</dl>
+<p>The form object errors array.</p>
+</dd></dl>
+
+<dl class="attr">
+<dt id="Form::$name">
+<em class="property">property </em><code class="sig-name descname">name</code><a class="headerlink" href="#Form::$name" title="Ссылка на это определение">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>string</p>
+</dd>
+<dt class="field-even">Scope</dt>
+<dd class="field-even"><p>protected</p>
+</dd>
+</dl>
+<p>The name of the form instance.</p>
+</dd></dl>
+
+<dl class="attr">
+<dt id="Form::$options">
+<em class="property">property </em><code class="sig-name descname">options</code><a class="headerlink" href="#Form::$options" title="Ссылка на это определение">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>array</p>
+</dd>
+<dt class="field-even">Scope</dt>
+<dd class="field-even"><p>protected</p>
+</dd>
+</dl>
+<p>The form object options for use in rendering and validation.</p>
+</dd></dl>
+
+<dl class="attr">
+<dt id="Form::$xml">
+<em class="property">property </em><code class="sig-name descname">xml</code><a class="headerlink" href="#Form::$xml" title="Ссылка на это определение">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>SimpleXMLElement</p>
+</dd>
+<dt class="field-even">Scope</dt>
+<dd class="field-even"><p>protected</p>
+</dd>
+</dl>
+<p>The form XML definition.</p>
+</dd></dl>
+
+<dl class="attr">
+<dt id="Form::$forms">
+<em class="property">property </em><code class="sig-name descname">forms</code><a class="headerlink" href="#Form::$forms" title="Ссылка на это определение">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>Form[]</p>
+</dd>
+<dt class="field-even">Scope</dt>
+<dd class="field-even"><p>protected</p>
+</dd>
+</dl>
+<p>Form instances.</p>
+</dd></dl>
+
+<dl class="attr">
+<dt id="Form::$repeat">
+<em class="property">property </em><code class="sig-name descname">repeat</code><a class="headerlink" href="#Form::$repeat" title="Ссылка на это определение">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>boolean</p>
+</dd>
+</dl>
+<p>Alows extensions to implement repeating elements</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Form::__construct">
+<code class="sig-name descname">__construct</code><span class="sig-paren">(</span><em class="sig-param">$name</em>, <em class="sig-param">$options = array()</em><span class="sig-paren">)</span><a class="headerlink" href="#Form::__construct" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Method to instantiate the form object.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$name</strong> – </p></li>
+<li><p><strong>$options</strong> – </p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="Form::bind">
+<code class="sig-name descname">bind</code><span class="sig-paren">(</span><em class="sig-param">$data</em><span class="sig-paren">)</span><a class="headerlink" href="#Form::bind" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Method to bind data to the form.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$data</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>boolean True on success.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="Form::bindLevel">
+<code class="sig-name descname">bindLevel</code><span class="sig-paren">(</span><em class="sig-param">$group</em>, <em class="sig-param">$data</em><span class="sig-paren">)</span><a class="headerlink" href="#Form::bindLevel" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Method to bind data to the form for the group level.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$group</strong> – </p></li>
+<li><p><strong>$data</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>void</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="Form::filter">
+<code class="sig-name descname">filter</code><span class="sig-paren">(</span><em class="sig-param">$data</em>, <em class="sig-param">$group = null</em><span class="sig-paren">)</span><a class="headerlink" href="#Form::filter" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Method to filter the form data.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$data</strong> – </p></li>
+<li><p><strong>$group</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>mixed Array or false.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="Form::getErrors">
+<code class="sig-name descname">getErrors</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Form::getErrors" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Return all errors, if any.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Результат</dt>
+<dd class="field-odd"><p>array Array of error messages or RuntimeException objects.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="Form::getField">
+<code class="sig-name descname">getField</code><span class="sig-paren">(</span><em class="sig-param">$name</em>, <em class="sig-param">$group = null</em>, <em class="sig-param">$value = null</em><span class="sig-paren">)</span><a class="headerlink" href="#Form::getField" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Method to get a form field represented as a JFormField object.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$name</strong> – </p></li>
+<li><p><strong>$group</strong> – </p></li>
+<li><p><strong>$value</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>JFormField|boolean The JFormField object for the field or boolean false on error.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="Form::getFieldAttribute">
+<code class="sig-name descname">getFieldAttribute</code><span class="sig-paren">(</span><em class="sig-param">$name</em>, <em class="sig-param">$attribute</em>, <em class="sig-param">$default = null</em>, <em class="sig-param">$group = null</em><span class="sig-paren">)</span><a class="headerlink" href="#Form::getFieldAttribute" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Method to get an attribute value from a field XML element.  If the
+attribute doesn’t exist or
+is null then the optional default value will be used.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$name</strong> – </p></li>
+<li><p><strong>$attribute</strong> – </p></li>
+<li><p><strong>$default</strong> – </p></li>
+<li><p><strong>$group</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>mixed The attribute value for the field.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="Form::getFieldset">
+<code class="sig-name descname">getFieldset</code><span class="sig-paren">(</span><em class="sig-param">$set = null</em><span class="sig-paren">)</span><a class="headerlink" href="#Form::getFieldset" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Method to get an array of JFormField objects in a given fieldset by name.
+If no name is
+given then all fields are returned.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$set</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>JFormField[] The array of JFormField objects in the fieldset.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="Form::getFieldsets">
+<code class="sig-name descname">getFieldsets</code><span class="sig-paren">(</span><em class="sig-param">$group = null</em><span class="sig-paren">)</span><a class="headerlink" href="#Form::getFieldsets" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Method to get an array of fieldset objects optionally filtered over a
+given field group.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$group</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>array The array of fieldset objects.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="Form::getFormControl">
+<code class="sig-name descname">getFormControl</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Form::getFormControl" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Method to get the form control. This string serves as a container for all
+form fields. For
+example, if there is a field named „foo“ and a field named „bar“ and the
+form control is
+empty the fields will be rendered like: <cite>&lt;input name=»foo» /&gt;</cite> and <cite>&lt;input
+name=»bar» /&gt;</cite>.  If
+the form control is set to „joomla“ however, the fields would be rendered
+like:
+<cite>&lt;input name=»joomla[foo]» /&gt;</cite> and <cite>&lt;input name=»joomla[bar]» /&gt;</cite>.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Результат</dt>
+<dd class="field-odd"><p>string The form control string.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="Form::getGroup">
+<code class="sig-name descname">getGroup</code><span class="sig-paren">(</span><em class="sig-param">$group</em>, <em class="sig-param">$nested = false</em><span class="sig-paren">)</span><a class="headerlink" href="#Form::getGroup" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Method to get an array of JFormField objects in a given field group by
+name.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$group</strong> – </p></li>
+<li><p><strong>$nested</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>JFormField[] The array of JFormField objects in the field group.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="Form::getInput">
+<code class="sig-name descname">getInput</code><span class="sig-paren">(</span><em class="sig-param">$name</em>, <em class="sig-param">$group = null</em>, <em class="sig-param">$value = null</em><span class="sig-paren">)</span><a class="headerlink" href="#Form::getInput" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Method to get a form field markup for the field input.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$name</strong> – </p></li>
+<li><p><strong>$group</strong> – </p></li>
+<li><p><strong>$value</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>string The form field markup.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="Form::getLabel">
+<code class="sig-name descname">getLabel</code><span class="sig-paren">(</span><em class="sig-param">$name</em>, <em class="sig-param">$group = null</em><span class="sig-paren">)</span><a class="headerlink" href="#Form::getLabel" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Method to get the label for a field input.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$name</strong> – </p></li>
+<li><p><strong>$group</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>string The form field label.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="Form::getName">
+<code class="sig-name descname">getName</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Form::getName" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Method to get the form name.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Результат</dt>
+<dd class="field-odd"><p>string The name of the form.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="Form::getValue">
+<code class="sig-name descname">getValue</code><span class="sig-paren">(</span><em class="sig-param">$name</em>, <em class="sig-param">$group = null</em>, <em class="sig-param">$default = null</em><span class="sig-paren">)</span><a class="headerlink" href="#Form::getValue" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Method to get the value of a field.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$name</strong> – </p></li>
+<li><p><strong>$group</strong> – </p></li>
+<li><p><strong>$default</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>mixed The value of the field or the default value if empty.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="Form::getControlGroup">
+<code class="sig-name descname">getControlGroup</code><span class="sig-paren">(</span><em class="sig-param">$name</em>, <em class="sig-param">$group = null</em>, <em class="sig-param">$default = null</em><span class="sig-paren">)</span><a class="headerlink" href="#Form::getControlGroup" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Method to get a control group with label and input.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$name</strong> – </p></li>
+<li><p><strong>$group</strong> – </p></li>
+<li><p><strong>$default</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>string A string containing the html for the control goup</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="Form::getControlGroups">
+<code class="sig-name descname">getControlGroups</code><span class="sig-paren">(</span><em class="sig-param">$name</em><span class="sig-paren">)</span><a class="headerlink" href="#Form::getControlGroups" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Method to get all control groups with label and input of a fieldset.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$name</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>string A string containing the html for the control goups</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="Form::renderField">
+<code class="sig-name descname">renderField</code><span class="sig-paren">(</span><em class="sig-param">$name</em>, <em class="sig-param">$group = null</em>, <em class="sig-param">$default = null</em>, <em class="sig-param">$options = array()</em><span class="sig-paren">)</span><a class="headerlink" href="#Form::renderField" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Method to get a control group with label and input.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$name</strong> – </p></li>
+<li><p><strong>$group</strong> – </p></li>
+<li><p><strong>$default</strong> – </p></li>
+<li><p><strong>$options</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>string A string containing the html for the control goup</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="Form::renderFieldset">
+<code class="sig-name descname">renderFieldset</code><span class="sig-paren">(</span><em class="sig-param">$name</em>, <em class="sig-param">$options = array()</em><span class="sig-paren">)</span><a class="headerlink" href="#Form::renderFieldset" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Method to get all control groups with label and input of a fieldset.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$name</strong> – </p></li>
+<li><p><strong>$options</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>string A string containing the html for the control goups</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="Form::load">
+<code class="sig-name descname">load</code><span class="sig-paren">(</span><em class="sig-param">$data</em>, <em class="sig-param">$replace = true</em>, <em class="sig-param">$xpath = false</em><span class="sig-paren">)</span><a class="headerlink" href="#Form::load" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Method to load the form description from an XML string or object.</p>
+<p>The replace option works per field.  If a field being loaded already
+exists in the current form definition then the behavior or load will vary
+depending upon the replace flag.  If it is set to true, then the existing
+field will be replaced in its exact location by the new field being
+loaded.  If it is false, then the new field being loaded will be ignored
+and the method will move on to the next field to load.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$data</strong> – </p></li>
+<li><p><strong>$replace</strong> – </p></li>
+<li><p><strong>$xpath</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>boolean True on success, false otherwise.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="Form::loadFile">
+<code class="sig-name descname">loadFile</code><span class="sig-paren">(</span><em class="sig-param">$file</em>, <em class="sig-param">$reset = true</em>, <em class="sig-param">$xpath = false</em><span class="sig-paren">)</span><a class="headerlink" href="#Form::loadFile" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Method to load the form description from an XML file.</p>
+<p>The reset option works on a group basis. If the XML file references groups
+that have already been created they will be replaced with the fields in
+the new XML file unless the $reset parameter has been set to false.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$file</strong> – </p></li>
+<li><p><strong>$reset</strong> – </p></li>
+<li><p><strong>$xpath</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>boolean True on success, false otherwise.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="Form::removeField">
+<code class="sig-name descname">removeField</code><span class="sig-paren">(</span><em class="sig-param">$name</em>, <em class="sig-param">$group = null</em><span class="sig-paren">)</span><a class="headerlink" href="#Form::removeField" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Method to remove a field from the form definition.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$name</strong> – </p></li>
+<li><p><strong>$group</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>boolean True on success, false otherwise.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="Form::removeGroup">
+<code class="sig-name descname">removeGroup</code><span class="sig-paren">(</span><em class="sig-param">$group</em><span class="sig-paren">)</span><a class="headerlink" href="#Form::removeGroup" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Method to remove a group from the form definition.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$group</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>boolean True on success.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="Form::reset">
+<code class="sig-name descname">reset</code><span class="sig-paren">(</span><em class="sig-param">$xml = false</em><span class="sig-paren">)</span><a class="headerlink" href="#Form::reset" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Method to reset the form data store and optionally the form XML
+definition.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$xml</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>boolean True on success.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="Form::setField">
+<code class="sig-name descname">setField</code><span class="sig-paren">(</span><em class="sig-param">SimpleXMLElement $element</em>, <em class="sig-param">$group = null</em>, <em class="sig-param">$replace = true</em>, <em class="sig-param">$fieldset = 'default'</em><span class="sig-paren">)</span><a class="headerlink" href="#Form::setField" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Method to set a field XML element to the form definition.  If the replace
+flag is set then
+the field will be set whether it already exists or not.  If it isn’t set,
+then the field
+will not be replaced if it already exists.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$element</strong> (<em>SimpleXMLElement</em>) – </p></li>
+<li><p><strong>$group</strong> – </p></li>
+<li><p><strong>$replace</strong> – </p></li>
+<li><p><strong>$fieldset</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>boolean True on success.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="Form::setFieldAttribute">
+<code class="sig-name descname">setFieldAttribute</code><span class="sig-paren">(</span><em class="sig-param">$name</em>, <em class="sig-param">$attribute</em>, <em class="sig-param">$value</em>, <em class="sig-param">$group = null</em><span class="sig-paren">)</span><a class="headerlink" href="#Form::setFieldAttribute" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Method to set an attribute value for a field XML element.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$name</strong> – </p></li>
+<li><p><strong>$attribute</strong> – </p></li>
+<li><p><strong>$value</strong> – </p></li>
+<li><p><strong>$group</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>boolean True on success.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="Form::setFields">
+<code class="sig-name descname">setFields</code><span class="sig-paren">(</span><em class="sig-param">$elements</em>, <em class="sig-param">$group = null</em>, <em class="sig-param">$replace = true</em>, <em class="sig-param">$fieldset = 'default'</em><span class="sig-paren">)</span><a class="headerlink" href="#Form::setFields" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Method to set some field XML elements to the form definition.  If the
+replace flag is set then
+the fields will be set whether they already exists or not.  If it isn’t
+set, then the fields
+will not be replaced if they already exist.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$elements</strong> – </p></li>
+<li><p><strong>$group</strong> – </p></li>
+<li><p><strong>$replace</strong> – </p></li>
+<li><p><strong>$fieldset</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>boolean True on success.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="Form::setValue">
+<code class="sig-name descname">setValue</code><span class="sig-paren">(</span><em class="sig-param">$name</em>, <em class="sig-param">$group = null</em>, <em class="sig-param">$value = null</em><span class="sig-paren">)</span><a class="headerlink" href="#Form::setValue" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Method to set the value of a field. If the field does not exist in the
+form then the method
+will return false.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$name</strong> – </p></li>
+<li><p><strong>$group</strong> – </p></li>
+<li><p><strong>$value</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>boolean True on success.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="Form::validate">
+<code class="sig-name descname">validate</code><span class="sig-paren">(</span><em class="sig-param">$data</em>, <em class="sig-param">$group = null</em><span class="sig-paren">)</span><a class="headerlink" href="#Form::validate" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Method to validate form data.</p>
+<p>Validation warnings will be pushed into JForm::errors and should be
+retrieved with JForm::getErrors() when validate returns boolean false.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$data</strong> – </p></li>
+<li><p><strong>$group</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>boolean True on success.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="Form::filterField">
+<code class="sig-name descname">filterField</code><span class="sig-paren">(</span><em class="sig-param">$element</em>, <em class="sig-param">$value</em><span class="sig-paren">)</span><a class="headerlink" href="#Form::filterField" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Method to apply an input filter to a value based on field data.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$element</strong> – </p></li>
+<li><p><strong>$value</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>mixed The filtered value.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="Form::findField">
+<code class="sig-name descname">findField</code><span class="sig-paren">(</span><em class="sig-param">$name</em>, <em class="sig-param">$group = null</em><span class="sig-paren">)</span><a class="headerlink" href="#Form::findField" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Method to get a form field represented as an XML element object.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$name</strong> – </p></li>
+<li><p><strong>$group</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>SimpleXMLElement|boolean The XML element object for the field or boolean false on error.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="Form::findFieldsByFieldset">
+<code class="sig-name descname">findFieldsByFieldset</code><span class="sig-paren">(</span><em class="sig-param">$name</em><span class="sig-paren">)</span><a class="headerlink" href="#Form::findFieldsByFieldset" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Method to get an array of <cite>&lt;field&gt;</cite> elements from the form XML document
+which are in a specified fieldset by name.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$name</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>SimpleXMLElement[]|boolean Boolean false on error or array of SimpleXMLElement objects.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="Form::findFieldsByGroup">
+<code class="sig-name descname">findFieldsByGroup</code><span class="sig-paren">(</span><em class="sig-param">$group = null</em>, <em class="sig-param">$nested = false</em><span class="sig-paren">)</span><a class="headerlink" href="#Form::findFieldsByGroup" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Method to get an array of <cite>&lt;field&gt;</cite> elements from the form XML document
+which are in a control group by name.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$group</strong> – </p></li>
+<li><p><strong>$nested</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>SimpleXMLElement[]|boolean Boolean false on error or array of SimpleXMLElement objects.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="Form::findGroup">
+<code class="sig-name descname">findGroup</code><span class="sig-paren">(</span><em class="sig-param">$group</em><span class="sig-paren">)</span><a class="headerlink" href="#Form::findGroup" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Method to get a form field group represented as an XML element object.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$group</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>SimpleXMLElement[]|boolean An array of XML element objects for the group or boolean false on error.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="Form::loadField">
+<code class="sig-name descname">loadField</code><span class="sig-paren">(</span><em class="sig-param">$element</em>, <em class="sig-param">$group = null</em>, <em class="sig-param">$value = null</em><span class="sig-paren">)</span><a class="headerlink" href="#Form::loadField" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Method to load, setup and return a JFormField object based on field data.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$element</strong> – </p></li>
+<li><p><strong>$group</strong> – </p></li>
+<li><p><strong>$value</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>JFormField|boolean The JFormField object for the field or boolean false on error.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="Form::loadFieldType">
+<code class="sig-name descname">loadFieldType</code><span class="sig-paren">(</span><em class="sig-param">$type</em>, <em class="sig-param">$new = true</em><span class="sig-paren">)</span><a class="headerlink" href="#Form::loadFieldType" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Proxy for <a class="reference external" href="mailto:{&#37;&#52;&#48;link">{<span>&#64;</span>link</a> FormHelper::loadFieldType()}.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$type</strong> – </p></li>
+<li><p><strong>$new</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>FormField|boolean FormField object on success, false otherwise.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="Form::loadRuleType">
+<code class="sig-name descname">loadRuleType</code><span class="sig-paren">(</span><em class="sig-param">$type</em>, <em class="sig-param">$new = true</em><span class="sig-paren">)</span><a class="headerlink" href="#Form::loadRuleType" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Proxy for FormHelper::loadRuleType().</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$type</strong> – </p></li>
+<li><p><strong>$new</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>FormRule|boolean FormRule object on success, false otherwise.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="Form::syncPaths">
+<code class="sig-name descname">syncPaths</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Form::syncPaths" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Method to synchronize any field, form or rule paths contained in the XML
+document.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Результат</dt>
+<dd class="field-odd"><p>boolean True on success.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="Form::validateField">
+<code class="sig-name descname">validateField</code><span class="sig-paren">(</span><em class="sig-param">SimpleXMLElement $element</em>, <em class="sig-param">$group = null</em>, <em class="sig-param">$value = null</em>, <em class="sig-param">Registry $input = null</em><span class="sig-paren">)</span><a class="headerlink" href="#Form::validateField" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Method to validate a JFormField object based on field data.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$element</strong> (<em>SimpleXMLElement</em>) – </p></li>
+<li><p><strong>$group</strong> – </p></li>
+<li><p><strong>$value</strong> – </p></li>
+<li><p><strong>$input</strong> (<em>Registry</em>) – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>boolean Boolean true if field value is valid, Exception on failure.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="Form::addFieldPath">
+<code class="sig-name descname">addFieldPath</code><span class="sig-paren">(</span><em class="sig-param">$new = null</em><span class="sig-paren">)</span><a class="headerlink" href="#Form::addFieldPath" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Proxy for <a class="reference external" href="mailto:{&#37;&#52;&#48;link">{<span>&#64;</span>link</a> FormHelper::addFieldPath()}.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$new</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>array The list of paths that have been added.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="Form::addFormPath">
+<code class="sig-name descname">addFormPath</code><span class="sig-paren">(</span><em class="sig-param">$new = null</em><span class="sig-paren">)</span><a class="headerlink" href="#Form::addFormPath" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Proxy for FormHelper::addFormPath().</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$new</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>array The list of paths that have been added.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="Form::addRulePath">
+<code class="sig-name descname">addRulePath</code><span class="sig-paren">(</span><em class="sig-param">$new = null</em><span class="sig-paren">)</span><a class="headerlink" href="#Form::addRulePath" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Proxy for FormHelper::addRulePath().</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$new</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>array The list of paths that have been added.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="Form::getInstance">
+<code class="sig-name descname">getInstance</code><span class="sig-paren">(</span><em class="sig-param">$name</em>, <em class="sig-param">$data = null</em>, <em class="sig-param">$options = array()</em>, <em class="sig-param">$replace = true</em>, <em class="sig-param">$xpath = false</em><span class="sig-paren">)</span><a class="headerlink" href="#Form::getInstance" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Method to get an instance of a form.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$name</strong> – </p></li>
+<li><p><strong>$data</strong> – </p></li>
+<li><p><strong>$options</strong> – </p></li>
+<li><p><strong>$replace</strong> – </p></li>
+<li><p><strong>$xpath</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>Form JForm instance.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="Form::addNode">
+<code class="sig-name descname">addNode</code><span class="sig-paren">(</span><em class="sig-param">SimpleXMLElement $source</em>, <em class="sig-param">SimpleXMLElement $new</em><span class="sig-paren">)</span><a class="headerlink" href="#Form::addNode" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Adds a new child SimpleXMLElement node to the source.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$source</strong> (<em>SimpleXMLElement</em>) – </p></li>
+<li><p><strong>$new</strong> (<em>SimpleXMLElement</em>) – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>void</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="Form::mergeNode">
+<code class="sig-name descname">mergeNode</code><span class="sig-paren">(</span><em class="sig-param">SimpleXMLElement $source</em>, <em class="sig-param">SimpleXMLElement $new</em><span class="sig-paren">)</span><a class="headerlink" href="#Form::mergeNode" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Update the attributes of a child node</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$source</strong> (<em>SimpleXMLElement</em>) – </p></li>
+<li><p><strong>$new</strong> (<em>SimpleXMLElement</em>) – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>void</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="Form::mergeNodes">
+<code class="sig-name descname">mergeNodes</code><span class="sig-paren">(</span><em class="sig-param">SimpleXMLElement $source</em>, <em class="sig-param">SimpleXMLElement $new</em><span class="sig-paren">)</span><a class="headerlink" href="#Form::mergeNodes" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Merges new elements into a source <cite>&lt;fields&gt;</cite> element.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$source</strong> (<em>SimpleXMLElement</em>) – </p></li>
+<li><p><strong>$new</strong> (<em>SimpleXMLElement</em>) – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>void</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="Form::getAttribute">
+<code class="sig-name descname">getAttribute</code><span class="sig-paren">(</span><em class="sig-param">$name</em>, <em class="sig-param">$default = null</em><span class="sig-paren">)</span><a class="headerlink" href="#Form::getAttribute" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Returns the value of an attribute of the form itself</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$name</strong> – </p></li>
+<li><p><strong>$default</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>mixed Value of the attribute / default</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="Form::getData">
+<code class="sig-name descname">getData</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Form::getData" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Getter for the form data</p>
+<dl class="field-list simple">
+<dt class="field-odd">Результат</dt>
+<dd class="field-odd"><p>Registry Object with the data</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="Form::getXml">
+<code class="sig-name descname">getXml</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Form::getXml" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Method to get the XML form object</p>
+<dl class="field-list simple">
+<dt class="field-odd">Результат</dt>
+<dd class="field-odd"><p>SimpleXMLElement The form XML object</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="Form::getFieldXml">
+<code class="sig-name descname">getFieldXml</code><span class="sig-paren">(</span><em class="sig-param">$name</em>, <em class="sig-param">$group = null</em><span class="sig-paren">)</span><a class="headerlink" href="#Form::getFieldXml" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Method to get a form field represented as an XML element object.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$name</strong> – </p></li>
+<li><p><strong>$group</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>SimpleXMLElement|boolean The XML element object for the field or boolean false on error.</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2020, Artem Vasilev &lt;kern.usr@gmail.com&gt;
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

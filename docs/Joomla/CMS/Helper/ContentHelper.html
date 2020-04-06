@@ -1,0 +1,317 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="ru" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="ru" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Joomla\CMS\Helper\ContentHelper &mdash; документация joomla-docs-rus 3.9.16</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../../../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../../" src="../../../_static/documentation_options.js"></script>
+        <script src="../../../_static/jquery.js"></script>
+        <script src="../../../_static/underscore.js"></script>
+        <script src="../../../_static/doctools.js"></script>
+        <script src="../../../_static/language_data.js"></script>
+        <script src="../../../_static/translations.js"></script>
+    
+    <script type="text/javascript" src="../../../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
+    <link rel="index" title="Алфавитный указатель" href="../../../genindex.html" />
+    <link rel="search" title="Поиск" href="../../../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search"  style="background: white" >
+          
+
+          
+            <a href="../../../index.html" class="icon icon-home"> joomla-docs-rus
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <!-- Local TOC -->
+              <div class="local-toc"><ul>
+<li><a class="reference internal" href="#">Joomla\CMS\Helper\ContentHelper</a></li>
+</ul>
+</div>
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../../index.html">joomla-docs-rus</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content style-external-links">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../../index.html">Docs</a> &raquo;</li>
+        
+      <li>Joomla\CMS\Helper\ContentHelper</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../../../_sources/Joomla/CMS/Helper/ContentHelper.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="joomla-cms-helper-contenthelper">
+<h1>Joomla\CMS\Helper\ContentHelper<a class="headerlink" href="#joomla-cms-helper-contenthelper" title="Ссылка на этот заголовок">¶</a></h1>
+<dl class="class">
+<dt id="ContentHelper">
+<em class="property">class </em><code class="sig-name descname">ContentHelper</code><a class="headerlink" href="#ContentHelper" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Helper for standard content style extensions.
+This class mainly simplifies static helper methods often repeated in individual components</p>
+<dl class="method">
+<dt id="ContentHelper::addSubmenu">
+<code class="sig-name descname">addSubmenu</code><span class="sig-paren">(</span><em class="sig-param">$vName</em><span class="sig-paren">)</span><a class="headerlink" href="#ContentHelper::addSubmenu" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Configure the Linkbar. Must be implemented by each extension.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$vName</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>void</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="ContentHelper::countRelations">
+<code class="sig-name descname">countRelations</code><span class="sig-paren">(</span><em class="sig-param">$items</em>, <em class="sig-param">$config</em><span class="sig-paren">)</span><a class="headerlink" href="#ContentHelper::countRelations" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Adds Count relations for Category and Tag Managers</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$items</strong> – </p></li>
+<li><p><strong>$config</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>stdClass[]</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="ContentHelper::_getActions">
+<code class="sig-name descname">_getActions</code><span class="sig-paren">(</span><em class="sig-param">$categoryId = 0</em>, <em class="sig-param">$id = 0</em>, <em class="sig-param">$assetName = ''</em><span class="sig-paren">)</span><a class="headerlink" href="#ContentHelper::_getActions" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Gets a list of the actions that can be performed.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$categoryId</strong> – </p></li>
+<li><p><strong>$id</strong> – </p></li>
+<li><p><strong>$assetName</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>JObject</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="ContentHelper::getActions">
+<code class="sig-name descname">getActions</code><span class="sig-paren">(</span><em class="sig-param">$component = ''</em>, <em class="sig-param">$section = ''</em>, <em class="sig-param">$id = 0</em><span class="sig-paren">)</span><a class="headerlink" href="#ContentHelper::getActions" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Gets a list of the actions that can be performed.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$component</strong> – </p></li>
+<li><p><strong>$section</strong> – </p></li>
+<li><p><strong>$id</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>JObject</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="ContentHelper::getCurrentLanguage">
+<code class="sig-name descname">getCurrentLanguage</code><span class="sig-paren">(</span><em class="sig-param">$detectBrowser = true</em><span class="sig-paren">)</span><a class="headerlink" href="#ContentHelper::getCurrentLanguage" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Gets the current language</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$detectBrowser</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>string The language string</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="ContentHelper::getLanguageId">
+<code class="sig-name descname">getLanguageId</code><span class="sig-paren">(</span><em class="sig-param">$langCode</em><span class="sig-paren">)</span><a class="headerlink" href="#ContentHelper::getLanguageId" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Gets the associated language ID</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$langCode</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>integer The language ID</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="ContentHelper::getRowData">
+<code class="sig-name descname">getRowData</code><span class="sig-paren">(</span><em class="sig-param">Table $table</em><span class="sig-paren">)</span><a class="headerlink" href="#ContentHelper::getRowData" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Gets a row of data from a table</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$table</strong> (<a class="reference internal" href="../Table/Table.html#Table" title="Table"><em>Table</em></a>) – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>array Associative array of all columns and values for a row in a table.</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2020, Artem Vasilev &lt;kern.usr@gmail.com&gt;
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

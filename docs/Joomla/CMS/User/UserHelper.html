@@ -1,0 +1,512 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="ru" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="ru" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Joomla\CMS\User\UserHelper &mdash; документация joomla-docs-rus 3.9.16</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../../../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../../" src="../../../_static/documentation_options.js"></script>
+        <script src="../../../_static/jquery.js"></script>
+        <script src="../../../_static/underscore.js"></script>
+        <script src="../../../_static/doctools.js"></script>
+        <script src="../../../_static/language_data.js"></script>
+        <script src="../../../_static/translations.js"></script>
+    
+    <script type="text/javascript" src="../../../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
+    <link rel="index" title="Алфавитный указатель" href="../../../genindex.html" />
+    <link rel="search" title="Поиск" href="../../../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search"  style="background: white" >
+          
+
+          
+            <a href="../../../index.html" class="icon icon-home"> joomla-docs-rus
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <!-- Local TOC -->
+              <div class="local-toc"><ul>
+<li><a class="reference internal" href="#">Joomla\CMS\User\UserHelper</a></li>
+</ul>
+</div>
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../../index.html">joomla-docs-rus</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content style-external-links">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../../index.html">Docs</a> &raquo;</li>
+        
+      <li>Joomla\CMS\User\UserHelper</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../../../_sources/Joomla/CMS/User/UserHelper.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="joomla-cms-user-userhelper">
+<h1>Joomla\CMS\User\UserHelper<a class="headerlink" href="#joomla-cms-user-userhelper" title="Ссылка на этот заголовок">¶</a></h1>
+<dl class="class">
+<dt id="UserHelper">
+<em class="property">class </em><code class="sig-name descname">UserHelper</code><a class="headerlink" href="#UserHelper" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Authorisation helper class, provides static methods to perform various tasks relevant
+to the Joomla user and authorisation classes</p>
+<p>This class has influences and some method logic from the Horde Auth package</p>
+<dl class="method">
+<dt id="UserHelper::addUserToGroup">
+<code class="sig-name descname">addUserToGroup</code><span class="sig-paren">(</span><em class="sig-param">$userId</em>, <em class="sig-param">$groupId</em><span class="sig-paren">)</span><a class="headerlink" href="#UserHelper::addUserToGroup" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Method to add a user to a group.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$userId</strong> – </p></li>
+<li><p><strong>$groupId</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>boolean True on success</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="UserHelper::getUserGroups">
+<code class="sig-name descname">getUserGroups</code><span class="sig-paren">(</span><em class="sig-param">$userId</em><span class="sig-paren">)</span><a class="headerlink" href="#UserHelper::getUserGroups" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Method to get a list of groups a user is in.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$userId</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>array List of groups</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="UserHelper::removeUserFromGroup">
+<code class="sig-name descname">removeUserFromGroup</code><span class="sig-paren">(</span><em class="sig-param">$userId</em>, <em class="sig-param">$groupId</em><span class="sig-paren">)</span><a class="headerlink" href="#UserHelper::removeUserFromGroup" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Method to remove a user from a group.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$userId</strong> – </p></li>
+<li><p><strong>$groupId</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>boolean True on success</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="UserHelper::setUserGroups">
+<code class="sig-name descname">setUserGroups</code><span class="sig-paren">(</span><em class="sig-param">$userId</em>, <em class="sig-param">$groups</em><span class="sig-paren">)</span><a class="headerlink" href="#UserHelper::setUserGroups" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Method to set the groups for a user.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$userId</strong> – </p></li>
+<li><p><strong>$groups</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>boolean True on success</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="UserHelper::getProfile">
+<code class="sig-name descname">getProfile</code><span class="sig-paren">(</span><em class="sig-param">$userId = 0</em><span class="sig-paren">)</span><a class="headerlink" href="#UserHelper::getProfile" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Gets the user profile information</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$userId</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>object</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="UserHelper::activateUser">
+<code class="sig-name descname">activateUser</code><span class="sig-paren">(</span><em class="sig-param">$activation</em><span class="sig-paren">)</span><a class="headerlink" href="#UserHelper::activateUser" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Method to activate a user</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$activation</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>boolean True on success</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="UserHelper::getUserId">
+<code class="sig-name descname">getUserId</code><span class="sig-paren">(</span><em class="sig-param">$username</em><span class="sig-paren">)</span><a class="headerlink" href="#UserHelper::getUserId" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Returns userid if a user exists</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$username</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>integer The user id or 0 if not found.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="UserHelper::hashPassword">
+<code class="sig-name descname">hashPassword</code><span class="sig-paren">(</span><em class="sig-param">$password</em>, <em class="sig-param">$algorithm = PASSWORD_BCRYPT</em>, <em class="sig-param">$options = array()</em><span class="sig-paren">)</span><a class="headerlink" href="#UserHelper::hashPassword" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Hashes a password using the current encryption.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$password</strong> – </p></li>
+<li><p><strong>$algorithm</strong> – </p></li>
+<li><p><strong>$options</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>string The encrypted password.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="UserHelper::verifyPassword">
+<code class="sig-name descname">verifyPassword</code><span class="sig-paren">(</span><em class="sig-param">$password</em>, <em class="sig-param">$hash</em>, <em class="sig-param">$user_id = 0</em><span class="sig-paren">)</span><a class="headerlink" href="#UserHelper::verifyPassword" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Formats a password using the current encryption. If the user ID is given
+and the hash does not fit the current hashing algorithm, it automatically
+updates the hash.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$password</strong> – </p></li>
+<li><p><strong>$hash</strong> – </p></li>
+<li><p><strong>$user_id</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>boolean True if the password and hash match, false otherwise</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="UserHelper::getCryptedPassword">
+<code class="sig-name descname">getCryptedPassword</code><span class="sig-paren">(</span><em class="sig-param">$plaintext</em>, <em class="sig-param">$salt = ''</em>, <em class="sig-param">$encryption = 'md5-hex'</em>, <em class="sig-param">$show_encrypt = false</em><span class="sig-paren">)</span><a class="headerlink" href="#UserHelper::getCryptedPassword" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Formats a password using the old encryption methods.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$plaintext</strong> – </p></li>
+<li><p><strong>$salt</strong> – </p></li>
+<li><p><strong>$encryption</strong> – </p></li>
+<li><p><strong>$show_encrypt</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>string The encrypted password.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="UserHelper::getSalt">
+<code class="sig-name descname">getSalt</code><span class="sig-paren">(</span><em class="sig-param">$encryption = 'md5-hex'</em>, <em class="sig-param">$seed = ''</em>, <em class="sig-param">$plaintext = ''</em><span class="sig-paren">)</span><a class="headerlink" href="#UserHelper::getSalt" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Returns a salt for the appropriate kind of password encryption using the
+old encryption methods.
+Optionally takes a seed and a plaintext password, to extract the seed
+of an existing password, or for encryption types that use the plaintext
+in the generation of the salt.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$encryption</strong> – </p></li>
+<li><p><strong>$seed</strong> – </p></li>
+<li><p><strong>$plaintext</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>string The generated or extracted salt.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="UserHelper::genRandomPassword">
+<code class="sig-name descname">genRandomPassword</code><span class="sig-paren">(</span><em class="sig-param">$length = 8</em><span class="sig-paren">)</span><a class="headerlink" href="#UserHelper::genRandomPassword" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Generate a random password</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$length</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>string Random Password</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="UserHelper::_toAPRMD5">
+<code class="sig-name descname">_toAPRMD5</code><span class="sig-paren">(</span><em class="sig-param">$value</em>, <em class="sig-param">$count</em><span class="sig-paren">)</span><a class="headerlink" href="#UserHelper::_toAPRMD5" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Converts to allowed 64 characters for APRMD5 passwords.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$value</strong> – </p></li>
+<li><p><strong>$count</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>string $value converted to the 64 MD5 characters.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="UserHelper::_bin">
+<code class="sig-name descname">_bin</code><span class="sig-paren">(</span><em class="sig-param">$hex</em><span class="sig-paren">)</span><a class="headerlink" href="#UserHelper::_bin" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Converts hexadecimal string to binary data.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$hex</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>string Binary data.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="UserHelper::invalidateCookie">
+<code class="sig-name descname">invalidateCookie</code><span class="sig-paren">(</span><em class="sig-param">$userId</em>, <em class="sig-param">$cookieName</em><span class="sig-paren">)</span><a class="headerlink" href="#UserHelper::invalidateCookie" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Method to remove a cookie record from the database and the browser</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$userId</strong> – </p></li>
+<li><p><strong>$cookieName</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>boolean True on success</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="UserHelper::clearExpiredTokens">
+<code class="sig-name descname">clearExpiredTokens</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#UserHelper::clearExpiredTokens" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Clear all expired tokens for all users.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Результат</dt>
+<dd class="field-odd"><p>mixed Database query result</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="UserHelper::getRememberCookieData">
+<code class="sig-name descname">getRememberCookieData</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#UserHelper::getRememberCookieData" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Method to get the remember me cookie data</p>
+<dl class="field-list simple">
+<dt class="field-odd">Результат</dt>
+<dd class="field-odd"><p>mixed An array of information from an authentication cookie or false if there is no cookie</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="UserHelper::getShortHashedUserAgent">
+<code class="sig-name descname">getShortHashedUserAgent</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#UserHelper::getShortHashedUserAgent" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Method to get a hashed user agent string that does not include browser
+version.
+Used when frequent version changes cause problems.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Результат</dt>
+<dd class="field-odd"><p>string A hashed user agent string with version replaced by „abcd“</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="UserHelper::checkSuperUserInUsers">
+<code class="sig-name descname">checkSuperUserInUsers</code><span class="sig-paren">(</span><em class="sig-param">$userIds</em><span class="sig-paren">)</span><a class="headerlink" href="#UserHelper::checkSuperUserInUsers" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Check if there is a super user in the user ids.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$userIds</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>boolean True on success, false on failure</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2020, Artem Vasilev &lt;kern.usr@gmail.com&gt;
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

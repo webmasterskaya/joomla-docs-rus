@@ -1,0 +1,369 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="ru" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="ru" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Joomla\CMS\Schema\ChangeSet &mdash; документация joomla-docs-rus 3.9.16</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../../../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../../" src="../../../_static/documentation_options.js"></script>
+        <script src="../../../_static/jquery.js"></script>
+        <script src="../../../_static/underscore.js"></script>
+        <script src="../../../_static/doctools.js"></script>
+        <script src="../../../_static/language_data.js"></script>
+        <script src="../../../_static/translations.js"></script>
+    
+    <script type="text/javascript" src="../../../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
+    <link rel="index" title="Алфавитный указатель" href="../../../genindex.html" />
+    <link rel="search" title="Поиск" href="../../../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search"  style="background: white" >
+          
+
+          
+            <a href="../../../index.html" class="icon icon-home"> joomla-docs-rus
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <!-- Local TOC -->
+              <div class="local-toc"><ul>
+<li><a class="reference internal" href="#">Joomla\CMS\Schema\ChangeSet</a></li>
+</ul>
+</div>
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../../index.html">joomla-docs-rus</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content style-external-links">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../../index.html">Docs</a> &raquo;</li>
+        
+      <li>Joomla\CMS\Schema\ChangeSet</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../../../_sources/Joomla/CMS/Schema/ChangeSet.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="joomla-cms-schema-changeset">
+<h1>Joomla\CMS\Schema\ChangeSet<a class="headerlink" href="#joomla-cms-schema-changeset" title="Ссылка на этот заголовок">¶</a></h1>
+<dl class="class">
+<dt id="ChangeSet">
+<em class="property">class </em><code class="sig-name descname">ChangeSet</code><a class="headerlink" href="#ChangeSet" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Contains a set of JSchemaChange objects for a particular instance of Joomla.
+Each of these objects contains a DDL query that should have been run against
+the database when this database was created or updated. This enables the
+Installation Manager to check that the current database schema is up to date.</p>
+<dl class="attr">
+<dt id="ChangeSet::$changeItems">
+<em class="property">property </em><code class="sig-name descname">changeItems</code><a class="headerlink" href="#ChangeSet::$changeItems" title="Ссылка на это определение">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>ChangeItem[]</p>
+</dd>
+<dt class="field-even">Scope</dt>
+<dd class="field-even"><p>protected</p>
+</dd>
+</dl>
+<p>Array of ChangeItem objects</p>
+</dd></dl>
+
+<dl class="attr">
+<dt id="ChangeSet::$db">
+<em class="property">property </em><code class="sig-name descname">db</code><a class="headerlink" href="#ChangeSet::$db" title="Ссылка на это определение">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>JDatabaseDriver</p>
+</dd>
+<dt class="field-even">Scope</dt>
+<dd class="field-even"><p>protected</p>
+</dd>
+</dl>
+<p>JDatabaseDriver object</p>
+</dd></dl>
+
+<dl class="attr">
+<dt id="ChangeSet::$folder">
+<em class="property">property </em><code class="sig-name descname">folder</code><a class="headerlink" href="#ChangeSet::$folder" title="Ссылка на это определение">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>string</p>
+</dd>
+<dt class="field-even">Scope</dt>
+<dd class="field-even"><p>protected</p>
+</dd>
+</dl>
+<p>Folder where SQL update files will be found</p>
+</dd></dl>
+
+<dl class="attr">
+<dt id="ChangeSet::$instance">
+<em class="property">property </em><code class="sig-name descname">instance</code><a class="headerlink" href="#ChangeSet::$instance" title="Ссылка на это определение">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p><a class="reference internal" href="#ChangeSet" title="ChangeSet">ChangeSet</a></p>
+</dd>
+<dt class="field-even">Scope</dt>
+<dd class="field-even"><p>protected</p>
+</dd>
+</dl>
+<p>The singleton instance of this object</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="ChangeSet::__construct">
+<code class="sig-name descname">__construct</code><span class="sig-paren">(</span><em class="sig-param">$db</em>, <em class="sig-param">$folder = null</em><span class="sig-paren">)</span><a class="headerlink" href="#ChangeSet::__construct" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Constructor: builds array of $changeItems by processing the .sql files in
+a folder.
+The folder for the Joomla core updates is
+<cite>administrator/components/com_admin/sql/updates/&lt;database&gt;</cite>.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$db</strong> – </p></li>
+<li><p><strong>$folder</strong> – </p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="ChangeSet::getInstance">
+<code class="sig-name descname">getInstance</code><span class="sig-paren">(</span><em class="sig-param">$db</em>, <em class="sig-param">$folder = null</em><span class="sig-paren">)</span><a class="headerlink" href="#ChangeSet::getInstance" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Returns a reference to the ChangeSet object, only creating it if it
+doesn’t already exist.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$db</strong> – </p></li>
+<li><p><strong>$folder</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>ChangeSet</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="ChangeSet::check">
+<code class="sig-name descname">check</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ChangeSet::check" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Checks the database and returns an array of any errors found.
+Note these are not database errors but rather situations where
+the current schema is not up to date.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Результат</dt>
+<dd class="field-odd"><p>array Array of errors if any.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="ChangeSet::fix">
+<code class="sig-name descname">fix</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ChangeSet::fix" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Runs the update query to apply the change to the database</p>
+<dl class="field-list simple">
+<dt class="field-odd">Результат</dt>
+<dd class="field-odd"><p>void</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="ChangeSet::getStatus">
+<code class="sig-name descname">getStatus</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ChangeSet::getStatus" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Returns an array of results for this set</p>
+<dl class="field-list simple">
+<dt class="field-odd">Результат</dt>
+<dd class="field-odd"><p>array associative array of changeitems grouped by unchecked, ok, error, and skipped</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="ChangeSet::getSchema">
+<code class="sig-name descname">getSchema</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ChangeSet::getSchema" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Gets the current database schema, based on the highest version number.
+Note that the .sql files are named based on the version and date, so
+the file name of the last file should match the database schema version
+in the #__schemas table.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Результат</dt>
+<dd class="field-odd"><p>string the schema version for the database</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="ChangeSet::getUpdateFiles">
+<code class="sig-name descname">getUpdateFiles</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ChangeSet::getUpdateFiles" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Get list of SQL update files for this database</p>
+<dl class="field-list simple">
+<dt class="field-odd">Результат</dt>
+<dd class="field-odd"><p>array list of sql update full-path names</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="ChangeSet::getUpdateQueries">
+<code class="sig-name descname">getUpdateQueries</code><span class="sig-paren">(</span><em class="sig-param">$sqlfiles</em><span class="sig-paren">)</span><a class="headerlink" href="#ChangeSet::getUpdateQueries" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Get array of SQL queries</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$sqlfiles</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>array Array of stdClass objects where: file=filename, update_query = text of SQL update query</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2020, Artem Vasilev &lt;kern.usr@gmail.com&gt;
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

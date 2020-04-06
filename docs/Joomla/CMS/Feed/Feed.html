@@ -1,0 +1,468 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="ru" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="ru" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Joomla\CMS\Feed\Feed &mdash; документация joomla-docs-rus 3.9.16</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../../../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../../" src="../../../_static/documentation_options.js"></script>
+        <script src="../../../_static/jquery.js"></script>
+        <script src="../../../_static/underscore.js"></script>
+        <script src="../../../_static/doctools.js"></script>
+        <script src="../../../_static/language_data.js"></script>
+        <script src="../../../_static/translations.js"></script>
+    
+    <script type="text/javascript" src="../../../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
+    <link rel="index" title="Алфавитный указатель" href="../../../genindex.html" />
+    <link rel="search" title="Поиск" href="../../../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search"  style="background: white" >
+          
+
+          
+            <a href="../../../index.html" class="icon icon-home"> joomla-docs-rus
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <!-- Local TOC -->
+              <div class="local-toc"><ul>
+<li><a class="reference internal" href="#">Joomla\CMS\Feed\Feed</a></li>
+</ul>
+</div>
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../../index.html">joomla-docs-rus</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content style-external-links">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../../index.html">Docs</a> &raquo;</li>
+        
+      <li>Joomla\CMS\Feed\Feed</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../../../_sources/Joomla/CMS/Feed/Feed.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="joomla-cms-feed-feed">
+<h1>Joomla\CMS\Feed\Feed<a class="headerlink" href="#joomla-cms-feed-feed" title="Ссылка на этот заголовок">¶</a></h1>
+<dl class="class">
+<dt id="Feed">
+<em class="property">class </em><code class="sig-name descname">Feed</code><a class="headerlink" href="#Feed" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Class to encapsulate a feed for the Joomla Platform.</p>
+<dl class="attr">
+<dt id="Feed::$properties">
+<em class="property">property </em><code class="sig-name descname">properties</code><a class="headerlink" href="#Feed::$properties" title="Ссылка на это определение">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>array</p>
+</dd>
+<dt class="field-even">Scope</dt>
+<dd class="field-even"><p>protected</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="attr">
+<dt id="Feed::$entries">
+<em class="property">property </em><code class="sig-name descname">entries</code><a class="headerlink" href="#Feed::$entries" title="Ссылка на это определение">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>array</p>
+</dd>
+<dt class="field-even">Scope</dt>
+<dd class="field-even"><p>protected</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="Feed::__get">
+<code class="sig-name descname">__get</code><span class="sig-paren">(</span><em class="sig-param">$name</em><span class="sig-paren">)</span><a class="headerlink" href="#Feed::__get" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Magic method to return values for feed properties.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$name</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>mixed</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="Feed::__set">
+<code class="sig-name descname">__set</code><span class="sig-paren">(</span><em class="sig-param">$name</em>, <em class="sig-param">$value</em><span class="sig-paren">)</span><a class="headerlink" href="#Feed::__set" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Magic method to set values for feed properties.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$name</strong> – </p></li>
+<li><p><strong>$value</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>void</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="Feed::addCategory">
+<code class="sig-name descname">addCategory</code><span class="sig-paren">(</span><em class="sig-param">$name</em>, <em class="sig-param">$uri = ''</em><span class="sig-paren">)</span><a class="headerlink" href="#Feed::addCategory" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Method to add a category to the feed object.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$name</strong> – </p></li>
+<li><p><strong>$uri</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>Feed</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="Feed::addContributor">
+<code class="sig-name descname">addContributor</code><span class="sig-paren">(</span><em class="sig-param">$name</em>, <em class="sig-param">$email</em>, <em class="sig-param">$uri = null</em>, <em class="sig-param">$type = null</em><span class="sig-paren">)</span><a class="headerlink" href="#Feed::addContributor" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Method to add a contributor to the feed object.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$name</strong> – </p></li>
+<li><p><strong>$email</strong> – </p></li>
+<li><p><strong>$uri</strong> – </p></li>
+<li><p><strong>$type</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>Feed</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="Feed::addEntry">
+<code class="sig-name descname">addEntry</code><span class="sig-paren">(</span><em class="sig-param">FeedEntry $entry</em><span class="sig-paren">)</span><a class="headerlink" href="#Feed::addEntry" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Method to add an entry to the feed object.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$entry</strong> (<a class="reference internal" href="FeedEntry.html#FeedEntry" title="FeedEntry"><em>FeedEntry</em></a>) – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>Feed</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="Feed::count">
+<code class="sig-name descname">count</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Feed::count" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Returns a count of the number of entries in the feed.</p>
+<p>This method is here to implement the Countable interface.
+You can call it by doing count($feed) rather than $feed-&gt;count();</p>
+<dl class="field-list simple">
+<dt class="field-odd">Результат</dt>
+<dd class="field-odd"><p>integer number of entries in the feed.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="Feed::offsetExists">
+<code class="sig-name descname">offsetExists</code><span class="sig-paren">(</span><em class="sig-param">$offset</em><span class="sig-paren">)</span><a class="headerlink" href="#Feed::offsetExists" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Whether or not an offset exists.  This method is executed when using
+isset() or empty() on
+objects implementing ArrayAccess.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$offset</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>boolean</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="Feed::offsetGet">
+<code class="sig-name descname">offsetGet</code><span class="sig-paren">(</span><em class="sig-param">$offset</em><span class="sig-paren">)</span><a class="headerlink" href="#Feed::offsetGet" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Returns the value at specified offset.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$offset</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>mixed The value at the offset.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="Feed::offsetSet">
+<code class="sig-name descname">offsetSet</code><span class="sig-paren">(</span><em class="sig-param">$offset</em>, <em class="sig-param">$value</em><span class="sig-paren">)</span><a class="headerlink" href="#Feed::offsetSet" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Assigns a value to the specified offset.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$offset</strong> – </p></li>
+<li><p><strong>$value</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>boolean</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="Feed::offsetUnset">
+<code class="sig-name descname">offsetUnset</code><span class="sig-paren">(</span><em class="sig-param">$offset</em><span class="sig-paren">)</span><a class="headerlink" href="#Feed::offsetUnset" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Unsets an offset.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$offset</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>void</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="Feed::removeCategory">
+<code class="sig-name descname">removeCategory</code><span class="sig-paren">(</span><em class="sig-param">$name</em><span class="sig-paren">)</span><a class="headerlink" href="#Feed::removeCategory" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Method to remove a category from the feed object.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$name</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>Feed</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="Feed::removeContributor">
+<code class="sig-name descname">removeContributor</code><span class="sig-paren">(</span><em class="sig-param">FeedPerson $contributor</em><span class="sig-paren">)</span><a class="headerlink" href="#Feed::removeContributor" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Method to remove a contributor from the feed object.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$contributor</strong> (<a class="reference internal" href="FeedPerson.html#FeedPerson" title="FeedPerson"><em>FeedPerson</em></a>) – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>Feed</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="Feed::removeEntry">
+<code class="sig-name descname">removeEntry</code><span class="sig-paren">(</span><em class="sig-param">FeedEntry $entry</em><span class="sig-paren">)</span><a class="headerlink" href="#Feed::removeEntry" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Method to remove an entry from the feed object.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$entry</strong> (<a class="reference internal" href="FeedEntry.html#FeedEntry" title="FeedEntry"><em>FeedEntry</em></a>) – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>Feed</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="Feed::setAuthor">
+<code class="sig-name descname">setAuthor</code><span class="sig-paren">(</span><em class="sig-param">$name</em>, <em class="sig-param">$email</em>, <em class="sig-param">$uri = null</em>, <em class="sig-param">$type = null</em><span class="sig-paren">)</span><a class="headerlink" href="#Feed::setAuthor" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Shortcut method to set the author for the feed object.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$name</strong> – </p></li>
+<li><p><strong>$email</strong> – </p></li>
+<li><p><strong>$uri</strong> – </p></li>
+<li><p><strong>$type</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>Feed</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="Feed::reverseItems">
+<code class="sig-name descname">reverseItems</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Feed::reverseItems" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Method to reverse the items if display is set to „oldest first“</p>
+<dl class="field-list simple">
+<dt class="field-odd">Результат</dt>
+<dd class="field-odd"><p>Feed</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2020, Artem Vasilev &lt;kern.usr@gmail.com&gt;
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

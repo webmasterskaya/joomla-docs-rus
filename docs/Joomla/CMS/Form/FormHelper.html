@@ -1,0 +1,519 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="ru" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="ru" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Joomla\CMS\Form\FormHelper &mdash; документация joomla-docs-rus 3.9.16</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../../../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../../" src="../../../_static/documentation_options.js"></script>
+        <script src="../../../_static/jquery.js"></script>
+        <script src="../../../_static/underscore.js"></script>
+        <script src="../../../_static/doctools.js"></script>
+        <script src="../../../_static/language_data.js"></script>
+        <script src="../../../_static/translations.js"></script>
+    
+    <script type="text/javascript" src="../../../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
+    <link rel="index" title="Алфавитный указатель" href="../../../genindex.html" />
+    <link rel="search" title="Поиск" href="../../../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search"  style="background: white" >
+          
+
+          
+            <a href="../../../index.html" class="icon icon-home"> joomla-docs-rus
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <!-- Local TOC -->
+              <div class="local-toc"><ul>
+<li><a class="reference internal" href="#">Joomla\CMS\Form\FormHelper</a></li>
+</ul>
+</div>
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../../index.html">joomla-docs-rus</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content style-external-links">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../../index.html">Docs</a> &raquo;</li>
+        
+      <li>Joomla\CMS\Form\FormHelper</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../../../_sources/Joomla/CMS/Form/FormHelper.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="joomla-cms-form-formhelper">
+<h1>Joomla\CMS\Form\FormHelper<a class="headerlink" href="#joomla-cms-form-formhelper" title="Ссылка на этот заголовок">¶</a></h1>
+<dl class="class">
+<dt id="FormHelper">
+<em class="property">class </em><code class="sig-name descname">FormHelper</code><a class="headerlink" href="#FormHelper" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Form’s helper class.
+Provides a storage for filesystem’s paths where Form’s entities reside and methods for creating those entities.
+Also stores objects with entities“ prototypes for further reusing.</p>
+<dl class="attr">
+<dt id="FormHelper::$paths">
+<em class="property">property </em><code class="sig-name descname">paths</code><a class="headerlink" href="#FormHelper::$paths" title="Ссылка на это определение">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>array</p>
+</dd>
+<dt class="field-even">Scope</dt>
+<dd class="field-even"><p>protected</p>
+</dd>
+</dl>
+<p>Array with paths where entities(field, rule, form) can be found.</p>
+<p>Array’s structure:</p>
+<p>paths:
+{ENTITY_NAME}:
+- /path/1
+- /path/2</p>
+</dd></dl>
+
+<dl class="attr">
+<dt id="FormHelper::$prefixes">
+<em class="property">property </em><code class="sig-name descname">prefixes</code><a class="headerlink" href="#FormHelper::$prefixes" title="Ссылка на это определение">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>string</p>
+</dd>
+<dt class="field-even">Scope</dt>
+<dd class="field-even"><p>protected</p>
+</dd>
+</dl>
+<p>The class namespaces.</p>
+</dd></dl>
+
+<dl class="attr">
+<dt id="FormHelper::$entities">
+<em class="property">property </em><code class="sig-name descname">entities</code><a class="headerlink" href="#FormHelper::$entities" title="Ссылка на это определение">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>array</p>
+</dd>
+<dt class="field-even">Scope</dt>
+<dd class="field-even"><p>protected</p>
+</dd>
+</dl>
+<p>Static array of Form’s entity objects for re-use.
+Prototypes for all fields and rules are here.</p>
+<p>Array’s structure:
+entities:
+{ENTITY_NAME}:
+{KEY}: {OBJECT}</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="FormHelper::loadFieldType">
+<code class="sig-name descname">loadFieldType</code><span class="sig-paren">(</span><em class="sig-param">$type</em>, <em class="sig-param">$new = true</em><span class="sig-paren">)</span><a class="headerlink" href="#FormHelper::loadFieldType" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Method to load a form field object given a type.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$type</strong> – </p></li>
+<li><p><strong>$new</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>FormField|boolean FormField object on success, false otherwise.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="FormHelper::loadRuleType">
+<code class="sig-name descname">loadRuleType</code><span class="sig-paren">(</span><em class="sig-param">$type</em>, <em class="sig-param">$new = true</em><span class="sig-paren">)</span><a class="headerlink" href="#FormHelper::loadRuleType" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Method to load a form rule object given a type.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$type</strong> – </p></li>
+<li><p><strong>$new</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>FormRule|boolean FormRule object on success, false otherwise.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="FormHelper::loadType">
+<code class="sig-name descname">loadType</code><span class="sig-paren">(</span><em class="sig-param">$entity</em>, <em class="sig-param">$type</em>, <em class="sig-param">$new = true</em><span class="sig-paren">)</span><a class="headerlink" href="#FormHelper::loadType" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Method to load a form entity object given a type.
+Each type is loaded only once and then used as a prototype for other
+objects of same type.
+Please, use this method only with those entities which support types
+(forms don’t support them).</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$entity</strong> – </p></li>
+<li><p><strong>$type</strong> – </p></li>
+<li><p><strong>$new</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>mixed Entity object on success, false otherwise.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="FormHelper::loadFieldClass">
+<code class="sig-name descname">loadFieldClass</code><span class="sig-paren">(</span><em class="sig-param">$type</em><span class="sig-paren">)</span><a class="headerlink" href="#FormHelper::loadFieldClass" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Attempt to import the JFormField class file if it isn’t already imported.
+You can use this method outside of JForm for loading a field for
+inheritance or composition.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$type</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>string|boolean Class name on success or false otherwise.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="FormHelper::loadRuleClass">
+<code class="sig-name descname">loadRuleClass</code><span class="sig-paren">(</span><em class="sig-param">$type</em><span class="sig-paren">)</span><a class="headerlink" href="#FormHelper::loadRuleClass" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Attempt to import the JFormRule class file if it isn’t already imported.
+You can use this method outside of JForm for loading a rule for
+inheritance or composition.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$type</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>string|boolean Class name on success or false otherwise.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="FormHelper::loadClass">
+<code class="sig-name descname">loadClass</code><span class="sig-paren">(</span><em class="sig-param">$entity</em>, <em class="sig-param">$type</em><span class="sig-paren">)</span><a class="headerlink" href="#FormHelper::loadClass" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Load a class for one of the form’s entities of a particular type.
+Currently, it makes sense to use this method for the «field» and «rule»
+entities
+(but you can support more entities in your subclass).</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$entity</strong> – </p></li>
+<li><p><strong>$type</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>string|boolean Class name on success or false otherwise.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="FormHelper::addFieldPath">
+<code class="sig-name descname">addFieldPath</code><span class="sig-paren">(</span><em class="sig-param">$new = null</em><span class="sig-paren">)</span><a class="headerlink" href="#FormHelper::addFieldPath" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Method to add a path to the list of field include paths.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$new</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>array The list of paths that have been added.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="FormHelper::addFormPath">
+<code class="sig-name descname">addFormPath</code><span class="sig-paren">(</span><em class="sig-param">$new = null</em><span class="sig-paren">)</span><a class="headerlink" href="#FormHelper::addFormPath" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Method to add a path to the list of form include paths.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$new</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>array The list of paths that have been added.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="FormHelper::addRulePath">
+<code class="sig-name descname">addRulePath</code><span class="sig-paren">(</span><em class="sig-param">$new = null</em><span class="sig-paren">)</span><a class="headerlink" href="#FormHelper::addRulePath" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Method to add a path to the list of rule include paths.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$new</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>array The list of paths that have been added.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="FormHelper::addPath">
+<code class="sig-name descname">addPath</code><span class="sig-paren">(</span><em class="sig-param">$entity</em>, <em class="sig-param">$new = null</em><span class="sig-paren">)</span><a class="headerlink" href="#FormHelper::addPath" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Method to add a path to the list of include paths for one of the form’s
+entities.
+Currently supported entities: field, rule and form. You are free to
+support your own in a subclass.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$entity</strong> – </p></li>
+<li><p><strong>$new</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>array The list of paths that have been added.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="FormHelper::addFieldPrefix">
+<code class="sig-name descname">addFieldPrefix</code><span class="sig-paren">(</span><em class="sig-param">$new = null</em><span class="sig-paren">)</span><a class="headerlink" href="#FormHelper::addFieldPrefix" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Method to add a namespace prefix to the list of field lookups.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$new</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>array The list of namespaces that have been added.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="FormHelper::addFormPrefix">
+<code class="sig-name descname">addFormPrefix</code><span class="sig-paren">(</span><em class="sig-param">$new = null</em><span class="sig-paren">)</span><a class="headerlink" href="#FormHelper::addFormPrefix" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Method to add a namespace to the list of form lookups.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$new</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>array The list of namespaces that have been added.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="FormHelper::addRulePrefix">
+<code class="sig-name descname">addRulePrefix</code><span class="sig-paren">(</span><em class="sig-param">$new = null</em><span class="sig-paren">)</span><a class="headerlink" href="#FormHelper::addRulePrefix" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Method to add a namespace to the list of rule lookups.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$new</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>array The list of namespaces that have been added.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="FormHelper::addPrefix">
+<code class="sig-name descname">addPrefix</code><span class="sig-paren">(</span><em class="sig-param">$entity</em>, <em class="sig-param">$new = null</em><span class="sig-paren">)</span><a class="headerlink" href="#FormHelper::addPrefix" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Method to add a namespace to the list of namespaces for one of the form’s
+entities.
+Currently supported entities: field, rule and form. You are free to
+support your own in a subclass.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$entity</strong> – </p></li>
+<li><p><strong>$new</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>array The list of namespaces that have been added.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="FormHelper::parseShowOnConditions">
+<code class="sig-name descname">parseShowOnConditions</code><span class="sig-paren">(</span><em class="sig-param">$showOn</em>, <em class="sig-param">$formControl = null</em>, <em class="sig-param">$group = null</em><span class="sig-paren">)</span><a class="headerlink" href="#FormHelper::parseShowOnConditions" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Parse the show on conditions</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$showOn</strong> – </p></li>
+<li><p><strong>$formControl</strong> – </p></li>
+<li><p><strong>$group</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>array Array with show on conditions.</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2020, Artem Vasilev &lt;kern.usr@gmail.com&gt;
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

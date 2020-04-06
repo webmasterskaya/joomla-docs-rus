@@ -1,0 +1,878 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="ru" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="ru" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Joomla\CMS\Date\Date &mdash; документация joomla-docs-rus 3.9.16</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../../../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../../" src="../../../_static/documentation_options.js"></script>
+        <script src="../../../_static/jquery.js"></script>
+        <script src="../../../_static/underscore.js"></script>
+        <script src="../../../_static/doctools.js"></script>
+        <script src="../../../_static/language_data.js"></script>
+        <script src="../../../_static/translations.js"></script>
+    
+    <script type="text/javascript" src="../../../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
+    <link rel="index" title="Алфавитный указатель" href="../../../genindex.html" />
+    <link rel="search" title="Поиск" href="../../../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search"  style="background: white" >
+          
+
+          
+            <a href="../../../index.html" class="icon icon-home"> joomla-docs-rus
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <!-- Local TOC -->
+              <div class="local-toc"><ul>
+<li><a class="reference internal" href="#">Joomla\CMS\Date\Date</a></li>
+</ul>
+</div>
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../../index.html">joomla-docs-rus</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content style-external-links">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../../index.html">Docs</a> &raquo;</li>
+        
+      <li>Joomla\CMS\Date\Date</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../../../_sources/Joomla/CMS/Date/Date.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="joomla-cms-date-date">
+<h1>Joomla\CMS\Date\Date<a class="headerlink" href="#joomla-cms-date-date" title="Ссылка на этот заголовок">¶</a></h1>
+<dl class="class">
+<dt id="Date">
+<em class="property">class </em><code class="sig-name descname">Date</code><a class="headerlink" href="#Date" title="Ссылка на это определение">¶</a></dt>
+<dd><p>JDate is a class that stores a date and provides logic to manipulate
+and render that date in a variety of formats.</p>
+<dl class="attr">
+<dt id="Date::$format">
+<em class="property">property </em><code class="sig-name descname">format</code><a class="headerlink" href="#Date::$format" title="Ссылка на это определение">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>string</p>
+</dd>
+</dl>
+<p>The format string to be applied when using the __toString() magic method.</p>
+</dd></dl>
+
+<dl class="attr">
+<dt id="Date::$gmt">
+<em class="property">property </em><code class="sig-name descname">gmt</code><a class="headerlink" href="#Date::$gmt" title="Ссылка на это определение">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>object</p>
+</dd>
+<dt class="field-even">Scope</dt>
+<dd class="field-even"><p>protected</p>
+</dd>
+</dl>
+<p>Placeholder for a DateTimeZone object with GMT as the time zone.</p>
+</dd></dl>
+
+<dl class="attr">
+<dt id="Date::$stz">
+<em class="property">property </em><code class="sig-name descname">stz</code><a class="headerlink" href="#Date::$stz" title="Ссылка на это определение">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>object</p>
+</dd>
+<dt class="field-even">Scope</dt>
+<dd class="field-even"><p>protected</p>
+</dd>
+</dl>
+<p>Placeholder for a DateTimeZone object with the default server
+time zone as the time zone.</p>
+</dd></dl>
+
+<dl class="attr">
+<dt id="Date::$tz">
+<em class="property">property </em><code class="sig-name descname">tz</code><a class="headerlink" href="#Date::$tz" title="Ссылка на это определение">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>DateTimeZone</p>
+</dd>
+<dt class="field-even">Scope</dt>
+<dd class="field-even"><p>protected</p>
+</dd>
+</dl>
+<p>The DateTimeZone object for usage in rending dates as strings.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Date::__construct">
+<code class="sig-name descname">__construct</code><span class="sig-paren">(</span><em class="sig-param">$date = 'now'</em>, <em class="sig-param">$tz = null</em><span class="sig-paren">)</span><a class="headerlink" href="#Date::__construct" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Constructor.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$date</strong> – </p></li>
+<li><p><strong>$tz</strong> – </p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="Date::__get">
+<code class="sig-name descname">__get</code><span class="sig-paren">(</span><em class="sig-param">$name</em><span class="sig-paren">)</span><a class="headerlink" href="#Date::__get" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Magic method to access properties of the date given by class to the format
+method.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$name</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>mixed A value if the property name is valid, null otherwise.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="Date::__toString">
+<code class="sig-name descname">__toString</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Date::__toString" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Magic method to render the date object in the format specified in the
+public
+static member Date::$format.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Результат</dt>
+<dd class="field-odd"><p>string The date as a formatted string.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="Date::getInstance">
+<code class="sig-name descname">getInstance</code><span class="sig-paren">(</span><em class="sig-param">$date = 'now'</em>, <em class="sig-param">$tz = null</em><span class="sig-paren">)</span><a class="headerlink" href="#Date::getInstance" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Proxy for new JDate().</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$date</strong> – </p></li>
+<li><p><strong>$tz</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>Date</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="Date::dayToString">
+<code class="sig-name descname">dayToString</code><span class="sig-paren">(</span><em class="sig-param">$day</em>, <em class="sig-param">$abbr = false</em><span class="sig-paren">)</span><a class="headerlink" href="#Date::dayToString" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Translates day of week number to a string.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$day</strong> – </p></li>
+<li><p><strong>$abbr</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>string The day of the week.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="Date::calendar">
+<code class="sig-name descname">calendar</code><span class="sig-paren">(</span><em class="sig-param">$format</em>, <em class="sig-param">$local = false</em>, <em class="sig-param">$translate = true</em><span class="sig-paren">)</span><a class="headerlink" href="#Date::calendar" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Gets the date as a formatted string in a local calendar.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$format</strong> – </p></li>
+<li><p><strong>$local</strong> – </p></li>
+<li><p><strong>$translate</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>string The date string in the specified format format.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="Date::format">
+<code class="sig-name descname">format</code><span class="sig-paren">(</span><em class="sig-param">$format</em>, <em class="sig-param">$local = false</em>, <em class="sig-param">$translate = true</em><span class="sig-paren">)</span><a class="headerlink" href="#Date::format" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Gets the date as a formatted string.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$format</strong> – </p></li>
+<li><p><strong>$local</strong> – </p></li>
+<li><p><strong>$translate</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>string The date string in the specified format format.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="Date::getOffsetFromGmt">
+<code class="sig-name descname">getOffsetFromGmt</code><span class="sig-paren">(</span><em class="sig-param">$hours = false</em><span class="sig-paren">)</span><a class="headerlink" href="#Date::getOffsetFromGmt" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Get the time offset from GMT in hours or seconds.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$hours</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>float The time offset from GMT either in hours or in seconds.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="Date::monthToString">
+<code class="sig-name descname">monthToString</code><span class="sig-paren">(</span><em class="sig-param">$month</em>, <em class="sig-param">$abbr = false</em><span class="sig-paren">)</span><a class="headerlink" href="#Date::monthToString" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Translates month number to a string.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$month</strong> – </p></li>
+<li><p><strong>$abbr</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>string The month of the year.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="Date::setTimezone">
+<code class="sig-name descname">setTimezone</code><span class="sig-paren">(</span><em class="sig-param">$tz</em><span class="sig-paren">)</span><a class="headerlink" href="#Date::setTimezone" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Method to wrap the setTimezone() function and set the internal time zone
+object.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$tz</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>Date</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="Date::toISO8601">
+<code class="sig-name descname">toISO8601</code><span class="sig-paren">(</span><em class="sig-param">$local = false</em><span class="sig-paren">)</span><a class="headerlink" href="#Date::toISO8601" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Gets the date as an ISO 8601 string.  IETF RFC 3339 defines the ISO 8601
+format
+and it can be found at the IETF Web site.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$local</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>string The date string in ISO 8601 format.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="Date::toSql">
+<code class="sig-name descname">toSql</code><span class="sig-paren">(</span><em class="sig-param">$local = false</em>, <em class="sig-param">JDatabaseDriver $db = null</em><span class="sig-paren">)</span><a class="headerlink" href="#Date::toSql" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Gets the date as an SQL datetime string.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$local</strong> – </p></li>
+<li><p><strong>$db</strong> (<em>JDatabaseDriver</em>) – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>string The date string in SQL datetime format.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="Date::toRFC822">
+<code class="sig-name descname">toRFC822</code><span class="sig-paren">(</span><em class="sig-param">$local = false</em><span class="sig-paren">)</span><a class="headerlink" href="#Date::toRFC822" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Gets the date as an RFC 822 string.  IETF RFC 2822 supercedes RFC 822 and
+its definition
+can be found at the IETF Web site.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$local</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>string The date string in RFC 822 format.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="Date::toUnix">
+<code class="sig-name descname">toUnix</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Date::toUnix" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Gets the date as UNIX time stamp.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Результат</dt>
+<dd class="field-odd"><p>integer The date as a UNIX timestamp.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="Date::__wakeup">
+<code class="sig-name descname">__wakeup</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Date::__wakeup" title="Ссылка на это определение">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="Date::__set_state">
+<code class="sig-name descname">__set_state</code><span class="sig-paren">(</span><em class="sig-param">$array</em><span class="sig-paren">)</span><a class="headerlink" href="#Date::__set_state" title="Ссылка на это определение">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$array</strong> – </p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="Date::createFromImmutable">
+<code class="sig-name descname">createFromImmutable</code><span class="sig-paren">(</span><em class="sig-param">$DateTimeImmutable</em><span class="sig-paren">)</span><a class="headerlink" href="#Date::createFromImmutable" title="Ссылка на это определение">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$DateTimeImmutable</strong> – </p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt>
+<code class="sig-name descname">createFromFormat($format, $time, Class [ &lt;internal:date&gt; class DateTimeZone ] {</code></dt>
+<dd><ul class="simple">
+<li><p>Constants [14] {
+Constant [ public int AFRICA ] { 1 }
+Constant [ public int AMERICA ] { 2 }
+Constant [ public int ANTARCTICA ] { 4 }
+Constant [ public int ARCTIC ] { 8 }
+Constant [ public int ASIA ] { 16 }
+Constant [ public int ATLANTIC ] { 32 }
+Constant [ public int AUSTRALIA ] { 64 }
+Constant [ public int EUROPE ] { 128 }
+Constant [ public int INDIAN ] { 256 }
+Constant [ public int PACIFIC ] { 512 }
+Constant [ public int UTC ] { 1024 }
+Constant [ public int ALL ] { 2047 }
+Constant [ public int ALL_WITH_BC ] { 4095 }
+Constant [ public int PER_COUNTRY ] { 4096 }</p></li>
+</ul>
+<p>}</p>
+<ul class="simple">
+<li><p>Static properties [0] {</p></li>
+</ul>
+<p>}</p>
+<ul>
+<li><p>Static methods [3] {
+Method [ &lt;internal:date&gt; static public method __set_state ] {</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Parameters [1] {
+Parameter #0 [ &lt;required&gt; array $array ]</p></li>
+</ul>
+<p>}</p>
+</div></blockquote>
+<p>}</p>
+<p>Method [ &lt;internal:date&gt; static public method listAbbreviations ] {</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Parameters [0] {</p></li>
+</ul>
+<p>}</p>
+</div></blockquote>
+<p>}</p>
+<p>Method [ &lt;internal:date&gt; static public method listIdentifiers ] {</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Parameters [2] {
+Parameter #0 [ &lt;optional&gt; $what ]
+Parameter #1 [ &lt;optional&gt; $country ]</p></li>
+</ul>
+<p>}</p>
+</div></blockquote>
+<p>}</p>
+</li>
+</ul>
+<p>}</p>
+<ul class="simple">
+<li><p>Properties [0] {</p></li>
+</ul>
+<p>}</p>
+<ul>
+<li><p>Methods [6] {
+Method [ &lt;internal:date, ctor&gt; public method __construct ] {</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Parameters [1] {
+Parameter #0 [ &lt;required&gt; $timezone ]</p></li>
+</ul>
+<p>}</p>
+</div></blockquote>
+<p>}</p>
+<p>Method [ &lt;internal:date&gt; public method __wakeup ] {
+}</p>
+<p>Method [ &lt;internal:date&gt; public method getName ] {</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Parameters [0] {</p></li>
+</ul>
+<p>}</p>
+</div></blockquote>
+<p>}</p>
+<p>Method [ &lt;internal:date&gt; public method getOffset ] {</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Parameters [1] {
+Parameter #0 [ &lt;required&gt; $object ]</p></li>
+</ul>
+<p>}</p>
+</div></blockquote>
+<p>}</p>
+<p>Method [ &lt;internal:date&gt; public method getTransitions ] {</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Parameters [2] {
+Parameter #0 [ &lt;optional&gt; $timestamp_begin ]
+Parameter #1 [ &lt;optional&gt; $timestamp_end ]</p></li>
+</ul>
+<p>}</p>
+</div></blockquote>
+<p>}</p>
+<p>Method [ &lt;internal:date&gt; public method getLocation ] {</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Parameters [0] {</p></li>
+</ul>
+<p>}</p>
+</div></blockquote>
+<p>}</p>
+</li>
+</ul>
+<p>}</p>
+</dd></dl>
+
+<dl>
+<dt>}</dt><dd><p>$object)</p>
+<blockquote>
+<div><dl class="field-list">
+<dt class="field-odd">param $format</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">param $time</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type $object</dt>
+<dd class="field-odd"><p>Class [ &lt;internal:date&gt; class DateTimeZone ] {</p>
+<ul class="simple">
+<li><p>Constants [14] {
+Constant [ public int AFRICA ] { 1 }
+Constant [ public int AMERICA ] { 2 }
+Constant [ public int ANTARCTICA ] { 4 }
+Constant [ public int ARCTIC ] { 8 }
+Constant [ public int ASIA ] { 16 }
+Constant [ public int ATLANTIC ] { 32 }
+Constant [ public int AUSTRALIA ] { 64 }
+Constant [ public int EUROPE ] { 128 }
+Constant [ public int INDIAN ] { 256 }
+Constant [ public int PACIFIC ] { 512 }
+Constant [ public int UTC ] { 1024 }
+Constant [ public int ALL ] { 2047 }
+Constant [ public int ALL_WITH_BC ] { 4095 }
+Constant [ public int PER_COUNTRY ] { 4096 }</p></li>
+</ul>
+<p>}</p>
+<ul class="simple">
+<li><p>Static properties [0] {</p></li>
+</ul>
+<p>}</p>
+<ul>
+<li><p>Static methods [3] {
+Method [ &lt;internal:date&gt; static public method __set_state ] {</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Parameters [1] {
+Parameter #0 [ &lt;required&gt; array $array ]</p></li>
+</ul>
+<p>}</p>
+</div></blockquote>
+<p>}</p>
+<p>Method [ &lt;internal:date&gt; static public method listAbbreviations ] {</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Parameters [0] {</p></li>
+</ul>
+<p>}</p>
+</div></blockquote>
+<p>}</p>
+<p>Method [ &lt;internal:date&gt; static public method listIdentifiers ] {</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Parameters [2] {
+Parameter #0 [ &lt;optional&gt; $what ]
+Parameter #1 [ &lt;optional&gt; $country ]</p></li>
+</ul>
+<p>}</p>
+</div></blockquote>
+<p>}</p>
+</li>
+</ul>
+<p>}</p>
+<ul class="simple">
+<li><p>Properties [0] {</p></li>
+</ul>
+<p>}</p>
+<ul>
+<li><p>Methods [6] {
+Method [ &lt;internal:date, ctor&gt; public method __construct ] {</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Parameters [1] {
+Parameter #0 [ &lt;required&gt; $timezone ]</p></li>
+</ul>
+<p>}</p>
+</div></blockquote>
+<p>}</p>
+<p>Method [ &lt;internal:date&gt; public method __wakeup ] {
+}</p>
+<p>Method [ &lt;internal:date&gt; public method getName ] {</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Parameters [0] {</p></li>
+</ul>
+<p>}</p>
+</div></blockquote>
+<p>}</p>
+<p>Method [ &lt;internal:date&gt; public method getOffset ] {</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Parameters [1] {
+Parameter #0 [ &lt;required&gt; $object ]</p></li>
+</ul>
+<p>}</p>
+</div></blockquote>
+<p>}</p>
+<p>Method [ &lt;internal:date&gt; public method getTransitions ] {</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Parameters [2] {
+Parameter #0 [ &lt;optional&gt; $timestamp_begin ]
+Parameter #1 [ &lt;optional&gt; $timestamp_end ]</p></li>
+</ul>
+<p>}</p>
+</div></blockquote>
+<p>}</p>
+<p>Method [ &lt;internal:date&gt; public method getLocation ] {</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Parameters [0] {</p></li>
+</ul>
+<p>}</p>
+</div></blockquote>
+<p>}</p>
+</li>
+</ul>
+<p>}</p>
+</dd>
+</dl>
+<p>}</p>
+<dl class="field-list simple">
+<dt class="field-odd">param $object</dt>
+<dd class="field-odd"><p></p></dd>
+</dl>
+</div></blockquote>
+</dd>
+</dl>
+<dl class="method">
+<dt id="Date::getLastErrors">
+<code class="sig-name descname">getLastErrors</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Date::getLastErrors" title="Ссылка на это определение">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="Date::modify">
+<code class="sig-name descname">modify</code><span class="sig-paren">(</span><em class="sig-param">$modify</em><span class="sig-paren">)</span><a class="headerlink" href="#Date::modify" title="Ссылка на это определение">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$modify</strong> – </p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="Date::add">
+<code class="sig-name descname">add</code><span class="sig-paren">(</span><em class="sig-param">$interval</em><span class="sig-paren">)</span><a class="headerlink" href="#Date::add" title="Ссылка на это определение">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$interval</strong> – </p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="Date::sub">
+<code class="sig-name descname">sub</code><span class="sig-paren">(</span><em class="sig-param">$interval</em><span class="sig-paren">)</span><a class="headerlink" href="#Date::sub" title="Ссылка на это определение">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$interval</strong> – </p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="Date::getTimezone">
+<code class="sig-name descname">getTimezone</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Date::getTimezone" title="Ссылка на это определение">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="Date::getOffset">
+<code class="sig-name descname">getOffset</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Date::getOffset" title="Ссылка на это определение">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="Date::setTime">
+<code class="sig-name descname">setTime</code><span class="sig-paren">(</span><em class="sig-param">$hour</em>, <em class="sig-param">$minute</em>, <em class="sig-param">$second</em>, <em class="sig-param">$microseconds</em><span class="sig-paren">)</span><a class="headerlink" href="#Date::setTime" title="Ссылка на это определение">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$hour</strong> – </p></li>
+<li><p><strong>$minute</strong> – </p></li>
+<li><p><strong>$second</strong> – </p></li>
+<li><p><strong>$microseconds</strong> – </p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="Date::setDate">
+<code class="sig-name descname">setDate</code><span class="sig-paren">(</span><em class="sig-param">$year</em>, <em class="sig-param">$month</em>, <em class="sig-param">$day</em><span class="sig-paren">)</span><a class="headerlink" href="#Date::setDate" title="Ссылка на это определение">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$year</strong> – </p></li>
+<li><p><strong>$month</strong> – </p></li>
+<li><p><strong>$day</strong> – </p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="Date::setISODate">
+<code class="sig-name descname">setISODate</code><span class="sig-paren">(</span><em class="sig-param">$year</em>, <em class="sig-param">$week</em>, <em class="sig-param">$day</em><span class="sig-paren">)</span><a class="headerlink" href="#Date::setISODate" title="Ссылка на это определение">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$year</strong> – </p></li>
+<li><p><strong>$week</strong> – </p></li>
+<li><p><strong>$day</strong> – </p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="Date::setTimestamp">
+<code class="sig-name descname">setTimestamp</code><span class="sig-paren">(</span><em class="sig-param">$unixtimestamp</em><span class="sig-paren">)</span><a class="headerlink" href="#Date::setTimestamp" title="Ссылка на это определение">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$unixtimestamp</strong> – </p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="Date::getTimestamp">
+<code class="sig-name descname">getTimestamp</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Date::getTimestamp" title="Ссылка на это определение">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="Date::diff">
+<code class="sig-name descname">diff</code><span class="sig-paren">(</span><em class="sig-param">$object</em>, <em class="sig-param">$absolute</em><span class="sig-paren">)</span><a class="headerlink" href="#Date::diff" title="Ссылка на это определение">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$object</strong> – </p></li>
+<li><p><strong>$absolute</strong> – </p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2020, Artem Vasilev &lt;kern.usr@gmail.com&gt;
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

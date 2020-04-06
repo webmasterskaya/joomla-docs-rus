@@ -1,0 +1,845 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="ru" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="ru" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Joomla\CMS\Layout\FileLayout &mdash; документация joomla-docs-rus 3.9.16</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../../../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../../" src="../../../_static/documentation_options.js"></script>
+        <script src="../../../_static/jquery.js"></script>
+        <script src="../../../_static/underscore.js"></script>
+        <script src="../../../_static/doctools.js"></script>
+        <script src="../../../_static/language_data.js"></script>
+        <script src="../../../_static/translations.js"></script>
+    
+    <script type="text/javascript" src="../../../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
+    <link rel="index" title="Алфавитный указатель" href="../../../genindex.html" />
+    <link rel="search" title="Поиск" href="../../../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search"  style="background: white" >
+          
+
+          
+            <a href="../../../index.html" class="icon icon-home"> joomla-docs-rus
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <!-- Local TOC -->
+              <div class="local-toc"><ul>
+<li><a class="reference internal" href="#">Joomla\CMS\Layout\FileLayout</a></li>
+</ul>
+</div>
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../../index.html">joomla-docs-rus</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content style-external-links">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../../index.html">Docs</a> &raquo;</li>
+        
+      <li>Joomla\CMS\Layout\FileLayout</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../../../_sources/Joomla/CMS/Layout/FileLayout.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="joomla-cms-layout-filelayout">
+<h1>Joomla\CMS\Layout\FileLayout<a class="headerlink" href="#joomla-cms-layout-filelayout" title="Ссылка на этот заголовок">¶</a></h1>
+<dl class="class">
+<dt id="FileLayout">
+<em class="property">class </em><code class="sig-name descname">FileLayout</code><a class="headerlink" href="#FileLayout" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Base class for rendering a display layout
+loaded from from a layout file</p>
+<dl class="attr">
+<dt id="FileLayout::$cache">
+<em class="property">property </em><code class="sig-name descname">cache</code><a class="headerlink" href="#FileLayout::$cache" title="Ссылка на это определение">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>array</p>
+</dd>
+<dt class="field-even">Scope</dt>
+<dd class="field-even"><p>protected</p>
+</dd>
+</dl>
+<p>Cached layout paths</p>
+</dd></dl>
+
+<dl class="attr">
+<dt id="FileLayout::$layoutId">
+<em class="property">property </em><code class="sig-name descname">layoutId</code><a class="headerlink" href="#FileLayout::$layoutId" title="Ссылка на это определение">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>string</p>
+</dd>
+<dt class="field-even">Scope</dt>
+<dd class="field-even"><p>protected</p>
+</dd>
+</dl>
+<p>Dot separated path to the layout file, relative to base path</p>
+</dd></dl>
+
+<dl class="attr">
+<dt id="FileLayout::$basePath">
+<em class="property">property </em><code class="sig-name descname">basePath</code><a class="headerlink" href="#FileLayout::$basePath" title="Ссылка на это определение">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>string</p>
+</dd>
+<dt class="field-even">Scope</dt>
+<dd class="field-even"><p>protected</p>
+</dd>
+</dl>
+<p>Base path to use when loading layout files</p>
+</dd></dl>
+
+<dl class="attr">
+<dt id="FileLayout::$fullPath">
+<em class="property">property </em><code class="sig-name descname">fullPath</code><a class="headerlink" href="#FileLayout::$fullPath" title="Ссылка на это определение">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>string</p>
+</dd>
+<dt class="field-even">Scope</dt>
+<dd class="field-even"><p>protected</p>
+</dd>
+</dl>
+<p>Full path to actual layout files, after possible template override check</p>
+</dd></dl>
+
+<dl class="attr">
+<dt id="FileLayout::$includePaths">
+<em class="property">property </em><code class="sig-name descname">includePaths</code><a class="headerlink" href="#FileLayout::$includePaths" title="Ссылка на это определение">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>array</p>
+</dd>
+<dt class="field-even">Scope</dt>
+<dd class="field-even"><p>protected</p>
+</dd>
+</dl>
+<p>Paths to search for layouts</p>
+</dd></dl>
+
+<dl class="attr">
+<dt id="FileLayout::$options">
+<em class="property">property </em><code class="sig-name descname">options</code><a class="headerlink" href="#FileLayout::$options" title="Ссылка на это определение">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>Registry</p>
+</dd>
+<dt class="field-even">Scope</dt>
+<dd class="field-even"><p>protected</p>
+</dd>
+</dl>
+<p>Options object</p>
+</dd></dl>
+
+<dl class="attr">
+<dt id="FileLayout::$data">
+<em class="property">property </em><code class="sig-name descname">data</code><a class="headerlink" href="#FileLayout::$data" title="Ссылка на это определение">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>array</p>
+</dd>
+<dt class="field-even">Scope</dt>
+<dd class="field-even"><p>protected</p>
+</dd>
+</dl>
+<p>Data for the layout</p>
+</dd></dl>
+
+<dl class="attr">
+<dt id="FileLayout::$debugMessages">
+<em class="property">property </em><code class="sig-name descname">debugMessages</code><a class="headerlink" href="#FileLayout::$debugMessages" title="Ссылка на это определение">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>array</p>
+</dd>
+<dt class="field-even">Scope</dt>
+<dd class="field-even"><p>protected</p>
+</dd>
+</dl>
+<p>Debug information messages</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="FileLayout::__construct">
+<code class="sig-name descname">__construct</code><span class="sig-paren">(</span><em class="sig-param">$layoutId</em>, <em class="sig-param">$basePath = null</em>, <em class="sig-param">$options = null</em><span class="sig-paren">)</span><a class="headerlink" href="#FileLayout::__construct" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Method to instantiate the file-based layout.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$layoutId</strong> – </p></li>
+<li><p><strong>$basePath</strong> – </p></li>
+<li><p><strong>$options</strong> – </p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="FileLayout::render">
+<code class="sig-name descname">render</code><span class="sig-paren">(</span><em class="sig-param">$displayData = array()</em><span class="sig-paren">)</span><a class="headerlink" href="#FileLayout::render" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Method to render the layout.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$displayData</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>string The necessary HTML to display the layout</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="FileLayout::getPath">
+<code class="sig-name descname">getPath</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#FileLayout::getPath" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Method to finds the full real file path, checking possible overrides</p>
+<dl class="field-list simple">
+<dt class="field-odd">Результат</dt>
+<dd class="field-odd"><p>string The full path to the layout file</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="FileLayout::addIncludePath">
+<code class="sig-name descname">addIncludePath</code><span class="sig-paren">(</span><em class="sig-param">$path</em><span class="sig-paren">)</span><a class="headerlink" href="#FileLayout::addIncludePath" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Add one path to include in layout search. Proxy of addIncludePaths()</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$path</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>self</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="FileLayout::addIncludePaths">
+<code class="sig-name descname">addIncludePaths</code><span class="sig-paren">(</span><em class="sig-param">$paths</em><span class="sig-paren">)</span><a class="headerlink" href="#FileLayout::addIncludePaths" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Add one or more paths to include in layout search</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$paths</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>self</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="FileLayout::clearIncludePaths">
+<code class="sig-name descname">clearIncludePaths</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#FileLayout::clearIncludePaths" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Clear the include paths</p>
+<dl class="field-list simple">
+<dt class="field-odd">Результат</dt>
+<dd class="field-odd"><p>self</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="FileLayout::getIncludePaths">
+<code class="sig-name descname">getIncludePaths</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#FileLayout::getIncludePaths" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Get the active include paths</p>
+<dl class="field-list simple">
+<dt class="field-odd">Результат</dt>
+<dd class="field-odd"><p>array</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="FileLayout::getLayoutId">
+<code class="sig-name descname">getLayoutId</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#FileLayout::getLayoutId" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Get the active layout id</p>
+<dl class="field-list simple">
+<dt class="field-odd">Результат</dt>
+<dd class="field-odd"><p>string</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="FileLayout::getSuffixes">
+<code class="sig-name descname">getSuffixes</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#FileLayout::getSuffixes" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Get the active suffixes</p>
+<dl class="field-list simple">
+<dt class="field-odd">Результат</dt>
+<dd class="field-odd"><p>array</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="FileLayout::loadLanguageSuffixes">
+<code class="sig-name descname">loadLanguageSuffixes</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#FileLayout::loadLanguageSuffixes" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Load the automatically generated language suffixes.
+Example: array(„es-ES“, „es“, „ltr“)</p>
+<dl class="field-list simple">
+<dt class="field-odd">Результат</dt>
+<dd class="field-odd"><p>self</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="FileLayout::loadVersionSuffixes">
+<code class="sig-name descname">loadVersionSuffixes</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#FileLayout::loadVersionSuffixes" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Load the automatically generated version suffixes.
+Example: array(„j311“, „j31“, „j3“)</p>
+<dl class="field-list simple">
+<dt class="field-odd">Результат</dt>
+<dd class="field-odd"><p>self</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="FileLayout::removeIncludePath">
+<code class="sig-name descname">removeIncludePath</code><span class="sig-paren">(</span><em class="sig-param">$path</em><span class="sig-paren">)</span><a class="headerlink" href="#FileLayout::removeIncludePath" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Remove one path from the layout search</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$path</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>self</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="FileLayout::removeIncludePaths">
+<code class="sig-name descname">removeIncludePaths</code><span class="sig-paren">(</span><em class="sig-param">$paths</em><span class="sig-paren">)</span><a class="headerlink" href="#FileLayout::removeIncludePaths" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Remove one or more paths to exclude in layout search</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$paths</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>self</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="FileLayout::validComponent">
+<code class="sig-name descname">validComponent</code><span class="sig-paren">(</span><em class="sig-param">$option = null</em><span class="sig-paren">)</span><a class="headerlink" href="#FileLayout::validComponent" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Validate that the active component is valid</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$option</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>boolean</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="FileLayout::setComponent">
+<code class="sig-name descname">setComponent</code><span class="sig-paren">(</span><em class="sig-param">$option</em><span class="sig-paren">)</span><a class="headerlink" href="#FileLayout::setComponent" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Method to change the component where search for layouts</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$option</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>mixed Component option string | null for none</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="FileLayout::setClient">
+<code class="sig-name descname">setClient</code><span class="sig-paren">(</span><em class="sig-param">$client</em><span class="sig-paren">)</span><a class="headerlink" href="#FileLayout::setClient" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Function to initialise the application client</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$client</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>void</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="FileLayout::setLayout">
+<code class="sig-name descname">setLayout</code><span class="sig-paren">(</span><em class="sig-param">$layoutId</em><span class="sig-paren">)</span><a class="headerlink" href="#FileLayout::setLayout" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Change the layout</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$layoutId</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>self</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="FileLayout::setLayoutId">
+<code class="sig-name descname">setLayoutId</code><span class="sig-paren">(</span><em class="sig-param">$layoutId</em><span class="sig-paren">)</span><a class="headerlink" href="#FileLayout::setLayoutId" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Set the active layout id</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$layoutId</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>self</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="FileLayout::refreshIncludePaths">
+<code class="sig-name descname">refreshIncludePaths</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#FileLayout::refreshIncludePaths" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Refresh the list of include paths</p>
+<dl class="field-list simple">
+<dt class="field-odd">Результат</dt>
+<dd class="field-odd"><p>self</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="FileLayout::getDefaultIncludePaths">
+<code class="sig-name descname">getDefaultIncludePaths</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#FileLayout::getDefaultIncludePaths" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Get the default array of include paths</p>
+<dl class="field-list simple">
+<dt class="field-odd">Результат</dt>
+<dd class="field-odd"><p>array</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="FileLayout::setIncludePaths">
+<code class="sig-name descname">setIncludePaths</code><span class="sig-paren">(</span><em class="sig-param">$paths</em><span class="sig-paren">)</span><a class="headerlink" href="#FileLayout::setIncludePaths" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Set the include paths to search for layouts</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$paths</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>self</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="FileLayout::setSuffixes">
+<code class="sig-name descname">setSuffixes</code><span class="sig-paren">(</span><em class="sig-param">$suffixes</em><span class="sig-paren">)</span><a class="headerlink" href="#FileLayout::setSuffixes" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Set suffixes to search layouts</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$suffixes</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>self</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="FileLayout::sublayout">
+<code class="sig-name descname">sublayout</code><span class="sig-paren">(</span><em class="sig-param">$layoutId</em>, <em class="sig-param">$displayData</em><span class="sig-paren">)</span><a class="headerlink" href="#FileLayout::sublayout" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Render a layout with the same include paths &amp; options</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$layoutId</strong> – </p></li>
+<li><p><strong>$displayData</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>string The necessary HTML to display the layout</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="FileLayout::setOptions">
+<code class="sig-name descname">setOptions</code><span class="sig-paren">(</span><em class="sig-param">$options = null</em><span class="sig-paren">)</span><a class="headerlink" href="#FileLayout::setOptions" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Set the options</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$options</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>BaseLayout Instance of $this to allow chaining.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="FileLayout::getOptions">
+<code class="sig-name descname">getOptions</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#FileLayout::getOptions" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Get the options</p>
+<dl class="field-list simple">
+<dt class="field-odd">Результат</dt>
+<dd class="field-odd"><p>Registry Object with the options</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="FileLayout::resetOptions">
+<code class="sig-name descname">resetOptions</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#FileLayout::resetOptions" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Function to empty all the options</p>
+<dl class="field-list simple">
+<dt class="field-odd">Результат</dt>
+<dd class="field-odd"><p>BaseLayout Instance of $this to allow chaining.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="FileLayout::escape">
+<code class="sig-name descname">escape</code><span class="sig-paren">(</span><em class="sig-param">$output</em><span class="sig-paren">)</span><a class="headerlink" href="#FileLayout::escape" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Method to escape output.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$output</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>string The escaped output.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="FileLayout::getDebugMessages">
+<code class="sig-name descname">getDebugMessages</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#FileLayout::getDebugMessages" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Get the debug messages array</p>
+<dl class="field-list simple">
+<dt class="field-odd">Результат</dt>
+<dd class="field-odd"><p>array</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="FileLayout::renderDebugMessages">
+<code class="sig-name descname">renderDebugMessages</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#FileLayout::renderDebugMessages" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Render the list of debug messages</p>
+<dl class="field-list simple">
+<dt class="field-odd">Результат</dt>
+<dd class="field-odd"><p>string Output text/HTML code</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="FileLayout::addDebugMessage">
+<code class="sig-name descname">addDebugMessage</code><span class="sig-paren">(</span><em class="sig-param">$message</em><span class="sig-paren">)</span><a class="headerlink" href="#FileLayout::addDebugMessage" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Add a debug message to the debug messages array</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$message</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>self</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="FileLayout::clearDebugMessages">
+<code class="sig-name descname">clearDebugMessages</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#FileLayout::clearDebugMessages" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Clear the debug messages array</p>
+<dl class="field-list simple">
+<dt class="field-odd">Результат</dt>
+<dd class="field-odd"><p>self</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="FileLayout::debug">
+<code class="sig-name descname">debug</code><span class="sig-paren">(</span><em class="sig-param">$data = array()</em><span class="sig-paren">)</span><a class="headerlink" href="#FileLayout::debug" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Render a layout with debug info</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$data</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>string</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="FileLayout::get">
+<code class="sig-name descname">get</code><span class="sig-paren">(</span><em class="sig-param">$key</em>, <em class="sig-param">$defaultValue = null</em><span class="sig-paren">)</span><a class="headerlink" href="#FileLayout::get" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Method to get the value from the data array</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$key</strong> – </p></li>
+<li><p><strong>$defaultValue</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>mixed Value from the data array | defaultValue if doesn’t exist</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="FileLayout::getData">
+<code class="sig-name descname">getData</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#FileLayout::getData" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Get the data being rendered</p>
+<dl class="field-list simple">
+<dt class="field-odd">Результат</dt>
+<dd class="field-odd"><p>array</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="FileLayout::isDebugEnabled">
+<code class="sig-name descname">isDebugEnabled</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#FileLayout::isDebugEnabled" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Check if debug mode is enabled</p>
+<dl class="field-list simple">
+<dt class="field-odd">Результат</dt>
+<dd class="field-odd"><p>boolean</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="FileLayout::set">
+<code class="sig-name descname">set</code><span class="sig-paren">(</span><em class="sig-param">$key</em>, <em class="sig-param">$value</em><span class="sig-paren">)</span><a class="headerlink" href="#FileLayout::set" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Method to set a value in the data array. Example: $layout-&gt;set(„items“,
+$items);</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$key</strong> – </p></li>
+<li><p><strong>$value</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>self</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="FileLayout::setData">
+<code class="sig-name descname">setData</code><span class="sig-paren">(</span><em class="sig-param">$data</em><span class="sig-paren">)</span><a class="headerlink" href="#FileLayout::setData" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Set the the data passed the layout</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$data</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>self</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="FileLayout::setDebug">
+<code class="sig-name descname">setDebug</code><span class="sig-paren">(</span><em class="sig-param">$debug</em><span class="sig-paren">)</span><a class="headerlink" href="#FileLayout::setDebug" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Change the debug mode</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$debug</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>self</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2020, Artem Vasilev &lt;kern.usr@gmail.com&gt;
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

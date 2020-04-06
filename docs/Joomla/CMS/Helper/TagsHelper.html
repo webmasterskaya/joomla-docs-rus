@@ -1,0 +1,619 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="ru" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="ru" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Joomla\CMS\Helper\TagsHelper &mdash; документация joomla-docs-rus 3.9.16</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../../../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../../" src="../../../_static/documentation_options.js"></script>
+        <script src="../../../_static/jquery.js"></script>
+        <script src="../../../_static/underscore.js"></script>
+        <script src="../../../_static/doctools.js"></script>
+        <script src="../../../_static/language_data.js"></script>
+        <script src="../../../_static/translations.js"></script>
+    
+    <script type="text/javascript" src="../../../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
+    <link rel="index" title="Алфавитный указатель" href="../../../genindex.html" />
+    <link rel="search" title="Поиск" href="../../../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search"  style="background: white" >
+          
+
+          
+            <a href="../../../index.html" class="icon icon-home"> joomla-docs-rus
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <!-- Local TOC -->
+              <div class="local-toc"><ul>
+<li><a class="reference internal" href="#">Joomla\CMS\Helper\TagsHelper</a></li>
+</ul>
+</div>
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../../index.html">joomla-docs-rus</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content style-external-links">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../../index.html">Docs</a> &raquo;</li>
+        
+      <li>Joomla\CMS\Helper\TagsHelper</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../../../_sources/Joomla/CMS/Helper/TagsHelper.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="joomla-cms-helper-tagshelper">
+<h1>Joomla\CMS\Helper\TagsHelper<a class="headerlink" href="#joomla-cms-helper-tagshelper" title="Ссылка на этот заголовок">¶</a></h1>
+<dl class="class">
+<dt id="TagsHelper">
+<em class="property">class </em><code class="sig-name descname">TagsHelper</code><a class="headerlink" href="#TagsHelper" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Tags helper class, provides methods to perform various tasks relevant
+tagging of content.</p>
+<dl class="attr">
+<dt id="TagsHelper::$tagsChanged">
+<em class="property">property </em><code class="sig-name descname">tagsChanged</code><a class="headerlink" href="#TagsHelper::$tagsChanged" title="Ссылка на это определение">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>boolean</p>
+</dd>
+<dt class="field-even">Scope</dt>
+<dd class="field-even"><p>protected</p>
+</dd>
+</dl>
+<p>Helper object for storing and deleting tag information.</p>
+</dd></dl>
+
+<dl class="attr">
+<dt id="TagsHelper::$replaceTags">
+<em class="property">property </em><code class="sig-name descname">replaceTags</code><a class="headerlink" href="#TagsHelper::$replaceTags" title="Ссылка на это определение">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>boolean</p>
+</dd>
+<dt class="field-even">Scope</dt>
+<dd class="field-even"><p>protected</p>
+</dd>
+</dl>
+<p>Whether up replace all tags or just add tags</p>
+</dd></dl>
+
+<dl class="attr">
+<dt id="TagsHelper::$typeAlias">
+<em class="property">property </em><code class="sig-name descname">typeAlias</code><a class="headerlink" href="#TagsHelper::$typeAlias" title="Ссылка на это определение">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>string</p>
+</dd>
+</dl>
+<p>Alias for querying mapping and content type table.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="TagsHelper::addTagMapping">
+<code class="sig-name descname">addTagMapping</code><span class="sig-paren">(</span><em class="sig-param">$ucmId</em>, <em class="sig-param">TableInterface $table</em>, <em class="sig-param">$tags = array()</em><span class="sig-paren">)</span><a class="headerlink" href="#TagsHelper::addTagMapping" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Method to add tag rows to mapping table.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$ucmId</strong> – </p></li>
+<li><p><strong>$table</strong> (<a class="reference internal" href="../Table/TableInterface.html#TableInterface" title="TableInterface"><em>TableInterface</em></a>) – </p></li>
+<li><p><strong>$tags</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>boolean true on success, otherwise false.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="TagsHelper::convertPathsToNames">
+<code class="sig-name descname">convertPathsToNames</code><span class="sig-paren">(</span><em class="sig-param">$tags</em><span class="sig-paren">)</span><a class="headerlink" href="#TagsHelper::convertPathsToNames" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Function that converts tags paths into paths of names</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$tags</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>array</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="TagsHelper::createTagsFromField">
+<code class="sig-name descname">createTagsFromField</code><span class="sig-paren">(</span><em class="sig-param">$tags</em><span class="sig-paren">)</span><a class="headerlink" href="#TagsHelper::createTagsFromField" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Create any new tags by looking for #new# in the strings</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$tags</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>mixed If successful, metadata with new tag titles replaced by tag ids. Otherwise false.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="TagsHelper::createTagsFromMetadata">
+<code class="sig-name descname">createTagsFromMetadata</code><span class="sig-paren">(</span><em class="sig-param">$metadata</em><span class="sig-paren">)</span><a class="headerlink" href="#TagsHelper::createTagsFromMetadata" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Create any new tags by looking for #new# in the metadata</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$metadata</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>mixed If successful, metadata with new tag titles replaced by tag ids. Otherwise false.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="TagsHelper::deleteTagData">
+<code class="sig-name descname">deleteTagData</code><span class="sig-paren">(</span><em class="sig-param">TableInterface $table</em>, <em class="sig-param">$contentItemId</em><span class="sig-paren">)</span><a class="headerlink" href="#TagsHelper::deleteTagData" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Method to delete the tag mappings and #__ucm_content record for for an
+item</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$table</strong> (<a class="reference internal" href="../Table/TableInterface.html#TableInterface" title="TableInterface"><em>TableInterface</em></a>) – </p></li>
+<li><p><strong>$contentItemId</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>boolean true on success, false on failure</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="TagsHelper::getItemTags">
+<code class="sig-name descname">getItemTags</code><span class="sig-paren">(</span><em class="sig-param">$contentType</em>, <em class="sig-param">$id</em>, <em class="sig-param">$getTagData = true</em><span class="sig-paren">)</span><a class="headerlink" href="#TagsHelper::getItemTags" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Method to get a list of tags for an item, optionally with the tag data.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$contentType</strong> – </p></li>
+<li><p><strong>$id</strong> – </p></li>
+<li><p><strong>$getTagData</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>array Array of of tag objects</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="TagsHelper::getTagIds">
+<code class="sig-name descname">getTagIds</code><span class="sig-paren">(</span><em class="sig-param">$ids</em>, <em class="sig-param">$prefix</em><span class="sig-paren">)</span><a class="headerlink" href="#TagsHelper::getTagIds" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Method to get a list of tags for a given item.
+Normally used for displaying a list of tags within a layout</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$ids</strong> – </p></li>
+<li><p><strong>$prefix</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>string Comma separated list of tag Ids.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="TagsHelper::getTagItemsQuery">
+<code class="sig-name descname">getTagItemsQuery</code><span class="sig-paren">(</span><em class="sig-param">$tagId</em>, <em class="sig-param">$typesr = null</em>, <em class="sig-param">$includeChildren = false</em>, <em class="sig-param">$orderByOption = 'c.core_title'</em>, <em class="sig-param">$orderDir = 'ASC'</em>, <em class="sig-param">$anyOrAll = true</em>, <em class="sig-param">$languageFilter = 'all'</em>, <em class="sig-param">$stateFilter = '0</em>, <em class="sig-param">1'</em><span class="sig-paren">)</span><a class="headerlink" href="#TagsHelper::getTagItemsQuery" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Method to get a query to retrieve a detailed list of items for a tag.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$tagId</strong> – </p></li>
+<li><p><strong>$typesr</strong> – </p></li>
+<li><p><strong>$includeChildren</strong> – </p></li>
+<li><p><strong>$orderByOption</strong> – </p></li>
+<li><p><strong>$orderDir</strong> – </p></li>
+<li><p><strong>$anyOrAll</strong> – </p></li>
+<li><p><strong>$languageFilter</strong> – </p></li>
+<li><p><strong>$stateFilter</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>JDatabaseQuery Query to retrieve a list of tags</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="TagsHelper::getTagNames">
+<code class="sig-name descname">getTagNames</code><span class="sig-paren">(</span><em class="sig-param">$tagIds</em><span class="sig-paren">)</span><a class="headerlink" href="#TagsHelper::getTagNames" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Function that converts tag ids to their tag names</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$tagIds</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>array An array of tag names.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="TagsHelper::getTagTreeArray">
+<code class="sig-name descname">getTagTreeArray</code><span class="sig-paren">(</span><em class="sig-param">$id</em>, <em class="sig-param">$tagTreeArray = array()</em><span class="sig-paren">)</span><a class="headerlink" href="#TagsHelper::getTagTreeArray" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Method to get an array of tag ids for the current tag and its children</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$id</strong> – </p></li>
+<li><p><strong>$tagTreeArray</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>mixed</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="TagsHelper::getTypeId">
+<code class="sig-name descname">getTypeId</code><span class="sig-paren">(</span><em class="sig-param">$typeAlias</em><span class="sig-paren">)</span><a class="headerlink" href="#TagsHelper::getTypeId" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Method to get the type id for a type alias.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$typeAlias</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>string Name of the table for a type</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="TagsHelper::getTypes">
+<code class="sig-name descname">getTypes</code><span class="sig-paren">(</span><em class="sig-param">$arrayType = 'objectList'</em>, <em class="sig-param">$selectTypes = null</em>, <em class="sig-param">$useAlias = true</em><span class="sig-paren">)</span><a class="headerlink" href="#TagsHelper::getTypes" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Method to get a list of types with associated data.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$arrayType</strong> – </p></li>
+<li><p><strong>$selectTypes</strong> – </p></li>
+<li><p><strong>$useAlias</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>array Array of of types</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="TagsHelper::postStoreProcess">
+<code class="sig-name descname">postStoreProcess</code><span class="sig-paren">(</span><em class="sig-param">TableInterface $table</em>, <em class="sig-param">$newTags = array()</em>, <em class="sig-param">$replace = true</em><span class="sig-paren">)</span><a class="headerlink" href="#TagsHelper::postStoreProcess" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Function that handles saving tags used in a table class after a store()</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$table</strong> (<a class="reference internal" href="../Table/TableInterface.html#TableInterface" title="TableInterface"><em>TableInterface</em></a>) – </p></li>
+<li><p><strong>$newTags</strong> – </p></li>
+<li><p><strong>$replace</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>boolean</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="TagsHelper::preStoreProcess">
+<code class="sig-name descname">preStoreProcess</code><span class="sig-paren">(</span><em class="sig-param">TableInterface $table</em>, <em class="sig-param">$newTags = array()</em><span class="sig-paren">)</span><a class="headerlink" href="#TagsHelper::preStoreProcess" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Function that preProcesses data from a table prior to a store() to ensure
+proper tag handling</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$table</strong> (<a class="reference internal" href="../Table/TableInterface.html#TableInterface" title="TableInterface"><em>TableInterface</em></a>) – </p></li>
+<li><p><strong>$newTags</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>null</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="TagsHelper::searchTags">
+<code class="sig-name descname">searchTags</code><span class="sig-paren">(</span><em class="sig-param">$filters = array()</em><span class="sig-paren">)</span><a class="headerlink" href="#TagsHelper::searchTags" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Function to search tags</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$filters</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>array</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="TagsHelper::tagDeleteInstances">
+<code class="sig-name descname">tagDeleteInstances</code><span class="sig-paren">(</span><em class="sig-param">$tag_id</em><span class="sig-paren">)</span><a class="headerlink" href="#TagsHelper::tagDeleteInstances" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Method to delete all instances of a tag from the mapping table. Generally
+used when a tag is deleted.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$tag_id</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>void</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="TagsHelper::tagItem">
+<code class="sig-name descname">tagItem</code><span class="sig-paren">(</span><em class="sig-param">$ucmId</em>, <em class="sig-param">TableInterface $table</em>, <em class="sig-param">$tags = array()</em>, <em class="sig-param">$replace = true</em><span class="sig-paren">)</span><a class="headerlink" href="#TagsHelper::tagItem" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Method to add or update tags associated with an item.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$ucmId</strong> – </p></li>
+<li><p><strong>$table</strong> (<a class="reference internal" href="../Table/TableInterface.html#TableInterface" title="TableInterface"><em>TableInterface</em></a>) – </p></li>
+<li><p><strong>$tags</strong> – </p></li>
+<li><p><strong>$replace</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>boolean true on success, otherwise false.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="TagsHelper::unTagItem">
+<code class="sig-name descname">unTagItem</code><span class="sig-paren">(</span><em class="sig-param">$contentId</em>, <em class="sig-param">TableInterface $table</em>, <em class="sig-param">$tags = array()</em><span class="sig-paren">)</span><a class="headerlink" href="#TagsHelper::unTagItem" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Method to untag an item</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$contentId</strong> – </p></li>
+<li><p><strong>$table</strong> (<a class="reference internal" href="../Table/TableInterface.html#TableInterface" title="TableInterface"><em>TableInterface</em></a>) – </p></li>
+<li><p><strong>$tags</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>boolean true on success, otherwise false.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="TagsHelper::getCurrentLanguage">
+<code class="sig-name descname">getCurrentLanguage</code><span class="sig-paren">(</span><em class="sig-param">$detectBrowser = true</em><span class="sig-paren">)</span><a class="headerlink" href="#TagsHelper::getCurrentLanguage" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Gets the current language</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$detectBrowser</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>string The language string</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="TagsHelper::getLanguageId">
+<code class="sig-name descname">getLanguageId</code><span class="sig-paren">(</span><em class="sig-param">$langCode</em><span class="sig-paren">)</span><a class="headerlink" href="#TagsHelper::getLanguageId" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Gets the associated language ID</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$langCode</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>integer The language ID</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="TagsHelper::getRowData">
+<code class="sig-name descname">getRowData</code><span class="sig-paren">(</span><em class="sig-param">TableInterface $table</em><span class="sig-paren">)</span><a class="headerlink" href="#TagsHelper::getRowData" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Gets a row of data from a table</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$table</strong> (<a class="reference internal" href="../Table/TableInterface.html#TableInterface" title="TableInterface"><em>TableInterface</em></a>) – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>array Associative array of all columns and values for a row in a table.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="TagsHelper::getDataObject">
+<code class="sig-name descname">getDataObject</code><span class="sig-paren">(</span><em class="sig-param">TableInterface $table</em><span class="sig-paren">)</span><a class="headerlink" href="#TagsHelper::getDataObject" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Method to get an object containing all of the table columns and values.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$table</strong> (<a class="reference internal" href="../Table/TableInterface.html#TableInterface" title="TableInterface"><em>TableInterface</em></a>) – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>stdClass Contains all of the columns and values.</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2020, Artem Vasilev &lt;kern.usr@gmail.com&gt;
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

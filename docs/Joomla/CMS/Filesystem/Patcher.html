@@ -1,0 +1,476 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="ru" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="ru" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Joomla\CMS\Filesystem\Patcher &mdash; документация joomla-docs-rus 3.9.16</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../../../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../../" src="../../../_static/documentation_options.js"></script>
+        <script src="../../../_static/jquery.js"></script>
+        <script src="../../../_static/underscore.js"></script>
+        <script src="../../../_static/doctools.js"></script>
+        <script src="../../../_static/language_data.js"></script>
+        <script src="../../../_static/translations.js"></script>
+    
+    <script type="text/javascript" src="../../../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
+    <link rel="index" title="Алфавитный указатель" href="../../../genindex.html" />
+    <link rel="search" title="Поиск" href="../../../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search"  style="background: white" >
+          
+
+          
+            <a href="../../../index.html" class="icon icon-home"> joomla-docs-rus
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <!-- Local TOC -->
+              <div class="local-toc"><ul>
+<li><a class="reference internal" href="#">Joomla\CMS\Filesystem\Patcher</a></li>
+</ul>
+</div>
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../../index.html">joomla-docs-rus</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content style-external-links">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../../index.html">Docs</a> &raquo;</li>
+        
+      <li>Joomla\CMS\Filesystem\Patcher</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../../../_sources/Joomla/CMS/Filesystem/Patcher.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="joomla-cms-filesystem-patcher">
+<h1>Joomla\CMS\Filesystem\Patcher<a class="headerlink" href="#joomla-cms-filesystem-patcher" title="Ссылка на этот заголовок">¶</a></h1>
+<dl class="class">
+<dt id="Patcher">
+<em class="property">class </em><code class="sig-name descname">Patcher</code><a class="headerlink" href="#Patcher" title="Ссылка на это определение">¶</a></dt>
+<dd><p>A Unified Diff Format Patcher class</p>
+<dl class="const">
+<dt id="Patcher::SRC_FILE">
+<em class="property">constant </em><code class="sig-name descname">SRC_FILE</code><a class="headerlink" href="#Patcher::SRC_FILE" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Regular expression for searching source files</p>
+</dd></dl>
+
+<dl class="const">
+<dt id="Patcher::DST_FILE">
+<em class="property">constant </em><code class="sig-name descname">DST_FILE</code><a class="headerlink" href="#Patcher::DST_FILE" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Regular expression for searching destination files</p>
+</dd></dl>
+
+<dl class="const">
+<dt id="Patcher::HUNK">
+<em class="property">constant </em><code class="sig-name descname">HUNK</code><a class="headerlink" href="#Patcher::HUNK" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Regular expression for searching hunks of differences</p>
+</dd></dl>
+
+<dl class="const">
+<dt id="Patcher::SPLIT">
+<em class="property">constant </em><code class="sig-name descname">SPLIT</code><a class="headerlink" href="#Patcher::SPLIT" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Regular expression for splitting lines</p>
+</dd></dl>
+
+<dl class="attr">
+<dt id="Patcher::$sources">
+<em class="property">property </em><code class="sig-name descname">sources</code><a class="headerlink" href="#Patcher::$sources" title="Ссылка на это определение">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>array</p>
+</dd>
+<dt class="field-even">Scope</dt>
+<dd class="field-even"><p>protected</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="attr">
+<dt id="Patcher::$destinations">
+<em class="property">property </em><code class="sig-name descname">destinations</code><a class="headerlink" href="#Patcher::$destinations" title="Ссылка на это определение">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>array</p>
+</dd>
+<dt class="field-even">Scope</dt>
+<dd class="field-even"><p>protected</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="attr">
+<dt id="Patcher::$removals">
+<em class="property">property </em><code class="sig-name descname">removals</code><a class="headerlink" href="#Patcher::$removals" title="Ссылка на это определение">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>array</p>
+</dd>
+<dt class="field-even">Scope</dt>
+<dd class="field-even"><p>protected</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="attr">
+<dt id="Patcher::$patches">
+<em class="property">property </em><code class="sig-name descname">patches</code><a class="headerlink" href="#Patcher::$patches" title="Ссылка на это определение">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>array</p>
+</dd>
+<dt class="field-even">Scope</dt>
+<dd class="field-even"><p>protected</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="attr">
+<dt id="Patcher::$instance">
+<em class="property">property </em><code class="sig-name descname">instance</code><a class="headerlink" href="#Patcher::$instance" title="Ссылка на это определение">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>array</p>
+</dd>
+<dt class="field-even">Scope</dt>
+<dd class="field-even"><p>protected</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="Patcher::__construct">
+<code class="sig-name descname">__construct</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Patcher::__construct" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Constructor</p>
+<p>The constructor is protected to force the use of
+FilesystemPatcher::getInstance()</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Patcher::getInstance">
+<code class="sig-name descname">getInstance</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Patcher::getInstance" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Method to get a patcher</p>
+<dl class="field-list simple">
+<dt class="field-odd">Результат</dt>
+<dd class="field-odd"><p>FilesystemPatcher an instance of the patcher</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="Patcher::reset">
+<code class="sig-name descname">reset</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Patcher::reset" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Reset the pacher</p>
+<dl class="field-list simple">
+<dt class="field-odd">Результат</dt>
+<dd class="field-odd"><p>FilesystemPatcher This object for chaining</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="Patcher::apply">
+<code class="sig-name descname">apply</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Patcher::apply" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Apply the patches</p>
+<dl class="field-list simple">
+<dt class="field-odd">Результат</dt>
+<dd class="field-odd"><p>integer The number of files patched</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="Patcher::addFile">
+<code class="sig-name descname">addFile</code><span class="sig-paren">(</span><em class="sig-param">$filename</em>, <em class="sig-param">$root = JPATH_BASE</em>, <em class="sig-param">$strip = 0</em><span class="sig-paren">)</span><a class="headerlink" href="#Patcher::addFile" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Add a unified diff file to the patcher</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$filename</strong> – </p></li>
+<li><p><strong>$root</strong> – </p></li>
+<li><p><strong>$strip</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>FilesystemPatcher $this for chaining</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="Patcher::add">
+<code class="sig-name descname">add</code><span class="sig-paren">(</span><em class="sig-param">$udiff</em>, <em class="sig-param">$root = JPATH_BASE</em>, <em class="sig-param">$strip = 0</em><span class="sig-paren">)</span><a class="headerlink" href="#Patcher::add" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Add a unified diff string to the patcher</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$udiff</strong> – </p></li>
+<li><p><strong>$root</strong> – </p></li>
+<li><p><strong>$strip</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>FilesystemPatcher $this for chaining</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="Patcher::splitLines">
+<code class="sig-name descname">splitLines</code><span class="sig-paren">(</span><em class="sig-param">$data</em><span class="sig-paren">)</span><a class="headerlink" href="#Patcher::splitLines" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Separate CR or CRLF lines</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$data</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>array The lines of the inputdestination file</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="Patcher::findHeader">
+<code class="sig-name descname">findHeader</code><span class="sig-paren">(</span><em class="sig-param">$lines</em>, <em class="sig-param">$src</em>, <em class="sig-param">$dst</em><span class="sig-paren">)</span><a class="headerlink" href="#Patcher::findHeader" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Find the diff header</p>
+<p>The internal array pointer of $lines is on the next line after the finding</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$lines</strong> – </p></li>
+<li><p><strong>$src</strong> – </p></li>
+<li><p><strong>$dst</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>boolean TRUE in case of success, FALSE in case of failure</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="Patcher::findHunk">
+<code class="sig-name descname">findHunk</code><span class="sig-paren">(</span><em class="sig-param">$lines</em>, <em class="sig-param">$src_line</em>, <em class="sig-param">$src_size</em>, <em class="sig-param">$dst_line</em>, <em class="sig-param">$dst_size</em><span class="sig-paren">)</span><a class="headerlink" href="#Patcher::findHunk" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Find the next hunk of difference</p>
+<p>The internal array pointer of $lines is on the next line after the finding</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$lines</strong> – </p></li>
+<li><p><strong>$src_line</strong> – </p></li>
+<li><p><strong>$src_size</strong> – </p></li>
+<li><p><strong>$dst_line</strong> – </p></li>
+<li><p><strong>$dst_size</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>boolean TRUE in case of success, false in case of failure</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="Patcher::applyHunk">
+<code class="sig-name descname">applyHunk</code><span class="sig-paren">(</span><em class="sig-param">$lines</em>, <em class="sig-param">$src</em>, <em class="sig-param">$dst</em>, <em class="sig-param">$src_line</em>, <em class="sig-param">$src_size</em>, <em class="sig-param">$dst_line</em>, <em class="sig-param">$dst_size</em><span class="sig-paren">)</span><a class="headerlink" href="#Patcher::applyHunk" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Apply the patch</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$lines</strong> – </p></li>
+<li><p><strong>$src</strong> – </p></li>
+<li><p><strong>$dst</strong> – </p></li>
+<li><p><strong>$src_line</strong> – </p></li>
+<li><p><strong>$src_size</strong> – </p></li>
+<li><p><strong>$dst_line</strong> – </p></li>
+<li><p><strong>$dst_size</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>void</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="Patcher::getSource">
+<code class="sig-name descname">getSource</code><span class="sig-paren">(</span><em class="sig-param">$src</em><span class="sig-paren">)</span><a class="headerlink" href="#Patcher::getSource" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Get the lines of a source file</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$src</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>array The lines of the source file</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="Patcher::getDestination">
+<code class="sig-name descname">getDestination</code><span class="sig-paren">(</span><em class="sig-param">$dst</em>, <em class="sig-param">$src</em><span class="sig-paren">)</span><a class="headerlink" href="#Patcher::getDestination" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Get the lines of a destination file</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$dst</strong> – </p></li>
+<li><p><strong>$src</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>array The lines of the destination file</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2020, Artem Vasilev &lt;kern.usr@gmail.com&gt;
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

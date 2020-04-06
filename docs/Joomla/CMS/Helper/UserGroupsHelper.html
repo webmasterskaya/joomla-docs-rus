@@ -1,0 +1,382 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="ru" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="ru" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Joomla\CMS\Helper\UserGroupsHelper &mdash; документация joomla-docs-rus 3.9.16</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../../../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../../" src="../../../_static/documentation_options.js"></script>
+        <script src="../../../_static/jquery.js"></script>
+        <script src="../../../_static/underscore.js"></script>
+        <script src="../../../_static/doctools.js"></script>
+        <script src="../../../_static/language_data.js"></script>
+        <script src="../../../_static/translations.js"></script>
+    
+    <script type="text/javascript" src="../../../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
+    <link rel="index" title="Алфавитный указатель" href="../../../genindex.html" />
+    <link rel="search" title="Поиск" href="../../../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search"  style="background: white" >
+          
+
+          
+            <a href="../../../index.html" class="icon icon-home"> joomla-docs-rus
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <!-- Local TOC -->
+              <div class="local-toc"><ul>
+<li><a class="reference internal" href="#">Joomla\CMS\Helper\UserGroupsHelper</a></li>
+</ul>
+</div>
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../../index.html">joomla-docs-rus</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content style-external-links">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../../index.html">Docs</a> &raquo;</li>
+        
+      <li>Joomla\CMS\Helper\UserGroupsHelper</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../../../_sources/Joomla/CMS/Helper/UserGroupsHelper.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="joomla-cms-helper-usergroupshelper">
+<h1>Joomla\CMS\Helper\UserGroupsHelper<a class="headerlink" href="#joomla-cms-helper-usergroupshelper" title="Ссылка на этот заголовок">¶</a></h1>
+<dl class="class">
+<dt id="UserGroupsHelper">
+<em class="property">class </em><code class="sig-name descname">UserGroupsHelper</code><a class="headerlink" href="#UserGroupsHelper" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Helper to deal with user groups.</p>
+<dl class="const">
+<dt id="UserGroupsHelper::MODE_SINGLETON">
+<em class="property">constant </em><code class="sig-name descname">MODE_SINGLETON</code><a class="headerlink" href="#UserGroupsHelper::MODE_SINGLETON" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Indicates the current helper instance is the singleton instance.</p>
+</dd></dl>
+
+<dl class="const">
+<dt id="UserGroupsHelper::MODE_INSTANCE">
+<em class="property">constant </em><code class="sig-name descname">MODE_INSTANCE</code><a class="headerlink" href="#UserGroupsHelper::MODE_INSTANCE" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Indicates the current helper instance is a standalone class instance.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="UserGroupsHelper::__construct">
+<code class="sig-name descname">__construct</code><span class="sig-paren">(</span><em class="sig-param">$groups = array()</em>, <em class="sig-param">$mode = self::MODE_INSTANCE</em><span class="sig-paren">)</span><a class="headerlink" href="#UserGroupsHelper::__construct" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Constructor</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$groups</strong> – </p></li>
+<li><p><strong>$mode</strong> – </p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="UserGroupsHelper::count">
+<code class="sig-name descname">count</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#UserGroupsHelper::count" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Count loaded user groups.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Результат</dt>
+<dd class="field-odd"><p>integer</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="UserGroupsHelper::getInstance">
+<code class="sig-name descname">getInstance</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#UserGroupsHelper::getInstance" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Get the helper instance.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Результат</dt>
+<dd class="field-odd"><p>self</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="UserGroupsHelper::get">
+<code class="sig-name descname">get</code><span class="sig-paren">(</span><em class="sig-param">$id</em><span class="sig-paren">)</span><a class="headerlink" href="#UserGroupsHelper::get" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Get a user group by its id.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$id</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>mixed stdClass on success. False otherwise</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="UserGroupsHelper::getAll">
+<code class="sig-name descname">getAll</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#UserGroupsHelper::getAll" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Get the list of existing user groups.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Результат</dt>
+<dd class="field-odd"><p>array</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="UserGroupsHelper::has">
+<code class="sig-name descname">has</code><span class="sig-paren">(</span><em class="sig-param">$id</em><span class="sig-paren">)</span><a class="headerlink" href="#UserGroupsHelper::has" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Check if a group is in the list.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$id</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>boolean</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="UserGroupsHelper::isSingleton">
+<code class="sig-name descname">isSingleton</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#UserGroupsHelper::isSingleton" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Check if this instance is a singleton.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Результат</dt>
+<dd class="field-odd"><p>boolean</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="UserGroupsHelper::total">
+<code class="sig-name descname">total</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#UserGroupsHelper::total" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Get total available user groups in database.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Результат</dt>
+<dd class="field-odd"><p>integer</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="UserGroupsHelper::load">
+<code class="sig-name descname">load</code><span class="sig-paren">(</span><em class="sig-param">$id</em><span class="sig-paren">)</span><a class="headerlink" href="#UserGroupsHelper::load" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Load a group from database.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$id</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>mixed</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="UserGroupsHelper::loadAll">
+<code class="sig-name descname">loadAll</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#UserGroupsHelper::loadAll" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Load all user groups from the database.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Результат</dt>
+<dd class="field-odd"><p>self</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="UserGroupsHelper::populateGroupsData">
+<code class="sig-name descname">populateGroupsData</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#UserGroupsHelper::populateGroupsData" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Populates extra information for groups.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Результат</dt>
+<dd class="field-odd"><p>array</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="UserGroupsHelper::populateGroupData">
+<code class="sig-name descname">populateGroupData</code><span class="sig-paren">(</span><em class="sig-param">$group</em><span class="sig-paren">)</span><a class="headerlink" href="#UserGroupsHelper::populateGroupData" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Populate data for a specific user group.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$group</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>stdClass</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="UserGroupsHelper::setGroups">
+<code class="sig-name descname">setGroups</code><span class="sig-paren">(</span><em class="sig-param">$groups</em><span class="sig-paren">)</span><a class="headerlink" href="#UserGroupsHelper::setGroups" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Set the groups to be used as source.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$groups</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>self</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2020, Artem Vasilev &lt;kern.usr@gmail.com&gt;
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

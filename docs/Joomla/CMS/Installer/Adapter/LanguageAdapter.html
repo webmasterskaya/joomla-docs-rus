@@ -1,0 +1,776 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="ru" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="ru" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Joomla\CMS\Installer\Adapter\LanguageAdapter &mdash; документация joomla-docs-rus 3.9.16</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../../../../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../../../" src="../../../../_static/documentation_options.js"></script>
+        <script src="../../../../_static/jquery.js"></script>
+        <script src="../../../../_static/underscore.js"></script>
+        <script src="../../../../_static/doctools.js"></script>
+        <script src="../../../../_static/language_data.js"></script>
+        <script src="../../../../_static/translations.js"></script>
+    
+    <script type="text/javascript" src="../../../../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../../../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../../../_static/pygments.css" type="text/css" />
+    <link rel="index" title="Алфавитный указатель" href="../../../../genindex.html" />
+    <link rel="search" title="Поиск" href="../../../../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search"  style="background: white" >
+          
+
+          
+            <a href="../../../../index.html" class="icon icon-home"> joomla-docs-rus
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <!-- Local TOC -->
+              <div class="local-toc"><ul>
+<li><a class="reference internal" href="#">Joomla\CMS\Installer\Adapter\LanguageAdapter</a></li>
+</ul>
+</div>
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../../../index.html">joomla-docs-rus</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content style-external-links">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../../../index.html">Docs</a> &raquo;</li>
+        
+      <li>Joomla\CMS\Installer\Adapter\LanguageAdapter</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../../../../_sources/Joomla/CMS/Installer/Adapter/LanguageAdapter.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="joomla-cms-installer-adapter-languageadapter">
+<h1>Joomla\CMS\Installer\Adapter\LanguageAdapter<a class="headerlink" href="#joomla-cms-installer-adapter-languageadapter" title="Ссылка на этот заголовок">¶</a></h1>
+<dl class="class">
+<dt id="LanguageAdapter">
+<em class="property">class </em><code class="sig-name descname">LanguageAdapter</code><a class="headerlink" href="#LanguageAdapter" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Language installer</p>
+<dl class="attr">
+<dt id="LanguageAdapter::$core">
+<em class="property">property </em><code class="sig-name descname">core</code><a class="headerlink" href="#LanguageAdapter::$core" title="Ссылка на это определение">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>boolean</p>
+</dd>
+<dt class="field-even">Scope</dt>
+<dd class="field-even"><p>protected</p>
+</dd>
+</dl>
+<p>Core language pack flag</p>
+</dd></dl>
+
+<dl class="attr">
+<dt id="LanguageAdapter::$currentExtensionId">
+<em class="property">property </em><code class="sig-name descname">currentExtensionId</code><a class="headerlink" href="#LanguageAdapter::$currentExtensionId" title="Ссылка на это определение">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>integer</p>
+</dd>
+<dt class="field-even">Scope</dt>
+<dd class="field-even"><p>protected</p>
+</dd>
+</dl>
+<p>ID for the currently installed extension if present</p>
+</dd></dl>
+
+<dl class="attr">
+<dt id="LanguageAdapter::$element">
+<em class="property">property </em><code class="sig-name descname">element</code><a class="headerlink" href="#LanguageAdapter::$element" title="Ссылка на это определение">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>string</p>
+</dd>
+<dt class="field-even">Scope</dt>
+<dd class="field-even"><p>protected</p>
+</dd>
+</dl>
+<p>The unique identifier for the extension (e.g. mod_login)</p>
+</dd></dl>
+
+<dl class="attr">
+<dt id="LanguageAdapter::$extension">
+<em class="property">property </em><code class="sig-name descname">extension</code><a class="headerlink" href="#LanguageAdapter::$extension" title="Ссылка на это определение">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p><a class="reference internal" href="../../Table/Extension.html#Extension" title="Extension">Extension</a></p>
+</dd>
+<dt class="field-even">Scope</dt>
+<dd class="field-even"><p>protected</p>
+</dd>
+</dl>
+<p>Extension object.</p>
+</dd></dl>
+
+<dl class="attr">
+<dt id="LanguageAdapter::$extensionMessage">
+<em class="property">property </em><code class="sig-name descname">extensionMessage</code><a class="headerlink" href="#LanguageAdapter::$extensionMessage" title="Ссылка на это определение">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>string</p>
+</dd>
+<dt class="field-even">Scope</dt>
+<dd class="field-even"><p>protected</p>
+</dd>
+</dl>
+<p>Messages rendered by custom scripts</p>
+</dd></dl>
+
+<dl class="attr">
+<dt id="LanguageAdapter::$manifest">
+<em class="property">property </em><code class="sig-name descname">manifest</code><a class="headerlink" href="#LanguageAdapter::$manifest" title="Ссылка на это определение">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>string</p>
+</dd>
+</dl>
+<p>Copy of the XML manifest file.</p>
+<p>Making this object public allows extensions to customize the manifest in
+custom scripts.</p>
+</dd></dl>
+
+<dl class="attr">
+<dt id="LanguageAdapter::$manifest_script">
+<em class="property">property </em><code class="sig-name descname">manifest_script</code><a class="headerlink" href="#LanguageAdapter::$manifest_script" title="Ссылка на это определение">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>string</p>
+</dd>
+<dt class="field-even">Scope</dt>
+<dd class="field-even"><p>protected</p>
+</dd>
+</dl>
+<p>A path to the PHP file that the scriptfile declaration in the manifest
+refers to.</p>
+</dd></dl>
+
+<dl class="attr">
+<dt id="LanguageAdapter::$name">
+<em class="property">property </em><code class="sig-name descname">name</code><a class="headerlink" href="#LanguageAdapter::$name" title="Ссылка на это определение">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>string</p>
+</dd>
+<dt class="field-even">Scope</dt>
+<dd class="field-even"><p>protected</p>
+</dd>
+</dl>
+<p>Name of the extension</p>
+</dd></dl>
+
+<dl class="attr">
+<dt id="LanguageAdapter::$route">
+<em class="property">property </em><code class="sig-name descname">route</code><a class="headerlink" href="#LanguageAdapter::$route" title="Ссылка на это определение">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>string</p>
+</dd>
+<dt class="field-even">Scope</dt>
+<dd class="field-even"><p>protected</p>
+</dd>
+</dl>
+<p>Install function routing</p>
+</dd></dl>
+
+<dl class="attr">
+<dt id="LanguageAdapter::$supportsDiscoverInstall">
+<em class="property">property </em><code class="sig-name descname">supportsDiscoverInstall</code><a class="headerlink" href="#LanguageAdapter::$supportsDiscoverInstall" title="Ссылка на это определение">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>boolean</p>
+</dd>
+<dt class="field-even">Scope</dt>
+<dd class="field-even"><p>protected</p>
+</dd>
+</dl>
+<p>Flag if the adapter supports discover installs</p>
+<p>Adapters should override this and set to false if discover install is
+unsupported</p>
+</dd></dl>
+
+<dl class="attr">
+<dt id="LanguageAdapter::$type">
+<em class="property">property </em><code class="sig-name descname">type</code><a class="headerlink" href="#LanguageAdapter::$type" title="Ссылка на это определение">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>string</p>
+</dd>
+<dt class="field-even">Scope</dt>
+<dd class="field-even"><p>protected</p>
+</dd>
+</dl>
+<p>The type of adapter in use</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="LanguageAdapter::copyBaseFiles">
+<code class="sig-name descname">copyBaseFiles</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#LanguageAdapter::copyBaseFiles" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Method to copy the extension’s base files from the <cite>&lt;files&gt;</cite> tag(s) and
+the manifest file</p>
+<dl class="field-list simple">
+<dt class="field-odd">Результат</dt>
+<dd class="field-odd"><p>void</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="LanguageAdapter::setupInstallPaths">
+<code class="sig-name descname">setupInstallPaths</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#LanguageAdapter::setupInstallPaths" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Method to do any prechecks and setup the install paths for the extension</p>
+<dl class="field-list simple">
+<dt class="field-odd">Результат</dt>
+<dd class="field-odd"><p>void</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="LanguageAdapter::storeExtension">
+<code class="sig-name descname">storeExtension</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#LanguageAdapter::storeExtension" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Method to store the extension to the database</p>
+<dl class="field-list simple">
+<dt class="field-odd">Результат</dt>
+<dd class="field-odd"><p>void</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="LanguageAdapter::install">
+<code class="sig-name descname">install</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#LanguageAdapter::install" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Custom install method</p>
+<p>Note: This behaves badly due to hacks made in the middle of 1.5.x to add
+the ability to install multiple distinct packs in one install. The
+preferred method is to use a package to install multiple language packs.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Результат</dt>
+<dd class="field-odd"><p>boolean|integer The extension ID on success, boolean false on failure</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="LanguageAdapter::_install">
+<code class="sig-name descname">_install</code><span class="sig-paren">(</span><em class="sig-param">$cname</em>, <em class="sig-param">$basePath</em>, <em class="sig-param">$clientId</em>, <em class="sig-param">$element</em><span class="sig-paren">)</span><a class="headerlink" href="#LanguageAdapter::_install" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Install function that is designed to handle individual clients</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$cname</strong> – </p></li>
+<li><p><strong>$basePath</strong> – </p></li>
+<li><p><strong>$clientId</strong> – </p></li>
+<li><p><strong>$element</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>boolean|integer The extension ID on success, boolean false on failure</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="LanguageAdapter::getSefString">
+<code class="sig-name descname">getSefString</code><span class="sig-paren">(</span><em class="sig-param">$itemLanguageTag</em><span class="sig-paren">)</span><a class="headerlink" href="#LanguageAdapter::getSefString" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Gets a unique language SEF string.</p>
+<p>This function checks other existing language with the same code, if they
+exist provides a unique SEF name.
+For instance: en-GB, en-US and en-AU will share the same SEF code by
+default: www.mywebsite.com/en/
+To avoid this conflict, this function creates an specific SEF in case of
+existing conflict:
+For example: www.mywebsite.com/en-au/</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$itemLanguageTag</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>string</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="LanguageAdapter::update">
+<code class="sig-name descname">update</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#LanguageAdapter::update" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Custom update method</p>
+<dl class="field-list simple">
+<dt class="field-odd">Результат</dt>
+<dd class="field-odd"><p>boolean True on success, false on failure</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="LanguageAdapter::uninstall">
+<code class="sig-name descname">uninstall</code><span class="sig-paren">(</span><em class="sig-param">$eid</em><span class="sig-paren">)</span><a class="headerlink" href="#LanguageAdapter::uninstall" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Custom uninstall method</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$eid</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>boolean True on success</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="LanguageAdapter::discover">
+<code class="sig-name descname">discover</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#LanguageAdapter::discover" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Custom discover method
+Finds language files</p>
+<dl class="field-list simple">
+<dt class="field-odd">Результат</dt>
+<dd class="field-odd"><p>boolean True on success</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="LanguageAdapter::discover_install">
+<code class="sig-name descname">discover_install</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#LanguageAdapter::discover_install" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Custom discover install method
+Basically updates the manifest cache and leaves everything alone</p>
+<dl class="field-list simple">
+<dt class="field-odd">Результат</dt>
+<dd class="field-odd"><p>integer The extension id</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="LanguageAdapter::refreshManifestCache">
+<code class="sig-name descname">refreshManifestCache</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#LanguageAdapter::refreshManifestCache" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Refreshes the extension table cache</p>
+<dl class="field-list simple">
+<dt class="field-odd">Результат</dt>
+<dd class="field-odd"><p>boolean result of operation, true if updated, false on failure</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="LanguageAdapter::__construct">
+<code class="sig-name descname">__construct</code><span class="sig-paren">(</span><em class="sig-param">Installer $parent</em>, <em class="sig-param">JDatabaseDriver $db</em>, <em class="sig-param">$options = array()</em><span class="sig-paren">)</span><a class="headerlink" href="#LanguageAdapter::__construct" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Constructor</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$parent</strong> (<a class="reference internal" href="../Installer.html#Installer" title="Installer"><em>Installer</em></a>) – </p></li>
+<li><p><strong>$db</strong> (<em>JDatabaseDriver</em>) – </p></li>
+<li><p><strong>$options</strong> – </p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="LanguageAdapter::canUninstallPackageChild">
+<code class="sig-name descname">canUninstallPackageChild</code><span class="sig-paren">(</span><em class="sig-param">$packageId</em><span class="sig-paren">)</span><a class="headerlink" href="#LanguageAdapter::canUninstallPackageChild" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Check if a package extension allows its child extensions to be uninstalled
+individually</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$packageId</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>boolean</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="LanguageAdapter::checkExistingExtension">
+<code class="sig-name descname">checkExistingExtension</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#LanguageAdapter::checkExistingExtension" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Method to check if the extension is already present in the database</p>
+<dl class="field-list simple">
+<dt class="field-odd">Результат</dt>
+<dd class="field-odd"><p>void</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="LanguageAdapter::checkExtensionInFilesystem">
+<code class="sig-name descname">checkExtensionInFilesystem</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#LanguageAdapter::checkExtensionInFilesystem" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Method to check if the extension is present in the filesystem, flags the
+route as update if so</p>
+<dl class="field-list simple">
+<dt class="field-odd">Результат</dt>
+<dd class="field-odd"><p>void</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="LanguageAdapter::createExtensionRoot">
+<code class="sig-name descname">createExtensionRoot</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#LanguageAdapter::createExtensionRoot" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Method to create the extension root path if necessary</p>
+<dl class="field-list simple">
+<dt class="field-odd">Результат</dt>
+<dd class="field-odd"><p>void</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="LanguageAdapter::doDatabaseTransactions">
+<code class="sig-name descname">doDatabaseTransactions</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#LanguageAdapter::doDatabaseTransactions" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Method to handle database transactions for the installer</p>
+<dl class="field-list simple">
+<dt class="field-odd">Результат</dt>
+<dd class="field-odd"><p>boolean True on success</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="LanguageAdapter::doLoadLanguage">
+<code class="sig-name descname">doLoadLanguage</code><span class="sig-paren">(</span><em class="sig-param">$extension</em>, <em class="sig-param">$source</em>, <em class="sig-param">$base = JPATH_ADMINISTRATOR</em><span class="sig-paren">)</span><a class="headerlink" href="#LanguageAdapter::doLoadLanguage" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Load language files</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$extension</strong> – </p></li>
+<li><p><strong>$source</strong> – </p></li>
+<li><p><strong>$base</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>void</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="LanguageAdapter::getDiscoverInstallSupported">
+<code class="sig-name descname">getDiscoverInstallSupported</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#LanguageAdapter::getDiscoverInstallSupported" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Checks if the adapter supports discover_install</p>
+<dl class="field-list simple">
+<dt class="field-odd">Результат</dt>
+<dd class="field-odd"><p>boolean</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="LanguageAdapter::getElement">
+<code class="sig-name descname">getElement</code><span class="sig-paren">(</span><em class="sig-param">$element = null</em><span class="sig-paren">)</span><a class="headerlink" href="#LanguageAdapter::getElement" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Get the filtered extension element from the manifest</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$element</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>string The filtered element</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="LanguageAdapter::getManifest">
+<code class="sig-name descname">getManifest</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#LanguageAdapter::getManifest" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Get the manifest object.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Результат</dt>
+<dd class="field-odd"><p>SimpleXMLElement Manifest object</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="LanguageAdapter::getName">
+<code class="sig-name descname">getName</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#LanguageAdapter::getName" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Get the filtered component name from the manifest</p>
+<dl class="field-list simple">
+<dt class="field-odd">Результат</dt>
+<dd class="field-odd"><p>string The filtered name</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="LanguageAdapter::getRoute">
+<code class="sig-name descname">getRoute</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#LanguageAdapter::getRoute" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Get the install route being followed</p>
+<dl class="field-list simple">
+<dt class="field-odd">Результат</dt>
+<dd class="field-odd"><p>string The install route</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="LanguageAdapter::getScriptClassName">
+<code class="sig-name descname">getScriptClassName</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#LanguageAdapter::getScriptClassName" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Get the class name for the install adapter script.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Результат</dt>
+<dd class="field-odd"><p>string The class name.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="LanguageAdapter::parseQueries">
+<code class="sig-name descname">parseQueries</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#LanguageAdapter::parseQueries" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Method to parse the queries specified in the <cite>&lt;sql&gt;</cite> tags</p>
+<dl class="field-list simple">
+<dt class="field-odd">Результат</dt>
+<dd class="field-odd"><p>void</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="LanguageAdapter::parseOptionalTags">
+<code class="sig-name descname">parseOptionalTags</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#LanguageAdapter::parseOptionalTags" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Method to parse optional tags in the manifest</p>
+<dl class="field-list simple">
+<dt class="field-odd">Результат</dt>
+<dd class="field-odd"><p>void</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="LanguageAdapter::prepareDiscoverInstall">
+<code class="sig-name descname">prepareDiscoverInstall</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#LanguageAdapter::prepareDiscoverInstall" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Prepares the adapter for a discover_install task</p>
+<dl class="field-list simple">
+<dt class="field-odd">Результат</dt>
+<dd class="field-odd"><p>void</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="LanguageAdapter::setManifest">
+<code class="sig-name descname">setManifest</code><span class="sig-paren">(</span><em class="sig-param">$manifest</em><span class="sig-paren">)</span><a class="headerlink" href="#LanguageAdapter::setManifest" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Set the manifest object.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$manifest</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>InstallerAdapter Instance of this class to support chaining</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="LanguageAdapter::setRoute">
+<code class="sig-name descname">setRoute</code><span class="sig-paren">(</span><em class="sig-param">$route</em><span class="sig-paren">)</span><a class="headerlink" href="#LanguageAdapter::setRoute" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Set the install route being followed</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$route</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>InstallerAdapter Instance of this class to support chaining</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="LanguageAdapter::setupScriptfile">
+<code class="sig-name descname">setupScriptfile</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#LanguageAdapter::setupScriptfile" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Setup the manifest script file for those adapters that use it.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Результат</dt>
+<dd class="field-odd"><p>void</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="LanguageAdapter::setupUpdates">
+<code class="sig-name descname">setupUpdates</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#LanguageAdapter::setupUpdates" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Method to setup the update routine for the adapter</p>
+<dl class="field-list simple">
+<dt class="field-odd">Результат</dt>
+<dd class="field-odd"><p>void</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="LanguageAdapter::triggerManifestScript">
+<code class="sig-name descname">triggerManifestScript</code><span class="sig-paren">(</span><em class="sig-param">$method</em><span class="sig-paren">)</span><a class="headerlink" href="#LanguageAdapter::triggerManifestScript" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Executes a custom install script method</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$method</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>boolean True on success</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2020, Artem Vasilev &lt;kern.usr@gmail.com&gt;
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

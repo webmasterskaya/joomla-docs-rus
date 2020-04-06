@@ -1,0 +1,806 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="ru" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="ru" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Joomla\CMS\User\User &mdash; документация joomla-docs-rus 3.9.16</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../../../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../../" src="../../../_static/documentation_options.js"></script>
+        <script src="../../../_static/jquery.js"></script>
+        <script src="../../../_static/underscore.js"></script>
+        <script src="../../../_static/doctools.js"></script>
+        <script src="../../../_static/language_data.js"></script>
+        <script src="../../../_static/translations.js"></script>
+    
+    <script type="text/javascript" src="../../../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
+    <link rel="index" title="Алфавитный указатель" href="../../../genindex.html" />
+    <link rel="search" title="Поиск" href="../../../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search"  style="background: white" >
+          
+
+          
+            <a href="../../../index.html" class="icon icon-home"> joomla-docs-rus
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <!-- Local TOC -->
+              <div class="local-toc"><ul>
+<li><a class="reference internal" href="#">Joomla\CMS\User\User</a></li>
+</ul>
+</div>
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../../index.html">joomla-docs-rus</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content style-external-links">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../../index.html">Docs</a> &raquo;</li>
+        
+      <li>Joomla\CMS\User\User</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../../../_sources/Joomla/CMS/User/User.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="joomla-cms-user-user">
+<h1>Joomla\CMS\User\User<a class="headerlink" href="#joomla-cms-user-user" title="Ссылка на этот заголовок">¶</a></h1>
+<dl class="class">
+<dt id="User">
+<em class="property">class </em><code class="sig-name descname">User</code><a class="headerlink" href="#User" title="Ссылка на это определение">¶</a></dt>
+<dd><p>User class.  Handles all application interaction with a user</p>
+<dl class="attr">
+<dt id="User::$isRoot">
+<em class="property">property </em><code class="sig-name descname">isRoot</code><a class="headerlink" href="#User::$isRoot" title="Ссылка на это определение">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>boolean</p>
+</dd>
+<dt class="field-even">Scope</dt>
+<dd class="field-even"><p>protected</p>
+</dd>
+</dl>
+<p>A cached switch for if this user has root access rights.</p>
+</dd></dl>
+
+<dl class="attr">
+<dt id="User::$id">
+<em class="property">property </em><code class="sig-name descname">id</code><a class="headerlink" href="#User::$id" title="Ссылка на это определение">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>integer</p>
+</dd>
+</dl>
+<p>Unique id</p>
+</dd></dl>
+
+<dl class="attr">
+<dt id="User::$name">
+<em class="property">property </em><code class="sig-name descname">name</code><a class="headerlink" href="#User::$name" title="Ссылка на это определение">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>string</p>
+</dd>
+</dl>
+<p>The user’s real name (or nickname)</p>
+</dd></dl>
+
+<dl class="attr">
+<dt id="User::$username">
+<em class="property">property </em><code class="sig-name descname">username</code><a class="headerlink" href="#User::$username" title="Ссылка на это определение">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>string</p>
+</dd>
+</dl>
+<p>The login name</p>
+</dd></dl>
+
+<dl class="attr">
+<dt id="User::$email">
+<em class="property">property </em><code class="sig-name descname">email</code><a class="headerlink" href="#User::$email" title="Ссылка на это определение">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>string</p>
+</dd>
+</dl>
+<p>The email</p>
+</dd></dl>
+
+<dl class="attr">
+<dt id="User::$password">
+<em class="property">property </em><code class="sig-name descname">password</code><a class="headerlink" href="#User::$password" title="Ссылка на это определение">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>string</p>
+</dd>
+</dl>
+<p>MD5 encrypted password</p>
+</dd></dl>
+
+<dl class="attr">
+<dt id="User::$password_clear">
+<em class="property">property </em><code class="sig-name descname">password_clear</code><a class="headerlink" href="#User::$password_clear" title="Ссылка на это определение">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>string</p>
+</dd>
+</dl>
+<p>Clear password, only available when a new password is set for a user</p>
+</dd></dl>
+
+<dl class="attr">
+<dt id="User::$block">
+<em class="property">property </em><code class="sig-name descname">block</code><a class="headerlink" href="#User::$block" title="Ссылка на это определение">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>integer</p>
+</dd>
+</dl>
+<p>Block status</p>
+</dd></dl>
+
+<dl class="attr">
+<dt id="User::$sendEmail">
+<em class="property">property </em><code class="sig-name descname">sendEmail</code><a class="headerlink" href="#User::$sendEmail" title="Ссылка на это определение">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>integer</p>
+</dd>
+</dl>
+<p>Should this user receive system email</p>
+</dd></dl>
+
+<dl class="attr">
+<dt id="User::$registerDate">
+<em class="property">property </em><code class="sig-name descname">registerDate</code><a class="headerlink" href="#User::$registerDate" title="Ссылка на это определение">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>DateTime</p>
+</dd>
+</dl>
+<p>Date the user was registered</p>
+</dd></dl>
+
+<dl class="attr">
+<dt id="User::$lastvisitDate">
+<em class="property">property </em><code class="sig-name descname">lastvisitDate</code><a class="headerlink" href="#User::$lastvisitDate" title="Ссылка на это определение">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>DateTime</p>
+</dd>
+</dl>
+<p>Date of last visit</p>
+</dd></dl>
+
+<dl class="attr">
+<dt id="User::$activation">
+<em class="property">property </em><code class="sig-name descname">activation</code><a class="headerlink" href="#User::$activation" title="Ссылка на это определение">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>string</p>
+</dd>
+</dl>
+<p>Activation hash</p>
+</dd></dl>
+
+<dl class="attr">
+<dt id="User::$params">
+<em class="property">property </em><code class="sig-name descname">params</code><a class="headerlink" href="#User::$params" title="Ссылка на это определение">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>Registry</p>
+</dd>
+</dl>
+<p>User parameters</p>
+</dd></dl>
+
+<dl class="attr">
+<dt id="User::$groups">
+<em class="property">property </em><code class="sig-name descname">groups</code><a class="headerlink" href="#User::$groups" title="Ссылка на это определение">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>array</p>
+</dd>
+</dl>
+<p>Associative array of user names =&gt; group ids</p>
+</dd></dl>
+
+<dl class="attr">
+<dt id="User::$guest">
+<em class="property">property </em><code class="sig-name descname">guest</code><a class="headerlink" href="#User::$guest" title="Ссылка на это определение">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>integer</p>
+</dd>
+</dl>
+<p>Guest status</p>
+</dd></dl>
+
+<dl class="attr">
+<dt id="User::$lastResetTime">
+<em class="property">property </em><code class="sig-name descname">lastResetTime</code><a class="headerlink" href="#User::$lastResetTime" title="Ссылка на это определение">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>string</p>
+</dd>
+</dl>
+<p>Last Reset Time</p>
+</dd></dl>
+
+<dl class="attr">
+<dt id="User::$resetCount">
+<em class="property">property </em><code class="sig-name descname">resetCount</code><a class="headerlink" href="#User::$resetCount" title="Ссылка на это определение">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+</dl>
+<p>Count since last Reset Time</p>
+</dd></dl>
+
+<dl class="attr">
+<dt id="User::$requireReset">
+<em class="property">property </em><code class="sig-name descname">requireReset</code><a class="headerlink" href="#User::$requireReset" title="Ссылка на это определение">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+</dl>
+<p>Flag to require the user’s password be reset</p>
+</dd></dl>
+
+<dl class="attr">
+<dt id="User::$_params">
+<em class="property">property </em><code class="sig-name descname">_params</code><a class="headerlink" href="#User::$_params" title="Ссылка на это определение">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>Registry</p>
+</dd>
+<dt class="field-even">Scope</dt>
+<dd class="field-even"><p>protected</p>
+</dd>
+</dl>
+<p>User parameters</p>
+</dd></dl>
+
+<dl class="attr">
+<dt id="User::$_authGroups">
+<em class="property">property </em><code class="sig-name descname">_authGroups</code><a class="headerlink" href="#User::$_authGroups" title="Ссылка на это определение">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>array</p>
+</dd>
+<dt class="field-even">Scope</dt>
+<dd class="field-even"><p>protected</p>
+</dd>
+</dl>
+<p>Authorised access groups</p>
+</dd></dl>
+
+<dl class="attr">
+<dt id="User::$_authLevels">
+<em class="property">property </em><code class="sig-name descname">_authLevels</code><a class="headerlink" href="#User::$_authLevels" title="Ссылка на это определение">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>array</p>
+</dd>
+<dt class="field-even">Scope</dt>
+<dd class="field-even"><p>protected</p>
+</dd>
+</dl>
+<p>Authorised access levels</p>
+</dd></dl>
+
+<dl class="attr">
+<dt id="User::$_authActions">
+<em class="property">property </em><code class="sig-name descname">_authActions</code><a class="headerlink" href="#User::$_authActions" title="Ссылка на это определение">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>array</p>
+</dd>
+<dt class="field-even">Scope</dt>
+<dd class="field-even"><p>protected</p>
+</dd>
+</dl>
+<p>Authorised access actions</p>
+</dd></dl>
+
+<dl class="attr">
+<dt id="User::$_errorMsg">
+<em class="property">property </em><code class="sig-name descname">_errorMsg</code><a class="headerlink" href="#User::$_errorMsg" title="Ссылка на это определение">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>string</p>
+</dd>
+<dt class="field-even">Scope</dt>
+<dd class="field-even"><p>protected</p>
+</dd>
+</dl>
+<p>Error message</p>
+</dd></dl>
+
+<dl class="attr">
+<dt id="User::$userHelper">
+<em class="property">property </em><code class="sig-name descname">userHelper</code><a class="headerlink" href="#User::$userHelper" title="Ссылка на это определение">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p><a class="reference internal" href="UserWrapper.html#UserWrapper" title="UserWrapper">UserWrapper</a></p>
+</dd>
+<dt class="field-even">Scope</dt>
+<dd class="field-even"><p>protected</p>
+</dd>
+</dl>
+<p>UserWrapper object</p>
+</dd></dl>
+
+<dl class="attr">
+<dt id="User::$instances">
+<em class="property">property </em><code class="sig-name descname">instances</code><a class="headerlink" href="#User::$instances" title="Ссылка на это определение">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>array</p>
+</dd>
+<dt class="field-even">Scope</dt>
+<dd class="field-even"><p>protected</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="User::__construct">
+<code class="sig-name descname">__construct</code><span class="sig-paren">(</span><em class="sig-param">$identifier = 0</em>, <em class="sig-param">UserWrapper $userHelper = null</em><span class="sig-paren">)</span><a class="headerlink" href="#User::__construct" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Constructor activating the default information of the language</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$identifier</strong> – </p></li>
+<li><p><strong>$userHelper</strong> (<a class="reference internal" href="UserWrapper.html#UserWrapper" title="UserWrapper"><em>UserWrapper</em></a>) – </p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="User::getInstance">
+<code class="sig-name descname">getInstance</code><span class="sig-paren">(</span><em class="sig-param">$identifier = 0</em>, <em class="sig-param">UserWrapper $userHelper = null</em><span class="sig-paren">)</span><a class="headerlink" href="#User::getInstance" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Returns the global User object, only creating it if it doesn’t already
+exist.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$identifier</strong> – </p></li>
+<li><p><strong>$userHelper</strong> (<a class="reference internal" href="UserWrapper.html#UserWrapper" title="UserWrapper"><em>UserWrapper</em></a>) – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>User The User object.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="User::getParam">
+<code class="sig-name descname">getParam</code><span class="sig-paren">(</span><em class="sig-param">$key</em>, <em class="sig-param">$default = null</em><span class="sig-paren">)</span><a class="headerlink" href="#User::getParam" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Method to get a parameter value</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$key</strong> – </p></li>
+<li><p><strong>$default</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>mixed The value or the default if it did not exist</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="User::setParam">
+<code class="sig-name descname">setParam</code><span class="sig-paren">(</span><em class="sig-param">$key</em>, <em class="sig-param">$value</em><span class="sig-paren">)</span><a class="headerlink" href="#User::setParam" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Method to set a parameter</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$key</strong> – </p></li>
+<li><p><strong>$value</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>mixed Set parameter value</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="User::defParam">
+<code class="sig-name descname">defParam</code><span class="sig-paren">(</span><em class="sig-param">$key</em>, <em class="sig-param">$value</em><span class="sig-paren">)</span><a class="headerlink" href="#User::defParam" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Method to set a default parameter if it does not exist</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$key</strong> – </p></li>
+<li><p><strong>$value</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>mixed Set parameter value</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="User::authorise">
+<code class="sig-name descname">authorise</code><span class="sig-paren">(</span><em class="sig-param">$action</em>, <em class="sig-param">$assetname = null</em><span class="sig-paren">)</span><a class="headerlink" href="#User::authorise" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Method to check User object authorisation against an access control
+object and optionally an access extension object</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$action</strong> – </p></li>
+<li><p><strong>$assetname</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>boolean True if authorised</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="User::getAuthorisedCategories">
+<code class="sig-name descname">getAuthorisedCategories</code><span class="sig-paren">(</span><em class="sig-param">$component</em>, <em class="sig-param">$action</em><span class="sig-paren">)</span><a class="headerlink" href="#User::getAuthorisedCategories" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Method to return a list of all categories that a user has permission for a
+given action</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$component</strong> – </p></li>
+<li><p><strong>$action</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>array List of categories that this group can do this action to (empty array if none). Categories must be published.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="User::getAuthorisedViewLevels">
+<code class="sig-name descname">getAuthorisedViewLevels</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#User::getAuthorisedViewLevels" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Gets an array of the authorised access levels for the user</p>
+<dl class="field-list simple">
+<dt class="field-odd">Результат</dt>
+<dd class="field-odd"><p>array</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="User::getAuthorisedGroups">
+<code class="sig-name descname">getAuthorisedGroups</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#User::getAuthorisedGroups" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Gets an array of the authorised user groups</p>
+<dl class="field-list simple">
+<dt class="field-odd">Результат</dt>
+<dd class="field-odd"><p>array</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="User::clearAccessRights">
+<code class="sig-name descname">clearAccessRights</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#User::clearAccessRights" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Clears the access rights cache of this user</p>
+<dl class="field-list simple">
+<dt class="field-odd">Результат</dt>
+<dd class="field-odd"><p>void</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="User::setLastVisit">
+<code class="sig-name descname">setLastVisit</code><span class="sig-paren">(</span><em class="sig-param">$timestamp = null</em><span class="sig-paren">)</span><a class="headerlink" href="#User::setLastVisit" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Pass through method to the table for setting the last visit date</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$timestamp</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>boolean True on success.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="User::getParameters">
+<code class="sig-name descname">getParameters</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#User::getParameters" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Method to get the user parameters</p>
+<p>This method used to load the user parameters from a file.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Результат</dt>
+<dd class="field-odd"><p>object The user parameters object.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="User::getTimezone">
+<code class="sig-name descname">getTimezone</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#User::getTimezone" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Method to get the user timezone.</p>
+<p>If the user didn’t set a timezone, it will return the server timezone</p>
+<dl class="field-list simple">
+<dt class="field-odd">Результат</dt>
+<dd class="field-odd"><p>DateTimeZone</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="User::setParameters">
+<code class="sig-name descname">setParameters</code><span class="sig-paren">(</span><em class="sig-param">$params</em><span class="sig-paren">)</span><a class="headerlink" href="#User::setParameters" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Method to get the user parameters</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$params</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>void</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="User::getTable">
+<code class="sig-name descname">getTable</code><span class="sig-paren">(</span><em class="sig-param">$type = null</em>, <em class="sig-param">$prefix = 'JTable'</em><span class="sig-paren">)</span><a class="headerlink" href="#User::getTable" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Method to get the user table object</p>
+<p>This function uses a static variable to store the table name of the user
+table to instantiate. You can call this function statically to set the
+table name if needed.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$type</strong> – </p></li>
+<li><p><strong>$prefix</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>object The user table object</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="User::bind">
+<code class="sig-name descname">bind</code><span class="sig-paren">(</span><em class="sig-param">$array</em><span class="sig-paren">)</span><a class="headerlink" href="#User::bind" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Method to bind an associative array of data to a user object</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$array</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>boolean True on success</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="User::save">
+<code class="sig-name descname">save</code><span class="sig-paren">(</span><em class="sig-param">$updateOnly = false</em><span class="sig-paren">)</span><a class="headerlink" href="#User::save" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Method to save the User object to the database</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$updateOnly</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>boolean True on success</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="User::delete">
+<code class="sig-name descname">delete</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#User::delete" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Method to delete the User object from the database</p>
+<dl class="field-list simple">
+<dt class="field-odd">Результат</dt>
+<dd class="field-odd"><p>boolean True on success</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="User::load">
+<code class="sig-name descname">load</code><span class="sig-paren">(</span><em class="sig-param">$id</em><span class="sig-paren">)</span><a class="headerlink" href="#User::load" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Method to load a User object by user id number</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$id</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>boolean True on success</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="User::__sleep">
+<code class="sig-name descname">__sleep</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#User::__sleep" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Method to allow serialize the object with minimal properties.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Результат</dt>
+<dd class="field-odd"><p>array The names of the properties to include in serialization.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="User::__wakeup">
+<code class="sig-name descname">__wakeup</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#User::__wakeup" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Method to recover the full object on unserialize.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Результат</dt>
+<dd class="field-odd"><p>void</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2020, Artem Vasilev &lt;kern.usr@gmail.com&gt;
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

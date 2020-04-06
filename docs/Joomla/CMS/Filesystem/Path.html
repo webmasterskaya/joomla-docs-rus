@@ -1,0 +1,315 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="ru" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="ru" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Joomla\CMS\Filesystem\Path &mdash; документация joomla-docs-rus 3.9.16</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../../../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../../" src="../../../_static/documentation_options.js"></script>
+        <script src="../../../_static/jquery.js"></script>
+        <script src="../../../_static/underscore.js"></script>
+        <script src="../../../_static/doctools.js"></script>
+        <script src="../../../_static/language_data.js"></script>
+        <script src="../../../_static/translations.js"></script>
+    
+    <script type="text/javascript" src="../../../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
+    <link rel="index" title="Алфавитный указатель" href="../../../genindex.html" />
+    <link rel="search" title="Поиск" href="../../../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search"  style="background: white" >
+          
+
+          
+            <a href="../../../index.html" class="icon icon-home"> joomla-docs-rus
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <!-- Local TOC -->
+              <div class="local-toc"><ul>
+<li><a class="reference internal" href="#">Joomla\CMS\Filesystem\Path</a></li>
+</ul>
+</div>
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../../index.html">joomla-docs-rus</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content style-external-links">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../../index.html">Docs</a> &raquo;</li>
+        
+      <li>Joomla\CMS\Filesystem\Path</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../../../_sources/Joomla/CMS/Filesystem/Path.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="joomla-cms-filesystem-path">
+<h1>Joomla\CMS\Filesystem\Path<a class="headerlink" href="#joomla-cms-filesystem-path" title="Ссылка на этот заголовок">¶</a></h1>
+<dl class="class">
+<dt id="Path">
+<em class="property">class </em><code class="sig-name descname">Path</code><a class="headerlink" href="#Path" title="Ссылка на это определение">¶</a></dt>
+<dd><p>A Path handling class</p>
+<dl class="method">
+<dt id="Path::canChmod">
+<code class="sig-name descname">canChmod</code><span class="sig-paren">(</span><em class="sig-param">$path</em><span class="sig-paren">)</span><a class="headerlink" href="#Path::canChmod" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Checks if a path’s permissions can be changed.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$path</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>boolean True if path can have mode changed.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="Path::setPermissions">
+<code class="sig-name descname">setPermissions</code><span class="sig-paren">(</span><em class="sig-param">$path</em>, <em class="sig-param">$filemode = '0644'</em>, <em class="sig-param">$foldermode = '0755'</em><span class="sig-paren">)</span><a class="headerlink" href="#Path::setPermissions" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Chmods files and directories recursively to given permissions.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$path</strong> – </p></li>
+<li><p><strong>$filemode</strong> – </p></li>
+<li><p><strong>$foldermode</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>boolean True if successful [one fail means the whole operation failed].</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="Path::getPermissions">
+<code class="sig-name descname">getPermissions</code><span class="sig-paren">(</span><em class="sig-param">$path</em><span class="sig-paren">)</span><a class="headerlink" href="#Path::getPermissions" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Get the permissions of the file/folder at a given path.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$path</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>string Filesystem permissions.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="Path::check">
+<code class="sig-name descname">check</code><span class="sig-paren">(</span><em class="sig-param">$path</em><span class="sig-paren">)</span><a class="headerlink" href="#Path::check" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Checks for snooping outside of the file system root.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$path</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>string A cleaned version of the path or exit on error.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="Path::clean">
+<code class="sig-name descname">clean</code><span class="sig-paren">(</span><em class="sig-param">$path</em>, <em class="sig-param">$ds = DIRECTORY_SEPARATOR</em><span class="sig-paren">)</span><a class="headerlink" href="#Path::clean" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Function to strip additional / or in a path name.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$path</strong> – </p></li>
+<li><p><strong>$ds</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>string The cleaned path.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="Path::isOwner">
+<code class="sig-name descname">isOwner</code><span class="sig-paren">(</span><em class="sig-param">$path</em><span class="sig-paren">)</span><a class="headerlink" href="#Path::isOwner" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Method to determine if script owns the path.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$path</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>boolean True if the php script owns the path passed.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="Path::find">
+<code class="sig-name descname">find</code><span class="sig-paren">(</span><em class="sig-param">$paths</em>, <em class="sig-param">$file</em><span class="sig-paren">)</span><a class="headerlink" href="#Path::find" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Searches the directory paths for a given file.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$paths</strong> – </p></li>
+<li><p><strong>$file</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>mixed The full path and file name for the target file, or boolean false if the file is not found in any of the paths.</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2020, Artem Vasilev &lt;kern.usr@gmail.com&gt;
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

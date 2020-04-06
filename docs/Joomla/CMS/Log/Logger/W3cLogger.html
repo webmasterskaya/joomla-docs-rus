@@ -1,0 +1,390 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="ru" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="ru" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Joomla\CMS\Log\Logger\W3cLogger &mdash; документация joomla-docs-rus 3.9.16</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../../../../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../../../" src="../../../../_static/documentation_options.js"></script>
+        <script src="../../../../_static/jquery.js"></script>
+        <script src="../../../../_static/underscore.js"></script>
+        <script src="../../../../_static/doctools.js"></script>
+        <script src="../../../../_static/language_data.js"></script>
+        <script src="../../../../_static/translations.js"></script>
+    
+    <script type="text/javascript" src="../../../../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../../../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../../../_static/pygments.css" type="text/css" />
+    <link rel="index" title="Алфавитный указатель" href="../../../../genindex.html" />
+    <link rel="search" title="Поиск" href="../../../../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search"  style="background: white" >
+          
+
+          
+            <a href="../../../../index.html" class="icon icon-home"> joomla-docs-rus
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <!-- Local TOC -->
+              <div class="local-toc"><ul>
+<li><a class="reference internal" href="#">Joomla\CMS\Log\Logger\W3cLogger</a></li>
+</ul>
+</div>
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../../../index.html">joomla-docs-rus</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content style-external-links">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../../../index.html">Docs</a> &raquo;</li>
+        
+      <li>Joomla\CMS\Log\Logger\W3cLogger</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../../../../_sources/Joomla/CMS/Log/Logger/W3cLogger.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="joomla-cms-log-logger-w3clogger">
+<h1>Joomla\CMS\Log\Logger\W3cLogger<a class="headerlink" href="#joomla-cms-log-logger-w3clogger" title="Ссылка на этот заголовок">¶</a></h1>
+<dl class="class">
+<dt id="W3cLogger">
+<em class="property">class </em><code class="sig-name descname">W3cLogger</code><a class="headerlink" href="#W3cLogger" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Joomla! W3C Logging class</p>
+<p>This class is designed to build log files based on the W3C specification.</p>
+<dl class="attr">
+<dt id="W3cLogger::$format">
+<em class="property">property </em><code class="sig-name descname">format</code><a class="headerlink" href="#W3cLogger::$format" title="Ссылка на это определение">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>string</p>
+</dd>
+<dt class="field-even">Scope</dt>
+<dd class="field-even"><p>protected</p>
+</dd>
+</dl>
+<p>The format which each entry follows in the log file.</p>
+<p>All fields must be named in all caps and be within curly brackets eg.
+{FOOBAR}.</p>
+</dd></dl>
+
+<dl class="attr">
+<dt id="W3cLogger::$fields">
+<em class="property">property </em><code class="sig-name descname">fields</code><a class="headerlink" href="#W3cLogger::$fields" title="Ссылка на это определение">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>array</p>
+</dd>
+<dt class="field-even">Scope</dt>
+<dd class="field-even"><p>protected</p>
+</dd>
+</dl>
+<p>The parsed fields from the format string.</p>
+</dd></dl>
+
+<dl class="attr">
+<dt id="W3cLogger::$path">
+<em class="property">property </em><code class="sig-name descname">path</code><a class="headerlink" href="#W3cLogger::$path" title="Ссылка на это определение">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>string</p>
+</dd>
+<dt class="field-even">Scope</dt>
+<dd class="field-even"><p>protected</p>
+</dd>
+</dl>
+<p>The full filesystem path for the log file.</p>
+</dd></dl>
+
+<dl class="attr">
+<dt id="W3cLogger::$defer">
+<em class="property">property </em><code class="sig-name descname">defer</code><a class="headerlink" href="#W3cLogger::$defer" title="Ссылка на это определение">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>boolean</p>
+</dd>
+<dt class="field-even">Scope</dt>
+<dd class="field-even"><p>protected</p>
+</dd>
+</dl>
+<p>If true, all writes will be deferred as long as possible.
+NOTE: Deferred logs may never be written if the application encounters a
+fatal error.</p>
+</dd></dl>
+
+<dl class="attr">
+<dt id="W3cLogger::$deferredEntries">
+<em class="property">property </em><code class="sig-name descname">deferredEntries</code><a class="headerlink" href="#W3cLogger::$deferredEntries" title="Ссылка на это определение">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>array</p>
+</dd>
+<dt class="field-even">Scope</dt>
+<dd class="field-even"><p>protected</p>
+</dd>
+</dl>
+<p>If deferring, entries will be stored here prior to writing.</p>
+</dd></dl>
+
+<dl class="attr">
+<dt id="W3cLogger::$options">
+<em class="property">property </em><code class="sig-name descname">options</code><a class="headerlink" href="#W3cLogger::$options" title="Ссылка на это определение">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>array</p>
+</dd>
+<dt class="field-even">Scope</dt>
+<dd class="field-even"><p>protected</p>
+</dd>
+</dl>
+<p>Options array for the JLog instance.</p>
+</dd></dl>
+
+<dl class="attr">
+<dt id="W3cLogger::$priorities">
+<em class="property">property </em><code class="sig-name descname">priorities</code><a class="headerlink" href="#W3cLogger::$priorities" title="Ссылка на это определение">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>array</p>
+</dd>
+<dt class="field-even">Scope</dt>
+<dd class="field-even"><p>protected</p>
+</dd>
+</dl>
+<p>Translation array for LogEntry priorities to text strings.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="W3cLogger::__construct">
+<code class="sig-name descname">__construct</code><span class="sig-paren">(</span><em class="sig-param">$options</em><span class="sig-paren">)</span><a class="headerlink" href="#W3cLogger::__construct" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Constructor.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$options</strong> – </p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="W3cLogger::__destruct">
+<code class="sig-name descname">__destruct</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#W3cLogger::__destruct" title="Ссылка на это определение">¶</a></dt>
+<dd><p>If deferred, write all pending logs.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="W3cLogger::addEntry">
+<code class="sig-name descname">addEntry</code><span class="sig-paren">(</span><em class="sig-param">LogEntry $entry</em><span class="sig-paren">)</span><a class="headerlink" href="#W3cLogger::addEntry" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Method to add an entry to the log.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$entry</strong> (<a class="reference internal" href="../LogEntry.html#LogEntry" title="LogEntry"><em>LogEntry</em></a>) – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>void</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="W3cLogger::formatLine">
+<code class="sig-name descname">formatLine</code><span class="sig-paren">(</span><em class="sig-param">LogEntry $entry</em><span class="sig-paren">)</span><a class="headerlink" href="#W3cLogger::formatLine" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Format a line for the log file.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$entry</strong> (<a class="reference internal" href="../LogEntry.html#LogEntry" title="LogEntry"><em>LogEntry</em></a>) – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>String</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="W3cLogger::generateFileHeader">
+<code class="sig-name descname">generateFileHeader</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#W3cLogger::generateFileHeader" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Method to generate the log file header.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Результат</dt>
+<dd class="field-odd"><p>string The log file header</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="W3cLogger::initFile">
+<code class="sig-name descname">initFile</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#W3cLogger::initFile" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Method to initialise the log file.  This will create the folder path to
+the file if it doesn’t already
+exist and also get a new file header if the file doesn’t already exist.
+If the file already exists it
+will simply open it for writing.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Результат</dt>
+<dd class="field-odd"><p>void</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="W3cLogger::parseFields">
+<code class="sig-name descname">parseFields</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#W3cLogger::parseFields" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Method to parse the format string into an array of fields.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Результат</dt>
+<dd class="field-odd"><p>void</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2020, Artem Vasilev &lt;kern.usr@gmail.com&gt;
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

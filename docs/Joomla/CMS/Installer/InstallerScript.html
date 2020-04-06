@@ -1,0 +1,444 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="ru" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="ru" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Joomla\CMS\Installer\InstallerScript &mdash; документация joomla-docs-rus 3.9.16</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../../../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../../" src="../../../_static/documentation_options.js"></script>
+        <script src="../../../_static/jquery.js"></script>
+        <script src="../../../_static/underscore.js"></script>
+        <script src="../../../_static/doctools.js"></script>
+        <script src="../../../_static/language_data.js"></script>
+        <script src="../../../_static/translations.js"></script>
+    
+    <script type="text/javascript" src="../../../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
+    <link rel="index" title="Алфавитный указатель" href="../../../genindex.html" />
+    <link rel="search" title="Поиск" href="../../../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search"  style="background: white" >
+          
+
+          
+            <a href="../../../index.html" class="icon icon-home"> joomla-docs-rus
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <!-- Local TOC -->
+              <div class="local-toc"><ul>
+<li><a class="reference internal" href="#">Joomla\CMS\Installer\InstallerScript</a></li>
+</ul>
+</div>
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../../index.html">joomla-docs-rus</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content style-external-links">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../../index.html">Docs</a> &raquo;</li>
+        
+      <li>Joomla\CMS\Installer\InstallerScript</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../../../_sources/Joomla/CMS/Installer/InstallerScript.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="joomla-cms-installer-installerscript">
+<h1>Joomla\CMS\Installer\InstallerScript<a class="headerlink" href="#joomla-cms-installer-installerscript" title="Ссылка на этот заголовок">¶</a></h1>
+<dl class="class">
+<dt id="InstallerScript">
+<em class="property">class </em><code class="sig-name descname">InstallerScript</code><a class="headerlink" href="#InstallerScript" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Base install script for use by extensions providing helper methods for common behaviours.</p>
+<dl class="attr">
+<dt id="InstallerScript::$release">
+<em class="property">property </em><code class="sig-name descname">release</code><a class="headerlink" href="#InstallerScript::$release" title="Ссылка на это определение">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>string</p>
+</dd>
+<dt class="field-even">Scope</dt>
+<dd class="field-even"><p>protected</p>
+</dd>
+</dl>
+<p>The version number of the extension.</p>
+</dd></dl>
+
+<dl class="attr">
+<dt id="InstallerScript::$paramTable">
+<em class="property">property </em><code class="sig-name descname">paramTable</code><a class="headerlink" href="#InstallerScript::$paramTable" title="Ссылка на это определение">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>string</p>
+</dd>
+<dt class="field-even">Scope</dt>
+<dd class="field-even"><p>protected</p>
+</dd>
+</dl>
+<p>The table the parameters are stored in.</p>
+</dd></dl>
+
+<dl class="attr">
+<dt id="InstallerScript::$extension">
+<em class="property">property </em><code class="sig-name descname">extension</code><a class="headerlink" href="#InstallerScript::$extension" title="Ссылка на это определение">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>string</p>
+</dd>
+<dt class="field-even">Scope</dt>
+<dd class="field-even"><p>protected</p>
+</dd>
+</dl>
+<p>The extension name. This should be set in the installer script.</p>
+</dd></dl>
+
+<dl class="attr">
+<dt id="InstallerScript::$deleteFiles">
+<em class="property">property </em><code class="sig-name descname">deleteFiles</code><a class="headerlink" href="#InstallerScript::$deleteFiles" title="Ссылка на это определение">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>array</p>
+</dd>
+<dt class="field-even">Scope</dt>
+<dd class="field-even"><p>protected</p>
+</dd>
+</dl>
+<p>A list of files to be deleted</p>
+</dd></dl>
+
+<dl class="attr">
+<dt id="InstallerScript::$deleteFolders">
+<em class="property">property </em><code class="sig-name descname">deleteFolders</code><a class="headerlink" href="#InstallerScript::$deleteFolders" title="Ссылка на это определение">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>array</p>
+</dd>
+<dt class="field-even">Scope</dt>
+<dd class="field-even"><p>protected</p>
+</dd>
+</dl>
+<p>A list of folders to be deleted</p>
+</dd></dl>
+
+<dl class="attr">
+<dt id="InstallerScript::$cliScriptFiles">
+<em class="property">property </em><code class="sig-name descname">cliScriptFiles</code><a class="headerlink" href="#InstallerScript::$cliScriptFiles" title="Ссылка на это определение">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>array</p>
+</dd>
+<dt class="field-even">Scope</dt>
+<dd class="field-even"><p>protected</p>
+</dd>
+</dl>
+<p>A list of CLI script files to be copied to the cli directory</p>
+</dd></dl>
+
+<dl class="attr">
+<dt id="InstallerScript::$minimumPhp">
+<em class="property">property </em><code class="sig-name descname">minimumPhp</code><a class="headerlink" href="#InstallerScript::$minimumPhp" title="Ссылка на это определение">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>string</p>
+</dd>
+<dt class="field-even">Scope</dt>
+<dd class="field-even"><p>protected</p>
+</dd>
+</dl>
+<p>Minimum PHP version required to install the extension</p>
+</dd></dl>
+
+<dl class="attr">
+<dt id="InstallerScript::$minimumJoomla">
+<em class="property">property </em><code class="sig-name descname">minimumJoomla</code><a class="headerlink" href="#InstallerScript::$minimumJoomla" title="Ссылка на это определение">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>string</p>
+</dd>
+<dt class="field-even">Scope</dt>
+<dd class="field-even"><p>protected</p>
+</dd>
+</dl>
+<p>Minimum Joomla! version required to install the extension</p>
+</dd></dl>
+
+<dl class="attr">
+<dt id="InstallerScript::$allowDowngrades">
+<em class="property">property </em><code class="sig-name descname">allowDowngrades</code><a class="headerlink" href="#InstallerScript::$allowDowngrades" title="Ссылка на это определение">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>boolean</p>
+</dd>
+<dt class="field-even">Scope</dt>
+<dd class="field-even"><p>protected</p>
+</dd>
+</dl>
+<p>Allow downgrades of your extension</p>
+<p>Use at your own risk as if there is a change in functionality people may
+wish to downgrade.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="InstallerScript::preflight">
+<code class="sig-name descname">preflight</code><span class="sig-paren">(</span><em class="sig-param">$type</em>, <em class="sig-param">$parent</em><span class="sig-paren">)</span><a class="headerlink" href="#InstallerScript::preflight" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Function called before extension installation/update/removal procedure
+commences</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$type</strong> – </p></li>
+<li><p><strong>$parent</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>boolean True on success</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="InstallerScript::getInstances">
+<code class="sig-name descname">getInstances</code><span class="sig-paren">(</span><em class="sig-param">$isModule</em><span class="sig-paren">)</span><a class="headerlink" href="#InstallerScript::getInstances" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Gets each instance of a module in the #__modules table</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$isModule</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>array An array of ID’s of the extension</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="InstallerScript::getParam">
+<code class="sig-name descname">getParam</code><span class="sig-paren">(</span><em class="sig-param">$name</em>, <em class="sig-param">$id = 0</em><span class="sig-paren">)</span><a class="headerlink" href="#InstallerScript::getParam" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Gets parameter value in the extensions row of the extension table</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$name</strong> – </p></li>
+<li><p><strong>$id</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>string The parameter desired</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="InstallerScript::setParams">
+<code class="sig-name descname">setParams</code><span class="sig-paren">(</span><em class="sig-param">$param_array = null</em>, <em class="sig-param">$type = 'edit'</em>, <em class="sig-param">$id = 0</em><span class="sig-paren">)</span><a class="headerlink" href="#InstallerScript::setParams" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Sets parameter values in the extensions row of the extension table. Note
+that the
+this must be called separately for deleting and editing. Note if edit is
+called as a
+type then if the param doesn’t exist it will be created</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$param_array</strong> – </p></li>
+<li><p><strong>$type</strong> – </p></li>
+<li><p><strong>$id</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>boolean True on success</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="InstallerScript::getItemArray">
+<code class="sig-name descname">getItemArray</code><span class="sig-paren">(</span><em class="sig-param">$element</em>, <em class="sig-param">$table</em>, <em class="sig-param">$column</em>, <em class="sig-param">$identifier</em><span class="sig-paren">)</span><a class="headerlink" href="#InstallerScript::getItemArray" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Builds a standard select query to produce better DRY code in this script.
+This should produce a single unique cell which is json encoded - it will
+then
+return an associated array with this data in.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$element</strong> – </p></li>
+<li><p><strong>$table</strong> – </p></li>
+<li><p><strong>$column</strong> – </p></li>
+<li><p><strong>$identifier</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>array Associated array containing data from the cell</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="InstallerScript::removeFiles">
+<code class="sig-name descname">removeFiles</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#InstallerScript::removeFiles" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Remove the files and folders in the given array from</p>
+<dl class="field-list simple">
+<dt class="field-odd">Результат</dt>
+<dd class="field-odd"><p>void</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="InstallerScript::moveCliFiles">
+<code class="sig-name descname">moveCliFiles</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#InstallerScript::moveCliFiles" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Moves the CLI scripts into the CLI folder in the CMS</p>
+<dl class="field-list simple">
+<dt class="field-odd">Результат</dt>
+<dd class="field-odd"><p>void</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2020, Artem Vasilev &lt;kern.usr@gmail.com&gt;
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

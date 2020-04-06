@@ -1,0 +1,562 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="ru" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="ru" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Joomla\CMS\Menu\MenuItem &mdash; документация joomla-docs-rus 3.9.16</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../../../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../../" src="../../../_static/documentation_options.js"></script>
+        <script src="../../../_static/jquery.js"></script>
+        <script src="../../../_static/underscore.js"></script>
+        <script src="../../../_static/doctools.js"></script>
+        <script src="../../../_static/language_data.js"></script>
+        <script src="../../../_static/translations.js"></script>
+    
+    <script type="text/javascript" src="../../../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
+    <link rel="index" title="Алфавитный указатель" href="../../../genindex.html" />
+    <link rel="search" title="Поиск" href="../../../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search"  style="background: white" >
+          
+
+          
+            <a href="../../../index.html" class="icon icon-home"> joomla-docs-rus
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <!-- Local TOC -->
+              <div class="local-toc"><ul>
+<li><a class="reference internal" href="#">Joomla\CMS\Menu\MenuItem</a></li>
+</ul>
+</div>
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../../index.html">joomla-docs-rus</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content style-external-links">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../../index.html">Docs</a> &raquo;</li>
+        
+      <li>Joomla\CMS\Menu\MenuItem</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../../../_sources/Joomla/CMS/Menu/MenuItem.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="joomla-cms-menu-menuitem">
+<h1>Joomla\CMS\Menu\MenuItem<a class="headerlink" href="#joomla-cms-menu-menuitem" title="Ссылка на этот заголовок">¶</a></h1>
+<dl class="class">
+<dt id="MenuItem">
+<em class="property">class </em><code class="sig-name descname">MenuItem</code><a class="headerlink" href="#MenuItem" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Object representing a menu item</p>
+<dl class="attr">
+<dt id="MenuItem::$id">
+<em class="property">property </em><code class="sig-name descname">id</code><a class="headerlink" href="#MenuItem::$id" title="Ссылка на это определение">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>integer</p>
+</dd>
+</dl>
+<p>Primary key</p>
+</dd></dl>
+
+<dl class="attr">
+<dt id="MenuItem::$menutype">
+<em class="property">property </em><code class="sig-name descname">menutype</code><a class="headerlink" href="#MenuItem::$menutype" title="Ссылка на это определение">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>integer</p>
+</dd>
+</dl>
+<p>The type of menu this item belongs to</p>
+</dd></dl>
+
+<dl class="attr">
+<dt id="MenuItem::$title">
+<em class="property">property </em><code class="sig-name descname">title</code><a class="headerlink" href="#MenuItem::$title" title="Ссылка на это определение">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>string</p>
+</dd>
+</dl>
+<p>The display title of the menu item</p>
+</dd></dl>
+
+<dl class="attr">
+<dt id="MenuItem::$alias">
+<em class="property">property </em><code class="sig-name descname">alias</code><a class="headerlink" href="#MenuItem::$alias" title="Ссылка на это определение">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>string</p>
+</dd>
+</dl>
+<p>The SEF alias of the menu item</p>
+</dd></dl>
+
+<dl class="attr">
+<dt id="MenuItem::$note">
+<em class="property">property </em><code class="sig-name descname">note</code><a class="headerlink" href="#MenuItem::$note" title="Ссылка на это определение">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>string</p>
+</dd>
+</dl>
+<p>A note associated with the menu item</p>
+</dd></dl>
+
+<dl class="attr">
+<dt id="MenuItem::$route">
+<em class="property">property </em><code class="sig-name descname">route</code><a class="headerlink" href="#MenuItem::$route" title="Ссылка на это определение">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>string</p>
+</dd>
+</dl>
+<p>The computed path of the menu item based on the alias field, this is
+populated from the <cite>path</cite> field in the <cite>#__menu</cite> table</p>
+</dd></dl>
+
+<dl class="attr">
+<dt id="MenuItem::$link">
+<em class="property">property </em><code class="sig-name descname">link</code><a class="headerlink" href="#MenuItem::$link" title="Ссылка на это определение">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>string</p>
+</dd>
+</dl>
+<p>The actual link the menu item refers to</p>
+</dd></dl>
+
+<dl class="attr">
+<dt id="MenuItem::$type">
+<em class="property">property </em><code class="sig-name descname">type</code><a class="headerlink" href="#MenuItem::$type" title="Ссылка на это определение">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>string</p>
+</dd>
+</dl>
+<p>The type of link</p>
+</dd></dl>
+
+<dl class="attr">
+<dt id="MenuItem::$level">
+<em class="property">property </em><code class="sig-name descname">level</code><a class="headerlink" href="#MenuItem::$level" title="Ссылка на это определение">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>integer</p>
+</dd>
+</dl>
+<p>The relative level in the tree</p>
+</dd></dl>
+
+<dl class="attr">
+<dt id="MenuItem::$language">
+<em class="property">property </em><code class="sig-name descname">language</code><a class="headerlink" href="#MenuItem::$language" title="Ссылка на это определение">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>string</p>
+</dd>
+</dl>
+<p>The assigned language for this item</p>
+</dd></dl>
+
+<dl class="attr">
+<dt id="MenuItem::$browserNav">
+<em class="property">property </em><code class="sig-name descname">browserNav</code><a class="headerlink" href="#MenuItem::$browserNav" title="Ссылка на это определение">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>string</p>
+</dd>
+</dl>
+<p>The click behaviour of the link</p>
+</dd></dl>
+
+<dl class="attr">
+<dt id="MenuItem::$access">
+<em class="property">property </em><code class="sig-name descname">access</code><a class="headerlink" href="#MenuItem::$access" title="Ссылка на это определение">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>integer</p>
+</dd>
+</dl>
+<p>The access level required to view the menu item</p>
+</dd></dl>
+
+<dl class="attr">
+<dt id="MenuItem::$params">
+<em class="property">property </em><code class="sig-name descname">params</code><a class="headerlink" href="#MenuItem::$params" title="Ссылка на это определение">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>string|Registry</p>
+</dd>
+<dt class="field-even">Scope</dt>
+<dd class="field-even"><p>protected</p>
+</dd>
+</dl>
+<p>The menu item parameters</p>
+</dd></dl>
+
+<dl class="attr">
+<dt id="MenuItem::$home">
+<em class="property">property </em><code class="sig-name descname">home</code><a class="headerlink" href="#MenuItem::$home" title="Ссылка на это определение">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>integer</p>
+</dd>
+</dl>
+<p>Indicates if this menu item is the home or default page</p>
+</dd></dl>
+
+<dl class="attr">
+<dt id="MenuItem::$img">
+<em class="property">property </em><code class="sig-name descname">img</code><a class="headerlink" href="#MenuItem::$img" title="Ссылка на это определение">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>string</p>
+</dd>
+</dl>
+<p>The image of the menu item</p>
+</dd></dl>
+
+<dl class="attr">
+<dt id="MenuItem::$template_style_id">
+<em class="property">property </em><code class="sig-name descname">template_style_id</code><a class="headerlink" href="#MenuItem::$template_style_id" title="Ссылка на это определение">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>integer</p>
+</dd>
+</dl>
+<p>The optional template style applied to this menu item</p>
+</dd></dl>
+
+<dl class="attr">
+<dt id="MenuItem::$component_id">
+<em class="property">property </em><code class="sig-name descname">component_id</code><a class="headerlink" href="#MenuItem::$component_id" title="Ссылка на это определение">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>integer</p>
+</dd>
+</dl>
+<p>The extension ID of the component this menu item is for</p>
+</dd></dl>
+
+<dl class="attr">
+<dt id="MenuItem::$parent_id">
+<em class="property">property </em><code class="sig-name descname">parent_id</code><a class="headerlink" href="#MenuItem::$parent_id" title="Ссылка на это определение">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>integer</p>
+</dd>
+</dl>
+<p>The parent menu item in the menu tree</p>
+</dd></dl>
+
+<dl class="attr">
+<dt id="MenuItem::$component">
+<em class="property">property </em><code class="sig-name descname">component</code><a class="headerlink" href="#MenuItem::$component" title="Ссылка на это определение">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>string</p>
+</dd>
+</dl>
+<p>The name of the component this menu item is for</p>
+</dd></dl>
+
+<dl class="attr">
+<dt id="MenuItem::$tree">
+<em class="property">property </em><code class="sig-name descname">tree</code><a class="headerlink" href="#MenuItem::$tree" title="Ссылка на это определение">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>array</p>
+</dd>
+</dl>
+<p>The tree of parent menu items</p>
+</dd></dl>
+
+<dl class="attr">
+<dt id="MenuItem::$query">
+<em class="property">property </em><code class="sig-name descname">query</code><a class="headerlink" href="#MenuItem::$query" title="Ссылка на это определение">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>array</p>
+</dd>
+</dl>
+<p>An array of the query string values for this item</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="MenuItem::__construct">
+<code class="sig-name descname">__construct</code><span class="sig-paren">(</span><em class="sig-param">$data = array()</em><span class="sig-paren">)</span><a class="headerlink" href="#MenuItem::__construct" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Class constructor</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$data</strong> – </p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="MenuItem::__get">
+<code class="sig-name descname">__get</code><span class="sig-paren">(</span><em class="sig-param">$name</em><span class="sig-paren">)</span><a class="headerlink" href="#MenuItem::__get" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Method to get certain otherwise inaccessible properties from the form
+field object.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$name</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>mixed The property value or null.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="MenuItem::__set">
+<code class="sig-name descname">__set</code><span class="sig-paren">(</span><em class="sig-param">$name</em>, <em class="sig-param">$value</em><span class="sig-paren">)</span><a class="headerlink" href="#MenuItem::__set" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Method to set certain otherwise inaccessible properties of the form field
+object.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$name</strong> – </p></li>
+<li><p><strong>$value</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>void</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="MenuItem::__isset">
+<code class="sig-name descname">__isset</code><span class="sig-paren">(</span><em class="sig-param">$name</em><span class="sig-paren">)</span><a class="headerlink" href="#MenuItem::__isset" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Method check if a certain otherwise inaccessible properties of the form
+field object is set.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$name</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>boolean</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="MenuItem::getParams">
+<code class="sig-name descname">getParams</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#MenuItem::getParams" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Returns the menu item parameters</p>
+<dl class="field-list simple">
+<dt class="field-odd">Результат</dt>
+<dd class="field-odd"><p>Registry</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="MenuItem::setParams">
+<code class="sig-name descname">setParams</code><span class="sig-paren">(</span><em class="sig-param">$params</em><span class="sig-paren">)</span><a class="headerlink" href="#MenuItem::setParams" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Sets the menu item parameters</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$params</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>void</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="MenuItem::get">
+<code class="sig-name descname">get</code><span class="sig-paren">(</span><em class="sig-param">$property</em>, <em class="sig-param">$default = null</em><span class="sig-paren">)</span><a class="headerlink" href="#MenuItem::get" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Returns a property of the object or the default value if the property is
+not set.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$property</strong> – </p></li>
+<li><p><strong>$default</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>mixed The value of the property.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="MenuItem::set">
+<code class="sig-name descname">set</code><span class="sig-paren">(</span><em class="sig-param">$property</em>, <em class="sig-param">$value = null</em><span class="sig-paren">)</span><a class="headerlink" href="#MenuItem::set" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Modifies a property of the object, creating it if it does not already
+exist.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$property</strong> – </p></li>
+<li><p><strong>$value</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>mixed Previous value of the property.</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2020, Artem Vasilev &lt;kern.usr@gmail.com&gt;
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

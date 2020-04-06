@@ -1,0 +1,503 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="ru" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="ru" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Joomla\CMS\Editor\Editor &mdash; документация joomla-docs-rus 3.9.16</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../../../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../../" src="../../../_static/documentation_options.js"></script>
+        <script src="../../../_static/jquery.js"></script>
+        <script src="../../../_static/underscore.js"></script>
+        <script src="../../../_static/doctools.js"></script>
+        <script src="../../../_static/language_data.js"></script>
+        <script src="../../../_static/translations.js"></script>
+    
+    <script type="text/javascript" src="../../../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
+    <link rel="index" title="Алфавитный указатель" href="../../../genindex.html" />
+    <link rel="search" title="Поиск" href="../../../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search"  style="background: white" >
+          
+
+          
+            <a href="../../../index.html" class="icon icon-home"> joomla-docs-rus
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <!-- Local TOC -->
+              <div class="local-toc"><ul>
+<li><a class="reference internal" href="#">Joomla\CMS\Editor\Editor</a></li>
+</ul>
+</div>
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../../index.html">joomla-docs-rus</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content style-external-links">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../../index.html">Docs</a> &raquo;</li>
+        
+      <li>Joomla\CMS\Editor\Editor</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../../../_sources/Joomla/CMS/Editor/Editor.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="joomla-cms-editor-editor">
+<h1>Joomla\CMS\Editor\Editor<a class="headerlink" href="#joomla-cms-editor-editor" title="Ссылка на этот заголовок">¶</a></h1>
+<dl class="class">
+<dt id="Editor">
+<em class="property">class </em><code class="sig-name descname">Editor</code><a class="headerlink" href="#Editor" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Editor class to handle WYSIWYG editors</p>
+<dl class="attr">
+<dt id="Editor::$_observers">
+<em class="property">property </em><code class="sig-name descname">_observers</code><a class="headerlink" href="#Editor::$_observers" title="Ссылка на это определение">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>array</p>
+</dd>
+<dt class="field-even">Scope</dt>
+<dd class="field-even"><p>protected</p>
+</dd>
+</dl>
+<p>An array of Observer objects to notify</p>
+</dd></dl>
+
+<dl class="attr">
+<dt id="Editor::$_state">
+<em class="property">property </em><code class="sig-name descname">_state</code><a class="headerlink" href="#Editor::$_state" title="Ссылка на это определение">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>mixed</p>
+</dd>
+<dt class="field-even">Scope</dt>
+<dd class="field-even"><p>protected</p>
+</dd>
+</dl>
+<p>The state of the observable object</p>
+</dd></dl>
+
+<dl class="attr">
+<dt id="Editor::$_methods">
+<em class="property">property </em><code class="sig-name descname">_methods</code><a class="headerlink" href="#Editor::$_methods" title="Ссылка на это определение">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>array</p>
+</dd>
+<dt class="field-even">Scope</dt>
+<dd class="field-even"><p>protected</p>
+</dd>
+</dl>
+<p>A multi dimensional array of [function][] = key for observers</p>
+</dd></dl>
+
+<dl class="attr">
+<dt id="Editor::$_editor">
+<em class="property">property </em><code class="sig-name descname">_editor</code><a class="headerlink" href="#Editor::$_editor" title="Ссылка на это определение">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>object</p>
+</dd>
+<dt class="field-even">Scope</dt>
+<dd class="field-even"><p>protected</p>
+</dd>
+</dl>
+<p>Editor Plugin object</p>
+</dd></dl>
+
+<dl class="attr">
+<dt id="Editor::$_name">
+<em class="property">property </em><code class="sig-name descname">_name</code><a class="headerlink" href="#Editor::$_name" title="Ссылка на это определение">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>string</p>
+</dd>
+<dt class="field-even">Scope</dt>
+<dd class="field-even"><p>protected</p>
+</dd>
+</dl>
+<p>Editor Plugin name</p>
+</dd></dl>
+
+<dl class="attr">
+<dt id="Editor::$asset">
+<em class="property">property </em><code class="sig-name descname">asset</code><a class="headerlink" href="#Editor::$asset" title="Ссылка на это определение">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>string</p>
+</dd>
+<dt class="field-even">Scope</dt>
+<dd class="field-even"><p>protected</p>
+</dd>
+</dl>
+<p>Object asset</p>
+</dd></dl>
+
+<dl class="attr">
+<dt id="Editor::$author">
+<em class="property">property </em><code class="sig-name descname">author</code><a class="headerlink" href="#Editor::$author" title="Ссылка на это определение">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>string</p>
+</dd>
+<dt class="field-even">Scope</dt>
+<dd class="field-even"><p>protected</p>
+</dd>
+</dl>
+<p>Object author</p>
+</dd></dl>
+
+<dl class="attr">
+<dt id="Editor::$instances">
+<em class="property">property </em><code class="sig-name descname">instances</code><a class="headerlink" href="#Editor::$instances" title="Ссылка на это определение">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>Editor[]</p>
+</dd>
+<dt class="field-even">Scope</dt>
+<dd class="field-even"><p>protected</p>
+</dd>
+</dl>
+<p>Editor instances container.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Editor::__construct">
+<code class="sig-name descname">__construct</code><span class="sig-paren">(</span><em class="sig-param">$editor = 'none'</em><span class="sig-paren">)</span><a class="headerlink" href="#Editor::__construct" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Constructor</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$editor</strong> – </p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="Editor::getInstance">
+<code class="sig-name descname">getInstance</code><span class="sig-paren">(</span><em class="sig-param">$editor = 'none'</em><span class="sig-paren">)</span><a class="headerlink" href="#Editor::getInstance" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Returns the global Editor object, only creating it
+if it doesn’t already exist.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$editor</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>Editor The Editor object.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="Editor::getState">
+<code class="sig-name descname">getState</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Editor::getState" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Get the state of the Editor object</p>
+<dl class="field-list simple">
+<dt class="field-odd">Результат</dt>
+<dd class="field-odd"><p>mixed The state of the object.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="Editor::attach">
+<code class="sig-name descname">attach</code><span class="sig-paren">(</span><em class="sig-param">$observer</em><span class="sig-paren">)</span><a class="headerlink" href="#Editor::attach" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Attach an observer object</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$observer</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>void</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="Editor::detach">
+<code class="sig-name descname">detach</code><span class="sig-paren">(</span><em class="sig-param">$observer</em><span class="sig-paren">)</span><a class="headerlink" href="#Editor::detach" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Detach an observer object</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$observer</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>boolean True if the observer object was detached.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="Editor::initialise">
+<code class="sig-name descname">initialise</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Editor::initialise" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Initialise the editor</p>
+<dl class="field-list simple">
+<dt class="field-odd">Результат</dt>
+<dd class="field-odd"><p>void</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="Editor::display">
+<code class="sig-name descname">display</code><span class="sig-paren">(</span><em class="sig-param">$name</em>, <em class="sig-param">$html</em>, <em class="sig-param">$width</em>, <em class="sig-param">$height</em>, <em class="sig-param">$col</em>, <em class="sig-param">$row</em>, <em class="sig-param">$buttons = true</em>, <em class="sig-param">$id = null</em>, <em class="sig-param">$asset = null</em>, <em class="sig-param">$author = null</em>, <em class="sig-param">$params = array()</em><span class="sig-paren">)</span><a class="headerlink" href="#Editor::display" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Display the editor area.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$name</strong> – </p></li>
+<li><p><strong>$html</strong> – </p></li>
+<li><p><strong>$width</strong> – </p></li>
+<li><p><strong>$height</strong> – </p></li>
+<li><p><strong>$col</strong> – </p></li>
+<li><p><strong>$row</strong> – </p></li>
+<li><p><strong>$buttons</strong> – </p></li>
+<li><p><strong>$id</strong> – </p></li>
+<li><p><strong>$asset</strong> – </p></li>
+<li><p><strong>$author</strong> – </p></li>
+<li><p><strong>$params</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>string</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="Editor::save">
+<code class="sig-name descname">save</code><span class="sig-paren">(</span><em class="sig-param">$editor</em><span class="sig-paren">)</span><a class="headerlink" href="#Editor::save" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Save the editor content</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$editor</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>string</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="Editor::getContent">
+<code class="sig-name descname">getContent</code><span class="sig-paren">(</span><em class="sig-param">$editor</em><span class="sig-paren">)</span><a class="headerlink" href="#Editor::getContent" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Get the editor contents</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$editor</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>string</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="Editor::setContent">
+<code class="sig-name descname">setContent</code><span class="sig-paren">(</span><em class="sig-param">$editor</em>, <em class="sig-param">$html</em><span class="sig-paren">)</span><a class="headerlink" href="#Editor::setContent" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Set the editor contents</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$editor</strong> – </p></li>
+<li><p><strong>$html</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>string</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="Editor::getButtons">
+<code class="sig-name descname">getButtons</code><span class="sig-paren">(</span><em class="sig-param">$editor</em>, <em class="sig-param">$buttons = true</em><span class="sig-paren">)</span><a class="headerlink" href="#Editor::getButtons" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Get the editor extended buttons (usually from plugins)</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$editor</strong> – </p></li>
+<li><p><strong>$buttons</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>array</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="Editor::_loadEditor">
+<code class="sig-name descname">_loadEditor</code><span class="sig-paren">(</span><em class="sig-param">$config = array()</em><span class="sig-paren">)</span><a class="headerlink" href="#Editor::_loadEditor" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Load the editor</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$config</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>mixed</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2020, Artem Vasilev &lt;kern.usr@gmail.com&gt;
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

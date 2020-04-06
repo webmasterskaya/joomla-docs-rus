@@ -1,0 +1,266 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="ru" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="ru" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Joomla\CMS\Client\ClientWrapper &mdash; документация joomla-docs-rus 3.9.16</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../../../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../../" src="../../../_static/documentation_options.js"></script>
+        <script src="../../../_static/jquery.js"></script>
+        <script src="../../../_static/underscore.js"></script>
+        <script src="../../../_static/doctools.js"></script>
+        <script src="../../../_static/language_data.js"></script>
+        <script src="../../../_static/translations.js"></script>
+    
+    <script type="text/javascript" src="../../../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
+    <link rel="index" title="Алфавитный указатель" href="../../../genindex.html" />
+    <link rel="search" title="Поиск" href="../../../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search"  style="background: white" >
+          
+
+          
+            <a href="../../../index.html" class="icon icon-home"> joomla-docs-rus
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <!-- Local TOC -->
+              <div class="local-toc"><ul>
+<li><a class="reference internal" href="#">Joomla\CMS\Client\ClientWrapper</a></li>
+</ul>
+</div>
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../../index.html">joomla-docs-rus</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content style-external-links">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../../index.html">Docs</a> &raquo;</li>
+        
+      <li>Joomla\CMS\Client\ClientWrapper</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../../../_sources/Joomla/CMS/Client/ClientWrapper.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="joomla-cms-client-clientwrapper">
+<h1>Joomla\CMS\Client\ClientWrapper<a class="headerlink" href="#joomla-cms-client-clientwrapper" title="Ссылка на этот заголовок">¶</a></h1>
+<dl class="class">
+<dt id="ClientWrapper">
+<em class="property">class </em><code class="sig-name descname">ClientWrapper</code><a class="headerlink" href="#ClientWrapper" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Wrapper class for ClientHelper</p>
+<dl class="method">
+<dt id="ClientWrapper::getCredentials">
+<code class="sig-name descname">getCredentials</code><span class="sig-paren">(</span><em class="sig-param">$client</em>, <em class="sig-param">$force = false</em><span class="sig-paren">)</span><a class="headerlink" href="#ClientWrapper::getCredentials" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Helper wrapper method for getCredentials</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$client</strong> – </p></li>
+<li><p><strong>$force</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>array Client layer configuration options, consisting of at least</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="ClientWrapper::setCredentials">
+<code class="sig-name descname">setCredentials</code><span class="sig-paren">(</span><em class="sig-param">$client</em>, <em class="sig-param">$user</em>, <em class="sig-param">$pass</em><span class="sig-paren">)</span><a class="headerlink" href="#ClientWrapper::setCredentials" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Helper wrapper method for setCredentials</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$client</strong> – </p></li>
+<li><p><strong>$user</strong> – </p></li>
+<li><p><strong>$pass</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>boolean True if the given login credentials have been set and are valid</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="ClientWrapper::hasCredentials">
+<code class="sig-name descname">hasCredentials</code><span class="sig-paren">(</span><em class="sig-param">$client</em><span class="sig-paren">)</span><a class="headerlink" href="#ClientWrapper::hasCredentials" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Helper wrapper method for hasCredentials</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$client</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>boolean True if login credentials are available</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="ClientWrapper::setCredentialsFromRequest">
+<code class="sig-name descname">setCredentialsFromRequest</code><span class="sig-paren">(</span><em class="sig-param">$client</em><span class="sig-paren">)</span><a class="headerlink" href="#ClientWrapper::setCredentialsFromRequest" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Helper wrapper method for setCredentialsFromRequest</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$client</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>mixed True, if FTP settings; JError if using legacy tree</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2020, Artem Vasilev &lt;kern.usr@gmail.com&gt;
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

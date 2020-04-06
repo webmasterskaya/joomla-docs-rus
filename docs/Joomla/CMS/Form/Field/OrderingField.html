@@ -1,0 +1,1097 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="ru" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="ru" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Joomla\CMS\Form\Field\OrderingField &mdash; документация joomla-docs-rus 3.9.16</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../../../../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../../../" src="../../../../_static/documentation_options.js"></script>
+        <script src="../../../../_static/jquery.js"></script>
+        <script src="../../../../_static/underscore.js"></script>
+        <script src="../../../../_static/doctools.js"></script>
+        <script src="../../../../_static/language_data.js"></script>
+        <script src="../../../../_static/translations.js"></script>
+    
+    <script type="text/javascript" src="../../../../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../../../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../../../_static/pygments.css" type="text/css" />
+    <link rel="index" title="Алфавитный указатель" href="../../../../genindex.html" />
+    <link rel="search" title="Поиск" href="../../../../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search"  style="background: white" >
+          
+
+          
+            <a href="../../../../index.html" class="icon icon-home"> joomla-docs-rus
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <!-- Local TOC -->
+              <div class="local-toc"><ul>
+<li><a class="reference internal" href="#">Joomla\CMS\Form\Field\OrderingField</a></li>
+</ul>
+</div>
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../../../index.html">joomla-docs-rus</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content style-external-links">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../../../index.html">Docs</a> &raquo;</li>
+        
+      <li>Joomla\CMS\Form\Field\OrderingField</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../../../../_sources/Joomla/CMS/Form/Field/OrderingField.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="joomla-cms-form-field-orderingfield">
+<h1>Joomla\CMS\Form\Field\OrderingField<a class="headerlink" href="#joomla-cms-form-field-orderingfield" title="Ссылка на этот заголовок">¶</a></h1>
+<dl class="class">
+<dt id="OrderingField">
+<em class="property">class </em><code class="sig-name descname">OrderingField</code><a class="headerlink" href="#OrderingField" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Ordering field.</p>
+<dl class="attr">
+<dt id="OrderingField::$type">
+<em class="property">property </em><code class="sig-name descname">type</code><a class="headerlink" href="#OrderingField::$type" title="Ссылка на это определение">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>string</p>
+</dd>
+<dt class="field-even">Scope</dt>
+<dd class="field-even"><p>protected</p>
+</dd>
+</dl>
+<p>The form field type.</p>
+</dd></dl>
+
+<dl class="attr">
+<dt id="OrderingField::$contentType">
+<em class="property">property </em><code class="sig-name descname">contentType</code><a class="headerlink" href="#OrderingField::$contentType" title="Ссылка на это определение">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>string</p>
+</dd>
+<dt class="field-even">Scope</dt>
+<dd class="field-even"><p>protected</p>
+</dd>
+</dl>
+<p>The form field content type.</p>
+</dd></dl>
+
+<dl class="attr">
+<dt id="OrderingField::$description">
+<em class="property">property </em><code class="sig-name descname">description</code><a class="headerlink" href="#OrderingField::$description" title="Ссылка на это определение">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>string</p>
+</dd>
+<dt class="field-even">Scope</dt>
+<dd class="field-even"><p>protected</p>
+</dd>
+</dl>
+<p>The description text for the form field. Usually used in tooltips.</p>
+</dd></dl>
+
+<dl class="attr">
+<dt id="OrderingField::$hint">
+<em class="property">property </em><code class="sig-name descname">hint</code><a class="headerlink" href="#OrderingField::$hint" title="Ссылка на это определение">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>string</p>
+</dd>
+<dt class="field-even">Scope</dt>
+<dd class="field-even"><p>protected</p>
+</dd>
+</dl>
+<p>The hint text for the form field used to display hint inside the field.</p>
+</dd></dl>
+
+<dl class="attr">
+<dt id="OrderingField::$autocomplete">
+<em class="property">property </em><code class="sig-name descname">autocomplete</code><a class="headerlink" href="#OrderingField::$autocomplete" title="Ссылка на это определение">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>mixed</p>
+</dd>
+<dt class="field-even">Scope</dt>
+<dd class="field-even"><p>protected</p>
+</dd>
+</dl>
+<p>The autocomplete state for the form field.  If „off“ element will not be
+automatically
+completed by browser.</p>
+</dd></dl>
+
+<dl class="attr">
+<dt id="OrderingField::$spellcheck">
+<em class="property">property </em><code class="sig-name descname">spellcheck</code><a class="headerlink" href="#OrderingField::$spellcheck" title="Ссылка на это определение">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>boolean</p>
+</dd>
+<dt class="field-even">Scope</dt>
+<dd class="field-even"><p>protected</p>
+</dd>
+</dl>
+<p>The spellcheck state for the form field.</p>
+</dd></dl>
+
+<dl class="attr">
+<dt id="OrderingField::$autofocus">
+<em class="property">property </em><code class="sig-name descname">autofocus</code><a class="headerlink" href="#OrderingField::$autofocus" title="Ссылка на это определение">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>boolean</p>
+</dd>
+<dt class="field-even">Scope</dt>
+<dd class="field-even"><p>protected</p>
+</dd>
+</dl>
+<p>The autofocus request for the form field.  If true element will be
+automatically
+focused on document load.</p>
+</dd></dl>
+
+<dl class="attr">
+<dt id="OrderingField::$element">
+<em class="property">property </em><code class="sig-name descname">element</code><a class="headerlink" href="#OrderingField::$element" title="Ссылка на это определение">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>SimpleXMLElement</p>
+</dd>
+<dt class="field-even">Scope</dt>
+<dd class="field-even"><p>protected</p>
+</dd>
+</dl>
+<p>The SimpleXMLElement object of the <cite>&lt;field&gt;</cite> XML element that describes
+the form field.</p>
+</dd></dl>
+
+<dl class="attr">
+<dt id="OrderingField::$form">
+<em class="property">property </em><code class="sig-name descname">form</code><a class="headerlink" href="#OrderingField::$form" title="Ссылка на это определение">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p><a class="reference internal" href="../Form.html#Form" title="Form">Form</a></p>
+</dd>
+<dt class="field-even">Scope</dt>
+<dd class="field-even"><p>protected</p>
+</dd>
+</dl>
+<p>The Form object of the form attached to the form field.</p>
+</dd></dl>
+
+<dl class="attr">
+<dt id="OrderingField::$formControl">
+<em class="property">property </em><code class="sig-name descname">formControl</code><a class="headerlink" href="#OrderingField::$formControl" title="Ссылка на это определение">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>string</p>
+</dd>
+<dt class="field-even">Scope</dt>
+<dd class="field-even"><p>protected</p>
+</dd>
+</dl>
+<p>The form control prefix for field names from the JForm object attached to
+the form field.</p>
+</dd></dl>
+
+<dl class="attr">
+<dt id="OrderingField::$hidden">
+<em class="property">property </em><code class="sig-name descname">hidden</code><a class="headerlink" href="#OrderingField::$hidden" title="Ссылка на это определение">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>boolean</p>
+</dd>
+<dt class="field-even">Scope</dt>
+<dd class="field-even"><p>protected</p>
+</dd>
+</dl>
+<p>The hidden state for the form field.</p>
+</dd></dl>
+
+<dl class="attr">
+<dt id="OrderingField::$translateLabel">
+<em class="property">property </em><code class="sig-name descname">translateLabel</code><a class="headerlink" href="#OrderingField::$translateLabel" title="Ссылка на это определение">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>boolean</p>
+</dd>
+<dt class="field-even">Scope</dt>
+<dd class="field-even"><p>protected</p>
+</dd>
+</dl>
+<p>True to translate the field label string.</p>
+</dd></dl>
+
+<dl class="attr">
+<dt id="OrderingField::$translateDescription">
+<em class="property">property </em><code class="sig-name descname">translateDescription</code><a class="headerlink" href="#OrderingField::$translateDescription" title="Ссылка на это определение">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>boolean</p>
+</dd>
+<dt class="field-even">Scope</dt>
+<dd class="field-even"><p>protected</p>
+</dd>
+</dl>
+<p>True to translate the field description string.</p>
+</dd></dl>
+
+<dl class="attr">
+<dt id="OrderingField::$translateHint">
+<em class="property">property </em><code class="sig-name descname">translateHint</code><a class="headerlink" href="#OrderingField::$translateHint" title="Ссылка на это определение">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>boolean</p>
+</dd>
+<dt class="field-even">Scope</dt>
+<dd class="field-even"><p>protected</p>
+</dd>
+</dl>
+<p>True to translate the field hint string.</p>
+</dd></dl>
+
+<dl class="attr">
+<dt id="OrderingField::$id">
+<em class="property">property </em><code class="sig-name descname">id</code><a class="headerlink" href="#OrderingField::$id" title="Ссылка на это определение">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>string</p>
+</dd>
+<dt class="field-even">Scope</dt>
+<dd class="field-even"><p>protected</p>
+</dd>
+</dl>
+<p>The document id for the form field.</p>
+</dd></dl>
+
+<dl class="attr">
+<dt id="OrderingField::$input">
+<em class="property">property </em><code class="sig-name descname">input</code><a class="headerlink" href="#OrderingField::$input" title="Ссылка на это определение">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>string</p>
+</dd>
+<dt class="field-even">Scope</dt>
+<dd class="field-even"><p>protected</p>
+</dd>
+</dl>
+<p>The input for the form field.</p>
+</dd></dl>
+
+<dl class="attr">
+<dt id="OrderingField::$label">
+<em class="property">property </em><code class="sig-name descname">label</code><a class="headerlink" href="#OrderingField::$label" title="Ссылка на это определение">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>string</p>
+</dd>
+<dt class="field-even">Scope</dt>
+<dd class="field-even"><p>protected</p>
+</dd>
+</dl>
+<p>The label for the form field.</p>
+</dd></dl>
+
+<dl class="attr">
+<dt id="OrderingField::$multiple">
+<em class="property">property </em><code class="sig-name descname">multiple</code><a class="headerlink" href="#OrderingField::$multiple" title="Ссылка на это определение">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>boolean</p>
+</dd>
+<dt class="field-even">Scope</dt>
+<dd class="field-even"><p>protected</p>
+</dd>
+</dl>
+<p>The multiple state for the form field.  If true then multiple values are
+allowed for the
+field.  Most often used for list field types.</p>
+</dd></dl>
+
+<dl class="attr">
+<dt id="OrderingField::$repeat">
+<em class="property">property </em><code class="sig-name descname">repeat</code><a class="headerlink" href="#OrderingField::$repeat" title="Ссылка на это определение">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>mixed</p>
+</dd>
+</dl>
+<p>Allows extensions to create repeat elements</p>
+</dd></dl>
+
+<dl class="attr">
+<dt id="OrderingField::$pattern">
+<em class="property">property </em><code class="sig-name descname">pattern</code><a class="headerlink" href="#OrderingField::$pattern" title="Ссылка на это определение">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>string</p>
+</dd>
+<dt class="field-even">Scope</dt>
+<dd class="field-even"><p>protected</p>
+</dd>
+</dl>
+<p>The pattern (Reg Ex) of value of the form field.</p>
+</dd></dl>
+
+<dl class="attr">
+<dt id="OrderingField::$validationtext">
+<em class="property">property </em><code class="sig-name descname">validationtext</code><a class="headerlink" href="#OrderingField::$validationtext" title="Ссылка на это определение">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>string</p>
+</dd>
+<dt class="field-even">Scope</dt>
+<dd class="field-even"><p>protected</p>
+</dd>
+</dl>
+<p>The validation text of invalid value of the form field.</p>
+</dd></dl>
+
+<dl class="attr">
+<dt id="OrderingField::$name">
+<em class="property">property </em><code class="sig-name descname">name</code><a class="headerlink" href="#OrderingField::$name" title="Ссылка на это определение">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>string</p>
+</dd>
+<dt class="field-even">Scope</dt>
+<dd class="field-even"><p>protected</p>
+</dd>
+</dl>
+<p>The name of the form field.</p>
+</dd></dl>
+
+<dl class="attr">
+<dt id="OrderingField::$fieldname">
+<em class="property">property </em><code class="sig-name descname">fieldname</code><a class="headerlink" href="#OrderingField::$fieldname" title="Ссылка на это определение">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>string</p>
+</dd>
+<dt class="field-even">Scope</dt>
+<dd class="field-even"><p>protected</p>
+</dd>
+</dl>
+<p>The name of the field.</p>
+</dd></dl>
+
+<dl class="attr">
+<dt id="OrderingField::$group">
+<em class="property">property </em><code class="sig-name descname">group</code><a class="headerlink" href="#OrderingField::$group" title="Ссылка на это определение">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>string</p>
+</dd>
+<dt class="field-even">Scope</dt>
+<dd class="field-even"><p>protected</p>
+</dd>
+</dl>
+<p>The group of the field.</p>
+</dd></dl>
+
+<dl class="attr">
+<dt id="OrderingField::$required">
+<em class="property">property </em><code class="sig-name descname">required</code><a class="headerlink" href="#OrderingField::$required" title="Ссылка на это определение">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>boolean</p>
+</dd>
+<dt class="field-even">Scope</dt>
+<dd class="field-even"><p>protected</p>
+</dd>
+</dl>
+<p>The required state for the form field.  If true then there must be a value
+for the field to
+be considered valid.</p>
+</dd></dl>
+
+<dl class="attr">
+<dt id="OrderingField::$disabled">
+<em class="property">property </em><code class="sig-name descname">disabled</code><a class="headerlink" href="#OrderingField::$disabled" title="Ссылка на это определение">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>boolean</p>
+</dd>
+<dt class="field-even">Scope</dt>
+<dd class="field-even"><p>protected</p>
+</dd>
+</dl>
+<p>The disabled state for the form field.  If true then the field will be
+disabled and user can’t
+interact with the field.</p>
+</dd></dl>
+
+<dl class="attr">
+<dt id="OrderingField::$readonly">
+<em class="property">property </em><code class="sig-name descname">readonly</code><a class="headerlink" href="#OrderingField::$readonly" title="Ссылка на это определение">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>boolean</p>
+</dd>
+<dt class="field-even">Scope</dt>
+<dd class="field-even"><p>protected</p>
+</dd>
+</dl>
+<p>The readonly state for the form field.  If true then the field will be
+readonly.</p>
+</dd></dl>
+
+<dl class="attr">
+<dt id="OrderingField::$validate">
+<em class="property">property </em><code class="sig-name descname">validate</code><a class="headerlink" href="#OrderingField::$validate" title="Ссылка на это определение">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>string</p>
+</dd>
+<dt class="field-even">Scope</dt>
+<dd class="field-even"><p>protected</p>
+</dd>
+</dl>
+<p>The validation method for the form field.  This value will determine which
+method is used
+to validate the value for a field.</p>
+</dd></dl>
+
+<dl class="attr">
+<dt id="OrderingField::$value">
+<em class="property">property </em><code class="sig-name descname">value</code><a class="headerlink" href="#OrderingField::$value" title="Ссылка на это определение">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>mixed</p>
+</dd>
+<dt class="field-even">Scope</dt>
+<dd class="field-even"><p>protected</p>
+</dd>
+</dl>
+<p>The value of the form field.</p>
+</dd></dl>
+
+<dl class="attr">
+<dt id="OrderingField::$default">
+<em class="property">property </em><code class="sig-name descname">default</code><a class="headerlink" href="#OrderingField::$default" title="Ссылка на это определение">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>mixed</p>
+</dd>
+<dt class="field-even">Scope</dt>
+<dd class="field-even"><p>protected</p>
+</dd>
+</dl>
+<p>The default value of the form field.</p>
+</dd></dl>
+
+<dl class="attr">
+<dt id="OrderingField::$size">
+<em class="property">property </em><code class="sig-name descname">size</code><a class="headerlink" href="#OrderingField::$size" title="Ссылка на это определение">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>integer</p>
+</dd>
+<dt class="field-even">Scope</dt>
+<dd class="field-even"><p>protected</p>
+</dd>
+</dl>
+<p>The size of the form field.</p>
+</dd></dl>
+
+<dl class="attr">
+<dt id="OrderingField::$class">
+<em class="property">property </em><code class="sig-name descname">class</code><a class="headerlink" href="#OrderingField::$class" title="Ссылка на это определение">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>mixed</p>
+</dd>
+<dt class="field-even">Scope</dt>
+<dd class="field-even"><p>protected</p>
+</dd>
+</dl>
+<p>The class of the form field</p>
+</dd></dl>
+
+<dl class="attr">
+<dt id="OrderingField::$labelclass">
+<em class="property">property </em><code class="sig-name descname">labelclass</code><a class="headerlink" href="#OrderingField::$labelclass" title="Ссылка на это определение">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>mixed</p>
+</dd>
+<dt class="field-even">Scope</dt>
+<dd class="field-even"><p>protected</p>
+</dd>
+</dl>
+<p>The label’s CSS class of the form field</p>
+</dd></dl>
+
+<dl class="attr">
+<dt id="OrderingField::$onchange">
+<em class="property">property </em><code class="sig-name descname">onchange</code><a class="headerlink" href="#OrderingField::$onchange" title="Ссылка на это определение">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>string</p>
+</dd>
+<dt class="field-even">Scope</dt>
+<dd class="field-even"><p>protected</p>
+</dd>
+</dl>
+<p>The javascript onchange of the form field.</p>
+</dd></dl>
+
+<dl class="attr">
+<dt id="OrderingField::$onclick">
+<em class="property">property </em><code class="sig-name descname">onclick</code><a class="headerlink" href="#OrderingField::$onclick" title="Ссылка на это определение">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>string</p>
+</dd>
+<dt class="field-even">Scope</dt>
+<dd class="field-even"><p>protected</p>
+</dd>
+</dl>
+<p>The javascript onclick of the form field.</p>
+</dd></dl>
+
+<dl class="attr">
+<dt id="OrderingField::$showon">
+<em class="property">property </em><code class="sig-name descname">showon</code><a class="headerlink" href="#OrderingField::$showon" title="Ссылка на это определение">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>string</p>
+</dd>
+<dt class="field-even">Scope</dt>
+<dd class="field-even"><p>protected</p>
+</dd>
+</dl>
+<p>The conditions to show/hide the field.</p>
+</dd></dl>
+
+<dl class="attr">
+<dt id="OrderingField::$count">
+<em class="property">property </em><code class="sig-name descname">count</code><a class="headerlink" href="#OrderingField::$count" title="Ссылка на это определение">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>integer</p>
+</dd>
+<dt class="field-even">Scope</dt>
+<dd class="field-even"><p>protected</p>
+</dd>
+</dl>
+<p>The count value for generated name field</p>
+</dd></dl>
+
+<dl class="attr">
+<dt id="OrderingField::$generated_fieldname">
+<em class="property">property </em><code class="sig-name descname">generated_fieldname</code><a class="headerlink" href="#OrderingField::$generated_fieldname" title="Ссылка на это определение">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>string</p>
+</dd>
+<dt class="field-even">Scope</dt>
+<dd class="field-even"><p>protected</p>
+</dd>
+</dl>
+<p>The string used for generated fields names</p>
+</dd></dl>
+
+<dl class="attr">
+<dt id="OrderingField::$layout">
+<em class="property">property </em><code class="sig-name descname">layout</code><a class="headerlink" href="#OrderingField::$layout" title="Ссылка на это определение">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>string</p>
+</dd>
+<dt class="field-even">Scope</dt>
+<dd class="field-even"><p>protected</p>
+</dd>
+</dl>
+<p>Name of the layout being used to render the field</p>
+</dd></dl>
+
+<dl class="attr">
+<dt id="OrderingField::$renderLayout">
+<em class="property">property </em><code class="sig-name descname">renderLayout</code><a class="headerlink" href="#OrderingField::$renderLayout" title="Ссылка на это определение">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>string</p>
+</dd>
+<dt class="field-even">Scope</dt>
+<dd class="field-even"><p>protected</p>
+</dd>
+</dl>
+<p>Layout to render the form field</p>
+</dd></dl>
+
+<dl class="attr">
+<dt id="OrderingField::$renderLabelLayout">
+<em class="property">property </em><code class="sig-name descname">renderLabelLayout</code><a class="headerlink" href="#OrderingField::$renderLabelLayout" title="Ссылка на это определение">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>string</p>
+</dd>
+<dt class="field-even">Scope</dt>
+<dd class="field-even"><p>protected</p>
+</dd>
+</dl>
+<p>Layout to render the label</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="OrderingField::__get">
+<code class="sig-name descname">__get</code><span class="sig-paren">(</span><em class="sig-param">$name</em><span class="sig-paren">)</span><a class="headerlink" href="#OrderingField::__get" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Method to get certain otherwise inaccessible properties from the form
+field object.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$name</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>mixed The property value or null.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OrderingField::__set">
+<code class="sig-name descname">__set</code><span class="sig-paren">(</span><em class="sig-param">$name</em>, <em class="sig-param">$value</em><span class="sig-paren">)</span><a class="headerlink" href="#OrderingField::__set" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Method to set certain otherwise inaccessible properties of the form field
+object.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$name</strong> – </p></li>
+<li><p><strong>$value</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>void</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OrderingField::setup">
+<code class="sig-name descname">setup</code><span class="sig-paren">(</span><em class="sig-param">SimpleXMLElement $element</em>, <em class="sig-param">$value</em>, <em class="sig-param">$group = null</em><span class="sig-paren">)</span><a class="headerlink" href="#OrderingField::setup" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Method to attach a JForm object to the field.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$element</strong> (<em>SimpleXMLElement</em>) – </p></li>
+<li><p><strong>$value</strong> – </p></li>
+<li><p><strong>$group</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>boolean True on success.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OrderingField::getInput">
+<code class="sig-name descname">getInput</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OrderingField::getInput" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Method to get the field input markup.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Результат</dt>
+<dd class="field-odd"><p>string The field input markup.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OrderingField::getQuery">
+<code class="sig-name descname">getQuery</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OrderingField::getQuery" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Builds the query for the ordering list.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Результат</dt>
+<dd class="field-odd"><p>JDatabaseQuery The query for the ordering form field</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OrderingField::getItemId">
+<code class="sig-name descname">getItemId</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OrderingField::getItemId" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Retrieves the current Item’s Id.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Результат</dt>
+<dd class="field-odd"><p>integer The current item ID</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OrderingField::__construct">
+<code class="sig-name descname">__construct</code><span class="sig-paren">(</span><em class="sig-param">$form = null</em><span class="sig-paren">)</span><a class="headerlink" href="#OrderingField::__construct" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Method to instantiate the form field object.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$form</strong> – </p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OrderingField::setForm">
+<code class="sig-name descname">setForm</code><span class="sig-paren">(</span><em class="sig-param">Form $form</em><span class="sig-paren">)</span><a class="headerlink" href="#OrderingField::setForm" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Method to attach a JForm object to the field.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$form</strong> (<a class="reference internal" href="../Form.html#Form" title="Form"><em>Form</em></a>) – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>FormField The form field object so that the method can be used in a chain.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OrderingField::setValue">
+<code class="sig-name descname">setValue</code><span class="sig-paren">(</span><em class="sig-param">$value</em><span class="sig-paren">)</span><a class="headerlink" href="#OrderingField::setValue" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Simple method to set the value</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$value</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>void</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OrderingField::getId">
+<code class="sig-name descname">getId</code><span class="sig-paren">(</span><em class="sig-param">$fieldId</em>, <em class="sig-param">$fieldName</em><span class="sig-paren">)</span><a class="headerlink" href="#OrderingField::getId" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Method to get the id used for the field input tag.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$fieldId</strong> – </p></li>
+<li><p><strong>$fieldName</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>string The id to be used for the field input tag.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OrderingField::getTitle">
+<code class="sig-name descname">getTitle</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OrderingField::getTitle" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Method to get the field title.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Результат</dt>
+<dd class="field-odd"><p>string The field title.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OrderingField::getLabel">
+<code class="sig-name descname">getLabel</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OrderingField::getLabel" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Method to get the field label markup.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Результат</dt>
+<dd class="field-odd"><p>string The field label markup.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OrderingField::getName">
+<code class="sig-name descname">getName</code><span class="sig-paren">(</span><em class="sig-param">$fieldName</em><span class="sig-paren">)</span><a class="headerlink" href="#OrderingField::getName" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Method to get the name used for the field input tag.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$fieldName</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>string The name to be used for the field input tag.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OrderingField::getFieldName">
+<code class="sig-name descname">getFieldName</code><span class="sig-paren">(</span><em class="sig-param">$fieldName</em><span class="sig-paren">)</span><a class="headerlink" href="#OrderingField::getFieldName" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Method to get the field name used.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$fieldName</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>string The field name</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OrderingField::getAttribute">
+<code class="sig-name descname">getAttribute</code><span class="sig-paren">(</span><em class="sig-param">$name</em>, <em class="sig-param">$default = null</em><span class="sig-paren">)</span><a class="headerlink" href="#OrderingField::getAttribute" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Method to get an attribute of the field</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$name</strong> – </p></li>
+<li><p><strong>$default</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>mixed Value of the attribute / default</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OrderingField::getControlGroup">
+<code class="sig-name descname">getControlGroup</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OrderingField::getControlGroup" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Method to get a control group with label and input.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Результат</dt>
+<dd class="field-odd"><p>string A string containing the html for the control group</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OrderingField::render">
+<code class="sig-name descname">render</code><span class="sig-paren">(</span><em class="sig-param">$layoutId</em>, <em class="sig-param">$data = array()</em><span class="sig-paren">)</span><a class="headerlink" href="#OrderingField::render" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Render a layout of this field</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$layoutId</strong> – </p></li>
+<li><p><strong>$data</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>string</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OrderingField::renderField">
+<code class="sig-name descname">renderField</code><span class="sig-paren">(</span><em class="sig-param">$options = array()</em><span class="sig-paren">)</span><a class="headerlink" href="#OrderingField::renderField" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Method to get a control group with label and input.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$options</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>string A string containing the html for the control group</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OrderingField::getLayoutData">
+<code class="sig-name descname">getLayoutData</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OrderingField::getLayoutData" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Method to get the data to be passed to the layout for rendering.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Результат</dt>
+<dd class="field-odd"><p>array</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OrderingField::getLayoutPaths">
+<code class="sig-name descname">getLayoutPaths</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OrderingField::getLayoutPaths" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Allow to override renderer include paths in child fields</p>
+<dl class="field-list simple">
+<dt class="field-odd">Результат</dt>
+<dd class="field-odd"><p>array</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OrderingField::getRenderer">
+<code class="sig-name descname">getRenderer</code><span class="sig-paren">(</span><em class="sig-param">$layoutId = 'default'</em><span class="sig-paren">)</span><a class="headerlink" href="#OrderingField::getRenderer" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Get the renderer</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$layoutId</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>FileLayout</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OrderingField::isDebugEnabled">
+<code class="sig-name descname">isDebugEnabled</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OrderingField::isDebugEnabled" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Is debug enabled for this field</p>
+<dl class="field-list simple">
+<dt class="field-odd">Результат</dt>
+<dd class="field-odd"><p>boolean</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2020, Artem Vasilev &lt;kern.usr@gmail.com&gt;
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>
